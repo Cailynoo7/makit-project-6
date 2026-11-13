@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T02:59:49.601Z",
+  "lcsc_code": "C80214",
+  "manufacturer": "MICRONE(南京微盟)",
+  "manufacturer_part_number": "MEL7135PG",
+  "description": "LED Driver IC 1 Output SOT-89",
+  "category": "LED驱动",
+  "package": "SOT-89",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating temperature": "-40°C~+85°C",
+    "Number of Channels": "1",
+    "Output Current": "350mA",
+    "Voltage - Input(DC)": "2.7V~6V"
+  },
+  "lcsc_stock": 1865,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.7597,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.5996,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.5196,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.4255,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.3775,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.3535,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1248,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0985,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0854,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0699,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.062,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0581,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/81359.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/05432fb6d6b74673b053705b65285d53.pdf?productCode=C80214",
+  "datasheet_file": null
+}

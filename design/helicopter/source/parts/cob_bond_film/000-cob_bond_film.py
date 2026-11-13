@@ -1,0 +1,5 @@
+c=part('internal_carrier')
+t=param('bond_thickness',0.15)
+w=param('bond_contact_width',12.0)
+body=Pos(c.heat_x,0,c.heat_bottom-t/2)*Box(w,w,t)
+publish('cob_bond_film',body,'COB绝缘导热胶层',material='silicone')

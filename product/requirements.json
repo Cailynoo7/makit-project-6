@@ -1,0 +1,371 @@
+{
+  "requirements": {
+    "product_class": {
+      "value": "electromechanical",
+      "source": "user"
+    },
+    "product_name": {
+      "value": "磁吸直升机造型充电风扇台灯",
+      "source": "user"
+    },
+    "maximum_fore_aft_mm": {
+      "value": 250,
+      "source": "user"
+    },
+    "use_environment": {
+      "value": "宿舍床架下书桌及低天花板阁楼",
+      "source": "user"
+    },
+    "design_direction": {
+      "value": "严格参照上传图片的天蓝色圆鼓机身、细长尾梁、尾翼与装饰尾桨、白色滑橇和顶部吊杆吸顶座；主旋翼纯白无彩色桨尖；双侧圆窗改为不透明浅蓝色",
+      "source": "user"
+    },
+    "magnet": {
+      "value": {
+        "diameter_mm": 30,
+        "thickness_mm": 2,
+        "protrusion_mm": 0.5,
+        "location": "顶部吊杆底座"
+      },
+      "source": "user"
+    },
+    "light_exit": {
+      "value": "机身前方与底部，半透明3D打印材质",
+      "source": "user"
+    },
+    "power_architecture": {
+      "value": "同一充电能源供给，灯与风扇独立驱动、独立开关，可同时工作",
+      "source": "user"
+    },
+    "controls": {
+      "value": "左右浅蓝圆窗中心各一个圆形按钮，外表曲率与窗面连续；灯泡及四叶风扇图标",
+      "source": "user"
+    },
+    "charging_connector": {
+      "value": "USB Type-C，尾梁下方，具体位置由设计方确定",
+      "source": "user"
+    },
+    "manufacturing_method": {
+      "value": "fdm",
+      "source": "user"
+    },
+    "envelope_interpretation": {
+      "value": "nose to tail fin length, not main rotor swept envelope",
+      "source": "user"
+    },
+    "initial_layout_mm": {
+      "value": {
+        "body_diameter": 100,
+        "body_height": 100,
+        "rotor_diameter": 250,
+        "tail_boom_length": 127.5,
+        "nose_to_tail_including_decoration": 244.66,
+        "tail_shoulder_plane_x": 47.5
+      },
+      "source": "default"
+    },
+    "magnet_pocket": {
+      "value": {
+        "initial_diameter_mm": 30.3,
+        "nominal_depth_mm": 1.5,
+        "retention": "薄胶固定；按胶厚调整磁铁露出量"
+      },
+      "source": "default"
+    },
+    "rotor_mechanism": {
+      "value": "固定吊杆承重，环形旋翼毂通过轴承绕吊杆转动，偏置电机传动；向下送风，尾桨固定装饰",
+      "source": "default"
+    },
+    "button_assignment": {
+      "value": "左控灯、右控风扇；短按开关，上电关闭",
+      "source": "default"
+    },
+    "battery_target": {
+      "value": {
+        "chemistry": "single-cell lithium-ion",
+        "form": "18650",
+        "nominal_capacity_mAh": 3200
+      },
+      "source": "user"
+    },
+    "lighting_target": {
+      "value": "在保持已确认外观的前提下，独立照亮读书写字区域；重新匹配光源、恒流驱动和散热，灯板20mm及平均0.5W不再是固定限制",
+      "source": "user"
+    },
+    "charging_behavior": {
+      "value": "检测到USB VBUS时由固件关闭灯和风扇；拔线低电平稳定500ms后仍保持关闭，须重新按键；不提供硬件断电隔离",
+      "source": "default"
+    },
+    "base_board": {
+      "value": "seeed/xiao-esp32c3",
+      "source": "default"
+    },
+    "materials": {
+      "value": "天蓝色及浅蓝PETG壳、半透明乳白PETG灯罩、白色主旋翼；旋翼材料及转速需原型验证",
+      "source": "default"
+    },
+    "internal_assembly": {
+      "value": "small_custom_connection_pcb",
+      "source": "user"
+    },
+    "cabin_plan_shape": {
+      "value": "circle; both side windows centred on transverse axis through cabin sphere centre",
+      "source": "user"
+    },
+    "button_diameter_mm": {
+      "value": 12,
+      "source": "user"
+    },
+    "belly_light_shape": {
+      "value": "small horizontal flat opening, not a large curved translucent belly",
+      "source": "user"
+    },
+    "belly_aperture_diameter_mm": {
+      "value": 63.75,
+      "source": "user"
+    },
+    "front_aperture_adjustment": {
+      "value": "slightly smaller than the previous front opening",
+      "source": "user"
+    },
+    "front_aperture_default": {
+      "value": {
+        "diameter_mm": 59.5,
+        "reduction_percent": 10,
+        "cut_plane_x_mm": -40.1875
+      },
+      "source": "default"
+    },
+    "window_button_proportion": {
+      "value": "Small central button within a fixed opaque pale-blue window and rounded porthole frame; follow reference window proportions",
+      "source": "user"
+    },
+    "detail_refinement": {
+      "value": "Refine landing skids and tail fin to match the supplied image",
+      "source": "user"
+    },
+    "rotor_visual_refinement": {
+      "value": "Widen the main rotor blades only; do not increase their existing thickness",
+      "source": "user"
+    },
+    "rotor_blade_thickness_mm": {
+      "value": 1.6,
+      "source": "user"
+    },
+    "rotor_blade_chord_mm": {
+      "value": 37.5,
+      "source": "default"
+    },
+    "landing_gear_form": {
+      "value": "Struts curve smoothly outward and downward from below the side windows to the skids, without exposed straight horizontal and vertical segments; fore/aft mirrored about the cabin sphere centre",
+      "source": "user"
+    },
+    "landing_gear_layout_mm": {
+      "value": {
+        "strut_x": [
+          -22.5,
+          22.5
+        ],
+        "mount_z": -25,
+        "rail_y": [
+          -56.25,
+          56.25
+        ],
+        "rail_z": -51.25,
+        "rail_tip_centre_length": 90,
+        "rail_tip_rise": 3.75,
+        "curve_handle": 12.5,
+        "peg_exit": 1.8,
+        "peg_inset_mm": 9
+      },
+      "source": "default"
+    },
+    "window_frame_construction": {
+      "value": "Separate silver-grey or white overlay ring covering the perimeter of each opaque pale-blue window",
+      "source": "user"
+    },
+    "window_frame_colour": {
+      "value": "white",
+      "source": "default"
+    },
+    "body_colour": {
+      "value": "sky blue, including cabin shell, tail boom and tail fin",
+      "source": "user"
+    },
+    "body_colour_srgb": {
+      "value": "#87CEEB",
+      "source": "default"
+    },
+    "tail_reference_detail": {
+      "value": "Vertical fin is exactly symmetric above and below the tail boom centreline; white three-blade decorative tail propeller on aircraft left; horizontal trim fin on aircraft right at tail tip, identical in shape and size to one half of the symmetric vertical fin",
+      "source": "user"
+    },
+    "window_colour": {
+      "value": "opaque pale blue, lighter than the sky-blue cabin; window frames keep their white colour",
+      "source": "user"
+    },
+    "window_colour_srgb": {
+      "value": "#C9EAF8 on window panes and central buttons",
+      "source": "default"
+    },
+    "tail_detail_layout_mm": {
+      "value": {
+        "vertical_fin_total_height": 50,
+        "vertical_fin_symmetry_plane_z": -3.75,
+        "right_trim_span": 25,
+        "tail_propeller_centre": [
+          176.875,
+          -4.625,
+          13.75
+        ],
+        "aircraft_left": "negative Y",
+        "aircraft_right": "positive Y",
+        "tail_propeller_aft_offset": 1.875
+      },
+      "source": "default"
+    },
+    "tail_propeller_alignment": {
+      "value": "Move the tail propeller aft slightly to visually centre its axis within the fore/aft fin outline",
+      "source": "user"
+    },
+    "landing_gear_height_refinement": {
+      "value": "Shorten landing struts by another 3mm from the previous 24mm vertical drop, retaining smooth curvature and symmetry",
+      "source": "user"
+    },
+    "appearance_approval": {
+      "value": "Proceed with current appearance after shortening struts another 3mm; begin internal component design",
+      "source": "user"
+    },
+    "internal_carrier_layout_mm": {
+      "value": {
+        "deck_top_z": -6,
+        "pcb_fr4_bottom_z": -4,
+        "motor_axis_x": 23,
+        "motor_floor_z": 16.7,
+        "motor_cup_id": 24.8,
+        "battery_envelope": {
+          "shape": "cylinder",
+          "diameter": 19,
+          "length": 66.2,
+          "axis": "Y"
+        },
+        "battery_centre": [
+          0,
+          0,
+          -24
+        ],
+        "printed_material": "PETG",
+        "shell_mount_points": [
+          [
+            -26,
+            -6
+          ],
+          [
+            24,
+            -20
+          ]
+        ]
+      },
+      "source": "default"
+    },
+    "overall_linear_enlargement": {
+      "value": 1.25,
+      "source": "user"
+    },
+    "clean_exterior": {
+      "value": "内部布局不得破坏参考图外轮廓；取消额外外露开孔和凸出安装结构",
+      "source": "user"
+    },
+    "window_retention": {
+      "value": "窗体自带承靠机身的厚度台阶，另有独立覆盖窗框；固定结构藏于机身内",
+      "source": "user"
+    },
+    "tail_retention": {
+      "value": "实心尾梁的圆形截面一部分承靠机身，一部分短插入；插入长度略大于壳厚，机身后方仅露圆形尾梁",
+      "source": "user"
+    },
+    "skid_root_retention": {
+      "value": "起落架根部增加可靠的内部固定结构",
+      "source": "user"
+    },
+    "charging_opening_raise_mm": {
+      "value": 10,
+      "source": "user"
+    },
+    "charging_access_direction": {
+      "value": "rearward +X on lower rear spherical wall; horizontal XIAO cassette below battery",
+      "source": "default"
+    },
+    "fan_drive": {
+      "value": {
+        "motor": "Pololu3060 5:1 Micro Metal Gearmotor HPCB6V,no encoder",
+        "battery": "direct protected1S, no boost",
+        "belt_ratio": 3.75,
+        "initial_pwm_duty": 0.6,
+        "continuous_motor_current_limit_A": 0.375,
+        "control": "independent fan PWM; hardware current limit and latched stall shutdown; reset on off"
+      },
+      "source": "default"
+    },
+    "reading_light_acceptance": {
+      "value": {
+        "diffuser_to_desk_mm": 300,
+        "reading_area_mm": [
+          400,
+          300
+        ],
+        "average_illuminance_lx_min": 500,
+        "minimum_illuminance_lx_min": 300,
+        "max_to_min_illuminance_ratio_max": 3,
+        "cct_target_K": 4000,
+        "cri_Ra_min": 80,
+        "ambient_design_C": 25,
+        "validation": "prototype lux grid through actual front/bottom printed diffusers; targets are engineering defaults,not a GB/T9473 certification claim"
+      },
+      "source": "default"
+    },
+    "reading_light_control": {
+      "value": {
+        "normal_LED_current_mA": 266.7,
+        "normal_battery_stop_V": 3.3,
+        "temperature_feedback": [
+          "COB substrate",
+          "opaque shell hot spot",
+          "battery"
+        ],
+        "USB_interlock": "灯扇关闭、拔线后须重新按键",
+        "implementation": "connection PCB upgrade"
+      },
+      "source": "default"
+    },
+    "aluminium_manufacturing_defaults": {
+      "value": {
+        "units": "mm",
+        "general_linear_tolerance": 0.1,
+        "hole_position_tolerance": 0.05,
+        "contact_face_flatness": 0.05,
+        "contact_face_size_tolerance": 0.05,
+        "unilateral_maximum_material_profile_tolerance": 0.1,
+        "liner_nominal_thickness": 0.5,
+        "liner_minimum_after_forming": 0.4,
+        "liner_max_outer_radius": 47.45,
+        "liner_min_inner_radius": 46.95,
+        "edge_break_range": [
+          0.1,
+          0.2
+        ],
+        "threads": "M1.6x0.35-6H and M2x0.4-6H;chip-free,hand assembly"
+      },
+      "source": "default"
+    },
+    "assembly_priority": {
+      "value": "以最简单组装方式制作，优先减少用户亲自焊接、接线及安装内部零件的步骤，保持已确认外观与灯扇功能",
+      "source": "user"
+    },
+    "assembly_delivery_default": {
+      "value": "厂家完成下壳功能总成与上盖旋翼总成的预装、烧录、校准和试装；用户只套皮带并以三颗M2x10合盖，厂家可整机交付时优先整机交付；不宣称内部物理减件已经完成",
+      "source": "default"
+    }
+  },
+  "open_questions": []
+}

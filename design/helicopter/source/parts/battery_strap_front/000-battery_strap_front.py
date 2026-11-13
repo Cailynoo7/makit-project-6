@@ -1,0 +1,12 @@
+c=part('battery_cradle')
+strap_t=param('strap_installed_thickness',0.8)
+strap_w=param('strap_width',10.0)
+strap_r=param('strap_inner_radius',9.55)
+body=Pos(0,c.station,c.cell_z)*Rot(90,0,0)*(Cylinder(strap_r+strap_t,strap_w)-Cylinder(strap_r,strap_w+2))
+closure_t=param('closure_overlap_thickness',0.8)
+closure=Pos(0,c.station,c.cell_z)*Rot(90,0,0)*(Cylinder(strap_r+strap_t+closure_t,strap_w)-Cylinder(strap_r+strap_t,strap_w+2))
+closure=closure & Pos(0,c.station,c.cell_z+12)*Box(30,strap_w+2,8)
+body=body.fuse(closure)
+assert len(body.solids())==1
+body.color=srgb('#555D65')
+publish('battery_strap_front',body,'前电池绑带',material='nylon')

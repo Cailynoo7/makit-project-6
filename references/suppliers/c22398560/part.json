@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:23:15.826Z",
+  "lcsc_code": "C22398560",
+  "manufacturer": "HONGLITRONIC(鸿利光电)",
+  "manufacturer_part_number": "HL-LM002H384W-7B1C18(Ra4)(ANSI-4000K)",
+  "description": "自然白色 4000K CRI:90",
+  "category": "COB光源",
+  "package": "SMD,13.5x13.5mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Lumens": "870lm",
+    "Color Temperature": "4000K",
+    "CRI Color Rendering Index": "90",
+    "Viewing Angle": "120°",
+    "Power(Watts)": "7.3W",
+    "Voltage - Forward(Vf)": "56V",
+    "Illumination Color": "Natural White",
+    "Operating Temperature": "-35°C~+80°C"
+  },
+  "lcsc_stock": 48,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.84,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 2.51,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 108,
+      "unitPrice": 2.18,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 1.98,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1296,
+      "unitPrice": 1.88,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.579,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.4698,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.4153,
+      "currency": "USD"
+    },
+    {
+      "quantity": 108,
+      "unitPrice": 0.3607,
+      "currency": "USD"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 0.3276,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1296,
+      "unitPrice": 0.311,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/24012661.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/40bcc03eff47a2eda51cd9de3c241c27.pdf?productCode=C22398560",
+  "datasheet_file": "references/suppliers/c22398560/c22398560-datasheet.pdf"
+}

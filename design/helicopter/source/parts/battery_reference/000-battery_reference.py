@@ -1,0 +1,6 @@
+c=part('battery_cradle')
+d=param('drawing_max_wrapped_diameter',19.0)
+length=param('drawing_max_welded_length',66.2)
+body=Pos(0,0,c.cell_z)*Rot(90,0,0)*Cylinder(d/2,length)
+body.color=srgb('#42724D')
+publish('battery_reference',body,'18650保守包络',role='reference')

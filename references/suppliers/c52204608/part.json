@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:50:29.393Z",
+  "lcsc_code": "C52204608",
+  "manufacturer": "R+O(宏嘉诚)",
+  "manufacturer_part_number": "HNTC-103F3950FB-100P",
+  "description": "HNTC-103F3950FB-100P",
+  "category": "NTC热敏电阻",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Height": "7.5mm",
+    "Resistance @ 25°C": "10kΩ",
+    "Operating Temperature": "-30°C~+105°C",
+    "Length": "2.8mm",
+    "B Constant (25°C/50°C)": "3950K",
+    "Power(Watts)": "10mW",
+    "Thermal Time Constant": "15s",
+    "B Constant Tolerance": "±1%"
+  },
+  "lcsc_stock": 949,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.3679,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.0806,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.9575,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.8039,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.7355,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.6944,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.2242,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1771,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.157,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1318,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.1206,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1138,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/55044715.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+  "datasheet_file": "references/suppliers/c52204608/c52204608-datasheet.pdf"
+}

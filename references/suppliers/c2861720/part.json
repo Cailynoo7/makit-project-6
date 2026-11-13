@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:51:26.456Z",
+  "lcsc_code": "C2861720",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "CSD16406Q3",
+  "description": "N-Channel 25V 79A 46W Surface Mount VSON-8(3.3x3.3)",
+  "category": "场效应管(MOSFET)",
+  "package": "VSON-8(3.3x3.3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Output Capacitance(Coss)": "950pF",
+    "Ciss-Input Capacitance": "1.1nF",
+    "Pd - Power Dissipation": "46W",
+    "Operating Temperature": "-55°C~+150°C",
+    "Drain to Source Voltage": "25V",
+    "Current - Continuous Drain(Id)": "79A",
+    "Reverse Transfer Capacitance (Crss)": "80pF",
+    "RDS(on)": "7.4mΩ@4.5V",
+    "Number": "1 N-channel",
+    "Gate Charge(Qg)": "8.1nC@4.5V",
+    "Gate Threshold Voltage (Vgs(th))": "2.2V",
+    "Type": "N-Channel"
+  },
+  "lcsc_stock": 3770,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 4.93,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 4.19,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 3.68,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.25,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 3.11,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 3.03,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.8148,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.6925,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.6082,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.5372,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.514,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.5008,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3066397.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/78a36f152ed409942151d239a21fd326.pdf?productCode=C2861720",
+  "datasheet_file": "references/suppliers/c2861720/c2861720-datasheet.pdf"
+}

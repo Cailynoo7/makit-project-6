@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-11-13T05:11:51.966181+00:00",
+  "target": "esp32:esp32:XIAO_ESP32C3",
+  "arduino_esp32": "3.3.12",
+  "host_tests": {
+    "compiler": "Apple clang++, C++17, -Wall -Wextra -Werror, AddressSanitizer + UndefinedBehaviorSanitizer",
+    "result": "passed",
+    "scenarios": 35,
+    "assertions": 11329
+  },
+  "target_compile": {
+    "status": "passed",
+    "exit_code": 0,
+    "arduino_cli": "1.6.0",
+    "fqbn": "esp32:esp32:XIAO_ESP32C3",
+    "arduino_esp32": "3.3.12",
+    "warnings": "all; none emitted",
+    "jobs": 2,
+    "program_bytes": 314386,
+    "program_limit_bytes": 1310720,
+    "static_ram_bytes": 14312,
+    "ram_limit_bytes": 327680,
+    "method": "Reused existing isolated official toolchain from prior verified archive installation; all warnings enabled, no warnings emitted. No core or SDK changes.",
+    "command": "arduino-cli compile --fqbn esp32:esp32:XIAO_ESP32C3 --build-path <temporary build folder> --warnings all --jobs 2 product/firmware/helicopter_controller",
+    "compiler": "riscv32-esp-elf-g++ 14.2.0, crosstool-NG esp-14.2.0_20260121",
+    "esp_idf": "v5.5.5 b774170ff46"
+  },
+  "physical_validation": {
+    "flashed": false,
+    "waveform_measured": false,
+    "loaded_motor_or_led_tested": false,
+    "installed_probe_calibration": false,
+    "charger_temperature_cutoff_supported": false,
+    "thermal_or_lux_verified": false
+  },
+  "sources_sha256": {
+    "product/firmware/helicopter_controller/Ads1115Sampler.h": "73c0632d2c8dd1f1f21b33cacaa22ead8e1aa6215f0262b36911d588e76d5a91",
+    "product/firmware/helicopter_controller/ControlConfig.h": "c2b2d89ad125d39480ccdaf5173f7608794284774e42a2fbf718f35d70966abd",
+    "product/firmware/helicopter_controller/ControllerLogic.h": "99b0af3001e76ff97be3317fc539a0ca097c28aa4c8b8efb8060c82fa0e786a9",
+    "product/firmware/helicopter_controller/ThermalSafety.h": "ca2e05e3c8b3723ca71a80b8d9b4c2b27dd7dcd3f4b7dd0f3a361296ec8a83b9",
+    "product/firmware/helicopter_controller/helicopter_controller.ino": "a2ce53bb25f350669b996de432799a7e24163722b9d45168a5fe65a5dfc991a3",
+    "product/firmware/tests/controller_tests.cpp": "2b51affc7619942a30b20504ce3a598425239597741a1cabedbe86dd41c7d2ab",
+    "design/helicopter/source/wiring.json": "e4ef1ebc7931e45b885050548bf03259474b16a2a1599f9a0e14d960bec04450"
+  },
+  "verified_build_inputs": [
+    {
+      "url": "https://github.com/espressif/arduino-esp32/releases/download/3.3.12/esp32-core-3.3.12.zip",
+      "archiveFileName": "esp32-core-3.3.12.zip",
+      "checksum": "SHA-256:87401004f279a206781e368b66098a8383b7cf87cce7811a6afd0163503fa78f",
+      "size": "51102895"
+    },
+    {
+      "url": "https://github.com/espressif/crosstool-NG/releases/download/esp-14.2.0_20260121/riscv32-esp-elf-14.2.0_20260121-aarch64-apple-darwin.tar.gz",
+      "archiveFileName": "riscv32-esp-elf-14.2.0_20260121-aarch64-apple-darwin.tar.gz",
+      "checksum": "SHA-256:cb32336452a4c8996b38814761a945fe7856fada1f4d57950cbabe9b0ecbfc52",
+      "size": "590046059"
+    },
+    {
+      "url": "https://github.com/espressif/esptool/releases/download/v5.3.1/esptool-v5.3.1-macos-arm64.tar.gz",
+      "archiveFileName": "esptool-v5.3.1-macos-arm64.tar.gz",
+      "checksum": "SHA-256:f63f7203d88cfe4c17aea34d6cf82769458ce204e49a05816c6384c2d299e6ca",
+      "size": "61218014"
+    },
+    {
+      "url": "https://github.com/espressif/arduino-esp32/releases/download/3.3.12/esp32c3-libs-3.3.12.zip",
+      "archiveFileName": "esp32c3-libs-3.3.12.zip",
+      "checksum": "SHA-256:4f14e59ca2adc7b917126638287a7115a7a2c0b6aed98df6138f56c3491b3a29",
+      "size": 60831692
+    }
+  ],
+  "connection_board_release": "171fcced55d57308fe0ba67341bcf9a1e5120fcf6a640abfc35d908bb5440812",
+  "limitations": [
+    "Simulation and target compilation only; no board flashed or GPIO waveform measured.",
+    "Temperature probes shut down loads only; original XIAO charger has no software cutoff interface.",
+    "NTC rail voltage, sensor offsets, battery divider and temperature lag require installed calibration.",
+    "Full nominal267mA operation does not certify continuous heat dissipation or500lx."
+  ],
+  "wiring_annotation_update": {
+    "date": "2026-11-13",
+    "current_sha256": "bc4359df71b191c2d4b966fb8bce32e0865668c06771312e83124e0c9d50419f",
+    "change": "Route labels and document references only;original compiled input hashes above are retained. Endpoint/pin/bus/via/evidence unchanged."
+  }
+}

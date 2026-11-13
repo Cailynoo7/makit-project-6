@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "releaseId": "a775a125f18a8423be0a2ba88a937e442a0c12100c13393ab9c8c7c26812f82e",
+      "designId": "connection",
+      "buildId": "66d1a8cb083b740ca5c84be91aaddf292c403ef1013ef63138dd3a67d51fffac",
+      "candidateId": "4f62e1263f07f519b030b9d6bab1fc655137dfc3658d81615ca6f5ac2c6addaa",
+      "approvedAt": "2026-11-13T08:24:36.037Z"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+s=part('fuselage')
+t=param('belly_lens_thickness',1.2)
+g=param('belly_seam_gap',0.25)
+d=param('enlarged_belly_lens_diameter',63.75)
+body=Pos(0,0,s.bottom_plane+t/2)*Cylinder(d/2,t)
+body.color=srgb('#F5F1DF',0.7)
+publish('belly_lens',body,'水平底透光片',material='petg')

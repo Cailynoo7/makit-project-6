@@ -1,0 +1,2103 @@
+{
+  "schemaVersion": 1,
+  "manufacturing": {
+    "name": "6-layer FR4 1.6mm;1oz outer,2oz inner;partitioned inner1/2 power,inner4 ground,inner3 signal",
+    "layers": 6,
+    "finishedThicknessMm": 1.6,
+    "copperThicknessOz": {
+      "outer": 1,
+      "inner": 2
+    },
+    "defaultTraceWidthMm": 0.3,
+    "absoluteMinimumTraceWidthMm": 0.2,
+    "absoluteMinimumCopperClearanceMm": 0.2,
+    "preferredRoutingClearanceMm": 0.25,
+    "copperToBoardEdgeMm": 1,
+    "via": {
+      "diameterMm": 0.5,
+      "drillMm": 0.25
+    },
+    "waveSolderVia": {
+      "diameterMm": 0.9,
+      "drillMm": 0.5
+    }
+  },
+  "netClasses": {
+    "signal": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "cpu_io": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.25
+    },
+    "power": {
+      "nominalWidthMm": 0.6,
+      "minimumWidthMm": 0.4,
+      "clearanceMm": 0.25
+    },
+    "high_current": {
+      "nominalWidthMm": 0.75,
+      "minimumWidthMm": 0.4,
+      "clearanceMm": 0.25
+    },
+    "ground": {
+      "nominalWidthMm": 0.6,
+      "minimumWidthMm": 0.4,
+      "clearanceMm": 0.25
+    },
+    "sensitive_analog": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "clock_high_speed": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.25
+    },
+    "differential_pair": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.25
+    }
+  },
+  "copperPours": {
+    "enabled": true,
+    "groundLayers": [
+      "top",
+      "inner1",
+      "inner2",
+      "inner4",
+      "bottom"
+    ],
+    "clearanceMm": 0.25,
+    "padMarginMm": 0.25,
+    "traceMarginMm": 0.25,
+    "boardEdgeMarginMm": 1,
+    "cutoutMarginMm": 0,
+    "removeIslands": true,
+    "planeLayers": [
+      "inner1",
+      "inner2",
+      "inner4"
+    ]
+  },
+  "keepouts": [
+    {
+      "name": "mount_1",
+      "purpose": "mounting_hole",
+      "shape": "circle",
+      "xMm": -16,
+      "yMm": -11,
+      "radiusMm": 2.5,
+      "layers": [
+        "top",
+        "bottom"
+      ],
+      "rationale": "M2 mounting screw envelope and one millimetre minimum hole margin."
+    },
+    {
+      "name": "mount_2",
+      "purpose": "mounting_hole",
+      "shape": "circle",
+      "xMm": 16,
+      "yMm": -11,
+      "radiusMm": 2.5,
+      "layers": [
+        "top",
+        "bottom"
+      ],
+      "rationale": "M2 mounting screw envelope and one millimetre minimum hole margin."
+    }
+  ],
+  "title": "Helicopter4WCOB,fan,1Sprotectionandtemperaturemonitor",
+  "nets": {
+    "BAT_ADC": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "ADS1115 DGS 0.5mm pitch, 0.28mm lands require local 0.2mm signal escape; V3V3 total ADC and divider/pullup current below 5mA. Fabrication floor remains 0.2mm."
+    },
+    "BAT_DIV": {
+      "class": "sensitive_analog"
+    },
+    "BOOST_SW": {
+      "class": "high_current",
+      "nominalWidthMm": 1.4,
+      "minimumWidthMm": 1.2,
+      "currentCapacity": {
+        "currentA": 2.49,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 20,
+        "requiredWidthMm": 1.2,
+        "calculationMethod": "IPC-2221internal2oz20C:3Aneeds1.167mm;round1.2mm,alsoexceeds1ozexternal20Crequirement",
+        "rationale": "Conservativeshared3Abudgetcovers2.626Acalculatedsystemload;inner2ozpermits1.2mmminimumonanyroutinglayer.Outer1ozat20Chaslowerwidthrequirement.FETterminalnecksandICbiasarelocalcopperlandtaps,notshared3Afeeders."
+      },
+      "rationale": "5.175Wboostoutputat3.0Vand80%efficiency=2.156Ainput,plus0.35Afanand0.12Acontroller=2.626A;reserve3A. SWpeak2.486A;parallelpinsjoinedbysourcecopperareas."
+    },
+    "CELL_N": {
+      "class": "high_current",
+      "nominalWidthMm": 1.3,
+      "minimumWidthMm": 1.2,
+      "currentCapacity": {
+        "currentA": 3.0,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 20,
+        "requiredWidthMm": 1.2,
+        "calculationMethod": "IPC-2221internal2oz20C:3Aneeds1.167mm;round1.2mm,alsoexceeds1ozexternal20Crequirement",
+        "rationale": "Conservativeshared3Abudgetcovers2.626Acalculatedsystemload;inner2ozpermits1.2mmminimumonanyroutinglayer.Outer1ozat20Chaslowerwidthrequirement.FETterminalnecksandICbiasarelocalcopperlandtaps,notshared3Afeeders."
+      },
+      "rationale": "5.175Wboostoutputat3.0Vand80%efficiency=2.156Ainput,plus0.35Afanand0.12Acontroller=2.626A;reserve3A. SWpeak2.486A;parallelpinsjoinedbysourcecopperareas."
+    },
+    "CELL_P": {
+      "class": "high_current",
+      "nominalWidthMm": 1.4,
+      "minimumWidthMm": 1.2,
+      "currentCapacity": {
+        "currentA": 3.0,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 20,
+        "requiredWidthMm": 1.2,
+        "calculationMethod": "IPC-2221internal2oz20C:3Aneeds1.167mm;round1.2mm,alsoexceeds1ozexternal20Crequirement",
+        "rationale": "Conservativeshared3Abudgetcovers2.626Acalculatedsystemload;inner2ozpermits1.2mmminimumonanyroutinglayer.Outer1ozat20Chaslowerwidthrequirement.FETterminalnecksandICbiasarelocalcopperlandtaps,notshared3Afeeders."
+      },
+      "rationale": "5.175Wboostoutputat3.0Vand80%efficiency=2.156Ainput,plus0.35Afanand0.12Acontroller=2.626A;reserve3A. SWpeak2.486A;parallelpinsjoinedbysourcecopperareas."
+    },
+    "CHG_GATE": {
+      "class": "cpu_io",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Low-current control or high-impedance analogue sense; 0.2mm fabrication floor permits fine-pitch escape."
+    },
+    "DSG_GATE": {
+      "class": "cpu_io",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Low-current control or high-impedance analogue sense; 0.2mm fabrication floor permits fine-pitch escape."
+    },
+    "FAN_CTL": {
+      "class": "cpu_io",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Fine-pitchlocalcontrol/analogsupply;sensecurrentsmAorless,no3Aloadcurrent."
+    },
+    "FAN_EN": {
+      "class": "cpu_io",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Fine-pitchlocalcontrol/analogsupply;sensecurrentsmAorless,no3Aloadcurrent."
+    },
+    "FAN_FAULT": {
+      "class": "cpu_io",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Fine-pitchlocalcontrol/analogsupply;sensecurrentsmAorless,no3Aloadcurrent."
+    },
+    "FAN_IPROPI": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Fine-pitchlocalcontrol/analogsupply;sensecurrentsmAorless,no3Aloadcurrent."
+    },
+    "FAN_TIMER": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Fine-pitchlocalcontrol/analogsupply;sensecurrentsmAorless,no3Aloadcurrent."
+    },
+    "FAN_VCC": {
+      "class": "power",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Fine-pitchlocalcontrol/analogsupply;sensecurrentsmAorless,no3Aloadcurrent."
+    },
+    "FAN_VREF": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Fine-pitchlocalcontrol/analogsupply;sensecurrentsmAorless,no3Aloadcurrent."
+    },
+    "FET_MID": {
+      "class": "high_current",
+      "nominalWidthMm": 1.4,
+      "minimumWidthMm": 1.2,
+      "currentCapacity": {
+        "currentA": 3.0,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 20,
+        "requiredWidthMm": 1.2,
+        "calculationMethod": "IPC-2221internal2oz20C:3Aneeds1.167mm;round1.2mm,alsoexceeds1ozexternal20Crequirement",
+        "rationale": "Conservativeshared3Abudgetcovers2.626Acalculatedsystemload;inner2ozpermits1.2mmminimumonanyroutinglayer.Outer1ozat20Chaslowerwidthrequirement.FETterminalnecksandICbiasarelocalcopperlandtaps,notshared3Afeeders."
+      },
+      "rationale": "5.175Wboostoutputat3.0Vand80%efficiency=2.156Ainput,plus0.35Afanand0.12Acontroller=2.626A;reserve3A. SWpeak2.486A;parallelpinsjoinedbysourcecopperareas."
+    },
+    "GND": {
+      "class": "ground",
+      "nominalWidthMm": 1.4,
+      "minimumWidthMm": 1.2,
+      "currentCapacity": {
+        "currentA": 3.0,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 20,
+        "requiredWidthMm": 1.2,
+        "calculationMethod": "IPC-2221internal2oz20C:3Aneeds1.167mm;round1.2mm,alsoexceeds1ozexternal20Crequirement",
+        "rationale": "Conservativeshared3Abudgetcovers2.626Acalculatedsystemload;inner2ozpermits1.2mmminimumonanyroutinglayer.Outer1ozat20Chaslowerwidthrequirement.FETterminalnecksandICbiasarelocalcopperlandtaps,notshared3Afeeders."
+      },
+      "rationale": "5.175Wboostoutputat3.0Vand80%efficiency=2.156Ainput,plus0.35Afanand0.12Acontroller=2.626A;reserve3A. SWpeak2.486A;parallelpinsjoinedbysourcecopperareas."
+    },
+    "I2C_SCL": {
+      "class": "cpu_io",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "ADS1115 DGS 0.5mm pitch, 0.28mm lands require local 0.2mm signal escape; V3V3 total ADC and divider/pullup current below 5mA. Fabrication floor remains 0.2mm."
+    },
+    "I2C_SDA": {
+      "class": "cpu_io",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "ADS1115 DGS 0.5mm pitch, 0.28mm lands require local 0.2mm signal escape; V3V3 total ADC and divider/pullup current below 5mA. Fabrication floor remains 0.2mm."
+    },
+    "KEY_L": {
+      "class": "cpu_io"
+    },
+    "KEY_R": {
+      "class": "cpu_io"
+    },
+    "LED_COMP": {
+      "class": "sensitive_analog"
+    },
+    "LED_DIM": {
+      "class": "sensitive_analog"
+    },
+    "LED_FB": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.3,
+      "rationale": "COBreturnmaximum0.277A;0.3mm1ozexceedsIPC-2221estimateandfits0.343mmTPSfeedbacklead.Senseresistormovedcloser;feedbackroutingkeptawayfromSW."
+    },
+    "LED_FREQ": {
+      "class": "sensitive_analog"
+    },
+    "LED_OVP": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Low-current control or high-impedance analogue sense; 0.2mm fabrication floor permits fine-pitch escape."
+    },
+    "LED_PLUS": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.3,
+      "rationale": "COBLEDcurrent<=0.277A;0.3mm1ozexceedsIPC-2221estimate;FBtakenKelvinfromsensepad."
+    },
+    "LED_SS": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Soft-start timing capacitor high impedance fine-pitch escape."
+    },
+    "LIGHT_CTL": {
+      "class": "cpu_io"
+    },
+    "LIGHT_EN": {
+      "class": "cpu_io"
+    },
+    "MOTOR_A": {
+      "class": "high_current",
+      "nominalWidthMm": 0.6,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.2,
+      "rationale": "UnchangedDRV8213branch<=0.6A;localQFNescapeuses0.25mmtraces.",
+      "currentCapacity": {
+        "currentA": 0.6,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 10,
+        "requiredWidthMm": 0.25,
+        "calculationMethod": "conservativeIPC-2221external",
+        "rationale": "DRV8213nominal0.525Alimitat4.2V;reserve0.6Aincludingtolerance."
+      }
+    },
+    "MOTOR_B": {
+      "class": "high_current",
+      "nominalWidthMm": 0.6,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.2,
+      "rationale": "UnchangedDRV8213branch<=0.6A;localQFNescapeuses0.25mmtraces.",
+      "currentCapacity": {
+        "currentA": 0.6,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 10,
+        "requiredWidthMm": 0.25,
+        "calculationMethod": "conservativeIPC-2221external",
+        "rationale": "DRV8213nominal0.525Alimitat4.2V;reserve0.6Aincludingtolerance."
+      }
+    },
+    "NTC_BAT": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Low-current control or high-impedance analogue sense; 0.2mm fabrication floor permits fine-pitch escape."
+    },
+    "NTC_LED": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Low-current control or high-impedance analogue sense; 0.2mm fabrication floor permits fine-pitch escape."
+    },
+    "NTC_SHELL": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Low-current control or high-impedance analogue sense; 0.2mm fabrication floor permits fine-pitch escape."
+    },
+    "PROT_BAT": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "BQ29700 BAT filter pin has a 0.28mm land at 0.5mm pitch; microamp sensing branch uses 0.2mm trace and clearance."
+    },
+    "PROT_VMINUS": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "BQ29700 VM low-current sense pin uses 0.28mm DSE land; 0.2mm escape with 0.2mm copper clearance."
+    },
+    "TEMP_BAT": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "ADS1115 DGS 0.5mm pitch, 0.28mm lands require local 0.2mm signal escape; V3V3 total ADC and divider/pullup current below 5mA. Fabrication floor remains 0.2mm."
+    },
+    "TEMP_LED": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "ADS1115 DGS 0.5mm pitch, 0.28mm lands require local 0.2mm signal escape; V3V3 total ADC and divider/pullup current below 5mA. Fabrication floor remains 0.2mm."
+    },
+    "TEMP_SHELL": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "ADS1115 DGS 0.5mm pitch, 0.28mm lands require local 0.2mm signal escape; V3V3 total ADC and divider/pullup current below 5mA. Fabrication floor remains 0.2mm."
+    },
+    "USB_SENSE": {
+      "class": "cpu_io"
+    },
+    "V3V3": {
+      "class": "power",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "ADS1115 DGS 0.5mm pitch, 0.28mm lands require local 0.2mm signal escape; V3V3 total ADC and divider/pullup current below 5mA. Fabrication floor remains 0.2mm."
+    },
+    "VBAT": {
+      "class": "high_current",
+      "nominalWidthMm": 1.3,
+      "minimumWidthMm": 1.2,
+      "currentCapacity": {
+        "currentA": 3.0,
+        "copperThicknessOz": 1,
+        "maxTemperatureRiseC": 20,
+        "requiredWidthMm": 1.2,
+        "calculationMethod": "IPC-2221internal2oz20C:3Aneeds1.167mm;round1.2mm,alsoexceeds1ozexternal20Crequirement",
+        "rationale": "Conservativeshared3Abudgetcovers2.626Acalculatedsystemload;inner2ozpermits1.2mmminimumonanyroutinglayer.Outer1ozat20Chaslowerwidthrequirement.FETterminalnecksandICbiasarelocalcopperlandtaps,notshared3Afeeders."
+      },
+      "rationale": "5.175Wboostoutputat3.0Vand80%efficiency=2.156Ainput,plus0.35Afanand0.12Acontroller=2.626A;reserve3A. SWpeak2.486A;parallelpinsjoinedbysourcecopperareas. C1positivepadshortaxis1.35001mm supports1.3mmnominal,above1.1mmrequired;thispreventsthe1.4mmnominalfrombeingroundeddownbytheexporter."
+    },
+    "VBUS": {
+      "class": "power"
+    },
+    "VBOOST_BIAS": {
+      "class": "power",
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Bias-only VIN branch separated by real populated R31 zero-ohm link; local C3 supplies switching IC bias, not inductor load current."
+    },
+    "BQ_VSS": {
+      "class": "sensitive_analog",
+      "nominalWidthMm": 0.2,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.2,
+      "rationale": "Kelvin battery-protection reference and microamp gate bleed branch through real populated zero-ohm link R32; no 3A return current flows here."
+    }
+  },
+  "bomBindings": [
+    {
+      "bomItemId": "led_regulator",
+      "designators": [
+        "U1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_schottky",
+      "designators": [
+        "D1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "fan_driver",
+      "designators": [
+        "U2"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "thermal_adc",
+      "designators": [
+        "U3"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "battery_protection_ic",
+      "designators": [
+        "U4"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "battery_fuse",
+      "designators": [
+        "F1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "battery_protection_fets",
+      "designators": [
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "gate_resistors",
+      "designators": [
+        "R1",
+        "R3"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "bias_resistors",
+      "designators": [
+        "R2",
+        "R4",
+        "R5",
+        "R10"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "usb_sense_bottom",
+      "designators": [
+        "R6",
+        "R7"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "fan_vref_bottom",
+      "designators": [
+        "R8"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "fan_current_scale",
+      "designators": [
+        "R9"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "bulk",
+      "designators": [
+        "C1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "decoupling",
+      "designators": [
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C7"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "fan_start_timer",
+      "designators": [
+        "C6"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "fan_bulk",
+      "designators": [
+        "C8"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_sense_resistor",
+      "designators": [
+        "R11"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_freq_resistor",
+      "designators": [
+        "R12"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_ovp_top",
+      "designators": [
+        "R13"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_ovp_bottom",
+      "designators": [
+        "R14"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_bleeder",
+      "designators": [
+        "R15"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_soft_start",
+      "designators": [
+        "C9"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_compensation",
+      "designators": [
+        "C10"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_dim_filter",
+      "designators": [
+        "C11"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_input_cap",
+      "designators": [
+        "C12"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_output_caps",
+      "designators": [
+        "C13",
+        "C14"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "protection_bat_filter",
+      "designators": [
+        "R16"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "protection_vminus",
+      "designators": [
+        "R17"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "protection_gate_bleeds",
+      "designators": [
+        "R18",
+        "R19"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "added_bypass",
+      "designators": [
+        "C15",
+        "C16"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "temperature_pullups",
+      "designators": [
+        "R20",
+        "R22",
+        "R24"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "temperature_input_filter",
+      "designators": [
+        "R21",
+        "R23",
+        "R25",
+        "R28"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "temperature_filter_caps",
+      "designators": [
+        "C17",
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "battery_adc_top",
+      "designators": [
+        "R26"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "battery_adc_bottom",
+      "designators": [
+        "R27"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "i2c_pullups",
+      "designators": [
+        "R29",
+        "R30"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_inductor",
+      "designators": [
+        "L1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "headers_7",
+      "designators": [
+        "J1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "headers_2",
+      "designators": [
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "J6",
+        "J7"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "protected_battery_header",
+      "designators": [
+        "J12"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "thermal_header",
+      "designators": [
+        "J8"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "probe_headers",
+      "designators": [
+        "J9",
+        "J10",
+        "J11"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "led_bias_link",
+      "designators": [
+        "R31"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "protection_vss_link",
+      "designators": [
+        "R32"
+      ],
+      "populate": true
+    }
+  ],
+  "componentOrientations": [
+    {
+      "componentRef": "J1",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J2",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J12",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J3",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J4",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J5",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J6",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J7",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J8",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J9",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J10",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    },
+    {
+      "componentRef": "J11",
+      "vertical": true,
+      "rationale": "Internalverticalwireharness;topserviceaccess,noexteriorinterface."
+    }
+  ],
+  "copperAreas": [
+    {
+      "name": "BOOST_SWITCH_JOIN",
+      "net": "BOOST_SW",
+      "layer": "top",
+      "polygonMm": [
+        [
+          -5.89,
+          -0.34
+        ],
+        [
+          -5.6,
+          -0.34
+        ],
+        [
+          -5.6,
+          -2.3
+        ],
+        [
+          -4.4,
+          -2.3
+        ],
+        [
+          -4.4,
+          0.2
+        ],
+        [
+          -4.86,
+          0.2
+        ],
+        [
+          -4.86,
+          7.2
+        ],
+        [
+          -1.35,
+          7.2
+        ],
+        [
+          -1.35,
+          15.6
+        ],
+        [
+          -7.35,
+          15.6
+        ],
+        [
+          -7.35,
+          7.2
+        ],
+        [
+          -5.89,
+          7.2
+        ]
+      ],
+      "rationale": "JointwoparallelSWleads,inductorSWpadandtwoSchottkyanodeswithoutfine-pinwidthlimitingthe3Aswitchpath.Cathodeisoutsidepolygon."
+    },
+    {
+      "name": "BOOST_VBAT_INPUT",
+      "net": "VBAT",
+      "layer": "top",
+      "polygonMm": [
+        [
+          -13.95,
+          2.76
+        ],
+        [
+          -11.45,
+          2.76
+        ],
+        [
+          -11.45,
+          18.18
+        ],
+        [
+          -13.95,
+          18.18
+        ]
+      ],
+      "rationale": "WidecoilinputfeederandlocalVINtap;VINleadcarriesICbiasonly,coilinputcarries2.16Amax.Local100nFunderVIN,bulk4.7uFbesideinputrail."
+    },
+    {
+      "name": "FAN_VM_BYPASS",
+      "net": "VBAT",
+      "layer": "top",
+      "polygonMm": [
+        [
+          9.05,
+          2.64
+        ],
+        [
+          10.5,
+          2.64
+        ],
+        [
+          10.5,
+          0.96
+        ],
+        [
+          12,
+          0.96
+        ],
+        [
+          12,
+          3.36
+        ],
+        [
+          9.05,
+          3.36
+        ]
+      ],
+      "rationale": "DRV8213VMpin5andlocalC2bypassfeedcarryfanbranch<=0.6A;mainVBATbus3Asharedratingdoesnotpassinserieswiththispad."
+    },
+    {
+      "name": "FET_COMMON_DRAIN",
+      "net": "FET_MID",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -11.3,
+          6.36
+        ],
+        [
+          -10.825000000000001,
+          6.36
+        ],
+        [
+          -10.825000000000001,
+          5.46
+        ],
+        [
+          -10.475,
+          5.46
+        ],
+        [
+          -10.475,
+          6.36
+        ],
+        [
+          -7.325,
+          6.36
+        ],
+        [
+          -7.325,
+          5.46
+        ],
+        [
+          -6.9750000000000005,
+          5.46
+        ],
+        [
+          -6.9750000000000005,
+          6.36
+        ],
+        [
+          -3.8249999999999997,
+          6.36
+        ],
+        [
+          -3.8249999999999997,
+          5.46
+        ],
+        [
+          -3.475,
+          5.46
+        ],
+        [
+          -3.475,
+          6.36
+        ],
+        [
+          -0.325,
+          6.36
+        ],
+        [
+          -0.325,
+          5.46
+        ],
+        [
+          0.024999999999999967,
+          5.46
+        ],
+        [
+          0.024999999999999967,
+          6.36
+        ],
+        [
+          3.1750000000000003,
+          6.36
+        ],
+        [
+          3.1750000000000003,
+          5.46
+        ],
+        [
+          3.525,
+          5.46
+        ],
+        [
+          3.525,
+          6.36
+        ],
+        [
+          5.8,
+          6.36
+        ],
+        [
+          5.8,
+          7.68
+        ],
+        [
+          4.825,
+          7.68
+        ],
+        [
+          4.825,
+          8.58
+        ],
+        [
+          4.4750000000000005,
+          8.58
+        ],
+        [
+          4.4750000000000005,
+          7.68
+        ],
+        [
+          1.325,
+          7.68
+        ],
+        [
+          1.325,
+          8.58
+        ],
+        [
+          0.9749999999999999,
+          8.58
+        ],
+        [
+          0.9749999999999999,
+          7.68
+        ],
+        [
+          -2.1750000000000003,
+          7.68
+        ],
+        [
+          -2.1750000000000003,
+          8.58
+        ],
+        [
+          -2.525,
+          8.58
+        ],
+        [
+          -2.525,
+          7.68
+        ],
+        [
+          -5.675,
+          7.68
+        ],
+        [
+          -5.675,
+          8.58
+        ],
+        [
+          -6.0249999999999995,
+          8.58
+        ],
+        [
+          -6.0249999999999995,
+          7.68
+        ],
+        [
+          -9.174999999999999,
+          7.68
+        ],
+        [
+          -9.174999999999999,
+          8.58
+        ],
+        [
+          -9.525,
+          8.58
+        ],
+        [
+          -9.525,
+          7.68
+        ],
+        [
+          -11.3,
+          7.68
+        ]
+      ],
+      "rationale": "Sharedcommon-drainthermal/currentlandforfiveback-to-backpairs;thetwoexposeddrainlandsoneachpackagearebothconnected."
+    },
+    {
+      "name": "CELL_NEG_BUS",
+      "net": "CELL_N",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -12,
+          8.4
+        ],
+        [
+          -11,
+          8.4
+        ],
+        [
+          -11,
+          7.86
+        ],
+        [
+          -10.475,
+          7.86
+        ],
+        [
+          -10.475,
+          8.4
+        ],
+        [
+          -7.325,
+          8.4
+        ],
+        [
+          -7.325,
+          7.86
+        ],
+        [
+          -6.9750000000000005,
+          7.86
+        ],
+        [
+          -6.9750000000000005,
+          8.4
+        ],
+        [
+          -3.8249999999999997,
+          8.4
+        ],
+        [
+          -3.8249999999999997,
+          7.86
+        ],
+        [
+          -3.475,
+          7.86
+        ],
+        [
+          -3.475,
+          8.4
+        ],
+        [
+          -0.325,
+          8.4
+        ],
+        [
+          -0.325,
+          7.86
+        ],
+        [
+          0.024999999999999967,
+          7.86
+        ],
+        [
+          0.024999999999999967,
+          8.4
+        ],
+        [
+          3.1750000000000003,
+          8.4
+        ],
+        [
+          3.1750000000000003,
+          7.86
+        ],
+        [
+          3.525,
+          7.86
+        ],
+        [
+          3.525,
+          8.4
+        ],
+        [
+          4,
+          8.4
+        ],
+        [
+          4,
+          10.8
+        ],
+        [
+          -11.3,
+          10.8
+        ]
+      ],
+      "rationale": "Wide3Araw-cellnegativebus;keptseparatefromprotectedGNDplaneandcharge/dischargegates."
+    },
+    {
+      "name": "RAW_CELL_SENSE_TAP",
+      "net": "CELL_P",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -11.8,
+          -11.2
+        ],
+        [
+          -9.8,
+          -11.2
+        ],
+        [
+          -9.8,
+          -10
+        ],
+        [
+          -11.8,
+          -10
+        ]
+      ],
+      "rationale": "R_PBAT330ohmfeedsBQ29700atmicroamps;solidlocaltapdoesnotmakethissensepadthe3Arawpositivefeeder."
+    },
+    {
+      "name": "BATTERY_ADC_SUPPLY_TAP",
+      "net": "VBAT",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -0.6,
+          -4.62
+        ],
+        [
+          1.4,
+          -4.62
+        ],
+        [
+          1.4,
+          -3.18
+        ],
+        [
+          -0.6,
+          -3.18
+        ]
+      ],
+      "rationale": "100kvoltagesensedividertap,microampsonly;solidareaunloadsthenarrowpadsfromsharedpowerbuswidthselection."
+    },
+    {
+      "name": "FAN_LOGIC_SUPPLY_TAP",
+      "net": "VBAT",
+      "layer": "top",
+      "polygonMm": [
+        [
+          14.15,
+          7.8
+        ],
+        [
+          15.5,
+          7.8
+        ],
+        [
+          15.5,
+          9.75
+        ],
+        [
+          14.15,
+          9.75
+        ]
+      ],
+      "rationale": "R1filteredlogicfeedcarriesmilliamps;mainmotor/boostpowerbypassesR1."
+    },
+    {
+      "name": "FAN_REFERENCE_SUPPLY_TAP",
+      "net": "VBAT",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          1.6,
+          17.784
+        ],
+        [
+          3.55,
+          17.784
+        ],
+        [
+          3.55,
+          19.656
+        ],
+        [
+          1.6,
+          19.656
+        ]
+      ],
+      "rationale": "150kfanVREFdividertap,microampsonly;notinserieswith3Apowerfeeder."
+    },
+    {
+      "name": "FUSED_INPUT_TRANSFER",
+      "net": "VBAT",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -13,
+          11.064
+        ],
+        [
+          -9,
+          11.064
+        ],
+        [
+          -9,
+          15.36
+        ],
+        [
+          -13,
+          15.36
+        ]
+      ],
+      "rationale": "Fused positive power land links F1 output with three parallel layer transfers; 0.22mm from RAW negative bus."
+    },
+    {
+      "name": "PROTECTED_POWER_DISTRIBUTION",
+      "net": "VBAT",
+      "layer": "inner2",
+      "polygonMm": [
+        [
+          -5.3,
+          -20.4
+        ],
+        [
+          15.5,
+          -20.4
+        ],
+        [
+          15.5,
+          -6.5
+        ],
+        [
+          12.8,
+          -6.5
+        ],
+        [
+          12.8,
+          -3.3
+        ],
+        [
+          15.5,
+          -3.3
+        ],
+        [
+          15.5,
+          3.8
+        ],
+        [
+          12.8,
+          3.8
+        ],
+        [
+          12.8,
+          7.0
+        ],
+        [
+          15.5,
+          7.0
+        ],
+        [
+          15.5,
+          22.2
+        ],
+        [
+          -14,
+          22.2
+        ],
+        [
+          -14,
+          11.064
+        ],
+        [
+          -9.5,
+          11.064
+        ],
+        [
+          -9.5,
+          20.4
+        ],
+        [
+          -5.3,
+          20.4
+        ],
+        [
+          -5.3,
+          10.2
+        ],
+        [
+          6.1,
+          10.2
+        ],
+        [
+          6.1,
+          6.0
+        ],
+        [
+          -5.3,
+          6.0
+        ]
+      ],
+      "rationale": "Protected power plane links fused boost feed and remote fan/control bias transfers without fine-pin bottlenecks. RAW negative header corridor retained. Side-open notches preserve GND around J10/J11 ground holes on inner2; power bus retains >=16mm width to their left."
+    },
+    {
+      "name": "RAW_NEGATIVE_DISTRIBUTION",
+      "net": "CELL_N",
+      "layer": "inner2",
+      "polygonMm": [
+        [
+          -14.5,
+          -17.4
+        ],
+        [
+          -5.8,
+          -17.4
+        ],
+        [
+          -5.8,
+          -14.64
+        ],
+        [
+          -9.8,
+          -14.64
+        ],
+        [
+          -9.8,
+          -8.4
+        ],
+        [
+          -7.5,
+          -8.4
+        ],
+        [
+          -7.5,
+          4.56
+        ],
+        [
+          -12,
+          4.56
+        ],
+        [
+          -12,
+          8.4
+        ],
+        [
+          4.5,
+          8.4
+        ],
+        [
+          4.5,
+          9.84
+        ],
+        [
+          -5.8,
+          9.84
+        ],
+        [
+          -5.8,
+          19.92
+        ],
+        [
+          -8.8,
+          19.92
+        ],
+        [
+          -8.8,
+          10.8
+        ],
+        [
+          -14.5,
+          10.8
+        ]
+      ],
+      "rationale": "Separate raw-cell negative plane from J2 to source bus and BQ sense returns; contour leaves common-drain bank isolated."
+    },
+    {
+      "name": "RAW_POSITIVE_SENSE_DISTRIBUTION",
+      "net": "CELL_P",
+      "layer": "inner1",
+      "polygonMm": [
+        [
+          -12.6,
+          -11.2
+        ],
+        [
+          -8.8,
+          -11.2
+        ],
+        [
+          -8.8,
+          11.3
+        ],
+        [
+          -3.15,
+          11.3
+        ],
+        [
+          -3.15,
+          16.7
+        ],
+        [
+          -8.8,
+          16.7
+        ],
+        [
+          -8.8,
+          20.04
+        ],
+        [
+          -12.6,
+          20.04
+        ]
+      ],
+      "rationale": "Raw-positive 3A fuse feeder on 2oz inner1, at least 3.8mm spine; also supplies BQ sense through R16. Three off-pad parallel transfers feed F1."
+    },
+    {
+      "name": "COMMON_DRAIN_INTERNAL_JOIN",
+      "net": "FET_MID",
+      "layer": "inner2",
+      "polygonMm": [
+        [
+          -11.3,
+          6.36
+        ],
+        [
+          5.8,
+          6.36
+        ],
+        [
+          5.8,
+          7.68
+        ],
+        [
+          -11.3,
+          7.68
+        ]
+      ],
+      "rationale": "Internal common-drain bridge joins the five pairs through five off-pad thermal/current transfers, without routing across gates."
+    },
+    {
+      "name": "BIAS_LINK_SUPPLY_TAP",
+      "net": "VBAT",
+      "layer": "top",
+      "polygonMm": [
+        [
+          0.1,
+          -10.92
+        ],
+        [
+          2.2,
+          -10.92
+        ],
+        [
+          2.2,
+          -9.48
+        ],
+        [
+          0.1,
+          -9.48
+        ]
+      ],
+      "rationale": "Bias zero-ohm supply pad is microamps-to-mA branch from protected power plane; main inductor current bypasses this link."
+    },
+    {
+      "name": "BQ_REFERENCE_SUPPLY_TAP",
+      "net": "CELL_N",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -9.9,
+          -16.2
+        ],
+        [
+          -7.7,
+          -16.2
+        ],
+        [
+          -7.7,
+          -14.76
+        ],
+        [
+          -9.9,
+          -14.76
+        ]
+      ],
+      "rationale": "Raw-negative Kelvin reference zero-ohm source tap, microamps only; main return bypasses this pad."
+    },
+    {
+      "name": "FAN_BULK_SUPPLY_TAP",
+      "net": "VBAT",
+      "layer": "top",
+      "polygonMm": [
+        [
+          7.1,
+          11.4
+        ],
+        [
+          9.8,
+          11.4
+        ],
+        [
+          9.8,
+          13.6
+        ],
+        [
+          7.1,
+          13.6
+        ]
+      ],
+      "rationale": "Local bulk capacitor charging branch to dedicated power-plane transfer; shared 3A feeder bypasses this capacitor pad."
+    },
+    {
+      "name": "PACK_BULK_SUPPLY_TAP",
+      "net": "VBAT",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -1.5,
+          13.2
+        ],
+        [
+          -0.5,
+          13.2
+        ],
+        [
+          -0.5,
+          16.3
+        ],
+        [
+          -1.5,
+          16.3
+        ]
+      ],
+      "rationale": "Local bulk capacitor charging branch to dedicated power-plane transfer; shared 3A feeder bypasses this capacitor pad."
+    },
+    {
+      "name": "RAW_FUSE_INPUT_TAP",
+      "net": "CELL_P",
+      "layer": "bottom",
+      "polygonMm": [
+        [
+          -7.2,
+          11.35
+        ],
+        [
+          -3.15,
+          11.35
+        ],
+        [
+          -3.15,
+          13.2
+        ],
+        [
+          -4,
+          13.2
+        ],
+        [
+          -4,
+          14.33
+        ],
+        [
+          -4.3,
+          14.33
+        ],
+        [
+          -4.3,
+          16.7
+        ],
+        [
+          -5.3,
+          16.7
+        ],
+        [
+          -5.3,
+          14.33
+        ],
+        [
+          -7.2,
+          14.33
+        ]
+      ],
+      "rationale": "Full-current fuse input land joins raw positive header on inner1 through off-pad transfer; internal feeder width >=1.6mm in 2oz copper."
+    },
+    {
+      "name": "SW_INTERNAL_BRIDGE",
+      "net": "BOOST_SW",
+      "layer": "inner4",
+      "polygonMm": [
+        [
+          -6.2,
+          -2.5
+        ],
+        [
+          -3.4,
+          -2.5
+        ],
+        [
+          -3.4,
+          11.1
+        ],
+        [
+          -6.2,
+          11.1
+        ]
+      ],
+      "rationale": "Compact switch-node bridge on a signal-free inner layer; four off-pad vias fully enclosed with >=0.5mm edge margin; two parallel transfers at each end."
+    }
+  ],
+  "stitchingVias": [
+    {
+      "name": "CELL_N_LAYER_TRANSFER",
+      "net": "CELL_N",
+      "xMm": -8,
+      "yMm": 10.14,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Connectrawnegativebuswithtopheaderroutebetweeninductorpadsandfusepads."
+    },
+    {
+      "name": "TPS_EP_THERMAL_0",
+      "net": "GND",
+      "xMm": -8.8,
+      "yMm": -2.028,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "GNDheatspreadingviabesideEP,paste-free;replacessupplierembeddedunnettedvia-in-pad."
+    },
+    {
+      "name": "TPS_EP_THERMAL_1",
+      "net": "GND",
+      "xMm": -10.6,
+      "yMm": -2.028,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Secondoff-padEPgroundheatspreadvia;relocatedawayfromRAWpositiveR_PBATpadanditsmaskopening."
+    },
+    {
+      "name": "BOOST_INPUT_TRANSFER_0",
+      "net": "VBAT",
+      "xMm": -12.4,
+      "yMm": 12.48,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Three parallel fused-power transfers, off component pads, join bottom fuse output to top boost input; combined path budget 3A."
+    },
+    {
+      "name": "BOOST_INPUT_TRANSFER_1",
+      "net": "VBAT",
+      "xMm": -12.4,
+      "yMm": 13.68,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Three parallel fused-power transfers, off component pads, join bottom fuse output to top boost input; combined path budget 3A."
+    },
+    {
+      "name": "BOOST_INPUT_TRANSFER_2",
+      "net": "VBAT",
+      "xMm": -12.4,
+      "yMm": 14.88,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Three parallel fused-power transfers, off component pads, join bottom fuse output to top boost input; combined path budget 3A."
+    },
+    {
+      "name": "VM_POWER_TRANSFER",
+      "net": "VBAT",
+      "xMm": 10.65,
+      "yMm": 2.04,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad local power/sense land layer transfer permits the wide main net to join without passing between fine-pitch signal pins."
+    },
+    {
+      "name": "VBAT_ADC_TRANSFER",
+      "net": "VBAT",
+      "xMm": 0.85,
+      "yMm": -3.9,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad local power/sense land layer transfer permits the wide main net to join without passing between fine-pitch signal pins."
+    },
+    {
+      "name": "FAN_VCC_TRANSFER",
+      "net": "VBAT",
+      "xMm": 14.8,
+      "yMm": 8.2,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad local power/sense land layer transfer permits the wide main net to join without passing between fine-pitch signal pins."
+    },
+    {
+      "name": "FAN_VREF_TRANSFER",
+      "net": "VBAT",
+      "xMm": 2,
+      "yMm": 18.372,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad local power/sense land layer transfer permits the wide main net to join without passing between fine-pitch signal pins."
+    },
+    {
+      "name": "RAW_SENSE_TRANSFER",
+      "net": "CELL_P",
+      "xMm": -10.35,
+      "yMm": -10.6,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad local power/sense land layer transfer permits the wide main net to join without passing between fine-pitch signal pins."
+    },
+    {
+      "name": "Q3_GROUND_RETURN",
+      "net": "GND",
+      "xMm": -8.6,
+      "yMm": 5.796,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Targeted off-pad stitch from measured isolated protected-ground return region to continuous inner1 GND plane."
+    },
+    {
+      "name": "Q4_GROUND_RETURN",
+      "net": "GND",
+      "xMm": -5.1,
+      "yMm": 5.796,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Targeted off-pad stitch from measured isolated protected-ground return region to continuous inner1 GND plane."
+    },
+    {
+      "name": "FET_DRAIN_TRANSFER_0",
+      "net": "FET_MID",
+      "xMm": -8.6,
+      "yMm": 7.02,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad common drain transfer to internal join plane; five parallel cells share protection current."
+    },
+    {
+      "name": "FET_DRAIN_TRANSFER_1",
+      "net": "FET_MID",
+      "xMm": -5.1,
+      "yMm": 7.02,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad common drain transfer to internal join plane; five parallel cells share protection current."
+    },
+    {
+      "name": "FET_DRAIN_TRANSFER_2",
+      "net": "FET_MID",
+      "xMm": -1.6,
+      "yMm": 7.02,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad common drain transfer to internal join plane; five parallel cells share protection current."
+    },
+    {
+      "name": "FET_DRAIN_TRANSFER_3",
+      "net": "FET_MID",
+      "xMm": 1.9,
+      "yMm": 7.02,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad common drain transfer to internal join plane; five parallel cells share protection current."
+    },
+    {
+      "name": "FET_DRAIN_TRANSFER_4",
+      "net": "FET_MID",
+      "xMm": 5.4,
+      "yMm": 7.02,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad common drain transfer to internal join plane; five parallel cells share protection current."
+    },
+    {
+      "name": "CELL_N_BANK_TRANSFER_0",
+      "net": "CELL_N",
+      "xMm": -10.65,
+      "yMm": 8.88,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad parallel power-plane transfer; separates high-current joins from gate and analogue escape traces."
+    },
+    {
+      "name": "CELL_N_BANK_TRANSFER_1",
+      "net": "CELL_N",
+      "xMm": -8,
+      "yMm": 8.88,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad parallel power-plane transfer; separates high-current joins from gate and analogue escape traces."
+    },
+    {
+      "name": "CELL_N_BANK_TRANSFER_2",
+      "net": "CELL_N",
+      "xMm": -3.65,
+      "yMm": 8.88,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad parallel power-plane transfer; separates high-current joins from gate and analogue escape traces."
+    },
+    {
+      "name": "CELL_N_BANK_TRANSFER_3",
+      "net": "CELL_N",
+      "xMm": -0.15,
+      "yMm": 8.88,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad parallel power-plane transfer; separates high-current joins from gate and analogue escape traces."
+    },
+    {
+      "name": "CELL_N_BANK_TRANSFER_4",
+      "net": "CELL_N",
+      "xMm": 3.35,
+      "yMm": 8.88,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad parallel power-plane transfer; separates high-current joins from gate and analogue escape traces."
+    },
+    {
+      "name": "BIAS_LINK_TRANSFER",
+      "net": "VBAT",
+      "xMm": 0.5,
+      "yMm": -10.2,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad bias link feed from protected power plane."
+    },
+    {
+      "name": "BQ_REFERENCE_TRANSFER",
+      "net": "CELL_N",
+      "xMm": -9.5,
+      "yMm": -15.48,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad raw-negative Kelvin reference feed to populated R32."
+    },
+    {
+      "name": "BULK_FAN_TRANSFER",
+      "net": "VBAT",
+      "xMm": 7.5,
+      "yMm": 12.48,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad bulk-capacitor power transfer directly to protected inner power plane."
+    },
+    {
+      "name": "BULK_PACK_TRANSFER",
+      "net": "VBAT",
+      "xMm": -1.1,
+      "yMm": 15.9,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad bulk-capacitor power transfer directly to protected inner power plane."
+    },
+    {
+      "name": "RAW_FUSE_INPUT_TRANSFER",
+      "net": "CELL_P",
+      "xMm": -3.55,
+      "yMm": 12.75,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad power layer transfer into continuous source-declared plane; switching current uses paired transfers."
+    },
+    {
+      "name": "SW_PIN_TRANSFER_0",
+      "net": "BOOST_SW",
+      "xMm": -5.05,
+      "yMm": -0.9,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad power layer transfer into continuous source-declared plane; switching current uses paired transfers."
+    },
+    {
+      "name": "SW_PIN_TRANSFER_1",
+      "net": "BOOST_SW",
+      "xMm": -5.05,
+      "yMm": -1.9,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad power layer transfer into continuous source-declared plane; switching current uses paired transfers."
+    },
+    {
+      "name": "SW_COIL_TRANSFER_0",
+      "net": "BOOST_SW",
+      "xMm": -4.1,
+      "yMm": 10.44,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad power layer transfer into continuous source-declared plane; switching current uses paired transfers."
+    },
+    {
+      "name": "SW_COIL_TRANSFER_1",
+      "net": "BOOST_SW",
+      "xMm": -4.5,
+      "yMm": 9.24,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-pad power layer transfer into continuous source-declared plane; switching current uses paired transfers."
+    },
+    {
+      "name": "RAW_FUSE_PARALLEL_1",
+      "net": "CELL_P",
+      "xMm": -3.7,
+      "yMm": 11.75,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Additional parallel off-pad fuse feeder transfer; three plated barrels share the 3A design budget instead of one."
+    },
+    {
+      "name": "RAW_FUSE_PARALLEL_2",
+      "net": "CELL_P",
+      "xMm": -4.8,
+      "yMm": 16.2,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Additional parallel off-pad fuse feeder transfer; three plated barrels share the 3A design budget instead of one."
+    },
+    {
+      "name": "PACK_CAP_GND_STITCH",
+      "net": "GND",
+      "xMm": -3.4,
+      "yMm": 15.4,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Join measured isolated C1 bottom GND region at x95.96..99.66,y11.05..15.61 to continuous inner1 plane; off-pad clear of the top diode and bottom fuse."
+    },
+    {
+      "name": "NTC_BAT_GROUND_TRANSFER",
+      "net": "GND",
+      "xMm": 14.0,
+      "yMm": -6.2,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Dedicated off-hole ground transfer, 1.5mm from J11 ground pin, joins sensor ground land to continuous inner plane without overlapping header drill."
+    },
+    {
+      "name": "NTC_SHELL_GROUND_TRANSFER",
+      "net": "GND",
+      "xMm": 14.2,
+      "yMm": 4.12,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Off-hole sensor ground transfer into the evidenced side-open ground corridor, clear of the J10 drill."
+    }
+  ]
+}

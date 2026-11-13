@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T02:43:32.625Z",
+  "lcsc_code": "C2827316",
+  "manufacturer": "TUOZHAN(拓展光电)",
+  "manufacturer_part_number": "S2-2835WOA-1W",
+  "description": "White LED Indication - Discrete 3V~3.5V SMD2835-2P",
+  "category": "发光二极管/LED",
+  "package": "SMD2835-2P",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Half wave width": "15nm",
+    "Forward Current": "350mA",
+    "Voltage - Forward(Vf)": "3V~3.5V",
+    "Operating Temperature": "-40°C~+85°C",
+    "Diode Configuration": "Discrete Diode",
+    "ESD Withstand Voltage": "2000V",
+    "Color Temperature": "3000K~4500K",
+    "Lens Color": "Orange Lens",
+    "Viewing Angle": "120°",
+    "Illumination Color": "Warm White",
+    "Lamp Holder Type": "3.2mm x 2.8mm square LED",
+    "Wavelength": "582nm~588nm"
+  },
+  "lcsc_stock": 1883,
+  "price_breaks": [
+    {
+      "quantity": 20,
+      "unitPrice": 0.2378,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.1865,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.158,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.1409,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 8000,
+      "unitPrice": 0.1261,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.1181,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20,
+      "unitPrice": 0.0391,
+      "currency": "USD"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.0307,
+      "currency": "USD"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.026,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0232,
+      "currency": "USD"
+    },
+    {
+      "quantity": 8000,
+      "unitPrice": 0.0208,
+      "currency": "USD"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.0194,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/2972612.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/3622292388ddfd3c4ba4da218521e162.pdf?productCode=C2827316",
+  "datasheet_file": "references/suppliers/c2827316/c2827316-datasheet.pdf"
+}

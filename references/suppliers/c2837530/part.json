@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T07:54:45.350Z",
+  "lcsc_code": "C2837530",
+  "manufacturer": "kinghelm(金航标)",
+  "manufacturer_part_number": "KH-6X6X4.3H-STM",
+  "description": "Tactile Switch SPST 4.3mm Gull Wing 6mm x 6mm Surface Mount",
+  "category": "轻触开关",
+  "package": "SMD-4P,6x6mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage Rating": "12V",
+    "Switching Life": "80,000 cycles",
+    "with Bracket": "Without Bracket",
+    "Width": "6mm",
+    "Termination Style": "Gull Wing",
+    "Actuator Style": "Round Button",
+    "Mounting Type": "Surface Mount,Vertical",
+    "Circuit": "SPST",
+    "Length": "6mm",
+    "Actuator/Cap Color": "Black",
+    "Height": "4.3mm",
+    "Contact Current": "50mA"
+  },
+  "lcsc_stock": 618,
+  "price_breaks": [
+    {
+      "quantity": 50,
+      "unitPrice": 0.1325,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1055,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.083,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.074,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 25000,
+      "unitPrice": 0.0662,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.062,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.022,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0175,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0138,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0123,
+      "currency": "USD"
+    },
+    {
+      "quantity": 25000,
+      "unitPrice": 0.011,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0103,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3009600.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/3a63fc257cb630e20c8ec53c2547a77a.pdf?productCode=C2837530",
+  "datasheet_file": "references/suppliers/c2837530/c2837530-datasheet.pdf"
+}

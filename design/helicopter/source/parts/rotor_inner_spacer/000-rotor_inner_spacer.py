@@ -1,0 +1,6 @@
+od=param('bearing_inner_spacer_diameter',12.6)
+id=param('bearing_inner_spacer_bore',10.2)
+h=param('bearing_inner_spacer_height',7.9)
+body=Pos(0,0,50.05)*(Cylinder(od/2,h)-Cylinder(id/2,h+1))
+body.color=srgb('#FFFFFF')
+publish('rotor_inner_spacer',body,'轴承内圈隔套',material='petg')

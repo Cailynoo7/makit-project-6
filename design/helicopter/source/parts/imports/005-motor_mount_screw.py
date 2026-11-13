@@ -1,0 +1,1 @@
+publish("motor_mount_screw", asset("design/helicopter/source/assets/3b922791c27c8a41e3812bc7b78e72789767ffb378cc199997cc15294ea0fd2a.step"), "电机M1.6×3螺钉")

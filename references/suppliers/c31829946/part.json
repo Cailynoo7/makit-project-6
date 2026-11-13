@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T05:30:28.574Z",
+  "lcsc_code": "C31829946",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "DRV8213RTER",
+  "description": "具有集成电流检测、电流调节和失速检测功能的4A有刷直流电机驱动器",
+  "category": "有刷直流电机驱动芯片",
+  "package": "WQFN-16-EP(3x3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Features": "Interleaved conduction protection;Motor stall protection;Current sensing/regulation function",
+    "Voltage - Supply": "1.65V~11V",
+    "Technology": "Yes",
+    "Operating Temperature": "-40°C~+125°C",
+    "Supply Current (Iq)": "20nA",
+    "Peak Current": "4A",
+    "RDS(on)": "240mΩ"
+  },
+  "lcsc_stock": 315,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 9.51,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 7.9,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 7.02,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 6.03,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 5.59,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 5.39,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.5709,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.3049,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.1596,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.9961,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.9234,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.8903,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/33567428.html",
+  "datasheet_url": "https://www.ti.com.cn/cn/lit/ds/symlink/drv8213.pdf",
+  "datasheet_file": "references/suppliers/c31829946/c31829946-datasheet.pdf"
+}

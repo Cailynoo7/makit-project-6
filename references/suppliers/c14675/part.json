@@ -1,0 +1,76 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T02:59:55.447Z",
+  "lcsc_code": "C14675",
+  "manufacturer": "YAGEO(国巨)",
+  "manufacturer_part_number": "RC0603FR-07100KL",
+  "description": "厚膜电阻 100kΩ ±1% 100mW",
+  "category": "贴片电阻",
+  "package": "0603",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Power(Watts)": "100mW",
+    "Resistance": "100kΩ",
+    "Voltage Rating": "75V",
+    "Type": "Thick Film Resistor",
+    "Temperature Coefficient": "±100ppm/°C",
+    "Tolerance": "±1%",
+    "Operating Temperature": "-55°C~+155°C"
+  },
+  "lcsc_stock": 99743,
+  "price_breaks": [
+    {
+      "quantity": 100,
+      "unitPrice": 0.0125,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0094,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0079,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0072,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0065,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0021,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0016,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0014,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0012,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0011,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/15343.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C14675",
+  "datasheet_file": null
+}

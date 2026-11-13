@@ -1,0 +1,6 @@
+r=param('head_max_radius',1.4)
+length=param('head_max_length',7.5)
+c=part('internal_carrier');q=part('cob_reference')
+body=Pos(c.heat_x-q.case_w/2-r,0,-r)*Rot(90,0,0)*Cylinder(r,length)
+body.color=srgb('#40342E')
+publish('ntc_cob_reference',body,'COB探头上限包络',role='reference')

@@ -1,0 +1,10 @@
+f=part('coupon_shell')
+shim_t=param('shim_thickness',0.6)
+shim_length=param('shim_length',20.5)
+shim_width=param('shim_width',17.2)
+board_centre_x=f.charging_opening_x+f.controller_shift_x-15.25
+base_z=f.charging_opening_z+f.controller_mount_raise+f.controller_pcb_x-1.4-f.usb_mouth_x
+outline=RectangleRounded(shim_length,shim_width,0.5)-RectangleRounded(shim_length-3.5,shim_width-4.0,0.5)
+body=Pos(board_centre_x,0,base_z)*extrude(outline,shim_t)
+body.color=srgb('#FFFFFF')
+publish('xiao_shim',body,'XIAO板厚适配垫片',material='petg')

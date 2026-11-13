@@ -1,0 +1,188 @@
+{
+  "selected_components": [
+    {
+      "id": "motor",
+      "name": "Pololu 5:1 Micro Metal Gearmotor HPCB 6V (no encoder), item3060",
+      "quantity": 1,
+      "source": "research",
+      "manufacturer": "Pololu",
+      "part_number": "3060",
+      "mpn": "3060",
+      "supplier": "Pololu",
+      "stock": 0,
+      "source_url": "https://www.pololu.com/product/3060",
+      "product_url": "https://www.pololu.com/product/3060",
+      "datasheet_url": "https://www.pololu.com/file/0J1487/pololu-micro-metal-gearmotors-rev-6-2.pdf",
+      "selection_reason": "12x10mm gearbox;3mm D-shaft;4.995:1 internal and3.75:1 belt reduction. Single-cell performance is extrapolated; initial60%PWM, winding current <=0.375A. Long-life carbon brushes; no interchangeable generic N20 accepted without matching motor curve.",
+      "supply_risk": "Official listing backordered at lookup; approximately USD26.45 before shipping. Domestic generic motors are not verified equivalents.",
+      "cad_model": {
+        "format": "step",
+        "source_url": "https://www.pololu.com/file/0J2042/Pololu%20Micro%20Metal%20Gearmotor%203D%20%28STEP%29%20Models.zip",
+        "file_name": "mmgm-cb.step"
+      },
+      "part_identity": "057639216d3fe995"
+    },
+    {
+      "id": "fan_driver",
+      "name": "DRV8213RTER",
+      "description": "具有集成电流检测、电流调节和失速检测功能的4A有刷直流电机驱动器",
+      "quantity": 1,
+      "source": "research",
+      "supplier": "LCSC",
+      "manufacturer": "TI(德州仪器)",
+      "part_number": "DRV8213RTER",
+      "mpn": "DRV8213RTER",
+      "lcsc_code": "C31829946",
+      "stock": 315,
+      "product_url": "https://item.szlcsc.com/33567428.html",
+      "datasheet_url": "https://www.ti.com.cn/cn/lit/ds/symlink/drv8213.pdf",
+      "package": "WQFN-16-EP(3x3)",
+      "jlc_smt_library": "extended",
+      "designators": [
+        "U2"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "manual"
+      },
+      "selection_reason": "Current regulation and latched stall shutdown at1S voltage; no Basic candidate with the same functions was found. WQFN requires reflow assembly.",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20260228_TI-DRV8213RTER_C31829946_front.jpg",
+      "part_identity": "fd0f98923f06b2f6"
+    },
+    {
+      "id": "fan_current_scale",
+      "name": "0603WAF4991T5E",
+      "description": "4.99kΩ ±1% 100mW 0603 Thick Film Resistor",
+      "quantity": 1,
+      "source": "research",
+      "supplier": "LCSC",
+      "manufacturer": "UNI-ROYAL(厚声)",
+      "part_number": "0603WAF4991T5E",
+      "mpn": "0603WAF4991T5E",
+      "lcsc_code": "C23046",
+      "stock": 12311,
+      "product_url": "https://item.szlcsc.com/23773.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23046",
+      "package": "0603",
+      "jlc_smt_library": "basic",
+      "designators": [
+        "R9"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "manual"
+      },
+      "selection_reason": "4.99k IPROPI resistor; AIPROPI205uA/A.",
+      "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20221228/1B8B71093E88E17E066B810DDA7DEB84.jpg",
+      "part_identity": "8d35cea5d2708bde"
+    },
+    {
+      "id": "fan_vref_bottom",
+      "name": "0603WAF2202T5E",
+      "description": "22kΩ ±1% 100mW 0603 Thick Film Resistor",
+      "quantity": 1,
+      "source": "research",
+      "supplier": "LCSC",
+      "manufacturer": "UNI-ROYAL(厚声)",
+      "part_number": "0603WAF2202T5E",
+      "mpn": "0603WAF2202T5E",
+      "lcsc_code": "C31850",
+      "stock": 13104,
+      "product_url": "https://item.szlcsc.com/32812.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C31850",
+      "package": "0603",
+      "jlc_smt_library": "basic",
+      "designators": [
+        "R8"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "manual"
+      },
+      "selection_reason": "22k bottom with150k top gives VREF=VBAT*22/172.",
+      "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20251013/B224F7A864E47E44EFFD65D2C0C0EEFC.jpg",
+      "part_identity": "87defe7f967dadbb"
+    },
+    {
+      "id": "fan_start_timer",
+      "name": "CL10B474KA8NNNC",
+      "description": "470nF ±10% 25V Ceramic Capacitor X7R 0603",
+      "quantity": 1,
+      "source": "research",
+      "supplier": "LCSC",
+      "manufacturer": "SAMSUNG(三星)",
+      "part_number": "CL10B474KA8NNNC",
+      "mpn": "CL10B474KA8NNNC",
+      "lcsc_code": "C1623",
+      "stock": 15436,
+      "product_url": "https://item.szlcsc.com/1975.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1623",
+      "package": "0603",
+      "jlc_smt_library": "basic",
+      "designators": [
+        "C6"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "manual"
+      },
+      "selection_reason": "470nF timer: nominal3.055s startup blanking.",
+      "part_identity": "b716255ee5ac5e29",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250904_Samsung-Electro-Mechanics-CL10B474KA8NNNC_C1623_front.jpg"
+    },
+    {
+      "id": "fan_bulk",
+      "name": "CL31A476MPHNNNE",
+      "description": "47uF ±20% 10V Ceramic Capacitor X5R 1206",
+      "quantity": 1,
+      "source": "research",
+      "supplier": "LCSC",
+      "manufacturer": "SAMSUNG(三星)",
+      "part_number": "CL31A476MPHNNNE",
+      "mpn": "CL31A476MPHNNNE",
+      "lcsc_code": "C96123",
+      "stock": 6739,
+      "product_url": "https://item.szlcsc.com/97327.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C96123",
+      "package": "1206",
+      "jlc_smt_library": "basic",
+      "designators": [
+        "C8"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "manual"
+      },
+      "selection_reason": "47uF10V1206 local motor input bulk; capacitance under DC bias must be checked on prototype.",
+      "part_identity": "d75d2b09d9438e4d",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240318_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123_front.jpg"
+    }
+  ],
+  "alternatives": [
+    {
+      "role": "motor",
+      "name": "Mabuchi RF-300CA-11400",
+      "status": "rejected",
+      "reason": "Insufficient torque/power reserve on1S with250mm rotor."
+    },
+    {
+      "role": "motor",
+      "name": "Mabuchi RF-300FA-12350",
+      "status": "rejected",
+      "reason": "Same envelope,only modest increase in output versus RF300CA; not a robust upgrade."
+    },
+    {
+      "role": "motor_driver",
+      "name": "DRV8213DSGR",
+      "lcsc_code": "C22407186",
+      "status": "rejected",
+      "reason": "8-pin version lacks the integrated hardware stall detection/shutdown of RTE."
+    }
+  ],
+  "supply_risks": [
+    "No qualified drop-in motor alternative. Pololu3060 official listing backordered; genericN20 electrical performance must not be assumed equivalent.",
+    "DRV8213RTE requires stencil/hot-air/reflow and exposed-pad inspection; outsourced sample assembly preferred. No qualified Basic equivalent with integrated current regulation and latched stall shutdown."
+  ],
+  "unresolved_items": [],
+  "bom_ready": true
+}

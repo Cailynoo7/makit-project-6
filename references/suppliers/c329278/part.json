@@ -1,0 +1,89 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:33:04.378Z",
+  "lcsc_code": "C329278",
+  "manufacturer": "XDS(芯鼎盛)",
+  "manufacturer_part_number": "TX6211",
+  "description": "LED Driver IC 1 Output DC-DC Boost PWM Dimming 3A SOP-8",
+  "category": "LED驱动",
+  "package": "SOP-8",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Output Voltage": "120V",
+    "Features": "Over-Temperature Protection (OTP)",
+    "Frequency - Switching": "1kHz~1MHz",
+    "Switch Tube (Built-In/External)": "External",
+    "Operating temperature": "-20°C~+85°C",
+    "Topology": "Boost",
+    "Number of Channels": "1",
+    "Type": "DC-DC",
+    "Output Current": "3A",
+    "Voltage - Input(DC)": "3.6V~100V"
+  },
+  "lcsc_stock": 1439,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.8769,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.4737,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 1.3009,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.0853,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.9057,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.848,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.309,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.2426,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.2142,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1787,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.1491,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.1396,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/308885.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/2d05e5a7abc3b738ab511401e08329d3.pdf?productCode=C329278",
+  "datasheet_file": "references/suppliers/c329278/c329278-datasheet.pdf"
+}

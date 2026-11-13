@@ -1,0 +1,1170 @@
+{
+  "units": "mm",
+  "layout_frame": "x fore/aft (nose negative), y transverse, z upward",
+  "envelope": {
+    "max_nose_to_tail": 250,
+    "main_rotor_diameter": 250,
+    "main_rotor_sweep_excluded_from_user_length_limit": true,
+    "main_rotor_blade_chord": 37.5,
+    "main_rotor_blade_thickness": 1.6
+  },
+  "magnet": {
+    "diameter": 30,
+    "thickness": 2,
+    "pocket_depth": 1.5,
+    "pocket_diameter": 30.3
+  },
+  "controller": {
+    "platform_ref": "seeed/xiao-esp32c3",
+    "pcb_outline": [
+      21,
+      17.8
+    ],
+    "mechanical_source": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-DXF.zip",
+    "retention": "Horizontal cassette below battery;1.9mm slot,0.6mm removable shim for1.0mm reference PCB;omit shim for1.6mm PCB",
+    "model_status": "Community STEP imported and cross-checked against official planar board/USB layout; actual hardware trial still required",
+    "usb_mouth_centre": [
+      37.805111326373,
+      0,
+      -26.25
+    ],
+    "external_opening_centre": [
+      42.555111326373,
+      0,
+      -26.25
+    ],
+    "usb_recess": 4.75,
+    "port_size_including_added_clearance": [
+      9.7,
+      4
+    ],
+    "fit_status": "Community board geometry and plug-body envelope pass current CAD fit/path tests. Actual board revision, printing tolerance and cable mating require the local fit coupon.",
+    "plug_body_pocket": [
+      13.3,
+      7.3,
+      4.75
+    ],
+    "plug_body_corner_radius": 0.5,
+    "opening_raise_mm": 10,
+    "pcb_centre": [
+      25.819611326373,
+      0,
+      -28.355
+    ],
+    "pcb_plane_z": -28.355,
+    "usb_facing": "+X",
+    "size_axes": "port width Y, height Z; cassette original datum rotated -90deg about Y",
+    "opening_validation": {
+      "revision": "0e3c71b9e4e656e1d02784fc23b1709e037e2644ff644cf5b026230b16c3012c",
+      "vertical_raise_mm": 10,
+      "plug_probe_size_width_height_mm": [
+        12.35,
+        6.5
+      ],
+      "tail_clearance_mm": 8.6364,
+      "cassette_clearance_mm": 0.9434,
+      "cassette_to_belly_lens_mm": 3.795,
+      "cassette_removal": [
+        [
+          -10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -20
+        ]
+      ],
+      "path_step_mm": 0.5,
+      "mesh_tolerance_mm": 0.02,
+      "board_fit": "Reference STEP mouth centre matches target; no shared volume with shell/cassette/shim",
+      "plug_insertion_tolerance": {
+        "lateral_mm": 0.25,
+        "vertical_mm": 0.3,
+        "travel_mm": 20,
+        "sample_step_mm": 0.5,
+        "tested_offset_combinations": 4,
+        "exact_shared_volume_max_mm3": 0,
+        "method": "exact geometry at sampled poses; plug-body procurement envelope, not an actual cable model"
+      },
+      "shimmed_board_withdrawal": [
+        [
+          -25,
+          0,
+          0
+        ]
+      ]
+    },
+    "board_thickness_nominal_mm": 1.6,
+    "board_thickness_source": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+    "cassette_slot_thickness_mm": 1.9,
+    "cassette_slot_clearance_mm": 0.3,
+    "usb_mouth_centre_status": "Measured in imported community STEP and aligned to target; not manufacturer-certified",
+    "connector_part_number": "UBF31-0171",
+    "model_source": "https://tscircuit.com/vinjocarsales/xiao-series/blob/assets/xiao-esp32-c3.step",
+    "model_sha256": "d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735",
+    "model_pcb_thickness_mm": 1,
+    "optional_shim_thickness_mm": 0.6,
+    "wire_exit_reliefs": {
+      "radius_mm": 1,
+      "centres_mm": [
+        [
+          18.1361,
+          7.62,
+          -26.2
+        ],
+        [
+          18.1361,
+          -7.62,
+          -26.2
+        ],
+        [
+          33.3761,
+          -7.62,
+          -26.2
+        ]
+      ],
+      "axial_height_mm": 4.2
+    }
+  },
+  "connection_board": {
+    "outline": [
+      40,
+      50
+    ],
+    "mounting_holes": [
+      [
+        -16,
+        -11,
+        2.4
+      ],
+      [
+        16,
+        -11,
+        2.4
+      ]
+    ],
+    "source": "design/connection/source/layout.ts",
+    "pcb_release": "a775a125f18a8423be0a2ba88a937e442a0c12100c13393ab9c8c7c26812f82e",
+    "model_alignment_note": "76 STEP-bound mounted components,12 headers,30 measured pin sections coaxial with PCB drills (<0.001mm);native board envelopes retained.",
+    "motor_driver": "DRV8213RTER",
+    "motor_current_limit_A_nominal_at4V2": 0.5252,
+    "startup_blank_s_nominal": 3.055,
+    "motor_off_state": "Both driver inputs low for>=10ms reset stall latch; extra internal J7(D5/GND) supplies enable.",
+    "fan_control": {
+      "PWM": "XIAO D3/GPIO5 -> J1.3 -> IN1",
+      "enable": "XIAO D5/GPIO7 -> J7.1 -> IN2",
+      "run": "EN=1,IN1 high40% at20kHz gives60% drive and40% low-side brake",
+      "off": "IN1=IN2=0 for>=10ms; no restart until button off/on",
+      "default_current_acceptance_A": 0.375
+    },
+    "layout_revision_note": "F1凹槽余厚1.7mm，间隙0.715mm。J10/J11横排行中心及针序不变。完整H10/11束径≤3.4，当前精确间隙至电机2.327217/2.114649mm，至皮带8.355574/8.744245mm；H10软绑+Y电机柱侧，H11用原下导向。14只插座静态/分阶段拔插已核对，窗端须主托架取出后再拔。",
+    "stackup": {
+      "layers": 6,
+      "outer_copper_oz": 1,
+      "inner_copper_oz": 2,
+      "plane_layers": [
+        "inner1",
+        "inner2",
+        "inner4"
+      ],
+      "signal_layers": [
+        "top",
+        "inner3",
+        "bottom"
+      ]
+    },
+    "pcb_release_state": "Fabrication and mechanical package ready; F1,connectors,new battery cradle and COB thermal hardware included in current nominal staged fit checks;physical fit,thermal calibration and illumination tests remain;temperature firmware implemented and target-compiled.",
+    "via_mm": {
+      "signal": [
+        0.5,
+        0.25
+      ],
+      "declared_power": [
+        0.6,
+        0.3
+      ]
+    },
+    "assembly_method": "manual or commissioned reflow; JLC SMT lists empty",
+    "ntc_connector_service": {
+      "source": "default",
+      "reference": "TE1375820-2 drawing p1;1375819-1 drawing p1",
+      "row_centres_mm": [
+        [
+          13.35,
+          5.3912
+        ],
+        [
+          13.35,
+          -4.9048
+        ]
+      ],
+      "pcb_rotation_deg": 90,
+      "plug_and_bend_envelope_mm": [
+        6.5,
+        9,
+        20
+      ],
+      "wire_bundle_max_diameter_mm": 3.4,
+      "bend_centreline_radius_mm": 6,
+      "guide_inner_diameter_mm": 4,
+      "vertical_unplug_travel_mm": 12,
+      "service_precondition": "upper assembly and drive belt removed;guide ties released"
+    },
+    "cad_reference_pcb_release": "171fcced55d57308fe0ba67341bcf9a1e5120fcf6a640abfc35d908bb5440812",
+    "compatibility_report": "product/pcb-release-fit-comparison.json"
+  },
+  "motor": {
+    "part_number": "Pololu3060",
+    "manufacturer": "Pololu",
+    "gearbox_mm": [
+      12,
+      10,
+      9
+    ],
+    "can_length_mm": 15.4,
+    "overall_body_max_mm": 25.6,
+    "output_shaft_diameter_mm": 3,
+    "shaft_flat_distance_from_axis_mm": 1,
+    "shaft_extension_mm": 9,
+    "source": "https://www.pololu.com/file/0J949/micro-metal-gearmotors-dimensions.pdf",
+    "source_page": 3,
+    "model_status": "Manufacturer HPCB STEP imported; shared non1000:1, no-encoder geometry",
+    "import_translation_mm": [
+      23,
+      0,
+      20.3
+    ],
+    "gearbox_front_z": 29.3,
+    "mount_screw_pattern_mm": [
+      [
+        -4.5,
+        0
+      ],
+      [
+        4.5,
+        0
+      ]
+    ],
+    "mount_screws": "2xISO4762 M1.6x3 through2mm plate,1mm metal engagement",
+    "electrical": {
+      "rated_voltage_V": 6,
+      "battery_V": [
+        2.8,
+        4.2
+      ],
+      "n0_rpm_at6V": 6500,
+      "n0_tolerance_fraction": 0.2,
+      "noload_current_A_at6V": 0.17,
+      "noload_current_tolerance_fraction": 0.5,
+      "stall_current_A_at6V_extrapolated": 1.5,
+      "stall_torque_mNm_at6V_extrapolated": 8.825985,
+      "manufacturer_continuous_current_guideline_A": 0.375,
+      "initial_pwm_duty": 0.6,
+      "note": "Undervoltage/DC-equivalent PWM curves are extrapolated; verify winding RMS current, starting and heat in prototype."
+    },
+    "model_body_including_terminals_mm": 26.2
+  },
+  "bearing": {
+    "catalog_id": "bd-warehouse:bd_warehouse.bearing.SingleRowDeepGrooveBallBearing",
+    "size": "M10-19-5",
+    "bore": 10,
+    "outside_diameter": 19,
+    "width": 5,
+    "quantity": 2,
+    "axial_support": {
+      "inner_ring_OD_from_catalog_STEP": 12.7,
+      "printed_support_OD": 12.6,
+      "lower_inner_seat_z": 41.1,
+      "inner_spacer": [
+        12.6,
+        10.2,
+        7.9
+      ],
+      "upper_mast_foot_z": 59,
+      "fixed_axle_top_z": 58.8,
+      "outer_spacer": [
+        19,
+        16,
+        7.9
+      ],
+      "retention": "Inner races captured between fixed pedestal and stepped mast; outer races bonded to rotor hub and located by separate outer spacer and cover; verify free rotation before tightening."
+    }
+  },
+  "battery": {
+    "identity": "FLY.18650.3200.3C / C5289740",
+    "capacity_choice_source": "user",
+    "capacity_mAh": 3200,
+    "bare_cell_max_diameter": 18.6,
+    "bare_cell_max_length": 65.2,
+    "mass_g": 46,
+    "reserved_envelope": {
+      "shape": "cylinder",
+      "diameter": 19,
+      "length": 66.2,
+      "axis": "Y",
+      "centre": [
+        0,
+        0,
+        -24
+      ]
+    },
+    "protection": "BQ29700DSER+5parallelCSD85301Q2 back-to-back pairs+0451004.MRL fuse on replacement PCB",
+    "termination": "supplier spot-welded tabs and24AWG leads;no direct cell solder",
+    "cad_status": "Separate cradle,gate,straps,cushions,ties and drawing-derived wrapped-cell reference modeled;nominal staged service paths checked.",
+    "holder": {
+      "material": "PETG",
+      "radial_hard_clearance_mm": 0.3,
+      "saddle_stations_y_mm": [
+        -7,
+        7
+      ],
+      "saddle_band_width_mm": 12,
+      "groove_wall_remaining_mm": 1.25,
+      "cell_straps": {
+        "quantity": 2,
+        "width_mm": 10,
+        "cut_length_mm": 75,
+        "max_single_layer_mm": 0.8,
+        "max_overlap_extra_mm": 0.8
+      },
+      "end_stops": {
+        "centre_y_mm": [
+          -36.4,
+          36.4
+        ],
+        "centre_z_mm": -21,
+        "cushions_installed_mm": [
+          7,
+          2.3,
+          3
+        ]
+      },
+      "gate_fasteners": "2xISO4762M2x6;kit-generated PETG pilots,atX+/-11.3,Y24,Z-8",
+      "deck_ties": {
+        "quantity": 2,
+        "width_mm": 2.5,
+        "length_mm": 100,
+        "max_band_thickness_mm": 0.8,
+        "max_head_envelope_mm": [
+          4.6,
+          3.4,
+          4.6
+        ],
+        "x_mm": -2,
+        "stations_y_mm": [
+          -17,
+          17
+        ]
+      },
+      "service_support": "Use temporary20x25x20mm insulating foam through belly opening before cutting deck ties.",
+      "supplier_pack": "Wrapped/tabbed reserve includes films;spot-weld leads only,terminal centre clear.",
+      "deck_datums": {
+        "source": "default",
+        "integral_PETG": true,
+        "height_mm": 2,
+        "centres_mm": [
+          [
+            8,
+            12,
+            -9
+          ],
+          [
+            -8,
+            -12,
+            -9
+          ]
+        ],
+        "side_stop_height_mm": 3,
+        "clearance_x_mm": 0.3,
+        "clearance_y_mm": 0.4
+      }
+    }
+  },
+  "switch": {
+    "lcsc_code": "C2837530",
+    "body": [
+      6,
+      6,
+      4.3
+    ],
+    "source": "references/suppliers/c2837530/part.json",
+    "pcb_size": [
+      14,
+      18,
+      1.6
+    ],
+    "board_quantity": 2,
+    "push_travel": 0.3,
+    "left_board_placement": {
+      "position": [
+        100,
+        36.155,
+        102
+      ],
+      "rotation": [
+        -90,
+        0,
+        180
+      ]
+    },
+    "right_board_placement": {
+      "position": [
+        -100,
+        -36.155,
+        102
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    "mechanical_reference": {
+      "identity": "Kinghelm KH-6X6X4.3H-STM/C2837530",
+      "authority": "exact manufacturer drawing, references/suppliers/c2837530/c2837530-datasheet.pdf",
+      "model_kind": "drawing-modeled conservative external envelope; not manufacturer STEP",
+      "keys_release": "b957cd2114d3ced53b0880e8878ea2964d1e2e989303f3763fdcc0b3ff58ff3a",
+      "height_above_lead_plane_mm": 4.3,
+      "mounted_top_above_pcb_copper_mm": 4.35,
+      "actual_fit": "unverified; check first assembled sample"
+    },
+    "button_fit": {
+      "cap_visible_diameter_mm": 12,
+      "flange_diameter_mm": 14,
+      "free_gap_mm": 0.15,
+      "total_cap_travel_mm": 0.45,
+      "switch_nominal_depression_mm": 0.3,
+      "hard_stop": "integral with removable white PETG window clamp; not fixed window",
+      "cap_stem_tip_abs_y_mm": 42.2,
+      "cap_stem_setback_mm": 0.2,
+      "stop_bore_mm": 12.4,
+      "stop_outer_diameter_mm": 14,
+      "stop_wall_mm": 1.6,
+      "fixed_guide_gap_mm": 14.6,
+      "rear_access_width_mm": 15,
+      "front_lip_access_notch_mm": [
+        15,
+        7
+      ],
+      "pcb_rear_support": "removable PETG clamp rear pads;0.02mm nominal copper-to-pad gap",
+      "pcb_lower_support": "removable ledge0.2mm below board bottom",
+      "validation": "nominal rigid geometry only; actual travel,return,tolerance and strength require prototype"
+    },
+    "service_path": {
+      "prerequisites": "Remove upper/thermal/optical groups and main carrier;support battery in cabin. Unplug side socket only after main carrier is out. Remove outer window/button/bezel first30mm outwards,then inner PCB+retainer.",
+      "side_socket_inward_mm": 6.3,
+      "side_socket_then_up_mm": 12,
+      "inner_retainer_inward_mm": 3,
+      "then_up_mm": 7,
+      "then_further_inward_mm": 19,
+      "then_up_out_mm": 50,
+      "mesh_tolerance_mm": 0.02,
+      "max_point_step_mm": 0.25
+    }
+  },
+  "drive": {
+    "method": "4.995:1 metal motor gearbox,3mm D-shaft pulley and internal O-ring reduction",
+    "belt_inside_diameter": 32,
+    "belt_section": 1.5,
+    "rotor_effective_pulley_diameter": 30,
+    "motor_effective_pulley_diameter": 8,
+    "centre_distance_initial": 23,
+    "source": "default",
+    "note": "32x1.5 EPDM70A O-ring; nominal5.53% stretch. Two motor mounting slots and boss-clearance slot allow +/-0.3mm centre adjustment. Actual friction,preload,creep and radial bushing wear require test. D-flat transmits torque; epoxy spot retains pulley axially.",
+    "pulley_plane_z": 35.3,
+    "total_reduction": 18.73125,
+    "belt_reduction": 3.75,
+    "pitch_length_mm": 111.0591,
+    "neutral_stretch_percent": 5.526,
+    "driver_wrap_deg": 122.8562,
+    "tension_adjustment_mm": [
+      -0.3,
+      0.3
+    ],
+    "slot_size_mm": [
+      2.4,
+      1.8
+    ]
+  },
+  "cabin": {
+    "diameter": 100,
+    "sphere_center": [
+      0,
+      0,
+      0
+    ],
+    "side_window_centres_on_sphere_equator": true,
+    "button_diameter": 12,
+    "belly_plane_z": -36.25,
+    "belly_aperture_diameter": 63.75,
+    "nose_aperture_diameter": 59.5,
+    "nose_cut_plane_x": -40.1875,
+    "window_panel_diameter": 37.5,
+    "window_bezel_diameter": 43.75,
+    "window_bezel_separate": true,
+    "window_bezel_colour": "white",
+    "window_bezel_height": 1.2,
+    "window_bezel_overlap": 0.5,
+    "window_bezel_glue_gap": 0.15,
+    "window_shoulder_diameter": 42.6,
+    "window_shoulder_rebate_depth": 1.2,
+    "shell_wall": 2.4
+  },
+  "skids": {
+    "rail_diameter": 3.75,
+    "strut_diameter": 3.5,
+    "rail_length_between_tip_centres": 90,
+    "tips": "mirror-symmetric fore/aft, both ends rise 3mm, straight middle",
+    "struts": "Continuous smooth Bezier curve outward and downward; short straight mounting peg hidden inside side socket",
+    "strut_x": [
+      -22.5,
+      22.5
+    ],
+    "mount_z": -25,
+    "rail_centres": [
+      [
+        0,
+        56.25,
+        -51.25
+      ],
+      [
+        0,
+        -56.25,
+        -51.25
+      ]
+    ],
+    "longitudinal_midpoint_x": 0,
+    "body_socket_axis": "Y",
+    "body_socket_diameter": 5.3,
+    "curve_handle": 12.5,
+    "peg_exit": 1.8,
+    "strut_vertical_height": 26.25,
+    "root_retention": "5mm locating pegs, curved external shoulder, internally screwed curved saddle caps; no external screw heads",
+    "peg_inset": 9,
+    "peg_diameter": 5,
+    "root_cap_OD": 9.2,
+    "root_cap_bore": 6.7,
+    "body_socket_depth": 20
+  },
+  "tail_details": {
+    "fin": "exact upper/lower mirror symmetry about tail boom axis",
+    "decorative_propeller_radius": 20,
+    "propeller_centre": [
+      176.875,
+      -4.625,
+      13.75
+    ],
+    "decorative_pin_diameter": 3,
+    "pin_hole_diameter": 3.5,
+    "propeller_profile": "three curved narrow-root round-tipped paddles; one up, two down; rounded central hub",
+    "vertical_symmetry_plane_z": -3.75,
+    "vertical_fin_height": 50,
+    "propeller_side": "aircraft left (-Y)",
+    "right_trim_fin": {
+      "side": "+Y",
+      "span": 25,
+      "profile": "exact same half_outline as vertical fin",
+      "attachment": "integral with tail boom and vertical fin"
+    },
+    "propeller_aft_offset": 1.875,
+    "root_plane_x": 47.5,
+    "root_radius": 10.6136363636,
+    "plug_length": 4,
+    "plug_diameter": 16,
+    "plug_clearance_per_side": 0.2,
+    "retention": "solid circular shoulder + short cylindrical plug, two axial internal M2 socket-cap screws",
+    "plug_section": "full circle, no flat",
+    "interface_validation": {
+      "revision": "cb6fee56a62e3b23f60a7504bc56b7d0eb1069081500838c180543f3b59a6845",
+      "plug_diameter": 16,
+      "plug_length": 4,
+      "socket_diameter": 16.4,
+      "socket_depth": 4.25,
+      "cross_section": "complete circular section without flat",
+      "removal": "20mm along+X, no overlap;0.5mm step,0.02mm mesh tolerance"
+    }
+  },
+  "colour_scheme": {
+    "cabin_tail": "#87CEEB",
+    "window_panels": "#C9EAF8",
+    "frames_rotors_skids": "#FFFFFF",
+    "window_buttons": "#C9EAF8"
+  },
+  "internal_carrier": {
+    "pcb_bottom_z": -4,
+    "deck_top_z": -6,
+    "mounts": [
+      [
+        -26,
+        -6
+      ],
+      [
+        24,
+        -20
+      ]
+    ],
+    "shell_screws": "2 x M2x6",
+    "pcb_screws": "2 x M2x4",
+    "battery_envelope": {
+      "shape": "cylinder",
+      "diameter": 19,
+      "length": 66.2,
+      "axis": "Y",
+      "centre": [
+        0,
+        0,
+        -24
+      ]
+    },
+    "battery_centre": [
+      0,
+      0,
+      -24
+    ],
+    "motor_centre": [
+      23,
+      0,
+      20.3
+    ],
+    "prototype_only": true,
+    "motor_support_axes": [
+      [
+        23,
+        -8.5
+      ],
+      [
+        23,
+        8.5
+      ]
+    ],
+    "motor_support_diameter": 6,
+    "motor_front_z": 29.3,
+    "motor_plate": [
+      16,
+      20,
+      2
+    ],
+    "status": "requires internal redesign for selected reading-light package"
+  },
+  "lighting": {
+    "selected_source": {
+      "mpn": "HL-LM002H384W-5B2C5(Ra2)(ANSI-4000K)",
+      "lcsc_code": "C22398553",
+      "size": [
+        13.5,
+        13.5,
+        1.5
+      ],
+      "emitting_diameter": 11.2,
+      "drawing_tolerance": 0.3,
+      "case_thermal_resistance_typ_K_per_W": 4.3
+    },
+    "driver": "TPS61500PWP",
+    "nominal_current_mA": 266.6667,
+    "current_range_mA": [
+      257.4257,
+      276.0943
+    ],
+    "nominal_LED_power_W_approx": 4.1,
+    "worst_output_power_W": 5.1754,
+    "collector_envelope": {
+      "size": [
+        18,
+        34,
+        3
+      ],
+      "centre": [
+        -28,
+        0,
+        1.5
+      ],
+      "status": "modeled aluminium;separate ASA supports"
+    },
+    "emission": "Downlight through original belly diffuser plus indirect front glow via16x2mm internal mixing port;matte-white ASA visor hides direct source view.",
+    "thermal_path": {
+      "collector": "18x34x3mm1050/1060Al,12x12x0.15mm insulating COB bond",
+      "straps": "Two custom4mm-web aluminium bridges,rootM2x8 and fourM1.6x10 contact bolts;upper cap links separate with lid",
+      "liners": "Six0.5mmAl liners,about72.1cm2 volume/thickness equivalent area",
+      "shell_interface": "insulatingthermaladhesive<=0.15mm,k>=1.5W/mK",
+      "COB_to_collector_R_max_K_per_W": 0.75,
+      "shell_surface_target_C": 48,
+      "NTC_channels": [
+        "COB substrate",
+        "opaque-shell hot spot",
+        "battery"
+      ],
+      "status": "Mechanical heat path complete;no temperature or steady-state illumination verification. Reading criteria unchanged.",
+      "equivalent_liner_area_cm2": 72.13703602015917,
+      "spreader_to_shell_R_target_K_per_W": 5,
+      "spreader_to_shell_R_result": "Unverified target;must not reuse the180cm2 concept estimate for this actual72.1cm2 geometry.",
+      "COB_bond_one_dimensional_ideal_R_K_per_W": 0.6944444444444444,
+      "detachable_interfaces": "0.1mm electrically insulating non-curing filler,k>=3W/mK at roots,contact-shoe/bridge laps,shoe/liner faces and cap split laps;cap links bonded to cap liners.",
+      "left_interface_area_mm2": {
+        "fore": 56.80222206729885,
+        "aft": 28.044535021152733,
+        "cap": 104.1131483648492,
+        "root": 22.436726178571675,
+        "couple_fore": 13.932498639371493,
+        "couple_aft": 19.1865945600932,
+        "couple_cap": 32.44099592955817
+      },
+      "aluminium_mass_g": 40.082789568051474,
+      "bridge_wire_exit_radius_mm": 4,
+      "machining_notes": "15part AL01-AL15 drawing set from current STEP;source-default fit tolerances in aluminium_manufacturing."
+    },
+    "controls": {
+      "LED_EN": "GPIO6/D4,5kHz analogdimming withDIMC1uF;continuousHIGH50msstartup",
+      "ADC_I2C": "explicitSDA20/D7,SCL21/D6;3.3V",
+      "default_thresholds_C": {
+        "COB_dim": 60,
+        "COB_off": 70,
+        "shell_dim": 43,
+        "shell_off": 48,
+        "battery_dim": 40,
+        "battery_off": 45
+      },
+      "fault_policy": "ADCmissing,NTCopen/short oroutofrange=>bothloadsOFF;freshkeyrequiredafterrecovery",
+      "status": "Implemented and host/target-compiled for current TPS61500/ADS1115/NTCs;not flashed or physically calibrated",
+      "firmware_defaults": {
+        "source": "default",
+        "adc": {
+          "address": 72,
+          "sda_gpio": 20,
+          "scl_gpio": 21,
+          "frequency_hz": 100000,
+          "full_scale_V": 4.096,
+          "rate_sps": 128,
+          "scan_period_ms": 100,
+          "stale_ms": 250,
+          "conversion_timeout_ms": 20,
+          "i2c_timeout_ms": 5,
+          "retry_ms": 250
+        },
+        "cold_start_high_ms": 50,
+        "off_low_min_ms": 10,
+        "light_EN_hz": 5000,
+        "light_max_permille": 1000,
+        "nominal_max_current_mA": 266.7,
+        "soft_derating_floor_fraction": 0.25,
+        "recovery": {
+          "continuous_ms": 5000,
+          "cob_C": 55,
+          "shell_C": 40,
+          "battery_C": [
+            5,
+            37
+          ],
+          "battery_V": [
+            3.5,
+            4.25
+          ],
+          "fresh_button_required": true
+        },
+        "battery_cutoff_V": [
+          3.3,
+          4.3
+        ],
+        "battery_cold_cutoff_C": 0,
+        "ntc_supply_calibration_V": 3.3,
+        "ntc_offsets_C": [
+          0,
+          0,
+          0
+        ],
+        "can_disable_XIAO_charger": false
+      }
+    },
+    "exterior": "unchanged100mmcabin,lenses,windows,portand250mmrotor",
+    "cad_status": "COB collector,ASA supports,removable bridges/contact shoes,upper-cap links and six liners modeled. Static and rigid service-path checks complete;thermal/optical performance unverified.",
+    "temperature_probe_locations": {
+      "maximum_head_envelope": "diameter2.8x7.5mm,sourceC52204608 datasheet pp1,3;reference geometry only",
+      "COB": {
+        "centre_mm": [
+          -36.3,
+          0,
+          -1.4
+        ],
+        "axis": "Y",
+        "attachment": "Insulating thermal adhesive to substrate edge nearTs;avoid pads/LES;calibrate against datasheetTs point"
+      },
+      "shell": {
+        "centre_mm": [
+          32.841,
+          29.584,
+          10.142
+        ],
+        "attachment": "Insulating thermal bond to rear liner hot spot;validate against actual hottest shell region"
+      },
+      "battery": {
+        "centre_mm": [
+          11,
+          -18,
+          -24
+        ],
+        "axis": "Y",
+        "attachment": "Non-curing thermal filler and polyimide tape;remove before sliding replacement cell"
+      }
+    },
+    "internal_optics": {
+      "material": "matte white ASA",
+      "wall_mm": 1.6,
+      "top_z_mm": -4,
+      "bottom_z_mm": -25.5,
+      "front_mix_port_mm": [
+        16,
+        2
+      ],
+      "visor_angle_deg": 25,
+      "geometric_direct_ray_checks": 4,
+      "ray_result": "four selected COB-to-belly segments unoccluded; not optical efficiency/photometry validation",
+      "bond": "two front-facing ASA-support lands;0.2mm peelable adhesive gap",
+      "service": "after collector removal, take reflector and both ASA supports together through nose -X80mm; separate adhesive outside shell"
+    }
+  },
+  "service_split": {
+    "plane_z": 25,
+    "joint": "kit internal M2 screw lugs",
+    "planning_envelope": [
+      120,
+      120,
+      82
+    ],
+    "planning_margin": 5,
+    "note": "Per-piece planning envelope only; 250mm main rotor needs a usable bed greater than250x250mm or a print service. All seam reinforcement kept inside the reference sphere.",
+    "lens_attachment": "Curved free adhesive joints at nose and belly; trial fit and glue only after internal assembly.",
+    "screws": "3xM2x10 ISO4762",
+    "local_hidden_seam_wall": 4.4,
+    "minimum_outer_roof_skin": 1.2,
+    "outer_holes": "Only functional windows, lenses, rotor-sleeve passage and USB-C; no extra vent or driver-access holes",
+    "carrier_removal": {
+      "requires": "Remove upper and COB/thermal parts;unplug and release all wires;support battery,cut cradle ties,remove carrier screws. PCB remains fixed to carrier;remove PCB outside shell.",
+      "moving": [
+        "internal_carrier",
+        "fan_motor",
+        "motor_mount_screw",
+        "motor_mount_screw_second",
+        "drive_pulley",
+        "connection_board",
+        "pcb_mount_screws"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            0,
+            1.5
+          ]
+        },
+        {
+          "move_mm": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "move_mm": [
+            0,
+            0,
+            7.5
+          ],
+          "rotate_deg": -15,
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_mm": [
+            0,
+            0,
+            -6
+          ]
+        },
+        {
+          "move_mm": [
+            4,
+            -0.5,
+            0
+          ]
+        },
+        {
+          "move_mm": [
+            0,
+            0,
+            55
+          ]
+        }
+      ],
+      "check": "No overlap,0.5mm maximum point steps,0.02mm mesh tolerance;window screws retained."
+    },
+    "battery_removal": {
+      "requires": "Upper/thermal parts,PCB,carrier and both window modules removed;XIAO cassette may remain",
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            0,
+            30
+          ]
+        },
+        {
+          "rotate_deg": -90,
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_mm": [
+            0,
+            0,
+            -24
+          ]
+        },
+        {
+          "move_mm": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "rotate_deg": 35,
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "pivot_mm": [
+            0,
+            0,
+            -24
+          ]
+        },
+        {
+          "move_mm": [
+            0,
+            0,
+            70
+          ]
+        }
+      ],
+      "minimum_fuselage_mesh_clearance_mm": 0.5045
+    },
+    "window_service": "After carrier removal and with battery supported:remove outer window/button/bezel30mm outwards first,then inner retainer/PCB inward3mm,up7mm,inward19mm,up50mm.",
+    "xiao_service": "After battery removal:remove2M1.6x5,move-X10mm then-Z20mm;upper withdrawal is blocked by existing mounts.",
+    "thermal_service": "Remove root2M2x8 and4M1.6x10 contact bolts;bridges inward10.4mm then+Z80mm;shoes inward12mm then+Z80mm. Do not glue lower shoes permanently.",
+    "optical_group_removal": "After collector removed,unscrew ASA supports and remove both supports+reflector together-X80mm;separate adhesive outside cabin.",
+    "wire_guide_removal": "Release ties/adhesive,free wires sideways from open U,then+Z80mm before inward motion of thermal bridges."
+  },
+  "mechanical_validation": {
+    "revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
+    "nose_to_tail_mm": 244.66032,
+    "static_overlaps": "No static shared volume in current repaired model; see final CAD handoff. Button reference uses exact4.3mm drawing envelope, with0.15mm rest gap and0.45mm hard stop.",
+    "paths": "Tail,windows,both skids,upper assembly and specified angled carrier removal show no obstruction;0.5mm step,0.02mm mesh tolerance.",
+    "rotor_sweep": "Current rotor,cover,outer spacer:360deg without overlap,2mm maximum point travel,0.02mm mesh tolerance; min clearance to mast0.2148mm,cap0.2902mm; unchanged tight fits need actual print check.",
+    "usb": "Prior downward insertion check superseded by raised rear opening; inspect current design review.",
+    "limitations": "Manufacturer motor and community XIAO are modeled; battery/harness remain purchasing envelopes. Print tolerances,fan airflow,balance,magnetic holding and heat need prototype tests.",
+    "internal_service": {
+      "revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
+      "report": "product/references/internal-service-fit-final-20261113.json",
+      "rigid_group_checks": 21,
+      "poses": 3883,
+      "mesh_tolerance_mm": 0.02,
+      "maximum_step_mm": 0.5,
+      "window_maximum_step_mm": 0.25,
+      "unintended_static_overlap_pairs": 0,
+      "exact_socket_checks": 14,
+      "hex_driver_min_clearance_mm": [
+        0.3578943335,
+        0.7771912144
+      ],
+      "reading_function": "Temperature firmware implemented and target-compiled;not flashed. Thermal,light-output and installed-probe calibration tests remain.",
+      "service_preconditions": "断开USB/J2并解除皮带；松开扎带/胶带，将主板端断开的柔性支线停放在尾侧及底口外。先取主线束夹，再拆桥；COB后将反光罩与两只ASA支座成组取出；窗端短插座待主托架移出后再拔。各路径的固定零件集合及原检查版本保留。"
+    }
+  },
+  "charging_fit_test": {
+    "design_id": "charging_fit",
+    "shell_bbox_mm": [
+      25.5513,
+      46,
+      20.25
+    ],
+    "cassette_bbox_mm": [
+      22.95,
+      40,
+      6.6
+    ],
+    "shim_mm": [
+      20.5,
+      17.2,
+      0.6
+    ],
+    "screws": "2xM1.6x5 ISO4762",
+    "geometry_match_to_main_mm3": 0,
+    "purpose": "physical fit test only",
+    "cassette_update": "threeR1 solder-wire reliefs synchronized with main cassette;volume622.5331372952644mm3",
+    "revision": "4cdc95c52fd808f9b4b1fbfe1465f9e64dfebf9a6092427644b848acebffb225"
+  },
+  "harness": {
+    "routing_document": "product/harness-routing.json",
+    "cut_table": "product/线束装配与裁线表.md",
+    "reference_geometry": "complete_harness;not printable or a manufacturerSTEP",
+    "main_generic_plugs": "seven2P/one7P/one3P,all14mmmaxinstalledheight",
+    "NTC_plugs": "3xTE1375820-2,6x1375819-1",
+    "key_sockets": "2x1x02 low-profile solder sockets,totaldepth<=11.5mm,crosssection<=3x5.6mm",
+    "generic_female_contacts": 24,
+    "key_socket_included_contacts": 4,
+    "NTC_contacts": 6,
+    "bend_radii": [
+      {
+        "id": "H01",
+        "length_mm": 162.54,
+        "minimum_modelled_bend_radius_mm": 4.341
+      },
+      {
+        "id": "H02P",
+        "length_mm": 117.04,
+        "minimum_modelled_bend_radius_mm": 4.09
+      },
+      {
+        "id": "H02N",
+        "length_mm": 157.099,
+        "minimum_modelled_bend_radius_mm": 5.013
+      },
+      {
+        "id": "H03",
+        "length_mm": 80.747,
+        "minimum_modelled_bend_radius_mm": 6
+      },
+      {
+        "id": "H04",
+        "length_mm": 79.627,
+        "minimum_modelled_bend_radius_mm": 4.341
+      },
+      {
+        "id": "H05",
+        "length_mm": 59.129,
+        "minimum_modelled_bend_radius_mm": 3.85
+      },
+      {
+        "id": "H06",
+        "length_mm": 28.315,
+        "minimum_modelled_bend_radius_mm": 2.581
+      },
+      {
+        "id": "H07",
+        "length_mm": 10.467,
+        "minimum_modelled_bend_radius_mm": 1.412
+      },
+      {
+        "id": "H08",
+        "length_mm": 10.847,
+        "minimum_modelled_bend_radius_mm": 1.617
+      },
+      {
+        "id": "H09",
+        "length_mm": 90.867,
+        "minimum_modelled_bend_radius_mm": 5.374
+      },
+      {
+        "id": "H10",
+        "length_mm": 50.445,
+        "minimum_modelled_bend_radius_mm": 6
+      },
+      {
+        "id": "H11",
+        "length_mm": 76.667,
+        "minimum_modelled_bend_radius_mm": 6
+      },
+      {
+        "id": "H12",
+        "length_mm": 138.881,
+        "minimum_modelled_bend_radius_mm": 2.288
+      }
+    ],
+    "fixation": [
+      {
+        "id": "F01",
+        "route": "H01/H07/H08",
+        "at_mm": [
+          23,
+          -16,
+          15
+        ],
+        "method": "新ASA开口导向夹+1条2.5x100扎带；夹根0.2mm可剥离胶隙，检修先放线后取夹"
+      },
+      {
+        "id": "F02",
+        "route": "H10",
+        "at_mm": [
+          23,
+          13,
+          27
+        ],
+        "method": "+Y电机支柱侧软绑1条扎带，在线束自然位置固定，不牵入皮带"
+      },
+      {
+        "id": "F03",
+        "route": "H11",
+        "at_mm": [
+          13.35,
+          -27.5,
+          -16
+        ],
+        "method": "原下导向座+1条扎带；不勒探头根"
+      },
+      {
+        "id": "F04",
+        "route": "H02P/H02N",
+        "method": "电芯端挡内侧聚酰亚胺带应力释放；不得挡正极泄压口，不拉点焊片"
+      },
+      {
+        "id": "F05",
+        "route": "H04/H09",
+        "method": "集热板非光面边缘绝缘胶带固定；前光腔用白色绝缘线/白套管，检修先揭带"
+      },
+      {
+        "id": "F06",
+        "route": "H05/H06",
+        "method": "窗板后侧低型焊线母座，焊点逐根热缩；窗端插座待主托架移出后再拔"
+      }
+    ],
+    "service": "主板托架移出后，先向中心6.3mm，再+Z12mm；主板在位时排针阻挡这条路径。",
+    "NTC_clearance_mm": {
+      "H10_motor": 2.327217,
+      "H11_motor": 2.114649,
+      "H10_belt": 8.355574,
+      "H11_belt": 8.744245
+    },
+    "wire_insulation_max_OD_mm": {
+      "24AWG": 1.4,
+      "26AWG": 1.1,
+      "TE_26AWG_adapter": [
+        0.89,
+        1.4
+      ]
+    }
+  },
+  "aluminium_manufacturing": {
+    "value": {
+      "units": "mm",
+      "general_linear_tolerance": 0.1,
+      "hole_position_tolerance": 0.05,
+      "contact_face_flatness": 0.05,
+      "contact_face_size_tolerance": 0.05,
+      "unilateral_maximum_material_profile_tolerance": 0.1,
+      "liner_nominal_thickness": 0.5,
+      "liner_minimum_after_forming": 0.4,
+      "liner_max_outer_radius": 47.45,
+      "liner_min_inner_radius": 46.95,
+      "edge_break_range": [
+        0.1,
+        0.2
+      ],
+      "threads": "M1.6x0.35-6H and M2x0.4-6H;chip-free,hand assembly"
+    },
+    "source": "default"
+  }
+}

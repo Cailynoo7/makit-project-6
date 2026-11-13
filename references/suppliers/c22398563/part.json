@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:23:59.505Z",
+  "lcsc_code": "C22398563",
+  "manufacturer": "HONGLITRONIC(鸿利光电)",
+  "manufacturer_part_number": "HL-LM002H384W-7B2C7(Ra2)(ANSI-4000K)",
+  "description": "自然白色 4000K CRI:80",
+  "category": "COB光源",
+  "package": "SMD,13.5x13.5mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Lumens": "800lm",
+    "Color Temperature": "4000K",
+    "CRI Color Rendering Index": "80",
+    "Power(Watts)": "6.7W",
+    "Voltage - Forward(Vf)": "22.5V",
+    "Illumination Color": "Natural White",
+    "Operating Temperature": "-40°C~+85°C"
+  },
+  "lcsc_stock": 73,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 3.61,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.86,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 2.54,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 108,
+      "unitPrice": 2.14,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 1.96,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1296,
+      "unitPrice": 1.85,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.5972,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.4731,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.4202,
+      "currency": "USD"
+    },
+    {
+      "quantity": 108,
+      "unitPrice": 0.354,
+      "currency": "USD"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 0.3243,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1296,
+      "unitPrice": 0.3061,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/24012664.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/7f03d967df651d35c3d39f9cedfac568.pdf?productCode=C22398563",
+  "datasheet_file": "references/suppliers/c22398563/c22398563-datasheet.pdf"
+}

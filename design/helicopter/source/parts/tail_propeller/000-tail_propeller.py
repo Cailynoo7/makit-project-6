@@ -1,0 +1,27 @@
+radius=param('tail_propeller_radius',13.0)
+chord=param('tail_propeller_chord',5.0)
+t=param('tail_propeller_thickness',1.5)
+pin_diameter=param('tail_prop_pin_diameter',2.4)
+pin_length=param('tail_prop_pin_length',5.0)
+hub_radius=param('tail_prop_hub_radius',2.8)
+leaf_edge=param('tail_prop_leaf_edge',0.25)
+hub_dome=param('tail_prop_hub_dome',1.0)
+root_half=chord*0.19
+leaf_outline=Wire([
+ Bezier((1.5,-root_half),(radius*0.4,-chord*0.25),(radius*0.72,-chord*0.65),(radius-2.4,-chord/2)),
+ ThreePointArc((radius-2.4,-chord/2),(radius,0),(radius-2.4,chord/2)),
+ Bezier((radius-2.4,chord/2),(radius*0.72,chord*0.65),(radius*0.4,chord*0.25),(1.5,root_half)),
+ ThreePointArc((1.5,root_half),(0.7,0),(1.5,-root_half))
+])
+leaf=extrude(make_face(leaf_outline),t/2,both=True)
+leaf=fillet(leaf.edges(),leaf_edge)
+body=Cylinder(hub_radius,t)
+dome=Sphere(1).transform_geometry(Matrix([[hub_radius,0,0,0],[0,hub_radius,0,0],[0,0,hub_dome,t/2],[0,0,0,1]]))
+body=body+dome
+for a in [90,210,330]:
+ body=body+Rot(0,0,a)*leaf
+body=body+Pos(0,0,-pin_length/2)*Cylinder(pin_diameter/2,pin_length)
+size_scale=param('tail_propeller_form_scale',1.25)
+body=body.scale(size_scale)
+body.color=srgb('#FFFFFF')
+publish('tail_propeller',body,'装饰尾桨',material='petg')

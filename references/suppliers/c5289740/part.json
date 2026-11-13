@@ -1,0 +1,23 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:33:07.586Z",
+  "lcsc_code": "C5289740",
+  "manufacturer": "FLYOUNG(远阳)",
+  "manufacturer_part_number": "FLY.18650.3200.3C",
+  "description": "FLYOUNG(远阳) 锂离子电池 3.6V 3200mAh 1个",
+  "category": "锂离子柱状电池",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {},
+  "lcsc_stock": 72,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 19.98,
+      "currency": "CNY"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/6029056.html",
+  "datasheet_url": "https://atta.szlcsc.com/upload/public/pdf/source/20221205/07E11C9A3B99BAAA3B7E607DC5FF771B.pdf",
+  "datasheet_file": "references/suppliers/c5289740/c5289740-datasheet.pdf"
+}

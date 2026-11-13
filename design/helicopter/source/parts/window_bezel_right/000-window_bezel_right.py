@@ -1,0 +1,5 @@
+b=part('window_bezel_left')
+glue_gap=param('bezel_right_glue_gap',0.15)
+body=mirror(Pos(0,glue_gap,0)*b.ring,about=Plane.XZ)
+body.color=srgb('#FFFFFF')
+publish('window_bezel_right',body,'右白色覆盖窗框',material='petg')

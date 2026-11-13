@@ -1,0 +1,67 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:23:25.747Z",
+  "lcsc_code": "C699476",
+  "manufacturer": "HONGLITRONIC(鸿利光电)",
+  "manufacturer_part_number": "HL-LM003D90VW-17B8C12(Ra7)",
+  "description": "白色 4000K CRI:97",
+  "category": "COB光源",
+  "package": "SMD,19x19mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Lumens": "1910lm;1760lm;1860lm;1890lm",
+    "Color Temperature": "4000K",
+    "CRI Color Rendering Index": "97",
+    "Viewing Angle": "120°",
+    "Power(Watts)": "17W",
+    "Voltage - Forward(Vf)": "36V",
+    "Illumination Color": "White",
+    "Operating Temperature": "-35°C~+85°C"
+  },
+  "lcsc_stock": 354,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 37.31,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 35.69,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 60,
+      "unitPrice": 34.71,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 120,
+      "unitPrice": 33.88,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 6.1718,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 5.9038,
+      "currency": "USD"
+    },
+    {
+      "quantity": 60,
+      "unitPrice": 5.7417,
+      "currency": "USD"
+    },
+    {
+      "quantity": 120,
+      "unitPrice": 5.6044,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/735412.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/95e86769558dff61d41cdf1151619ea3.pdf?productCode=C699476",
+  "datasheet_file": "references/suppliers/c699476/c699476-datasheet.pdf"
+}

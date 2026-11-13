@@ -1,0 +1,7 @@
+c=part('internal_carrier')
+case_w=param('drawing_max_case_width',13.8)
+case_h=param('drawing_max_case_height',1.8)
+bond_t=param('bond_line',0.15)
+body=Pos(c.heat_x,0,c.heat_bottom-bond_t-case_h/2)*Box(case_w,case_w,case_h)
+body.color=srgb('#FAE6A2')
+publish('cob_reference',body,'COB图纸上限包络',role='reference')

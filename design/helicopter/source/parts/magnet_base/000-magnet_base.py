@@ -1,0 +1,13 @@
+s=part('fuselage')
+diameter=param('enlarged_base_diameter',45.0)
+height=param('enlarged_base_height',13.75)
+neck=param('enlarged_base_neck_diameter',17.5)
+pocket=param('magnet_pocket_diameter',30.3)
+depth=param('magnet_pocket_depth',1.5)
+bolt_bore=param('magnet_base_bolt_bore',4.6)
+body=loft([Pos(0,0,-height/2)*Circle(neck/2),Pos(0,0,-height*0.3)*Circle(diameter*0.27),Pos(0,0,height*0.05)*Circle(diameter*0.43),Pos(0,0,height*0.3)*Circle(diameter/2),Pos(0,0,height/2)*Circle(diameter/2)])
+body=body-Pos(0,0,height/2-depth/2)*Cylinder(pocket/2,depth+0.002)
+body=body-Cylinder(bolt_bore/2,height+1)
+body=body-Pos(0,0,-106.875)*s.joint.through_cuts[0]
+body.color=srgb('#FFFFFF')
+publish('magnet_base',body,'磁吸顶部座',material='petg')

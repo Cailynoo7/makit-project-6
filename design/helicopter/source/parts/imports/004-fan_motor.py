@@ -1,0 +1,1 @@
+publish("fan_motor", asset("design/helicopter/source/assets/203cec51bb3c7537266c230459960bd4a061e18f3619b9e0358805bf63a08652.step"), "Pololu 3060 减速电机")

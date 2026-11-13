@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:50:25.588Z",
+  "lcsc_code": "C280564",
+  "manufacturer": "Chilisin(奇力新)",
+  "manufacturer_part_number": "MHCC06030-100M-R7",
+  "description": "10uH ±20% 5.5A",
+  "category": "功率电感",
+  "package": "SMD,7.3x6.6mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Current Rating": "4A",
+    "Inductance": "10uH",
+    "Tolerance": "±20%",
+    "Current - Saturation(Isat)": "5.5A",
+    "DC Resistance(DCR)": "68mΩ",
+    "Type": "Magnetic Shielded Inductor",
+    "Application Grade": "Consumer grade"
+  },
+  "lcsc_stock": 568,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.369,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.1225,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 1.0169,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.8042,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.7455,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.7103,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.2262,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1855,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.168,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.1329,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.1232,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1174,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/266984.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/19fc53f9b3116f21fa52dfafc921b9d8.pdf?productCode=C280564",
+  "datasheet_file": "references/suppliers/c280564/c280564-datasheet.pdf"
+}

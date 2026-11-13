@@ -1,0 +1,92 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:52:04.524Z",
+  "lcsc_code": "C85734",
+  "manufacturer": "AOS",
+  "manufacturer_part_number": "AON7400A",
+  "description": "N-Channel 30V 40A 25W Surface Mount DFN-8(3x3)",
+  "category": "场效应管(MOSFET)",
+  "package": "DFN-8(3x3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Output Capacitance(Coss)": "180pF",
+    "Ciss-Input Capacitance": "1.38nF",
+    "Pd - Power Dissipation": "25W",
+    "Operating Temperature": "-55°C~+150°C",
+    "Drain to Source Voltage": "30V",
+    "Current - Continuous Drain(Id)": "40A",
+    "Reverse Transfer Capacitance (Crss)": "150pF",
+    "RDS(on)": "7.5mΩ@10V",
+    "Number": "1 N-channel",
+    "Gate Charge(Qg)": "24nC@10V",
+    "Vgs": "±20V",
+    "Gate Threshold Voltage (Vgs(th))": "2.5V",
+    "Type": "N-Channel"
+  },
+  "lcsc_stock": 6881,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.0517,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.8174,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.7169,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.5916,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.5358,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.5023,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1736,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1349,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1184,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0977,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0885,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0829,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/86909.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/bd790eedb548b5ab8370fe438c479b0f.pdf?productCode=C85734",
+  "datasheet_file": "references/suppliers/c85734/c85734-datasheet.pdf"
+}

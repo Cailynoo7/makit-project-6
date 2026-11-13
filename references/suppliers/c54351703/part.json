@@ -1,0 +1,88 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T02:51:41.212Z",
+  "lcsc_code": "C54351703",
+  "manufacturer": "OSRAM(欧司朗)",
+  "manufacturer_part_number": "GW CPSRM1.PM-N7P1-XX55-1-700-R33",
+  "description": "GW CPSRM1.PM-N7P1-XX55-1-700-R33",
+  "category": "发光二极管/LED",
+  "package": "SMD-3P,3.5x3.5mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "ESD Withstand Voltage": "8kV",
+    "Color Temperature": "4000K",
+    "Lens Color": "Water Clear",
+    "Viewing Angle": "120°",
+    "Illumination Color": "White",
+    "Forward Current": "700mA",
+    "Lamp Holder Type": "3.5mm round lamp head",
+    "Operating Temperature": "-40°C~+125°C",
+    "Voltage - Forward(Vf)": "2.83V"
+  },
+  "lcsc_stock": 1130,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 5.82,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 4.74,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 4.2,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.67,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 3.35,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 3.19,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.9556,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.7783,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.6896,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.6026,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.5501,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.5238,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/57658993.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/4ebd874a5a3144677ed6206ea510a039.pdf?productCode=C54351703",
+  "datasheet_file": "references/suppliers/c54351703/c54351703-datasheet.pdf"
+}

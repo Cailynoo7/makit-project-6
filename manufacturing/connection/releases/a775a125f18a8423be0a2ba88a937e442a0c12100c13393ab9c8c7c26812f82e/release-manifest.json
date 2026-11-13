@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "a775a125f18a8423be0a2ba88a937e442a0c12100c13393ab9c8c7c26812f82e",
+  "designId": "connection",
+  "buildId": "66d1a8cb083b740ca5c84be91aaddf292c403ef1013ef63138dd3a67d51fffac",
+  "candidateId": "4f62e1263f07f519b030b9d6bab1fc655137dfc3658d81615ca6f5ac2c6addaa",
+  "approvedAt": "2026-11-13T08:24:36.037Z",
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "drill/board-NPTH.drl",
+        "drill/board-PTH.drl",
+        "drill/connection-drill-report.txt",
+        "gerbers/board-B_Cu.gbl",
+        "gerbers/board-B_Mask.gbs",
+        "gerbers/board-B_Paste.gbp",
+        "gerbers/board-B_Silkscreen.gbo",
+        "gerbers/board-Edge_Cuts.gm1",
+        "gerbers/board-F_Cu.gtl",
+        "gerbers/board-F_Mask.gts",
+        "gerbers/board-F_Paste.gtp",
+        "gerbers/board-F_Silkscreen.gto",
+        "gerbers/board-In1_Cu.g1",
+        "gerbers/board-In2_Cu.g2",
+        "gerbers/board-In3_Cu.g3",
+        "gerbers/board-In4_Cu.g4",
+        "gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "jlc-smt-bom.csv",
+        "jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "3dmodels/connection.3dshapes/C_0603_1608Metric.step",
+        "3dmodels/connection.3dshapes/C_0805_2012Metric.step",
+        "3dmodels/connection.3dshapes/C_1210_3225Metric.step",
+        "3dmodels/connection.3dshapes/csd85301q2-supplier-faceted.step",
+        "3dmodels/connection.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+        "3dmodels/connection.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+        "3dmodels/connection.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+        "3dmodels/connection.3dshapes/R_0603_1608Metric.step",
+        "3dmodels/connection.3dshapes/R_1206_3216Metric.step",
+        "3dmodels/connection.3dshapes/tps61500pwp-supplier.step",
+        "assembly.glb",
+        "assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "package": [
+    {
+      "path": "3dmodels/connection.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "sizeBytes": 43450
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "sizeBytes": 43618
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "sizeBytes": 43502
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "sizeBytes": 75616
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+      "sizeBytes": 110633
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+      "sha256": "e2494ee514c349bfd27fc085f05e73e35a61d73b2303a72b707c562b1f6b7dc6",
+      "sizeBytes": 251100
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "sizeBytes": 40618
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "sizeBytes": 40414
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/csd85301q2-supplier-faceted.step",
+      "sha256": "0fb568b58047397eb6ec2b695e392929bd8cedf3e2bfe9e56019b18baef75a1d",
+      "sizeBytes": 716887
+    },
+    {
+      "path": "3dmodels/connection.3dshapes/tps61500pwp-supplier.step",
+      "sha256": "284276d725d48c4d5b8b4d6b8c356ebd11eb0de3fcba22be6d02ab2af45d5df1",
+      "sizeBytes": 1934827
+    },
+    {
+      "path": "assembly.glb",
+      "sha256": "36b69722efb8efd06eb468a5630a0e6c75defa0008e5704fd3cf5c28b451908e",
+      "sizeBytes": 81747044
+    },
+    {
+      "path": "assembly.step",
+      "sha256": "ed34eb03e927f6866d5bbc050583d91d288bcd12a09a49cda3c53fbb0bde3b60",
+      "sizeBytes": 37450551
+    },
+    {
+      "path": "circuit.json",
+      "sha256": "fce546546f46f471a67f77528863ec1cc5ee4e3392add5d70d16e4ce0f414844",
+      "sizeBytes": 2887207
+    },
+    {
+      "path": "drill/board-NPTH.drl",
+      "sha256": "ce4df28ba11a36fa1da9f6daaa2cdbc25cffc632ac98d7c318746bfa9f17a007",
+      "sizeBytes": 355
+    },
+    {
+      "path": "drill/board-PTH.drl",
+      "sha256": "8cc72d28f6ba2debefb37c829d15effe3023ae0be4bf2ab5cbe3fd48edb013e0",
+      "sizeBytes": 2520
+    },
+    {
+      "path": "drill/connection-drill-report.txt",
+      "sha256": "6840fca5fbb021c3da19f25bb158c0452b7587c2bb336aabc8d21f39e7bfcef8",
+      "sizeBytes": 878
+    },
+    {
+      "path": "gerbers/board-B_Cu.gbl",
+      "sha256": "b884e583edd13b78ffc5ea2f21af625f30c2ea7c7793ec2f1a3760b9bb9a5cbd",
+      "sizeBytes": 278095
+    },
+    {
+      "path": "gerbers/board-B_Mask.gbs",
+      "sha256": "2ff379d2354de6e39c42418261cb9bfdc1b2ff91d631fb40797e483c96ba3479",
+      "sizeBytes": 6921
+    },
+    {
+      "path": "gerbers/board-B_Paste.gbp",
+      "sha256": "06e39bb30873298f221fdc712fb00f98951cd756bc49c076c9bccfd9acf81776",
+      "sizeBytes": 5647
+    },
+    {
+      "path": "gerbers/board-B_Silkscreen.gbo",
+      "sha256": "201ac4948f6b980d3e12c25888dcd9b188d1b8acb2c207f62283c518add3907f",
+      "sizeBytes": 8228
+    },
+    {
+      "path": "gerbers/board-Edge_Cuts.gm1",
+      "sha256": "e412437ebd9b870b4a15167bdd34215c0ef64d1c17398122f1c0dbad1902215b",
+      "sizeBytes": 680
+    },
+    {
+      "path": "gerbers/board-F_Cu.gtl",
+      "sha256": "b1f9381b0358e0b7a856756858370a92442f0b7d8c20cf17d17189481e85bba6",
+      "sizeBytes": 231420
+    },
+    {
+      "path": "gerbers/board-F_Mask.gts",
+      "sha256": "8502c1d8a98cabba63735fc9d51f20998048bfe3223c3baba3d13979d34d2df3",
+      "sizeBytes": 5252
+    },
+    {
+      "path": "gerbers/board-F_Paste.gtp",
+      "sha256": "e38c1f05b6c6bca9d63af392a3879db83726c43fbdfc000af98fd23ad7a44527",
+      "sizeBytes": 3973
+    },
+    {
+      "path": "gerbers/board-F_Silkscreen.gto",
+      "sha256": "e51eaf8b5b3148f1939ebbcb7f680a6782cb22f6521d2e7ef4b47b27a701edef",
+      "sizeBytes": 19825
+    },
+    {
+      "path": "gerbers/board-In1_Cu.g1",
+      "sha256": "7b71fd351187121fff0ad560d210bfca7e20c395a946ca81b7af8f4ac1a23ea5",
+      "sizeBytes": 201555
+    },
+    {
+      "path": "gerbers/board-In2_Cu.g2",
+      "sha256": "b381710179c76836c877eda809c45f79cfee4c0c48522587c233146813d1fc3c",
+      "sizeBytes": 260039
+    },
+    {
+      "path": "gerbers/board-In3_Cu.g3",
+      "sha256": "0881e735e5c34ea0800a4202108d52ba9c029871f9cbaa3da395706160fa832d",
+      "sizeBytes": 9623
+    },
+    {
+      "path": "gerbers/board-In4_Cu.g4",
+      "sha256": "54f3d80c1a0010c1ecf13cb75f5d1c1839f35d8a537a14c07d61cec6efa9a80f",
+      "sizeBytes": 196193
+    },
+    {
+      "path": "gerbers/board-job.gbrjob",
+      "sha256": "176a54878e4e95ea82377d2a3ab383a47116334fc9d27f28a023387b932d50df",
+      "sizeBytes": 4427
+    },
+    {
+      "path": "jlc-smt-bom.csv",
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
+      "sizeBytes": 72
+    },
+    {
+      "path": "jlc-smt-placement.csv",
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
+      "sizeBytes": 83
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "71d4ab4715f1b6c8124ec574d950994490234294707ee603ea352f54c4a76713",
+      "sizeBytes": 51507
+    },
+    {
+      "path": "previews/gerber-bottom.png",
+      "sha256": "a3b82e3fdd830c6580f988c1b580665c540996e73fb9ac21183fd1eb9e5333c3",
+      "sizeBytes": 282269
+    },
+    {
+      "path": "previews/gerber-bottom.svg",
+      "sha256": "5d0d6764b060ea152774f6d0830f158eb761b32e6396e8d3511b8d94b6d50bfd",
+      "sizeBytes": 282007
+    },
+    {
+      "path": "previews/gerber-top.png",
+      "sha256": "c71f600bc87ce82dd5cabf825ecb0446679281a64ef9a61bfac1ce069fa3b80b",
+      "sizeBytes": 277929
+    },
+    {
+      "path": "previews/gerber-top.svg",
+      "sha256": "950ab203e065f39df4ad694c3b4abd6ddc763402b46dc0b362bf612886f6d9f1",
+      "sizeBytes": 240259
+    }
+  ]
+}

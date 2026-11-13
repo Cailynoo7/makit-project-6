@@ -1,0 +1,1 @@
+publish("xiao_reference", asset("design/helicopter/source/assets/d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735.step"), "XIAO ESP32C3参考模型")

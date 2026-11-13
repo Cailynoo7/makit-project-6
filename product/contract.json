@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "artifact_level": "assembly",
+  "deliverable_intent": "manufacturing_package",
+  "summary": "参考图直升机造型磁吸充电风扇台灯；外形放大1.25倍，机头到尾端不超过250mm。",
+  "required_interfaces": [
+    {
+      "id": "magnet_mount",
+      "kind": "internal_fit",
+      "description": "顶部容纳直径30厚2mm磁铁，外露约0.5mm",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "rotor_drive",
+      "kind": "internal_fit",
+      "description": "固定吊杆与旋转主旋翼、轴承及传动的接口",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "lighting",
+      "kind": "internal_fit",
+      "description": "机身前下方透光件与独立照明支路",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "controls",
+      "kind": "internal_fit",
+      "description": "两侧曲面浅蓝圆窗按钮及图标",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "charging",
+      "kind": "internal_fit",
+      "description": "尾梁下方USB-C及插拔空间",
+      "source": "user_requested",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "reference_image",
+      "source": "user_requested",
+      "description": "用户上传直升机造型图，以文字修改主旋翼与侧窗",
+      "path": "product/references/uploads/20261111T052250721Z-1-3.png"
+    },
+    {
+      "id": "xiao_community_step",
+      "source": "existing_workspace",
+      "description": "Community XIAO ESP32C3 STEP, registry vinjocarsales/xiao-series0.1.7; validate against official board dimensions, license unset",
+      "path": "product/references/mechanical/xiao-c3-community.step"
+    },
+    {
+      "id": "switch_drawing",
+      "source": "catalog_required",
+      "description": "Kinghelm KH-6X6X4.3H-STM manufacturer drawing: H4.3mm, actuator travel0.3+/-0.1mm; dimensional authority over mismatched supplier STEP",
+      "path": "references/suppliers/c2837530/c2837530-datasheet.pdf"
+    }
+  ],
+  "assembly_story": {
+    "installation": "顶部磁铁吸附铁磁性床架或钢板，固定吊杆传递承重。",
+    "maintenance": "机身检修盖可拆，电池、驱动及旋翼可维修。",
+    "user_access": [
+      "两侧按钮",
+      "尾梁下方USB-C"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "enclosure",
+        "design_id": "helicopter",
+        "description": "直升机台灯装配及打印分件",
+        "delivery_target": "manufacturing_handoff",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "magnet_mount",
+          "rotor_drive",
+          "lighting",
+          "controls",
+          "charging"
+        ],
+        "reference_ids": [
+          "reference_image",
+          "xiao_community_step"
+        ]
+      },
+      {
+        "role": "charging_fit_test",
+        "design_id": "charging_fit",
+        "description": "局部球壳充电口与XIAO卡座适配试件，实物试装用",
+        "delivery_target": "fit_check",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "charging"
+        ],
+        "reference_ids": [
+          "xiao_community_step"
+        ]
+      },
+      {
+        "role": "switch_reference",
+        "design_id": "switch_reference",
+        "description": "按厂商图纸重建的保守开关装配参考外形；不打印，不改变采购型号",
+        "delivery_target": "visual_review",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "controls"
+        ],
+        "reference_ids": [
+          "switch_drawing"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}

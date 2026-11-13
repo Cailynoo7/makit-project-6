@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "switch",
+      "label": "switch",
+      "cells": [
+        {
+          "id": "switch",
+          "target": "switch",
+          "order": 0,
+          "path": "design/switch_reference/source/parts/switch/000-switch.py",
+          "sha256": "02a98e8c4f5dc4a1a3b110cb4e321cc964d790d1eed598b9b84d98432a4b86bc"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "switch",
+      "target": "switch",
+      "label": "图纸开关装配参考",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "d4e8925d26e3c89880bbdc23f16222e0bc47c96fe7d7acf1e5f68d0533326ec0",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-11-12T08:17:20.376Z",
+  "parameters": {
+    "switch": {
+      "lead_mounting_clearance": 0
+    }
+  }
+}

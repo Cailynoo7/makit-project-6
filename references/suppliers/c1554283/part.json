@@ -1,0 +1,90 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:32:56.635Z",
+  "lcsc_code": "C1554283",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "TPS61500PWP",
+  "description": "单芯片开关稳压器用于高亮度LED驱动",
+  "category": "LED驱动",
+  "package": "HTSSOP-14-EP",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Frequency - Switching": "1.2MHz",
+    "Dimming": "Analog;PWM",
+    "Number of Channels": "1",
+    "Type": "DC-DC",
+    "Switch tube (built-in/external)": "Built-in",
+    "Output Voltage": "2.9V~38V",
+    "Output Current": "3A",
+    "Operating Temperature": "-40°C~+85°C",
+    "Features": "Over Voltage Protection;Built-in soft-start;Over-Temperature Protection (OTP)",
+    "Topology": "Boost",
+    "Voltage - Input(DC)": "2.9V~18V"
+  },
+  "lcsc_stock": 258,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 15.63,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 13.78,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 12.84,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 90,
+      "unitPrice": 11.58,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 11.12,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 10.93,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 2.5788,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.2736,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 2.1185,
+      "currency": "USD"
+    },
+    {
+      "quantity": 90,
+      "unitPrice": 1.9106,
+      "currency": "USD"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 1.8347,
+      "currency": "USD"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 1.8034,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/1645090.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9766003e8b0d81036438896263c3df0e.pdf?productCode=C1554283",
+  "datasheet_file": "references/suppliers/c1554283/c1554283-datasheet.pdf"
+}

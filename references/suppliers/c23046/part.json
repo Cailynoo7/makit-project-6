@@ -1,0 +1,76 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T05:43:37.129Z",
+  "lcsc_code": "C23046",
+  "manufacturer": "UNI-ROYAL(厚声)",
+  "manufacturer_part_number": "0603WAF4991T5E",
+  "description": "4.99kΩ ±1% 100mW 0603 Thick Film Resistor",
+  "category": "贴片电阻",
+  "package": "0603",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Power(Watts)": "100mW",
+    "Resistance": "4.99kΩ",
+    "Voltage Rating": "75V",
+    "Type": "Thick Film Resistor",
+    "Temperature Coefficient": "±100ppm/°C",
+    "Tolerance": "±1%",
+    "Operating Temperature": "-55°C~+155°C"
+  },
+  "lcsc_stock": 12311,
+  "price_breaks": [
+    {
+      "quantity": 100,
+      "unitPrice": 0.0125,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0095,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0079,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0069,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.006,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0021,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0016,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0014,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0012,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.001,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/23773.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23046",
+  "datasheet_file": "references/suppliers/c23046/c23046-datasheet.pdf"
+}

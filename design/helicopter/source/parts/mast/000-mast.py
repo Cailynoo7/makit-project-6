@@ -1,0 +1,14 @@
+s=part('fuselage')
+diameter=param('enlarged_mast_diameter',13.5)
+height=param('enlarged_mast_height',33.95)
+bore=param('mast_bolt_bore',4.6)
+seat=param('mast_inner_race_seat_z',59.0)
+foot_d=param('mast_inner_race_foot_diameter',12.6)
+visible_bottom=100-height
+body=Pos(0,0,(visible_bottom+100)/2)*Cylinder(diameter/2,height)
+body=body.fuse(Pos(0,0,(seat+visible_bottom)/2)*Cylinder(foot_d/2,visible_bottom-seat))
+body=body.cut(Pos(0,0,(seat+100)/2)*Cylinder(bore/2,100-seat+1))
+body=body.cut(s.joint.through_cuts[1])
+body=Pos(0,0,-83.025)*body
+body.color=srgb('#FFFFFF')
+publish('mast',body,'固定吊杆与内圈压肩',material='petg')

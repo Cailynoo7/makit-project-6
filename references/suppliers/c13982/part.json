@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:55:11.453Z",
+  "lcsc_code": "C13982",
+  "manufacturer": "Littelfuse(美国力特)",
+  "manufacturer_part_number": "0451003.MRL",
+  "description": "3A 125V Fuse Surface Mount 2410",
+  "category": "一次性保险丝",
+  "package": "2410",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Melting I2t": "0.459",
+    "Interrupt Rating": "50A",
+    "Operating Temperature": "-55°C~+125°C",
+    "Width": "2.5mm",
+    "Type": "Surface Mount Fuse",
+    "Length": "6.1mm",
+    "Current Rating": "3A",
+    "Voltage Rating (DC)": "125V"
+  },
+  "lcsc_stock": 6644,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.5699,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.2625,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 1.1124,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.9479,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.9111,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.889,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.2556,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.2055,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1811,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.1543,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.1483,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1447,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/14638.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0fa73ac0c22d46e28886e67d6778eaaf.pdf?productCode=C13982",
+  "datasheet_file": "references/suppliers/c13982/c13982-datasheet.pdf"
+}

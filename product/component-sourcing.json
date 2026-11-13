@@ -1,0 +1,804 @@
+{
+  "observed_on": "2026-11-12",
+  "supplier": "LCSC",
+  "parts": {
+    "C20917": {
+      "id": "lcsc:C20917",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C20917",
+      "manufacturer": "AOS",
+      "manufacturerPartNumber": "AO3400A",
+      "description": "N-Channel 30V Surface Mount SOT-23-3L",
+      "category": "场效应管(MOSFET)",
+      "productUrl": "https://item.szlcsc.com/21629.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20221229_Alpha---Omega-Semicon-AO3400A_C20917_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/130876b936da464599428c58fd8de8f6.pdf?productCode=C20917",
+      "keySpecs": {
+        "Output Capacitance(Coss)": "75pF",
+        "Ciss-Input Capacitance": "630pF",
+        "Pd - Power Dissipation": "1.4W",
+        "Operating Temperature": "-55°C~+150°C",
+        "Drain to Source Voltage": "30V",
+        "Current - Continuous Drain(Id)": "5.7A",
+        "Reverse Transfer Capacitance (Crss)": "50pF",
+        "RDS(on)": "48mΩ@2.5V",
+        "Number": "1 N-channel",
+        "Gate Charge(Qg)": "7nC@10V",
+        "Vgs": "±12V",
+        "Gate Threshold Voltage (Vgs(th))": "1.45V",
+        "Type": "N-Channel"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T02:59:44.300Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 67873
+      },
+      "priceBreaks": [
+        {
+          "quantity": 5,
+          "unitPrice": 0.49,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.386,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.3325,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.2884,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 3000,
+          "unitPrice": 0.273,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 6000,
+          "unitPrice": 0.2626,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5,
+          "unitPrice": 0.081,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.0638,
+          "currency": "USD"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.055,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.0477,
+          "currency": "USD"
+        },
+        {
+          "quantity": 3000,
+          "unitPrice": 0.0451,
+          "currency": "USD"
+        },
+        {
+          "quantity": 6000,
+          "unitPrice": 0.0434,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 5,
+      "packaging": "SOT-23",
+      "jlcSmtLibrary": "basic",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T02:59:44.300Z"
+    },
+    "C80214": {
+      "id": "lcsc:C80214",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C80214",
+      "manufacturer": "MICRONE(南京微盟)",
+      "manufacturerPartNumber": "MEL7135PG",
+      "description": "LED Driver IC 1 Output SOT-89",
+      "category": "LED驱动",
+      "productUrl": "https://item.szlcsc.com/81359.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20250814_MICRONE-MEL7135PG_C80214_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/05432fb6d6b74673b053705b65285d53.pdf?productCode=C80214",
+      "keySpecs": {
+        "Operating temperature": "-40°C~+85°C",
+        "Number of Channels": "1",
+        "Output Current": "350mA",
+        "Voltage - Input(DC)": "2.7V~6V"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T02:59:49.601Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 1865
+      },
+      "priceBreaks": [
+        {
+          "quantity": 5,
+          "unitPrice": 0.7597,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.5996,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.5196,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.4255,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.3775,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.3535,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5,
+          "unitPrice": 0.1248,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.0985,
+          "currency": "USD"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.0854,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.0699,
+          "currency": "USD"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.062,
+          "currency": "USD"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0581,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 5,
+      "packaging": "SOT-89",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T02:59:49.601Z"
+    },
+    "C2480": {
+      "id": "lcsc:C2480",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C2480",
+      "manufacturer": "MDD(辰达半导体)",
+      "manufacturerPartNumber": "SS14",
+      "description": "Diode Independent 40V 1A Surface Mount SMA(DO-214AC)",
+      "category": "肖特基二极管",
+      "productUrl": "https://item.szlcsc.com/2857.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20230314_MDD-Microdiode-Semiconductor-SS14_C2480_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/9977bb85cd7e349115b7bcb7054cfa0d.pdf?productCode=C2480",
+      "keySpecs": {
+        "Operating Junction Temperature Range": "-55°C~+150°C",
+        "Voltage - DC Reverse (Vr) (Max)": "40V",
+        "Diode Configuration": "Standalone",
+        "Voltage - Forward(Vf@If)": "550mV@1A",
+        "Reverse Leakage Current (Ir)": "300uA@40V",
+        "Non-Repetitive Peak Forward Surge Current": "25A",
+        "Current - Rectified": "1A"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T02:59:46.544Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 20489
+      },
+      "priceBreaks": [
+        {
+          "quantity": 50,
+          "unitPrice": 0.1165,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.0927,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1500,
+          "unitPrice": 0.0821,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0585,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 25000,
+          "unitPrice": 0.0553,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.0532,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.0193,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.0154,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1500,
+          "unitPrice": 0.0136,
+          "currency": "USD"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0097,
+          "currency": "USD"
+        },
+        {
+          "quantity": 25000,
+          "unitPrice": 0.0092,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.0088,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 50,
+      "packaging": "SMA(DO-214AC)",
+      "jlcSmtLibrary": "basic",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T02:59:46.544Z"
+    },
+    "C22775": {
+      "id": "lcsc:C22775",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C22775",
+      "manufacturer": "UNI-ROYAL(厚声)",
+      "manufacturerPartNumber": "0603WAF1000T5E",
+      "description": "100Ω ±1% 100mW 0603 Thick Film Resistor",
+      "category": "贴片电阻",
+      "productUrl": "https://item.szlcsc.com/23502.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20251025_UNI-ROYAL-0603WAF1000T5E_C22775_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22775",
+      "keySpecs": {
+        "Power(Watts)": "100mW",
+        "Resistance": "100Ω",
+        "Voltage Rating": "75V",
+        "Type": "Thick Film Resistor",
+        "Tolerance": "±1%",
+        "Temperature Coefficient": "±100ppm/°C",
+        "Operating Temperature": "-55°C~+155°C"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T02:59:52.470Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 16672
+      },
+      "priceBreaks": [
+        {
+          "quantity": 100,
+          "unitPrice": 0.0122,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.0096,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0084,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 10000,
+          "unitPrice": 0.0067,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.0062,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 100,
+          "unitPrice": 0.0021,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.0016,
+          "currency": "USD"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0014,
+          "currency": "USD"
+        },
+        {
+          "quantity": 10000,
+          "unitPrice": 0.0012,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.0011,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 100,
+      "packaging": "0603",
+      "jlcSmtLibrary": "basic",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T02:59:52.470Z"
+    },
+    "C14675": {
+      "id": "lcsc:C14675",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C14675",
+      "manufacturer": "YAGEO(国巨)",
+      "manufacturerPartNumber": "RC0603FR-07100KL",
+      "description": "厚膜电阻 100kΩ ±1% 100mW",
+      "category": "贴片电阻",
+      "productUrl": "https://item.szlcsc.com/15343.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20250410_YAGEO-RC0603FR-07100KL_C14675_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/b426be3ce22c6de3e0c3a2248e49159e.pdf?productCode=C14675",
+      "keySpecs": {
+        "Power(Watts)": "100mW",
+        "Resistance": "100kΩ",
+        "Voltage Rating": "75V",
+        "Type": "Thick Film Resistor",
+        "Temperature Coefficient": "±100ppm/°C",
+        "Tolerance": "±1%",
+        "Operating Temperature": "-55°C~+155°C"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T02:59:55.447Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 99743
+      },
+      "priceBreaks": [
+        {
+          "quantity": 100,
+          "unitPrice": 0.0125,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.0094,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0079,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 10000,
+          "unitPrice": 0.0072,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.0065,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 100,
+          "unitPrice": 0.0021,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.0016,
+          "currency": "USD"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0014,
+          "currency": "USD"
+        },
+        {
+          "quantity": 10000,
+          "unitPrice": 0.0012,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.0011,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 100,
+      "packaging": "0603",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T02:59:55.447Z"
+    },
+    "C14663": {
+      "id": "lcsc:C14663",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C14663",
+      "manufacturer": "YAGEO(国巨)",
+      "manufacturerPartNumber": "CC0603KRX7R9BB104",
+      "description": "100nF ±10% 50V Ceramic Capacitor X7R 0603",
+      "category": "贴片电容(MLCC)",
+      "productUrl": "https://item.szlcsc.com/15331.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20250715_YAGEO-CC0603KRX7R9BB104_C14663_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/23ccee80ee542e7cf156a772bb589942.pdf?productCode=C14663",
+      "keySpecs": {
+        "Capacitance": "100nF",
+        "Temperature Coefficient": "X7R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "50V"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T02:59:58.656Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 18961
+      },
+      "priceBreaks": [
+        {
+          "quantity": 50,
+          "unitPrice": 0.0365,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.0285,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1500,
+          "unitPrice": 0.0241,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 4000,
+          "unitPrice": 0.0214,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 24000,
+          "unitPrice": 0.0191,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 48000,
+          "unitPrice": 0.0178,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.0061,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.0048,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1500,
+          "unitPrice": 0.004,
+          "currency": "USD"
+        },
+        {
+          "quantity": 4000,
+          "unitPrice": 0.0036,
+          "currency": "USD"
+        },
+        {
+          "quantity": 24000,
+          "unitPrice": 0.0032,
+          "currency": "USD"
+        },
+        {
+          "quantity": 48000,
+          "unitPrice": 0.003,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 50,
+      "packaging": "0603",
+      "jlcSmtLibrary": "basic",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T02:59:58.656Z"
+    },
+    "C15850": {
+      "id": "lcsc:C15850",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C15850",
+      "manufacturer": "SAMSUNG(三星)",
+      "manufacturerPartNumber": "CL21A106KAYNNNE",
+      "description": "10uF ±10% 25V Ceramic Capacitor X5R 0805",
+      "category": "贴片电容(MLCC)",
+      "productUrl": "https://item.szlcsc.com/16532.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20180914_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850_front_10.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15850",
+      "keySpecs": {
+        "Capacitance": "10uF",
+        "Temperature Coefficient": "X5R",
+        "Tolerance": "±10%",
+        "Voltage Rating": "25V"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T03:00:02.044Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 92206
+      },
+      "priceBreaks": [
+        {
+          "quantity": 20,
+          "unitPrice": 0.1919,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 200,
+          "unitPrice": 0.144,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 600,
+          "unitPrice": 0.1227,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.1067,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 10000,
+          "unitPrice": 0.1003,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 20000,
+          "unitPrice": 0.096,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 20,
+          "unitPrice": 0.0317,
+          "currency": "USD"
+        },
+        {
+          "quantity": 200,
+          "unitPrice": 0.0238,
+          "currency": "USD"
+        },
+        {
+          "quantity": 600,
+          "unitPrice": 0.0203,
+          "currency": "USD"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.0177,
+          "currency": "USD"
+        },
+        {
+          "quantity": 10000,
+          "unitPrice": 0.0166,
+          "currency": "USD"
+        },
+        {
+          "quantity": 20000,
+          "unitPrice": 0.0159,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 20,
+      "packaging": "0805",
+      "jlcSmtLibrary": "basic",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T03:00:02.044Z"
+    },
+    "C2837530": {
+      "id": "lcsc:C2837530",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C2837530",
+      "manufacturer": "kinghelm(金航标)",
+      "manufacturerPartNumber": "KH-6X6X4.3H-STM",
+      "description": "Tactile Switch SPST 4.3mm Gull Wing 6mm x 6mm Surface Mount",
+      "category": "轻触开关",
+      "productUrl": "https://item.szlcsc.com/3009600.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20230120_Shenzhen-Kinghelm-Elec-KH-6X6X4-3H-STM_C2837530_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/3a63fc257cb630e20c8ec53c2547a77a.pdf?productCode=C2837530",
+      "keySpecs": {
+        "Voltage Rating": "12V",
+        "Switching Life": "80,000 cycles",
+        "with Bracket": "Without Bracket",
+        "Width": "6mm",
+        "Termination Style": "Gull Wing",
+        "Actuator Style": "Round Button",
+        "Mounting Type": "Surface Mount,Vertical",
+        "Circuit": "SPST",
+        "Length": "6mm",
+        "Actuator/Cap Color": "Black",
+        "Height": "4.3mm",
+        "Contact Current": "50mA"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T03:00:05.277Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 635
+      },
+      "priceBreaks": [
+        {
+          "quantity": 50,
+          "unitPrice": 0.1325,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.1055,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.083,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.074,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 25000,
+          "unitPrice": 0.0662,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.062,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.022,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.0175,
+          "currency": "USD"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.0138,
+          "currency": "USD"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.0123,
+          "currency": "USD"
+        },
+        {
+          "quantity": 25000,
+          "unitPrice": 0.011,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50000,
+          "unitPrice": 0.0103,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 50,
+      "packaging": "SMD-4P,6x6mm",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T03:00:05.277Z"
+    }
+  }
+}

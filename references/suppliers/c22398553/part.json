@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:23:56.251Z",
+  "lcsc_code": "C22398553",
+  "manufacturer": "HONGLITRONIC(鸿利光电)",
+  "manufacturer_part_number": "HL-LM002H384W-5B2C5(Ra2)(ANSI-4000K)",
+  "description": "自然白色 4000K CRI:80",
+  "category": "COB光源",
+  "package": "SMD,13.5x13.5mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Lumens": "620lm",
+    "Color Temperature": "4000K",
+    "CRI Color Rendering Index": "80",
+    "Viewing Angle": "120°",
+    "Power(Watts)": "4.85W",
+    "Voltage - Forward(Vf)": "16V",
+    "Illumination Color": "Natural White",
+    "Operating Temperature": "-35°C~+100°C"
+  },
+  "lcsc_stock": 37,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 3.21,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.54,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 2.25,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 108,
+      "unitPrice": 1.9,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 1.74,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1296,
+      "unitPrice": 1.65,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.531,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.4202,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.3722,
+      "currency": "USD"
+    },
+    {
+      "quantity": 108,
+      "unitPrice": 0.3143,
+      "currency": "USD"
+    },
+    {
+      "quantity": 540,
+      "unitPrice": 0.2879,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1296,
+      "unitPrice": 0.273,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/24012654.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/7636cb76ede70875ee49a1607374b470.pdf?productCode=C22398553",
+  "datasheet_file": "references/suppliers/c22398553/c22398553-datasheet.pdf"
+}

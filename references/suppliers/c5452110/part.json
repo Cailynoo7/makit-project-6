@@ -1,0 +1,23 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:33:09.499Z",
+  "lcsc_code": "C5452110",
+  "manufacturer": "FLYOUNG(远阳)",
+  "manufacturer_part_number": "FLY-18650-3000mAh",
+  "description": "FLYOUNG(远阳) 锂离子电池 3.7V 3000mAh 1个",
+  "category": "锂离子柱状电池",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {},
+  "lcsc_stock": 56,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 18.05,
+      "currency": "CNY"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/6357412.html",
+  "datasheet_url": "https://atta.szlcsc.com/upload/public/pdf/source/20230427/A91FE72A94D85D9EAD61ED58601206E5.pdf",
+  "datasheet_file": "references/suppliers/c5452110/c5452110-datasheet.pdf"
+}

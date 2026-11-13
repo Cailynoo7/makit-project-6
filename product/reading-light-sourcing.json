@@ -1,0 +1,849 @@
+{
+  "observed_on": "2026-11-12",
+  "supplier": "LCSC",
+  "parts": {
+    "C22398553": {
+      "id": "lcsc:C22398553",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C22398553",
+      "manufacturer": "HONGLITRONIC(鸿利光电)",
+      "manufacturerPartNumber": "HL-LM002H384W-5B2C5(Ra2)(ANSI-4000K)",
+      "description": "自然白色 4000K CRI:80",
+      "category": "COB光源",
+      "productUrl": "https://item.szlcsc.com/24012654.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20240622_HONGLITRONIC-Hongli-Zhihui--HONGLITRONIC-HL-LM002H384W-5B2C5-Ra2-ANSI-4000K_C22398553_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/7636cb76ede70875ee49a1607374b470.pdf?productCode=C22398553",
+      "keySpecs": {
+        "Lumens": "620lm",
+        "Color Temperature": "4000K",
+        "CRI Color Rendering Index": "80",
+        "Viewing Angle": "120°",
+        "Power(Watts)": "4.85W",
+        "Voltage - Forward(Vf)": "16V",
+        "Illumination Color": "Natural White",
+        "Operating Temperature": "-35°C~+100°C"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:23:56.251Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 37
+      },
+      "priceBreaks": [
+        {
+          "quantity": 1,
+          "unitPrice": 3.21,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 2.54,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 2.25,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 108,
+          "unitPrice": 1.9,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 540,
+          "unitPrice": 1.74,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1296,
+          "unitPrice": 1.65,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0.531,
+          "currency": "USD"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 0.4202,
+          "currency": "USD"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 0.3722,
+          "currency": "USD"
+        },
+        {
+          "quantity": 108,
+          "unitPrice": 0.3143,
+          "currency": "USD"
+        },
+        {
+          "quantity": 540,
+          "unitPrice": 0.2879,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1296,
+          "unitPrice": 0.273,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 1,
+      "packaging": "SMD,13.5x13.5mm",
+      "jlcSmtLibrary": "unknown",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:23:56.251Z"
+    },
+    "C1554283": {
+      "id": "lcsc:C1554283",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C1554283",
+      "manufacturer": "TI(德州仪器)",
+      "manufacturerPartNumber": "TPS61500PWP",
+      "description": "单芯片开关稳压器用于高亮度LED驱动",
+      "category": "LED驱动",
+      "productUrl": "https://item.szlcsc.com/1645090.html",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/9766003e8b0d81036438896263c3df0e.pdf?productCode=C1554283",
+      "keySpecs": {
+        "Frequency - Switching": "1.2MHz",
+        "Dimming": "Analog;PWM",
+        "Number of Channels": "1",
+        "Type": "DC-DC",
+        "Switch tube (built-in/external)": "Built-in",
+        "Output Voltage": "2.9V~38V",
+        "Output Current": "3A",
+        "Operating Temperature": "-40°C~+85°C",
+        "Features": "Over Voltage Protection;Built-in soft-start;Over-Temperature Protection (OTP)",
+        "Topology": "Boost",
+        "Voltage - Input(DC)": "2.9V~18V"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:32:56.635Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 258
+      },
+      "priceBreaks": [
+        {
+          "quantity": 1,
+          "unitPrice": 15.63,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 13.78,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 12.84,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 90,
+          "unitPrice": 11.58,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 540,
+          "unitPrice": 11.12,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 900,
+          "unitPrice": 10.93,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 2.5788,
+          "currency": "USD"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 2.2736,
+          "currency": "USD"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 2.1185,
+          "currency": "USD"
+        },
+        {
+          "quantity": 90,
+          "unitPrice": 1.9106,
+          "currency": "USD"
+        },
+        {
+          "quantity": 540,
+          "unitPrice": 1.8347,
+          "currency": "USD"
+        },
+        {
+          "quantity": 900,
+          "unitPrice": 1.8034,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 1,
+      "packaging": "HTSSOP-14-EP",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:32:56.635Z"
+    },
+    "C37593": {
+      "id": "lcsc:C37593",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C37593",
+      "manufacturer": "TI(德州仪器)",
+      "manufacturerPartNumber": "ADS1115IDGSR",
+      "description": "具有内部基准、振荡器和可编程比较器且兼容 I2C 的ADS111x、超小型、低功耗 860SPS、16位ADC",
+      "category": "模数转换芯片ADC",
+      "productUrl": "https://item.szlcsc.com/38573.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20190612_Texas-Instruments-ADS1115IDGSR_C37593_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/ab99f5e86cc44c5b8c94f5d72223386b.pdf?productCode=C37593",
+      "keySpecs": {
+        "Operating Temperature": "-40°C~+125°C",
+        "Interface": "I2C",
+        "Quiescent Current (Iq)": "500nA",
+        "Voltage - Supply": "2V~5.5V",
+        "Number of Channels": "4",
+        "Integral non - linearity": "1LSB",
+        "Voltage Reference": "Built-in",
+        "Clock/Oscillator": "Built-in",
+        "Features": "Multiplexers;Integrated modulator;Built-in digital filter;Power-on reset",
+        "Resolution(Bits)": "860Hz;16",
+        "ADC architecture": "Sigma-Delta",
+        "Programmable Gain": "Support"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:34:37.627Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 11740
+      },
+      "priceBreaks": [
+        {
+          "quantity": 1,
+          "unitPrice": 7.83,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 6.91,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 6.04,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 100,
+          "unitPrice": 5.39,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 5.12,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 4.99,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 1.2935,
+          "currency": "USD"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 1.1416,
+          "currency": "USD"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 0.9978,
+          "currency": "USD"
+        },
+        {
+          "quantity": 100,
+          "unitPrice": 0.8905,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.8459,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.8244,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 1,
+      "packaging": "VSSOP-10",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:34:37.627Z"
+    },
+    "C5289740": {
+      "id": "lcsc:C5289740",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C5289740",
+      "manufacturer": "FLYOUNG(远阳)",
+      "manufacturerPartNumber": "FLY.18650.3200.3C",
+      "description": "FLYOUNG(远阳) 锂离子电池 3.6V 3200mAh 1个",
+      "category": "锂离子柱状电池",
+      "productUrl": "https://item.szlcsc.com/6029056.html",
+      "imageUrl": "https://alimg.szlcsc.com/upload/public/product/middle/20230105/B2E82B40C6A197EC38D59527C58C9F35.jpg",
+      "datasheetUrl": "https://atta.szlcsc.com/upload/public/pdf/source/20221205/07E11C9A3B99BAAA3B7E607DC5FF771B.pdf",
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:33:07.586Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 72
+      },
+      "priceBreaks": [
+        {
+          "quantity": 1,
+          "unitPrice": 19.98,
+          "currency": "CNY"
+        }
+      ],
+      "packaging": "-",
+      "jlcSmtLibrary": "unknown",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:33:07.586Z"
+    },
+    "C183096": {
+      "id": "lcsc:C183096",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C183096",
+      "manufacturer": "TI(德州仪器)",
+      "manufacturerPartNumber": "BQ29700DSER",
+      "description": "单节锂离子和锂聚合物电池的经济型电压和电流保护集成电路",
+      "category": "电池管理",
+      "productUrl": "https://item.szlcsc.com/194498.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20230111_Texas-Instruments-BQ29700DSER_C183096_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/2eb82e7000dd0ebafe2a37c842a90ea8.pdf?productCode=C183096",
+      "keySpecs": {
+        "Operating Temperature": "-40°C~+85°C",
+        "Quiescent Current": "4uA",
+        "0V Battery Charge": "Support",
+        "Operating Voltage": "1.5V~8V",
+        "Type of Battery": "Lithium Battery",
+        "Features": "Overcharge protection;Over-discharge protection;Overcurrent Protection;Short-Circuit Protection",
+        "The Chip Type": "Protection IC"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:44:18.928Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 2956
+      },
+      "priceBreaks": [
+        {
+          "quantity": 1,
+          "unitPrice": 3.33,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 2.53,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 2.18,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 100,
+          "unitPrice": 1.75,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 1.56,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 1.44,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0.5501,
+          "currency": "USD"
+        },
+        {
+          "quantity": 10,
+          "unitPrice": 0.4179,
+          "currency": "USD"
+        },
+        {
+          "quantity": 30,
+          "unitPrice": 0.3601,
+          "currency": "USD"
+        },
+        {
+          "quantity": 100,
+          "unitPrice": 0.2891,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.2577,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.2379,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 1,
+      "packaging": "WSON-6(1.5x1.5)",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:44:18.928Z"
+    },
+    "C544396": {
+      "id": "lcsc:C544396",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C544396",
+      "manufacturer": "TI(德州仪器)",
+      "manufacturerPartNumber": "CSD85301Q2",
+      "description": "N-Channel Array 20V 5A 2.3W Surface Mount WSON-6(2x2)",
+      "category": "场效应管(MOSFET)",
+      "productUrl": "https://item.szlcsc.com/565047.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20230204_Texas-Instruments-CSD85301Q2_C544396_front.jpg",
+      "datasheetUrl": "https://www.ti.com/cn/lit/ds/symlink/csd85301q2.pdf",
+      "keySpecs": {
+        "Drain to Source Voltage": "20V",
+        "Current - Continuous Drain(Id)": "5A",
+        "Pd - Power Dissipation": "2.3W",
+        "RDS(on)": "27mΩ@4.5V",
+        "Ciss-Input Capacitance": "469pF",
+        "Number": "2 N-Channel",
+        "Gate Charge(Qg)": "5.4nC@4.5V",
+        "Operating Temperature": "-55°C~+150°C",
+        "Gate Threshold Voltage (Vgs(th))": "1.2V"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:44:25.504Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 104
+      },
+      "priceBreaks": [
+        {
+          "quantity": 5,
+          "unitPrice": 1.9045,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 1.5073,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 1.3134,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 1.1404,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5,
+          "unitPrice": 0.3148,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.2492,
+          "currency": "USD"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.2171,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.1885,
+          "currency": "USD"
+        },
+        {
+          "quantity": 3000,
+          "unitPrice": 0.1807,
+          "currency": "USD"
+        },
+        {
+          "quantity": 6000,
+          "unitPrice": 0.1759,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 5,
+      "packaging": "WSON-6(2x2)",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:44:25.504Z"
+    },
+    "C968580": {
+      "id": "lcsc:C968580",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C968580",
+      "manufacturer": "VISHAY(威世)",
+      "manufacturerPartNumber": "SS3P6L-M3/86A",
+      "description": "Diode 1 Independent 60V 3A Surface Mount TO-277A",
+      "category": "肖特基二极管",
+      "productUrl": "https://item.szlcsc.com/1056014.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20230201_Vishay-Intertech-SS3P6L-M3-86A_C968580_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/163a247b336f0b75cd6b5a9b78459285.pdf?productCode=C968580",
+      "keySpecs": {
+        "Operating Junction Temperature Range": "-55°C~+150°C",
+        "Diode Configuration": "1 Independent",
+        "Voltage - DC Reverse (Vr) (Max)": "60V",
+        "Voltage - Forward(Vf@If)": "542mV@3A",
+        "Reverse Leakage Current (Ir)": "8.4uA@60V",
+        "Non-Repetitive Peak Forward Surge Current": "150A",
+        "Current - Rectified": "3A"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:50:15.973Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 128
+      },
+      "priceBreaks": [
+        {
+          "quantity": 5,
+          "unitPrice": 2.2552,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 1.7972,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 1.6009,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5,
+          "unitPrice": 0.3708,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.2955,
+          "currency": "USD"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.2632,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1500,
+          "unitPrice": 0.1931,
+          "currency": "USD"
+        },
+        {
+          "quantity": 3000,
+          "unitPrice": 0.1752,
+          "currency": "USD"
+        },
+        {
+          "quantity": 4500,
+          "unitPrice": 0.1644,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 5,
+      "packaging": "TO-277A",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:50:15.973Z"
+    },
+    "C280564": {
+      "id": "lcsc:C280564",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C280564",
+      "manufacturer": "Chilisin(奇力新)",
+      "manufacturerPartNumber": "MHCC06030-100M-R7",
+      "description": "10uH ±20% 5.5A",
+      "category": "功率电感",
+      "productUrl": "https://item.szlcsc.com/266984.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20181009_Chilisin-Elec-MHCC06030-100M-R7_C280564_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/19fc53f9b3116f21fa52dfafc921b9d8.pdf?productCode=C280564",
+      "keySpecs": {
+        "Current Rating": "4A",
+        "Inductance": "10uH",
+        "Tolerance": "±20%",
+        "Current - Saturation(Isat)": "5.5A",
+        "DC Resistance(DCR)": "68mΩ",
+        "Type": "Magnetic Shielded Inductor",
+        "Application Grade": "Consumer grade"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:50:25.588Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 568
+      },
+      "priceBreaks": [
+        {
+          "quantity": 5,
+          "unitPrice": 1.369,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 1.1225,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 1.0169,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.8042,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.7455,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.7103,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5,
+          "unitPrice": 0.2262,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.1855,
+          "currency": "USD"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.168,
+          "currency": "USD"
+        },
+        {
+          "quantity": 1000,
+          "unitPrice": 0.1329,
+          "currency": "USD"
+        },
+        {
+          "quantity": 2000,
+          "unitPrice": 0.1232,
+          "currency": "USD"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.1174,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 5,
+      "packaging": "SMD,7.3x6.6mm",
+      "jlcSmtLibrary": "extended",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:50:25.588Z"
+    },
+    "C52204608": {
+      "id": "lcsc:C52204608",
+      "supplierName": "LCSC",
+      "supplierPartNumber": "C52204608",
+      "manufacturer": "R+O(宏嘉诚)",
+      "manufacturerPartNumber": "HNTC-103F3950FB-100P",
+      "description": "HNTC-103F3950FB-100P",
+      "category": "NTC热敏电阻",
+      "productUrl": "https://item.szlcsc.com/55044715.html",
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20260603_R-O-HNTC-103F3950FB-100P_C52204608_front.jpg",
+      "datasheetUrl": "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+      "keySpecs": {
+        "Height": "7.5mm",
+        "Resistance @ 25°C": "10kΩ",
+        "Operating Temperature": "-30°C~+105°C",
+        "Length": "2.8mm",
+        "B Constant (25°C/50°C)": "3950K",
+        "Power(Watts)": "10mW",
+        "Thermal Time Constant": "15s",
+        "B Constant Tolerance": "±1%"
+      },
+      "source": {
+        "id": "lcsc:catalog",
+        "providerId": "lcsc",
+        "providerName": "LCSC catalog",
+        "mode": "api",
+        "sourceName": "LCSC catalog (EasyEDA part search and LCSC product detail)",
+        "sourceUrl": "https://www.lcsc.com/",
+        "observedAt": "2026-11-12T09:50:29.393Z"
+      },
+      "availability": {
+        "status": "in-stock",
+        "quantityAvailable": 949
+      },
+      "priceBreaks": [
+        {
+          "quantity": 5,
+          "unitPrice": 1.3679,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 1.0806,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.9575,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.8039,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 2500,
+          "unitPrice": 0.7355,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.6944,
+          "currency": "CNY"
+        },
+        {
+          "quantity": 5,
+          "unitPrice": 0.2242,
+          "currency": "USD"
+        },
+        {
+          "quantity": 50,
+          "unitPrice": 0.1771,
+          "currency": "USD"
+        },
+        {
+          "quantity": 150,
+          "unitPrice": 0.157,
+          "currency": "USD"
+        },
+        {
+          "quantity": 500,
+          "unitPrice": 0.1318,
+          "currency": "USD"
+        },
+        {
+          "quantity": 2500,
+          "unitPrice": 0.1206,
+          "currency": "USD"
+        },
+        {
+          "quantity": 5000,
+          "unitPrice": 0.1138,
+          "currency": "USD"
+        }
+      ],
+      "minimumOrderQuantity": 5,
+      "packaging": "-",
+      "jlcSmtLibrary": "unknown",
+      "isAlternate": false,
+      "confidence": 1,
+      "observedAt": "2026-11-12T09:50:29.393Z"
+    },
+    "C27515": {
+      "imageUrl": "https://assets.lcsc.com/images/lcsc/900x900/20260522_Littelfuse-0451004-MRL_C27515_front.jpg"
+    }
+  }
+}

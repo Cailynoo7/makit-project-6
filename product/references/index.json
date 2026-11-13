@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "file": "PinHeader_1x02_P2.54mm_Vertical.txt",
+      "sha256": "5184fc4dddb8da027c0a5d4e63eefed1993cc0c2632e1a291ce63d3b5b8026ad",
+      "bytes": 2010,
+      "addedAt": "2026-11-12T12:23:58.390Z",
+      "share": false
+    },
+    {
+      "file": "c1554283-easyeda-native.json",
+      "sha256": "cd4897ce8e122481ea863ac8de66a27888167412805f2112ba48ec0c8abc56fa",
+      "bytes": 34499,
+      "addedAt": "2026-11-12T11:01:37.022Z",
+      "share": false
+    },
+    {
+      "file": "c544396-easyeda-native.json",
+      "sha256": "f301f3ab175f8807861e37dc419b51af3e7aa0d29bf281e790379084072c1cbf",
+      "bytes": 15242,
+      "addedAt": "2026-11-12T13:11:23.740Z",
+      "share": false
+    },
+    {
+      "file": "connection-model-measurements.json",
+      "sha256": "6802c8a91072ee2fc637c668cac3a41e895a744b0c2f8dc06c07e83d431a1419",
+      "bytes": 3679,
+      "addedAt": "2026-11-12T13:44:58.732Z",
+      "share": false
+    },
+    {
+      "file": "csd85301q2-model-obj.txt",
+      "sha256": "11669e90fe126856fe54bc9a8a33f7c762d73fb4aa49c260fb3c521f6f001481",
+      "bytes": 65395,
+      "addedAt": "2026-11-12T13:11:51.847Z",
+      "share": false
+    },
+    {
+      "file": "design-direction.md",
+      "sha256": "503002d330d8b149f60ec31a875eff65bc4b78aa266ff0fd3b16822ae4557e60",
+      "bytes": 1902,
+      "addedAt": "2026-11-11T06:08:19.510Z",
+      "share": false
+    },
+    {
+      "file": "fan_drive_analysis.json",
+      "sha256": "a4993b531f468cd273fffb206fab21d7485e5d329e4543901061e8ce10c75742",
+      "bytes": 11565,
+      "addedAt": "2026-11-12T05:48:24.785Z",
+      "share": false
+    },
+    {
+      "file": "fan_drive_calculation.py",
+      "sha256": "c43c925020242b2a0fdb14e51d1fde370cff6ba42d548b82810c92bab84ba9fb",
+      "bytes": 6985,
+      "addedAt": "2026-11-12T05:48:24.786Z",
+      "share": false
+    },
+    {
+      "file": "internal-service-fit-20261113-c4006ca.json",
+      "sha256": "ace136fd251019ff0ebbb65058292610fe9a0e6de89a5f3c022dd1205d6beecc",
+      "bytes": 146585,
+      "addedAt": "2026-11-13T03:39:59.256Z",
+      "share": false
+    },
+    {
+      "file": "internal-service-fit-20261113.json",
+      "sha256": "04e9490e070e34f356cad8d4814eb6a53a5a313a19305f225e1219a2175f9751",
+      "bytes": 152332,
+      "addedAt": "2026-11-13T04:02:28.430Z",
+      "share": false
+    },
+    {
+      "file": "internal-service-fit-final-20261113.json",
+      "sha256": "adbd840e037dc55840d3c97d319e0b8c85ef9fee9ee54f9519c52326276337d6",
+      "bytes": 157604,
+      "addedAt": "2026-11-13T07:45:46.416Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/pololu-micro-dimensions.pdf",
+      "sha256": "d2b24afa17b1bd6fa901c5429e51003eb0a771f72da32cf6ff9ff49f760d786f",
+      "bytes": 634780,
+      "addedAt": "2026-11-12T05:31:23.889Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/pololu-micro-gearmotors-rev6-2.pdf",
+      "sha256": "fb949beb58a92c4dff4d6e1849c8989761ddabe3a3224075755ad71561520ed0",
+      "bytes": 5261132,
+      "addedAt": "2026-11-12T05:31:45.373Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/pololu-micro-models.zip",
+      "sha256": "eeafd5682d7a2c7deed7c7c7e24719eeb36761706aca4a1c5c815c07c36cbb55",
+      "bytes": 59981034,
+      "addedAt": "2026-11-12T05:32:15.693Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/pololu-mmgm-cb.step",
+      "sha256": "203cec51bb3c7537266c230459960bd4a061e18f3619b9e0358805bf63a08652",
+      "bytes": 12655339,
+      "addedAt": "2026-11-12T05:36:58.215Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/rf300ca.pdf",
+      "sha256": "d467a3fb5b90defb3fb7fdebe1b78a58895fd70d1d324eec7b548de1b178d5c0",
+      "bytes": 53498,
+      "addedAt": "2026-11-11T05:36:05.606Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-c3-community.step",
+      "sha256": "d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735",
+      "bytes": 1306104,
+      "addedAt": "2026-11-12T04:01:17.985Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-c3-dimensions.zip",
+      "sha256": "eb3c9986857353440ee2e53f1d5a01745c7e0330371563fcde1c9d2df023f9fe",
+      "bytes": 115093,
+      "addedAt": "2026-11-11T05:36:00.381Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-c3-dimensions/113991054/bottom.dxf",
+      "sha256": "a558cb17b320373dac998ecab7341350b1b9a09e5912e43625dfbbc6d81efef4",
+      "bytes": 1376689,
+      "addedAt": "2026-11-11T05:37:10.188Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-c3-dimensions/113991054/top.dxf",
+      "sha256": "6c23d5561ed62ca252afaf2c23ba9fcb0763254f4c620ba306792d8828d716d4",
+      "bytes": 1595259,
+      "addedAt": "2026-11-11T05:37:10.190Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-c3-v12-dimensioning.zip",
+      "sha256": "a75fe366c4fa160db8d50891da84820062011e9fd06343ae047ab67763035bd7",
+      "bytes": 106090,
+      "addedAt": "2026-11-12T03:44:02.973Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-c3-v13-kicad.zip",
+      "sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff",
+      "bytes": 339671,
+      "addedAt": "2026-11-11T09:17:45.235Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-official-c3-library.zip",
+      "sha256": "9c106defddebe645a1d5eeb0a3d69e66526b1505490c5f6f83aa01454ba4be5d",
+      "bytes": 2782,
+      "addedAt": "2026-11-12T03:42:18.982Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-official-footprints.zip",
+      "sha256": "671cb119639e489091b87a64e070d4aba1f22860ddfdbecc85ff143c0c295e28",
+      "bytes": 1084956,
+      "addedAt": "2026-11-12T03:42:18.984Z",
+      "share": false
+    },
+    {
+      "file": "mechanical/xiao-series-som.pdf",
+      "sha256": "98e1131e034b3f4d0bbc365181de821bf7c84391c33a06007b4641896b3baeba",
+      "bytes": 2854945,
+      "addedAt": "2026-11-12T03:40:50.216Z",
+      "share": false
+    },
+    {
+      "file": "ntc-installation-envelopes.json",
+      "sha256": "f57d352b34b584cbe4369ee627881be3ca389400e8663692c5fc24582bc25c4e",
+      "bytes": 1973,
+      "addedAt": "2026-11-12T14:52:10.815Z",
+      "share": false
+    },
+    {
+      "file": "tps61500-ti-official.pdf",
+      "sha256": "b932d253f6fc05d1db57ae7566f70855c9fdba1310bd00ccc5dff4594a8f1463",
+      "bytes": 1217120,
+      "addedAt": "2026-11-12T10:58:03.894Z",
+      "share": false
+    },
+    {
+      "file": "tps61500pwp-supplier.step",
+      "sha256": "284276d725d48c4d5b8b4d6b8c356ebd11eb0de3fcba22be6d02ab2af45d5df1",
+      "bytes": 1934827,
+      "addedAt": "2026-11-12T13:11:51.919Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261111T052250721Z-1-3.png",
+      "sha256": "c3d0c61742e334c86a1d2c9b7f5b7712983efb2d9946b9eb8d4a837b3e901b1f",
+      "bytes": 1753818,
+      "addedAt": "2026-11-11T05:22:50.727Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261111T085537801Z-1-image.png",
+      "sha256": "6b14ece886380771e203f480e49685d484bd9d4cac455a52cc4a06b3caa752e5",
+      "bytes": 155725,
+      "addedAt": "2026-11-11T08:56:14.387Z",
+      "share": false
+    }
+  ]
+}

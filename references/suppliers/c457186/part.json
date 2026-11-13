@@ -1,0 +1,89 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T14:05:06.755Z",
+  "lcsc_code": "C457186",
+  "manufacturer": "TE Connectivity(泰科电子)",
+  "manufacturer_part_number": "1375820-2",
+  "description": "Connector Housing 2 Position 2.54mm Pitch Single Row",
+  "category": "胶壳(线对板/线对线)",
+  "package": "P=2.54mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Pitch": "2.54mm",
+    "Gender": "Male",
+    "Flame Retardant Rating": "UL94V-0",
+    "Number of Rows": "1",
+    "With Wings": "Without Fins",
+    "Operating Temperature": "-55°C~+105°C",
+    "Holes Structure": "1x2P",
+    "Plastic Material": "Glass fiber reinforced PA",
+    "Number of PINs Per Row": "2",
+    "With Locker": "Non-Latching"
+  },
+  "lcsc_stock": 3415,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.4592,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.4174,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.3965,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.3808,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.3682,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.362,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.0756,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0687,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0652,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0627,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0606,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0596,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/460395.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/2152979cf067360e65f60e8071bbc3ab.pdf?productCode=C457186",
+  "datasheet_file": "references/suppliers/c457186/c457186-datasheet.pdf"
+}

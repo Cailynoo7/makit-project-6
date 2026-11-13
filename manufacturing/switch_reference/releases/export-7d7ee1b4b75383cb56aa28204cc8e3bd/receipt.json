@@ -1,0 +1,79 @@
+{
+  "designId": "switch_reference",
+  "revision": "c9949165412c38a6ac5ab94769f7da9cb6df7377e4d89cbc662046b82f593c10",
+  "schemaVersion": 3,
+  "exportId": "export-7d7ee1b4b75383cb56aa28204cc8e3bd",
+  "generatedAt": "2026-11-12T08:17:20.376Z",
+  "designSha256": "27b9b4608e41cecd85835101e8d3b23080c6b8c72df7f40442150f7ff2ae828e",
+  "role": "switch_reference",
+  "stateHash": "8b775e823b78525e995cd9b6db1162dfba8089ee14d4eaf3a727eaef2d68dd52",
+  "stateManifest": {
+    "schemaVersion": 4,
+    "designId": "switch_reference",
+    "role": "switch_reference",
+    "design": {
+      "revision": "c9949165412c38a6ac5ab94769f7da9cb6df7377e4d89cbc662046b82f593c10",
+      "designSha256": "ee068cfa10b3b12ea68eb5325faa4a91f82c97de6f7aa9a68fda77490069a0be",
+      "manifestSha256": "892cbe23f26967418b0f026dedd9dd35b3875c0e4af531d9eec8e9c71ebd76a1",
+      "modelSha256": "0d6c00504292202e65a7a599aad9aedef843b3032f3563c343b20ce7a2c005a5",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/switch_reference/README.md",
+      "sha256": "ddf7674d6e9568eae4d218cf23b450b8982146ca0b49e0878abf187d27ea54a4"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "97caf1119e4126abde90b030566ca3a31e9cde93d94660b41924b50aedc7d341",
+      "designRequirementSha256": "241610dda50c2e323a19570f9186e2d95de8f584869316c1930253027e638914",
+      "inputs": []
+    },
+    "delivery": {
+      "target": "visual_review",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "8b775e823b78525e995cd9b6db1162dfba8089ee14d4eaf3a727eaef2d68dd52"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "892cbe23f26967418b0f026dedd9dd35b3875c0e4af531d9eec8e9c71ebd76a1",
+    "modelSha256": "0d6c00504292202e65a7a599aad9aedef843b3032f3563c343b20ce7a2c005a5"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "73e2a6d20ca2ee605997d4e1a375b8831f0b363e3d66e5778b9738224ab9bcea"
+  },
+  "sourceHashes": {
+    "switch/switch": "02a98e8c4f5dc4a1a3b110cb4e321cc964d790d1eed598b9b84d98432a4b86bc"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "switch": "d4e8925d26e3c89880bbdc23f16222e0bc47c96fe7d7acf1e5f68d0533326ec0"
+  },
+  "runtime": {
+    "manifestHash": "fc14cea3fa144580d670f50a47b5e19f20d3314d173aa36fe6464963ee0359eb",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "9d8309bdd0a4779c7701aff0d2b54a8c30d0cdfdc1c825f242abfdd2906a104c"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/switch_reference/releases/export-7d7ee1b4b75383cb56aa28204cc8e3bd/model.step",
+      "role": "model/step",
+      "sha256": "80513fc8b36095e813428bed6e5761dc41643385bb0ecd3eed9ce8c9b031f12c",
+      "sizeBytes": 152210
+    }
+  ],
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "0b0b999ca4cc555ae066c0dd06277aa2",
+    "projectId": "5420874b-8d43-4a1f-905a-cde1ff80993e",
+    "receiptPath": "manufacturing/switch_reference/releases/export-7d7ee1b4b75383cb56aa28204cc8e3bd/receipt.json",
+    "payloadSha256": "486e8bf1d294cc5da82f609c63a665079854382514c24f56b19acbd8bedb6cca",
+    "mac": "2514bee87d6a1eb930f10ef1137ad398f724ba7c86d575ffb8cfbe5becb90e86"
+  },
+  "status": "handoff"
+}

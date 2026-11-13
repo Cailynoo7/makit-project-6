@@ -1,0 +1,76 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T05:43:47.197Z",
+  "lcsc_code": "C31850",
+  "manufacturer": "UNI-ROYAL(厚声)",
+  "manufacturer_part_number": "0603WAF2202T5E",
+  "description": "22kΩ ±1% 100mW 0603 Thick Film Resistor",
+  "category": "贴片电阻",
+  "package": "0603",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Power(Watts)": "100mW",
+    "Resistance": "22kΩ",
+    "Voltage Rating": "75V",
+    "Type": "Thick Film Resistor",
+    "Temperature Coefficient": "±100ppm/°C",
+    "Tolerance": "±1%",
+    "Operating Temperature": "-55°C~+155°C"
+  },
+  "lcsc_stock": 13104,
+  "price_breaks": [
+    {
+      "quantity": 100,
+      "unitPrice": 0.0251,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.019,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0158,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0139,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.012,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0042,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0032,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0027,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0023,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.002,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/32812.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C31850",
+  "datasheet_file": "references/suppliers/c31850/c31850-datasheet.pdf"
+}

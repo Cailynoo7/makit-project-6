@@ -1,0 +1,368 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Reading-light hardware matching with user-approved exterior unchanged. Parts selection and engineering budgets;not a released replacement PCB,CAD assembly or measured photometric/thermal approval.",
+  "user_decisions": {
+    "lighting": "independent reading/writing;20mm star and0.5W notfixed",
+    "battery": "3200mAh18650",
+    "exterior": "preserveconfirmedshape,colour,lenses,windows,controlsandUSBopening"
+  },
+  "source": {
+    "part": "HL-LM002H384W-5B2C5(Ra2)(ANSI-4000K)",
+    "lcsc_code": "C22398553",
+    "finished_module": true,
+    "module_definition": "COB withfactoryintegratedLEDdiesonmirrorAlsubstrate;soldertwopads,noseparatestarPCBneeded",
+    "body_mm": [
+      13.5,
+      13.5,
+      1.5
+    ],
+    "LES_diameter_mm": 11.2,
+    "nominal_CCT_K": 4000,
+    "minimum_CRI_Ra": 80,
+    "flux_at_300mA_Tc25_lm": {
+      "minimum": 570,
+      "typical": 620,
+      "maximum": 680
+    },
+    "VF_at_300mA_Tc25_V": {
+      "min": 14,
+      "typ": 16,
+      "max": 18
+    },
+    "datasheet_typical_input_W": 4.85,
+    "not_absolute_max": "300mA and4.85W aretypicalratingtableentries,notstatedabsolutemaximums",
+    "junction_to_substrate_typ_K_per_W": 4.3,
+    "Tj_max_C": 115,
+    "substrate_temperature_max_C": 85,
+    "substrate_limit_at_high_power_C": 75,
+    "evidence": {
+      "pdf": "references/suppliers/c22398553/c22398553-datasheet.pdf",
+      "sha256": "45d00e2db14f980ee37738fe49807d45aacc01f9593c4ffc24fe37bf2d09bf08",
+      "visually_read_pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/7636cb76ede70875ee49a1607374b470.pdf?productCode=C22398553"
+    }
+  },
+  "driver": {
+    "part": "TPS61500PWP",
+    "lcsc_code": "C1554283",
+    "topology": "boostconstantcurrentwithDIMCcapacitorselectinganalogdimming",
+    "input_operating_V": [
+      2.9,
+      18
+    ],
+    "design_protected_input_min_V": 3,
+    "raw_battery_firmware_cutoff_V": 3.3,
+    "FB_reference_V": [
+      0.195,
+      0.2,
+      0.205
+    ],
+    "Rsense_ohm": 0.75,
+    "Rsense_tolerance_fraction": 0.01,
+    "current_A": [
+      0.2574257426,
+      0.2666666667,
+      0.2760942761
+    ],
+    "nominal_LED_power_W_approx": 4.1,
+    "normal_mode": "fullDCcurrent;reducedbythermalcontrollerasneeded",
+    "EN": "3.3VGPIO6/D4,5kHzwhenreducingbrightness",
+    "EN_logic_levels_V": {
+      "high_min": 1.2,
+      "low_max": 0.4
+    },
+    "DIMC_uF": 1,
+    "startup": "ENcontinuousHIGH50msaftervalidtemperatureandbatterychecks;thenapplyreduceddutyifneeded.Vendorminimumstartupontime200usmeanssub100percent5kHzPWMaloneisnotavalidstartupguarantee.",
+    "shutdown": "ENLOW>=10ms;USBpresentorfaultkeepslow.",
+    "switch_current_limit_A": {
+      "min": 3,
+      "typ": 3.8,
+      "max": 5
+    },
+    "warning": "switchcurrentlimitdoesnotmean3ALEDoutput",
+    "passives": {
+      "L": "MHCC06030-100M-R7,10uH20%,7.3x6.6x3mm,DCRmax68mohm,Isattyp5.5A,IrmsTyp4A",
+      "diode": "SS3P6L-M3/86A60V3A",
+      "Rfreq": "176k1%,nom600kHz",
+      "OVP_divider_ohm": [
+        158000,
+        10000
+      ],
+      "OVP_bound_V": [
+        19.6526574,
+        20.6472,
+        21.672897
+      ],
+      "SS_nF": 47,
+      "COMP_nF": 470,
+      "Cin": "4.7uF10Vlocal,effective>=3.3uF",
+      "Cout": "2x2.2uF50V1210,effectivecombined>=2.2uFat21.7V",
+      "output_bleeder_ohm": 1000000
+    },
+    "worst_case_power_check": {
+      "LED_VF_including_measurement_tolerance_V": 18.54,
+      "output_V_with_FB": 18.745,
+      "output_W": 5.1753872,
+      "efficiency_assumed": 0.8,
+      "Vin_assumed_V": 3,
+      "average_input_A": 2.1564113,
+      "L_assumed_uH": 8,
+      "fs_assumed_kHz": 480,
+      "inductor_ripple_pp_A": 0.6597303,
+      "peak_switch_A": 2.4862765,
+      "minimum_switch_limit_A": 3,
+      "switch_headroom_A": 0.5137235,
+      "status": "positivecalculatedheadroom;efficiency/frequencyandinductanceatbiasrequireprototypeconfirmation"
+    },
+    "layout_requirements": [
+      "minimizeSWloopandSchottky-outputcapacitorloop",
+      "CincloseVIN/PGND",
+      "EPsolderedtoAGNDplaneandthermalvias",
+      "KelvinFBsenseawayfromSW",
+      "joingroundreturnswithoutmotorcurrentthroughADC/NTCgrounds",
+      "verifycompensation,overshootandrippleonloaded1Sprototype"
+    ],
+    "evidence": {
+      "pdf": "references/suppliers/c1554283/c1554283-datasheet.pdf",
+      "sha256": "acacd68b32365a9e74173d917144931a3dd7146606e9336c3df2649c19bde194",
+      "visually_read_pages": [
+        1,
+        3,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19
+      ],
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/9766003e8b0d81036438896263c3df0e.pdf?productCode=C1554283"
+    }
+  },
+  "photometric_budget": {
+    "model": "effectivehorizontalLambertianbellyemission;notaraytraceoractualmeasuredsource",
+    "height_m": 0.3,
+    "rectangle_m": [
+      0.4,
+      0.3
+    ],
+    "equation": "E(x,y)=Phi_use*h^2/(pi*(h^2+x^2+y^2)^2)",
+    "grid_integration": "compositetrapezoid401x301",
+    "lux_per_useful_lumen": {
+      "centre": 3.536776513,
+      "mean": 2.435840101,
+      "corner": 1.231836163
+    },
+    "required_useful_downward_lm": 243.5388805,
+    "max_min_ratio": 2.871141975,
+    "example_useful_lm": 260,
+    "example_lux": {
+      "centre": 919.56,
+      "mean": 633.32,
+      "corner": 320.28
+    },
+    "estimated_warm_COB_lm": [
+      400,
+      500
+    ],
+    "estimated_warm_flux_status": "engineeringestimatefromlowercurrentanddatasheettemperaturecurves,notguaranteedminimum",
+    "required_useful_fraction_at400lm": 0.6088472,
+    "examples": {
+      "400lm_x_65percent": "260lm:calculatedtargetpass",
+      "400lm_x_55percent": "220lm:corner271lx,targetfail"
+    },
+    "optical_actions": [
+      "turnemissiondownward;original45degreeforwardorientationunsuitableforprimaryreadingbeam",
+      "useinternalwhitereflectorandbaffletoprioritizebellyaperturewhilefrontdiffuserglows",
+      "preserveexistinglensoutershape;evaluatewallcount,materialtransmissionandprintsettingsthroughcoupons",
+      "accountfor18650shadow,sidewindowsandmultiplebouncelosses;donotclaim65percentusefulfractionisestablished"
+    ],
+    "acceptance": "actualprintedassemblyluxgridat30cm:mean>=500,min>=300,max/min<=3;meetwhilethermallystable,notjustatcoldstartup"
+  },
+  "thermal_budget": {
+    "local_fins_alone": "rejectedinsideclosedplasticcabin",
+    "selected_path": "COB->thininsulatingthermaladhesive->Alcollector->twowideshortAlstraps->segmentedconformalAlliners->bondedopaqueshell->ambient",
+    "collector_envelope_mm": [
+      18,
+      34,
+      14
+    ],
+    "COB_mount_land_mm": 2,
+    "straps_mm": {
+      "thickness": 0.5,
+      "width": 20,
+      "max_length": 15,
+      "count": 2
+    },
+    "liner_thickness_mm": 0.5,
+    "target_contact_area_m2": 0.018,
+    "interface_mm": 0.15,
+    "interface_k_min_W_per_mK": 1.5,
+    "ideal_strap_R_K_per_W": 3.65854,
+    "collector_to_inner_shell_total_R_target_K_per_W": 5,
+    "COB_to_collector_R_target_K_per_W": 0.75,
+    "PETG_k_assumed_W_per_mK": 0.2,
+    "shell_t_mm": 2.4,
+    "ideal_shell_conduction_R_K_per_W": 0.6667,
+    "ambient_design_C": 25,
+    "external_effective_h_sensitivity_W_per_m2K": [
+      8,
+      10,
+      12,
+      14
+    ],
+    "at_4W_shell_heat_predicted_outer_C": [
+      52.78,
+      47.22,
+      43.52,
+      40.87
+    ],
+    "at_5W_shell_heat_predicted_outer_C": [
+      59.72,
+      52.78,
+      48.15,
+      44.84
+    ],
+    "note": "Theseareuniform-spreadinglumpedestimates;contacthotspots,reducedactualarea,linerinterruption,motorlossandambientchangescanworsenthem.4/5Wareassumedheatloads,notmeasuredvalues.NoCFD/FEMorsteady-statepassclaimed.",
+    "conclusion": "~4Wreadingoperationisplausibleat25Cwithlargeareaspreading,butcannotbeguaranteeduntilopaquecontactareaandheatlossaremeasured.Hotroomorlampfansimultaneousmayderate;deratingthatlosesreadingilluminanceisatestfailureforthatcondition,notpermissiontolowerreadingtarget.",
+    "NTC_defaults_C": {
+      "COB_dim": 60,
+      "COB_off": 70,
+      "shell_dim": 43,
+      "shell_off": 48,
+      "battery_dim": 40,
+      "battery_off": 45,
+      "restart_hysteresis": 5
+    },
+    "fault_policy": "bothloadsOFFonmissingADC,open/shortNTC,implausibletemperatureorlowbattery;freshbuttonrequiredforrestart",
+    "qualification": "logCOB Ts,shellhotspot,batteryanddrivercaseuntiltemperaturechange<1Cper10min,atleast60min;lampaloneandlampfanatfullandnearemptybattery,25Candwarm-room35Csensitivity;requirelighttargetandtemperaturesconcurrently"
+  },
+  "battery": {
+    "user_choice": "3200mAh18650",
+    "selected": "FLY.18650.3200.3C / C5289740",
+    "nominal_V": 3.6,
+    "typ_capacity_mAh": 3200,
+    "min_capacity_mAh": 3100,
+    "max_cell_mm": [
+      18.6,
+      65.2
+    ],
+    "mass_g": 46,
+    "protected": false,
+    "standard_charge_mA": 620,
+    "charge_temperature_C": [
+      0,
+      45
+    ],
+    "continuous_discharge_A": {
+      "minus20_to60C": 3.1,
+      "5_to50C": 9.3
+    },
+    "XIAO_charge_mA_approx": 380,
+    "calculated_CC_min_hours": 8.42,
+    "estimated_total_charge_hours": [
+      9,
+      11
+    ],
+    "estimated_runtime_hours": {
+      "lamp_only": [
+        1.5,
+        2
+      ],
+      "lamp_and_fan": [
+        1.2,
+        1.6
+      ]
+    },
+    "runtime_status": "estimatesforapproximately4WLED,80-85percentboostefficiency,80-90percentusablecapacityandcurrentfanmode;notworst-Vfguarantees",
+    "worst_system_current_A": 2.6264,
+    "protection": "BQ29700+5paralleledCSD85301Q2pairs+4Afuse;allXIAOandloadreturnsPACK-side",
+    "protection_limits": "OCD85..115mVovertemperature;FETpathmax15.6mohmat2.5V25C;using1.5xhotfactor+3mohmtracegives3.22Aminimumtripestimate.Hotfactorandsharingaretestassumptions,notguaranteedbounds.Fuseisfaultbackup,notapreciseoperatinglimit.",
+    "preflight": {
+      "revision": "8541094b8a7c9b0f08343485c3487e4f25126d6834666caf959f733dc6df04f0",
+      "mesh_tolerance_mm": 0.02,
+      "shell_clearance_mm": 0.5069,
+      "window_clamp_clearance_mm": 0.5049,
+      "belly_lens_clearance_mm": 1.5549,
+      "xiao_clearance_mm": 6.3203,
+      "cassette_clearance_mm": 6.149,
+      "scope": "reserved cylinder only;not holder,leads,assembly path,orfullinstalledcell"
+    },
+    "service": "supplierweldedtabs,noendcellholderoutsidereservedØ19x66.2;holdersandwiresnotyetmodeled",
+    "magnet_effect": "cell46g,0.5mmlinerat180cm2addsabout24.3g,collectorandstrapsextra;retest30x2magnetwithcompleteweightandrotorvibration",
+    "charge_temperature_control": "RetainedXIAOchargerhasnoestablishedsoftwarecharge-disablecontrol;NTCfirmwareturnsoffloads,notcharger.Use0..45Cchargingconditionsandverifycelltemperatureonprototype;donotclaimthermalchargingcutoff."
+  },
+  "electrical_control_plan": {
+    "ADC": "ADS1115IDGSR3.3V,ADDR=GND0x48,AIN0/1/2NTCs,AIN3protectedbattery100k/100k",
+    "NTC": "HNTC-103F3950FB-100P10k1%,B3950K1%,100mmlead,maxheadØ2.8x7.5mm",
+    "NTC_divider": "3.3V->10k0.1%->AINnode->NTC->GND;series1kand100nFfilter;singleendedADS1115PGA±4.096V,128SPS;readallchannelsandrejectfaultsbeforeswitchingloads",
+    "i2c": "explicitSDA20(D7),SCL21(D6),100kHz,4.7kpullupsto3.3V;notdefaultGPIO6/7",
+    "pin_evidence_url": "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32C3/pins_arduino.h",
+    "pin_evidence_sha256": "3ca43dbbba1c26f8612ac63331cb76679ba6528ea6d3610d5017a0a656be3056",
+    "USB": "existingGPIO10VBUSdetector;turnoffbothloads,unplugstable500msstillrequiresfreshkey",
+    "independent_controls": "leftlightGPIO3,rightfanGPIO4;fanGPIO5inverse20kHzandGPIO7enableunchanged",
+    "new_internal_connections": "one3wire3V3/SDA/SCLharnessplus3two-wireNTCports;nofurtherexternalholes"
+  },
+  "rejected_options": [
+    {
+      "part": "oldMEL7135350mA+Q2",
+      "reason": "linear1Scircuitcannotdriveselected14-18VCOB;50percentPWMnotareading-powerbasis"
+    },
+    {
+      "part": "20mmstarfixedrequirement",
+      "reason": "withdrawnbyuser;foundsupplierCOBonownAlsubstrate"
+    },
+    {
+      "part": "HL-LM002H384W-7B1C18(Ra4)(ANSI-4000K)",
+      "lcsc_code": "C22398560",
+      "reason": "Ra90but52-60VstringexceedsTPS6150040Vswitchlimit"
+    },
+    {
+      "part": "HL-LM002H384W-7B3C12(Ra4)(ANSI-4000K)",
+      "lcsc_code": "C22398577",
+      "reason": "Ra90butdatasheetminimum180mA/6.3W,typ9.72W;catalog7W/1780lmnotacceptedatreadingpower"
+    },
+    {
+      "part": "TX6211",
+      "lcsc_code": "C329278",
+      "reason": "minimuminput3.6Vdoesnotcoverselected1Sdischargewindow"
+    },
+    {
+      "part": "CSD17577Q3AandAON7400A",
+      "reason": "lowRdsnotguaranteedatselectedsingle-cellgatedrivefromtheirratingtables;notselected"
+    },
+    {
+      "part": "0451003.MRL3Afuse",
+      "reason": "4Achosenforworst2.63Aloadplusstartupmargin;fusecoordinationstillrequiresbenchtest"
+    }
+  ],
+  "supply_risks": [
+    "COB37andbattery72inLCSCstockatlookup;exact4000KRa2variantmustbepreserved;noapproveddropinalternate.",
+    "TPS61500Extended;chosenbecauseconfirmed1S-to16Vanalogdimmingreferencecircuitisavailable.",
+    "MHCCinductorseriesdatasheetmarksnotfornewdesign;prototypeonlyfromexistingstock,notproductionlifecycleapproval.",
+    "Noassembledlightingboardismisrepresented:COBfinishedlight-sourcemoduleisreal,butboost,ADCandprotectionrequiretheacceptedcustomconnectionPCBrevision.",
+    "FullmanufacturingBOMquantitiesandheaderpositionsfollowthenewPCB;oldfabricationpackagedoesnotimplementthisselection."
+  ],
+  "validation_state": {
+    "parts_identity": "selectedwithcataloganddatasheetevidence",
+    "power_headroom": "calculatedpositiveunderexplicitassumptions",
+    "battery_geometry": "reservedcylinderhasnooverlapwithcheckedcurrentobjects,min0.5049mmclearance,mesh0.02mm;notcompleteinstallation",
+    "collector_geometry": "intentionalreplacementenvelopeintersectsoldcarrierandbrackets;internalredesignrequired",
+    "photometry": "notmeasured",
+    "thermal": "notqualified",
+    "PCB": "40x50x1.6mm6layer;0DRCerrors,0unconnected,4silkwarnings;release 171fcced55d57308fe0ba67341bcf9a1e5120fcf6a640abfc35d908bb5440812;76resolvedSTEPmodels",
+    "firmware": "oldversionnotcompatiblewithnewlighttopology",
+    "exterior": "nochange",
+    "wiring": "Updated raw-cell/protected-pack split,3V3 I2C and3NTC channels;pipeline reports no wiring diagnostic",
+    "populated_PCB_fit": "F1避让凹槽8.1×4.7mm、底面Z=-7.5mm，局部补强底Z=-9.2mm，余厚1.7mm；保险丝底部间隙0.715mm。左侧安装台同时避开R19及R16焊点，完整连接板与托架无共享体积。J10/J11旋转90°横排，排针行中心X=13.35mm、Y=5.3912/-4.9048mm，Pin1在X=12.08、Pin2在X=14.62；接口功能不变。TE1375820-2插壳和1375819-1端子采用厂商图纸包络，保守预留X6.5×Y9×Z20mm（14mm插头加6mm弯线空间）；与电机最小网格间隙0.4198mm，网格公差0.02mm。移除上部组件后沿+Z拔出12mm，0.5mm步长的精确几何采样最小间隙0.40mm。双线束按合拢外径3.4mm、弯曲半径6mm核对，上下导向座孔Ø4、壁1.5mm，用两条2.5×100mm扎带闭合。线束至电机精确最小间隙J10=2.2566mm、J11=2.1146mm，至皮带至少8.7442mm，至导向座0.3mm。仅连接板和内部托架改变，所有外观件几何比较不变。 线束为按厂商尺寸和工程余量建立的只读扫掠检查，不把探针包络冒充供应商STEP；插合力、压接拉力、打印公差需样件确认。新18650固定座、COB导热件及整组检修路径尚需后续完成，本次不认证整机可打印运行。J11路线核对到电芯侧交接点Z=-18，最终探头贴合点随电池固定座完成。"
+  }
+}

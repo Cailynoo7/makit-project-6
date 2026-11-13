@@ -1,0 +1,54 @@
+{
+  "prepared_at": "2026-11-13T05:27:34.234752+00:00",
+  "purpose": "Commissioning procedure basis and software-only checks;not physical results or a readiness gate.",
+  "production_and_wiring_sha256": {
+    "product/firmware/helicopter_controller/Ads1115Sampler.h": "73c0632d2c8dd1f1f21b33cacaa22ead8e1aa6215f0262b36911d588e76d5a91",
+    "product/firmware/helicopter_controller/ControlConfig.h": "c2b2d89ad125d39480ccdaf5173f7608794284774e42a2fbf718f35d70966abd",
+    "product/firmware/helicopter_controller/ControllerLogic.h": "99b0af3001e76ff97be3317fc539a0ca097c28aa4c8b8efb8060c82fa0e786a9",
+    "product/firmware/helicopter_controller/ThermalSafety.h": "ca2e05e3c8b3723ca71a80b8d9b4c2b27dd7dcd3f4b7dd0f3a361296ec8a83b9",
+    "product/firmware/helicopter_controller/helicopter_controller.ino": "a2ce53bb25f350669b996de432799a7e24163722b9d45168a5fe65a5dfc991a3",
+    "product/firmware/tests/controller_tests.cpp": "2b51affc7619942a30b20504ce3a598425239597741a1cabedbe86dd41c7d2ab",
+    "design/helicopter/source/wiring.json": "e4ef1ebc7931e45b885050548bf03259474b16a2a1599f9a0e14d960bec04450"
+  },
+  "procedure_sha256": {
+    "product/firmware/commissioning/首样通电与温度校准.md": "f11d5275c876836564a7f6880e1d8ef104bfc2a020455602c600c1446c25daab",
+    "product/firmware/commissioning/calibration.csv": "f84cf53f2258c0fe9676265c76c4c9fd48221463b4dd8f6590e2c6d374e88a51",
+    "product/firmware/commissioning/test-results.csv": "077422ba75d27e61257fc744b8e67b032209d4e07ac2b9e15849f2e51ddfde72",
+    "product/firmware/commissioning/thresholds.csv": "c8cb1ab178e698b023eafa3bafd0df2e07c746c363b6d580b08b942ff49cf89d",
+    "product/firmware/commissioning/commissioning_helper.py": "b2769ac109f7c4ccab91b64a0fdbf161dfcbeaea83f36da565dda7d19bed59e4"
+  },
+  "software_checks": {
+    "production_host_scenarios": 35,
+    "production_host_assertions": 11329,
+    "sanitizers": "address,undefined",
+    "helper": "Signed16-bit ADC,rail rejection,21 inverse temperature/parallel-resistor points,empty measurements,and synthetic positive offset checked.",
+    "limited_build": {
+      "fqbn": "esp32:esp32:XIAO_ESP32C3",
+      "core": "3.3.12",
+      "warnings": "all;none emitted",
+      "program_bytes": 314390,
+      "static_ram_bytes": 14312,
+      "only_difference": "kLightMaxPermille=500;official production files unchanged"
+    }
+  },
+  "physical_measurements": "Not performed;all49 test-result rows and18 calibration rows remain blank.",
+  "default_experimental_conditions": {
+    "ambient_C": 25,
+    "supply_V": 3.8,
+    "current_limits_A": {
+      "initial_no_load": 0.2,
+      "motor_only": 0.5,
+      "light_only": 1.8,
+      "combined": 2.5
+    },
+    "manual_stop_C": {
+      "COB_Ts": 65,
+      "external_shell": 45,
+      "battery_discharging": 42,
+      "battery_charging": 40
+    },
+    "calibration_margin_C": 0.5,
+    "offset_review_C": 5,
+    "point_error_review_C": 2
+  }
+}

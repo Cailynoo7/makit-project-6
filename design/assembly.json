@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "coordinateFrame": "makit-world-z-up",
+  "placements": {
+    "charging_fit": {
+      "positionMm": [
+        0,
+        180,
+        0
+      ],
+      "rotationDeg": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ"
+    },
+    "switch_reference": {
+      "positionMm": [
+        350,
+        -100,
+        0
+      ],
+      "rotationDeg": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ"
+    }
+  },
+  "fits": [],
+  "steps": [
+    {
+      "title": "厂家预装：下壳机械与照明",
+      "note": "此步是厂家已完成的交付内容，用户不逐件安装散热、圆窗、尾梁、起落架或COB；细分工序另留在厂家装配资料。",
+      "parts": [
+        "helicopter:carrier_shell_screws",
+        "helicopter:fuselage",
+        "helicopter:nose_lens",
+        "helicopter:belly_lens",
+        "helicopter:tail",
+        "helicopter:tail_lock_screws",
+        "helicopter:skid_left",
+        "helicopter:skid_root_screws_left",
+        "helicopter:tail_propeller",
+        "helicopter:window_left",
+        "helicopter:window_left_screws",
+        "helicopter:button_left",
+        "helicopter:window_right",
+        "helicopter:window_right_screws",
+        "helicopter:button_right",
+        "helicopter:motor_mount_screw",
+        "helicopter:window_bezel_left",
+        "helicopter:window_bezel_right",
+        "helicopter:heat_mount_screws",
+        "helicopter:internal_carrier",
+        "helicopter:led_bracket_screws",
+        "helicopter:drive_pulley",
+        "helicopter:heat_spreader",
+        "helicopter:led_bracket_left",
+        "helicopter:led_bracket_right",
+        "helicopter:skid_right",
+        "helicopter:skid_root_screws_right",
+        "helicopter:window_retainer_left",
+        "helicopter:window_retainer_right",
+        "helicopter:skid_clamps_left",
+        "helicopter:skid_clamps_right",
+        "helicopter:skid_clamp_left_aft",
+        "helicopter:skid_clamp_right_aft",
+        "helicopter:motor_mount_screw_second",
+        "helicopter:battery_gate_screws",
+        "helicopter:liner_left",
+        "helicopter:liner_right",
+        "helicopter:liner_aft_left",
+        "helicopter:liner_aft_right",
+        "helicopter:thermal_bridge_left",
+        "helicopter:thermal_clamp_screws",
+        "helicopter:thermal_contact_screws",
+        "helicopter:thermal_bridge_right",
+        "helicopter:cob_reference",
+        "helicopter:cob_bond_film",
+        "helicopter:thermal_aft_pad_left",
+        "helicopter:thermal_couple_aft_pad_left",
+        "helicopter:thermal_couple_fore_pad_left",
+        "helicopter:thermal_fore_pad_left",
+        "helicopter:thermal_root_pad_left",
+        "helicopter:thermal_aft_pad_right",
+        "helicopter:thermal_couple_aft_pad_right",
+        "helicopter:thermal_couple_fore_pad_right",
+        "helicopter:thermal_fore_pad_right",
+        "helicopter:thermal_root_pad_right",
+        "helicopter:thermal_fore_shoe_left",
+        "helicopter:thermal_fore_shoe_right",
+        "helicopter:thermal_aft_shoe_left",
+        "helicopter:thermal_aft_shoe_right",
+        "helicopter:optical_reflector"
+      ]
+    },
+    {
+      "title": "厂家预装：电路、电池及线束",
+      "note": "厂家完成焊接、压接、烧录、校准和试装；用户不再接内部插头，灰色尺寸参考不打印。",
+      "parts": [
+        "helicopter:controller_mount_screws",
+        "helicopter:connection_board",
+        "helicopter:fan_motor",
+        "helicopter:key_board_left",
+        "helicopter:xiao_reference",
+        "helicopter:pcb_mount_screws",
+        "helicopter:controller_cassette",
+        "helicopter:xiao_shim",
+        "helicopter:key_board_right",
+        "helicopter:battery_cradle",
+        "helicopter:battery_gate",
+        "helicopter:battery_strap_front",
+        "helicopter:battery_strap_rear",
+        "helicopter:battery_reference",
+        "helicopter:cradle_tie_front",
+        "helicopter:cradle_tie_rear",
+        "helicopter:battery_end_pad_front",
+        "helicopter:battery_end_pad_rear",
+        "helicopter:ntc_battery_reference",
+        "helicopter:ntc_cob_reference",
+        "helicopter:ntc_shell_reference",
+        "helicopter:complete_harness",
+        "helicopter:controller_wire_guide"
+      ]
+    },
+    {
+      "title": "用户套皮带并放下上盖",
+      "note": "断电，将预套主轮的皮带套到小轮，确认不夹线再落盖；磁铁、轴承和热件由厂家预装。可整机交货时优先整机交货。",
+      "parts": [
+        "helicopter:fuselage_cap",
+        "helicopter:cap_liner_left",
+        "helicopter:cap_liner_right",
+        "helicopter:upper_heat_link_left",
+        "helicopter:upper_heat_link_right",
+        "helicopter:main_rotor",
+        "helicopter:mast",
+        "helicopter:magnet_base",
+        "helicopter:bearing_pedestal",
+        "helicopter:bearing_lower",
+        "helicopter:bearing_upper",
+        "helicopter:rotor_bearing_spacer",
+        "helicopter:rotor_inner_spacer",
+        "helicopter:hub_cover",
+        "helicopter:suspension_screw",
+        "helicopter:drive_belt",
+        "helicopter:thermal_cap_pad_left",
+        "helicopter:thermal_cap_pad_right",
+        "helicopter:thermal_couple_cap_pad_left",
+        "helicopter:thermal_couple_cap_pad_right"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "用户锁紧三颗合盖螺钉",
+      "note": "三颗M2×10；不靠螺钉强压错位零件。先收齐供应商实测记录。",
+      "parts": [
+        "helicopter:service_screws"
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-13T08:38:34.863Z"
+}

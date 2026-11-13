@@ -1,0 +1,265 @@
+{
+  "source_step": "manufacturing/helicopter/releases/export-5e92f8d55d183d0781587eb2c4657a79/model.step",
+  "source_step_sha256": "f3dd4f36dd9bcfaab2b2d80d02a04854c7822de192cdbffb3fc87958e2d05eba",
+  "cad_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
+  "units": "mm",
+  "projection": "THIRD ANGLE",
+  "parts": [
+    {
+      "part_number": "AL01",
+      "object_id": "heat_spreader",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -37.0,
+        -17.0,
+        -3.8237441556910005e-15
+      ],
+      "bbox_max_mm": [
+        -19.0,
+        17.0,
+        3.0
+      ],
+      "volume_mm3": 1800.81416227979,
+      "sheet": 1
+    },
+    {
+      "part_number": "AL02",
+      "object_id": "thermal_bridge_left",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -33.0000000000005,
+        12.0,
+        3.0999999999999996
+      ],
+      "bbox_max_mm": [
+        34.000000000000355,
+        34.000000000000846,
+        26.000000000002892
+      ],
+      "volume_mm3": 3906.660798785518,
+      "sheet": 2
+    },
+    {
+      "part_number": "AL03",
+      "object_id": "thermal_bridge_right",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -33.0000000000039,
+        -34.000000000000846,
+        3.0999999999999996
+      ],
+      "bbox_max_mm": [
+        34.00000000000285,
+        -12.0,
+        26.000000000002892
+      ],
+      "volume_mm3": 3906.6608410534136,
+      "sheet": 3
+    },
+    {
+      "part_number": "AL04",
+      "object_id": "upper_heat_link_left",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -32.37422777968,
+        2.4999999,
+        26.0999999
+      ],
+      "bbox_max_mm": [
+        -11.99999989999881,
+        23.35556688824145,
+        42.00000002075141
+      ],
+      "volume_mm3": 459.3678295334431,
+      "sheet": 4
+    },
+    {
+      "part_number": "AL05",
+      "object_id": "upper_heat_link_right",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -32.37422777968,
+        -23.355566888241242,
+        26.0999999
+      ],
+      "bbox_max_mm": [
+        -11.9999999,
+        -2.4999999,
+        42.00000002075141
+      ],
+      "volume_mm3": 459.3679427808431,
+      "sheet": 5
+    },
+    {
+      "part_number": "AL06",
+      "object_id": "thermal_fore_shoe_left",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -32.43196725454559,
+        22.3,
+        11.9
+      ],
+      "bbox_max_mm": [
+        -23.0,
+        36.30000000000013,
+        21.000000000003208
+      ],
+      "volume_mm3": 184.4161275321532,
+      "sheet": 6
+    },
+    {
+      "part_number": "AL07",
+      "object_id": "thermal_fore_shoe_right",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -32.43196725454559,
+        -36.30000000000013,
+        11.9
+      ],
+      "bbox_max_mm": [
+        -23.0,
+        -22.3,
+        21.000000000003208
+      ],
+      "volume_mm3": 184.4161273573219,
+      "sheet": 7
+    },
+    {
+      "part_number": "AL08",
+      "object_id": "thermal_aft_shoe_left",
+      "quantity": 1,
+      "bbox_min_mm": [
+        25.0,
+        23.5,
+        11.899999999999833
+      ],
+      "bbox_max_mm": [
+        32.000000000000256,
+        35.82837562603103,
+        21.6
+      ],
+      "volume_mm3": 168.46106950945855,
+      "sheet": 8
+    },
+    {
+      "part_number": "AL09",
+      "object_id": "thermal_aft_shoe_right",
+      "quantity": 1,
+      "bbox_min_mm": [
+        25.0,
+        -35.82837562603067,
+        11.899999999999833
+      ],
+      "bbox_max_mm": [
+        32.000000000000256,
+        -23.5,
+        21.600000000003632
+      ],
+      "volume_mm3": 168.46106962404994,
+      "sheet": 9
+    },
+    {
+      "part_number": "AL10",
+      "object_id": "liner_left",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -38.00000010000886,
+        17.138917640462108,
+        -18.000000099999998
+      ],
+      "bbox_max_mm": [
+        -4.716990466027999,
+        41.77621941241269,
+        22.000000100000168
+      ],
+      "volume_mm3": 502.31138476978873,
+      "sheet": 10
+    },
+    {
+      "part_number": "AL11",
+      "object_id": "liner_right",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -38.000000100003014,
+        -41.77621941241095,
+        -18.000000100000072
+      ],
+      "bbox_max_mm": [
+        -4.716990466027999,
+        -17.138917643059536,
+        22.0000001
+      ],
+      "volume_mm3": 474.8231593986154,
+      "sheet": 11
+    },
+    {
+      "part_number": "AL12",
+      "object_id": "liner_aft_left",
+      "quantity": 1,
+      "bbox_min_mm": [
+        4.716990448537221,
+        1.4999998999999302,
+        -16.0000001
+      ],
+      "bbox_max_mm": [
+        46.81151436997264,
+        41.776219413897245,
+        22.00000010358457
+      ],
+      "volume_mm3": 877.4991429314539,
+      "sheet": 12
+    },
+    {
+      "part_number": "AL13",
+      "object_id": "liner_aft_right",
+      "quantity": 1,
+      "bbox_min_mm": [
+        4.716990448538541,
+        -41.776219413897714,
+        -16.00000010000008
+      ],
+      "bbox_max_mm": [
+        46.811514369972635,
+        -1.4999998999998976,
+        22.000000103584362
+      ],
+      "volume_mm3": 852.2064587470318,
+      "sheet": 13
+    },
+    {
+      "part_number": "AL14",
+      "object_id": "cap_liner_left",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -27.83329840317205,
+        1.4999999999999438,
+        38.39999999999964
+      ],
+      "bbox_max_mm": [
+        27.83329840317206,
+        27.873688309946,
+        45.01669134887885
+      ],
+      "volume_mm3": 450.0056926719226,
+      "sheet": 14
+    },
+    {
+      "part_number": "AL15",
+      "object_id": "cap_liner_right",
+      "quantity": 1,
+      "bbox_min_mm": [
+        -27.83329840317205,
+        -27.873688309946,
+        38.39999999999964
+      ],
+      "bbox_max_mm": [
+        27.83329840317206,
+        -1.5,
+        45.01669134887885
+      ],
+      "volume_mm3": 450.00569267223136,
+      "sheet": 15
+    }
+  ],
+  "limitations": "Orthographic and hidden-line views;no sections. STEP defines remaining complex surfaces."
+}

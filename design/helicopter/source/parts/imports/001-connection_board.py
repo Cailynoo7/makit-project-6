@@ -1,0 +1,1 @@
+publish("connection_board", asset("design/helicopter/source/assets/4e0aa490b5d737619f6fee8720de3aa324388a98d51fd871130856d8007742a3.step"), "COB连接板：横排NTC与电机避让")

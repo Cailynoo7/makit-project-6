@@ -1,0 +1,71 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:50:15.973Z",
+  "lcsc_code": "C968580",
+  "manufacturer": "VISHAY(威世)",
+  "manufacturer_part_number": "SS3P6L-M3/86A",
+  "description": "Diode 1 Independent 60V 3A Surface Mount TO-277A",
+  "category": "肖特基二极管",
+  "package": "TO-277A",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Junction Temperature Range": "-55°C~+150°C",
+    "Diode Configuration": "1 Independent",
+    "Voltage - DC Reverse (Vr) (Max)": "60V",
+    "Voltage - Forward(Vf@If)": "542mV@3A",
+    "Reverse Leakage Current (Ir)": "8.4uA@60V",
+    "Non-Repetitive Peak Forward Surge Current": "150A",
+    "Current - Rectified": "3A"
+  },
+  "lcsc_stock": 128,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 2.2552,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.7972,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 1.6009,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.3708,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.2955,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.2632,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.1931,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.1752,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4500,
+      "unitPrice": 0.1644,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/1056014.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/163a247b336f0b75cd6b5a9b78459285.pdf?productCode=C968580",
+  "datasheet_file": "references/suppliers/c968580/c968580-datasheet.pdf"
+}

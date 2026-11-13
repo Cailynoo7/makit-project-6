@@ -1,0 +1,11 @@
+r=param('enlarged_hub_cover_radius',16.25)
+bore=param('hub_cover_mast_clearance',13.9)
+t=param('hub_cover_thickness',1.2)
+body=Pos(0,0,65.35)*Cylinder(r,t)
+spacer=Pos(0,0,(59+64.75)/2)*Cylinder(9.55,64.75-59)
+spacer=spacer.cut(Pos(0,0,61.875)*Cylinder(8,6))
+body=body.fuse(spacer)
+body=body.cut(Pos(0,0,65.35)*Cylinder(bore/2,15))
+body=Pos(0,0,-65.35)*body
+body.color=srgb('#FFFFFF')
+publish('hub_cover',body,'白色轴承压盖',material='petg')

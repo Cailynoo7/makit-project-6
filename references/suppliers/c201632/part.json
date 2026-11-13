@@ -1,0 +1,82 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:50:21.113Z",
+  "lcsc_code": "C201632",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "CSD17577Q3A",
+  "description": "N-Channel 30V 83A 53W Surface Mount VSONP-8(3.3x3.3)",
+  "category": "场效应管(MOSFET)",
+  "package": "VSONP-8(3.3x3.3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Output Capacitance(Coss)": "270pF",
+    "Ciss-Input Capacitance": "2.31nF",
+    "Pd - Power Dissipation": "53W",
+    "Operating Temperature": "-55°C~+150°C",
+    "Drain to Source Voltage": "30V",
+    "Current - Continuous Drain(Id)": "83A",
+    "Reverse Transfer Capacitance (Crss)": "103pF",
+    "RDS(on)": "6.4mΩ@4.5V",
+    "Number": "1 N-channel",
+    "Gate Charge(Qg)": "35nC@10V",
+    "Vgs": "±20V",
+    "Gate Threshold Voltage (Vgs(th))": "1.8V",
+    "Type": "N-Channel"
+  },
+  "lcsc_stock": 405,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 2.69,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.12,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.88,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 1.49,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.4443,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.3502,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.3105,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.2461,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.223,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.2098,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/202956.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e13348e675b048b642377c775f6d4e87.pdf?productCode=C201632",
+  "datasheet_file": "references/suppliers/c201632/c201632-datasheet.pdf"
+}

@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "b957cd2114d3ced53b0880e8878ea2964d1e2e989303f3763fdcc0b3ff58ff3a",
+  "designId": "keys",
+  "buildId": "ae3c24e0b2e41a58375410abc3121e931fa97f83856d41c613e496ecfc4e99b4",
+  "candidateId": "6cb454c4144849ddbd4c70a6cd1dcad570f9d2fec649c5f1c6b6e00ae7fb6d9b",
+  "approvedAt": "2026-11-13T08:24:40.024Z",
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "drill/board-NPTH.drl",
+        "drill/board-PTH.drl",
+        "drill/keys-drill-report.txt",
+        "gerbers/board-B_Cu.gbl",
+        "gerbers/board-B_Mask.gbs",
+        "gerbers/board-B_Paste.gbp",
+        "gerbers/board-B_Silkscreen.gbo",
+        "gerbers/board-Edge_Cuts.gm1",
+        "gerbers/board-F_Cu.gtl",
+        "gerbers/board-F_Mask.gts",
+        "gerbers/board-F_Paste.gtp",
+        "gerbers/board-F_Silkscreen.gto",
+        "gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "jlc-smt-bom.csv",
+        "jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "3dmodels/keys.3dshapes/kinghelm-kh-6x6x4p3h-drawing.step",
+        "3dmodels/keys.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+        "assembly.glb",
+        "assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "package": [
+    {
+      "path": "3dmodels/keys.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "sizeBytes": 75616
+    },
+    {
+      "path": "3dmodels/keys.3dshapes/kinghelm-kh-6x6x4p3h-drawing.step",
+      "sha256": "80513fc8b36095e813428bed6e5761dc41643385bb0ecd3eed9ce8c9b031f12c",
+      "sizeBytes": 152210
+    },
+    {
+      "path": "assembly.glb",
+      "sha256": "d49b396453f8ef40e99401fe323ab15ad130163105b107f53f6af8f0e50e990e",
+      "sizeBytes": 1569280
+    },
+    {
+      "path": "assembly.step",
+      "sha256": "c42cbd1899970a0b65dbc403007bc8a09b6aeb983f49f49b74fe2127acbbd928",
+      "sizeBytes": 517447
+    },
+    {
+      "path": "circuit.json",
+      "sha256": "88636bb243ad69502a6b0dc6991dedbaafe94ffbf17ed0fc5abe35c1185dc796",
+      "sizeBytes": 59134
+    },
+    {
+      "path": "drill/board-NPTH.drl",
+      "sha256": "63dbd8f02e57dbcf426b67bb5edfbca01cdd600be15afc8ccc56325991a8bac3",
+      "sizeBytes": 264
+    },
+    {
+      "path": "drill/board-PTH.drl",
+      "sha256": "2cd599810eb760584e3c5d96687c6428ffb2c180bc7041ef9296895f72233209",
+      "sizeBytes": 413
+    },
+    {
+      "path": "drill/keys-drill-report.txt",
+      "sha256": "e9501239be2000e9804b5f322b24373fdffff1ae05ecc1b38035a61f764e481e",
+      "sizeBytes": 637
+    },
+    {
+      "path": "gerbers/board-B_Cu.gbl",
+      "sha256": "90cb11a94b9e15d990f4975fc84d28b3a02cb515f3b1829c0e61ecf54beac56f",
+      "sizeBytes": 3913
+    },
+    {
+      "path": "gerbers/board-B_Mask.gbs",
+      "sha256": "b05d63ba6313c534050c2aac5b25ae8d0ae4d4046863c67fa81749cf43ec46ef",
+      "sizeBytes": 579
+    },
+    {
+      "path": "gerbers/board-B_Paste.gbp",
+      "sha256": "632c640f61ab6e0127f24ae2e153ce6f873754e603c859cade0fa4630a8fa9cf",
+      "sizeBytes": 450
+    },
+    {
+      "path": "gerbers/board-B_Silkscreen.gbo",
+      "sha256": "de83e98e078ef69905be012bb49d8200109d37cd4090bce006331cd1fe6b8fe5",
+      "sizeBytes": 1278
+    },
+    {
+      "path": "gerbers/board-Edge_Cuts.gm1",
+      "sha256": "87b871bf1eb9da5ff881c77fff81605c9b211fae8704d08b76916d3c021c8b01",
+      "sizeBytes": 680
+    },
+    {
+      "path": "gerbers/board-F_Cu.gtl",
+      "sha256": "f2862793069366ed8503295ce95559ba52268aed51817f100d559d43811325f1",
+      "sizeBytes": 5967
+    },
+    {
+      "path": "gerbers/board-F_Mask.gts",
+      "sha256": "5518a99a65d747a04391c37edbbc8df223a72fa55f7475ec1c88e38306c89c1b",
+      "sizeBytes": 730
+    },
+    {
+      "path": "gerbers/board-F_Paste.gtp",
+      "sha256": "82bdc125bf671cadb5527b6574ee4cf45bb523fe6e0868b4dcc8f648429dab72",
+      "sizeBytes": 601
+    },
+    {
+      "path": "gerbers/board-F_Silkscreen.gto",
+      "sha256": "e30722463a817c0a5f09cbccbebe5678b4fbaf6b71dd6365356abdb69452b8a4",
+      "sizeBytes": 1450
+    },
+    {
+      "path": "gerbers/board-job.gbrjob",
+      "sha256": "f21b643a4b9a7b11926eef15c9ee81b1b5c219b36aa5db961d30ec781b128de2",
+      "sizeBytes": 2658
+    },
+    {
+      "path": "jlc-smt-bom.csv",
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
+      "sizeBytes": 72
+    },
+    {
+      "path": "jlc-smt-placement.csv",
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
+      "sizeBytes": 83
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "c54b5416c823a90d041aaf38d6055d043f6f18961db486e9f2e7e09e3dc7b6e0",
+      "sizeBytes": 15795
+    },
+    {
+      "path": "previews/gerber-bottom.png",
+      "sha256": "4a05e887803fa2667cc882d3e5d86affd992ad9197cb5bd2dd36560dab8cf889",
+      "sizeBytes": 48072
+    },
+    {
+      "path": "previews/gerber-bottom.svg",
+      "sha256": "a4b9cd0be57982e3726b6d26f4c7db30bc734f3370d1259e1cd288aa763e14f1",
+      "sizeBytes": 6230
+    },
+    {
+      "path": "previews/gerber-top.png",
+      "sha256": "33cd252ae745eadcc8ba855982a62c124466a3d712ed50f559b6d97ee96cc7ec",
+      "sizeBytes": 79805
+    },
+    {
+      "path": "previews/gerber-top.svg",
+      "sha256": "feda03b41433bb7169c6ca22d41acad440f1ff93cda002e52a2be0f0356788b3",
+      "sizeBytes": 9133
+    }
+  ]
+}

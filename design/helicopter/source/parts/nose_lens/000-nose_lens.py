@@ -1,0 +1,8 @@
+s=part('fuselage')
+t=param('nose_lens_thickness',1.2)
+g=param('nose_seam_gap',0.25)
+inner_lens=Sphere(1).transform_geometry(Matrix([[s.body_length/2-t,0,0,0],[0,s.body_width/2-t,0,0],[0,0,s.body_height/2-t,0],[0,0,0,1]]))
+cap=(s.outer-inner_lens)&Pos(s.front_plane-50-g,0,0)*Box(100,150,150)
+cap=cap-Pos(0,0,s.bottom_plane-50)*Box(150,150,100)
+cap.color=srgb('#F5F1DF',0.7)
+publish('nose_lens',cap,'前透光罩',material='petg')

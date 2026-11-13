@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-11-13",
+  "scope": "当前连接板制造版本保留；补齐整套线束/插壳与光学、导热件的装配和分阶段检修",
+  "build_id": "9b9ad99f48b1e8e6a1f4444eadfd824d2a2878f9d82ec8828268053316c86b5c",
+  "release_id": "a775a125f18a8423be0a2ba88a937e442a0c12100c13393ab9c8c7c26812f82e",
+  "board_mm": [
+    40,
+    50,
+    1.6
+  ],
+  "layers": 6,
+  "copper_oz": {
+    "outer": 1,
+    "inner": 2
+  },
+  "populated_component_count": 76,
+  "footprint_count_including_mount_holes": 78,
+  "electrical_drc_errors": 0,
+  "unconnected": 0,
+  "nonblocking_silkscreen_warnings": 4,
+  "fabrication": "ready,17Gerberanddrillfiles",
+  "assembly": "manualorcommissioned;JLCautomaticSMTlistsareempty",
+  "mechanical": "76个器件均有STEP模型绑定，无未解析模型或方盒占位。Q3–Q7由精确型号CSD85301Q2的供应商原始封闭网格转为分面STEP（保留0.81mm高度）；U1补入TPS61500PWP供应商STEP。12组排针使用对应KiCad原生模型；实际STEP截面30根金属针与钻孔逐一同轴，最大轴心误差小于0.001mm。供应商模型鸣谢：JLCEDA/EasyEDA Official Library，https://lceda.cn/ 、https://easyeda.com/ 。",
+  "wiring": "structuredandhumanpinmapupdated;noCADpipelinewiringdiagnostic",
+  "firmware": "现用TPS61500/DRV8213/ADS1115三NTC程序已通过35场景11329断言及真实XIAO目标编译；未烧录/测波形。",
+  "runtime_evidence": [
+    ".work/pcb/connection/reports/kicad-drc-diagnostics.json",
+    ".work/pcb/connection/reports/freerouting-diagnostics.json",
+    "manufacturing/connection/releases/a775a125f18a8423be0a2ba88a937e442a0c12100c13393ab9c8c7c26812f82e/release-manifest.json"
+  ],
+  "cad_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
+  "populated_installation_check": "F1底部间隙0.715mm，托架无共享体积；主板76器件模型保留。14只母端按现版尺寸包络静态无干涉，12主板插壳及2窗端插座按0.5mm精确几何分阶段拔出无相交。H10沿后侧短路径到壳体探头，H11到电芯探头，替代旧临时交接路线；固定点及线长见完整路由。",
+  "measurements": "product/references/connection-model-measurements.json",
+  "notes": "现版76器件完整模型；F1/托架干涉已消除，18650托座、15件铝热路及内部反光罩已实施。整套线束按14只母端采购包络检查，12主板插壳0.5mm步长BRep拔出检查无相交；2窗端插座在托架移出后的6.3mm向内/12mm上提检查无相交。H10已经落到壳体探头、H11落到电芯探头。扎带与胶带须先释放，不模拟柔性自动跟随。插合力/拉力/打印公差及通电功能仍需首样。",
+  "harness_routing": "product/harness-routing.json",
+  "current_mechanical_report": "product/internal-handoff.json"
+}

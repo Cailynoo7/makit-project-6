@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T05:43:40.588Z",
+  "lcsc_code": "C96123",
+  "manufacturer": "SAMSUNG(三星)",
+  "manufacturer_part_number": "CL31A476MPHNNNE",
+  "description": "47uF ±20% 10V Ceramic Capacitor X5R 1206",
+  "category": "贴片电容(MLCC)",
+  "package": "1206",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Capacitance": "47uF",
+    "Temperature Coefficient": "X5R",
+    "Tolerance": "±20%",
+    "Voltage Rating": "10V"
+  },
+  "lcsc_stock": 6739,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.9953,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.7731,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.6646,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.5678,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.4727,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.4567,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1644,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1277,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1098,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0938,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0781,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0755,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/97327.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C96123",
+  "datasheet_file": "references/suppliers/c96123/c96123-datasheet.pdf"
+}

@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:34:37.627Z",
+  "lcsc_code": "C37593",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "ADS1115IDGSR",
+  "description": "具有内部基准、振荡器和可编程比较器且兼容 I2C 的ADS111x、超小型、低功耗 860SPS、16位ADC",
+  "category": "模数转换芯片ADC",
+  "package": "VSSOP-10",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+125°C",
+    "Interface": "I2C",
+    "Quiescent Current (Iq)": "500nA",
+    "Voltage - Supply": "2V~5.5V",
+    "Number of Channels": "4",
+    "Integral non - linearity": "1LSB",
+    "Voltage Reference": "Built-in",
+    "Clock/Oscillator": "Built-in",
+    "Features": "Multiplexers;Integrated modulator;Built-in digital filter;Power-on reset",
+    "Resolution(Bits)": "860Hz;16",
+    "ADC architecture": "Sigma-Delta",
+    "Programmable Gain": "Support"
+  },
+  "lcsc_stock": 11740,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 7.83,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 6.91,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 6.04,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 5.39,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 5.12,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 4.99,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.2935,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.1416,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.9978,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.8905,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.8459,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.8244,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/38573.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/ab99f5e86cc44c5b8c94f5d72223386b.pdf?productCode=C37593",
+  "datasheet_file": "references/suppliers/c37593/c37593-datasheet.pdf"
+}

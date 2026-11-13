@@ -1,0 +1,77 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:51:45.703Z",
+  "lcsc_code": "C294987",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "CSD17308Q3",
+  "description": "N-Channel 30V 50A 28W Surface Mount VSON-CLIP-8(3.3x3.3)",
+  "category": "场效应管(MOSFET)",
+  "package": "VSON-CLIP-8(3.3x3.3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Output Capacitance(Coss)": "365pF",
+    "Ciss-Input Capacitance": "700pF",
+    "Pd - Power Dissipation": "28W",
+    "Operating Temperature": "-55°C~+150°C",
+    "Drain to Source Voltage": "30V",
+    "Current - Continuous Drain(Id)": "50A",
+    "Reverse Transfer Capacitance (Crss)": "35pF",
+    "RDS(on)": "12.5mΩ@3V",
+    "Number": "1 N-channel",
+    "Gate Charge(Qg)": "3.9nC@4.5V",
+    "Vgs": "-8V;10V",
+    "Gate Threshold Voltage (Vgs(th))": "1.8V",
+    "Type": "N-Channel"
+  },
+  "lcsc_stock": null,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 3.6,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.48,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 3.36,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.6822,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.5504,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.4845,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.4186,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.3494,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.3296,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/279538.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/d1aa01b435beea9010373ea6bf7a76a8.pdf?productCode=C294987",
+  "datasheet_file": "references/suppliers/c294987/c294987-datasheet.pdf"
+}

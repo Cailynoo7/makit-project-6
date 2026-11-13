@@ -1,0 +1,5 @@
+axis=param('motor_mount_axis_x',23.0)
+pitch=param('motor_mount_pitch',9.0)
+z=param('motor_mount_surface_z',31.3)
+s=asset('design/helicopter/source/assets/3b922791c27c8a41e3812bc7b78e72789767ffb378cc199997cc15294ea0fd2a.step')
+publish('motor_mount_screw_second',Pos(axis+pitch/2,0,z)*s,'电机固定螺钉右',role='fastener',material='stainless_steel')

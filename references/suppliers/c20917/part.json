@@ -1,0 +1,92 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T02:59:44.300Z",
+  "lcsc_code": "C20917",
+  "manufacturer": "AOS",
+  "manufacturer_part_number": "AO3400A",
+  "description": "N-Channel 30V Surface Mount SOT-23-3L",
+  "category": "场效应管(MOSFET)",
+  "package": "SOT-23",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Output Capacitance(Coss)": "75pF",
+    "Ciss-Input Capacitance": "630pF",
+    "Pd - Power Dissipation": "1.4W",
+    "Operating Temperature": "-55°C~+150°C",
+    "Drain to Source Voltage": "30V",
+    "Current - Continuous Drain(Id)": "5.7A",
+    "Reverse Transfer Capacitance (Crss)": "50pF",
+    "RDS(on)": "48mΩ@2.5V",
+    "Number": "1 N-channel",
+    "Gate Charge(Qg)": "7nC@10V",
+    "Vgs": "±12V",
+    "Gate Threshold Voltage (Vgs(th))": "1.45V",
+    "Type": "N-Channel"
+  },
+  "lcsc_stock": 67873,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.49,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.386,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.3325,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.2884,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.273,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.2626,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.081,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0638,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.055,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0477,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.0451,
+      "currency": "USD"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.0434,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/21629.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/130876b936da464599428c58fd8de8f6.pdf?productCode=C20917",
+  "datasheet_file": null
+}

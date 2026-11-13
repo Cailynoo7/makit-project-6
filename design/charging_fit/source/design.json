@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "imports",
+      "label": "imports",
+      "cells": [
+        {
+          "id": "xiao_reference",
+          "target": "imports",
+          "order": 0,
+          "path": "design/charging_fit/source/parts/imports/000-xiao_reference.py",
+          "sha256": "844714165454bafe4b39063fb1ff8a2d93ffae16f4501eab68b67912766088f5"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "coupon_shell",
+      "label": "coupon_shell",
+      "cells": [
+        {
+          "id": "coupon_shell",
+          "target": "coupon_shell",
+          "order": 0,
+          "path": "design/charging_fit/source/parts/coupon_shell/000-coupon_shell.py",
+          "sha256": "8fc1465bb900e2fe55b04c31b3dd5d0c8758f43f89f5126175e9018cbb61d763"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "controller_cassette",
+      "label": "controller_cassette",
+      "cells": [
+        {
+          "id": "controller_cassette",
+          "target": "controller_cassette",
+          "order": 0,
+          "path": "design/charging_fit/source/parts/controller_cassette/000-controller_cassette.py",
+          "sha256": "b3aa8e698545ebc576c205dd3c83bd099d5e3c8ecfc3f5c185c8f6a5a51d81b4"
+        }
+      ],
+      "dependencies": [
+        "coupon_shell"
+      ]
+    },
+    {
+      "id": "xiao_shim",
+      "label": "xiao_shim",
+      "cells": [
+        {
+          "id": "xiao_shim",
+          "target": "xiao_shim",
+          "order": 0,
+          "path": "design/charging_fit/source/parts/xiao_shim/000-xiao_shim.py",
+          "sha256": "ecfea50382652ffd50ef20cb08f4d710bf4e4f0b80eb93388f4587430d418969"
+        }
+      ],
+      "dependencies": [
+        "coupon_shell"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "xiao_reference",
+      "target": "imports",
+      "label": "XIAO ESP32C3参考模型",
+      "kind": "imported",
+      "shapeHash": "f2f9cc8d4be228cfef62db922146c4fcd41b8f1c62e46f9f02b956c8547cff74",
+      "transform": {
+        "positionMm": [
+          24.01545264078658,
+          -6.1113999554125,
+          -28.85500001490116
+        ],
+        "rotationDeg": [
+          90,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "controller_mount_screws",
+      "target": "coupon_shell",
+      "label": "充电基板卡座螺钉",
+      "material": "stainless_steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "75ecf7e778515f274c5e4fdfde1660d9fbc240ecbe7615c73ff758b1d73c739c",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "coupon_shell",
+      "target": "coupon_shell",
+      "label": "局部充电口球壳",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "f7fa9feae13d98897fd979934d0cc52a6ab6c7d473a01a7d8aae08ba10416392",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "controller_cassette",
+      "target": "controller_cassette",
+      "label": "XIAO尾根充电卡座",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "d621c8d3b914b3a096c925afff19b0a0fbad21ac91aa86dd7ad169b5fddbe2ac",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "xiao_shim",
+      "target": "xiao_shim",
+      "label": "XIAO板厚适配垫片",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "c90334d61f4eaa7ec2d060413d48ed075785d27477c7d410892627668d9406f6",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "xiao_reference",
+      "kind": "step",
+      "path": "design/charging_fit/source/assets/d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735.step",
+      "sha256": "d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735",
+      "label": "XIAO ESP32C3参考模型",
+      "provenance": {
+        "sourcePath": "product/references/mechanical/xiao-c3-community.step",
+        "provider": "vinjocarsales/xiao-series 0.1.7 (community)",
+        "sourceUrl": "https://tscircuit.com/vinjocarsales/xiao-series/blob/assets/xiao-esp32-c3.step",
+        "sourceVersion": "0.1.7",
+        "declaredSha256": "d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735"
+      }
+    }
+  ],
+  "fits": [],
+  "updatedAt": "2026-11-13T07:12:28.141Z",
+  "parameters": {
+    "imports": {},
+    "coupon_shell": {
+      "cabin_diameter": 100,
+      "shell_wall": 2.4,
+      "bottom_plane": -36.25,
+      "coupon_width": 46,
+      "coupon_height": 20.25,
+      "coupon_back_depth": 45,
+      "charging_board_plane_x": 32.8,
+      "enlarged_controller_centre_z": -21,
+      "controller_edge_clearance": 0.25,
+      "controller_slot_clearance": 0.3,
+      "charging_mouth_final_x": 36,
+      "enlarged_usb_recess_depth": 4.75,
+      "charging_opening_raise": 10,
+      "charging_plug_corner_radius": 0.5
+    },
+    "controller_cassette": {
+      "controller_wire_relief_diameter": 3,
+      "cassette_lower_face_z": -33.5,
+      "solder_wire_relief_radius": 1
+    },
+    "xiao_shim": {
+      "shim_thickness": 0.6,
+      "shim_length": 20.5,
+      "shim_width": 17.2
+    }
+  }
+}

@@ -1,0 +1,5870 @@
+{
+  "cad_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
+  "checked_on": "2026-11-13",
+  "preconditions": "USB/J2 disconnected;upper/belt out;ties/tape released;flexible branches unplugged and parked outside sweeps;wire guide removed before bridge inward travel;optical/support group removed before carrier;side sockets unplugged after carrier removal.",
+  "checks": [
+    {
+      "label": "upper assembly",
+      "request": {
+        "moving": [
+          "fuselage_cap",
+          "cap_liner_left",
+          "cap_liner_right",
+          "upper_heat_link_left",
+          "upper_heat_link_right",
+          "main_rotor",
+          "mast",
+          "magnet_base",
+          "bearing_pedestal",
+          "bearing_lower",
+          "bearing_upper",
+          "rotor_bearing_spacer",
+          "rotor_inner_spacer",
+          "hub_cover",
+          "suspension_screw"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right",
+          "thermal_bridge_left",
+          "thermal_bridge_right",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "heat_spreader",
+          "led_bracket_left",
+          "led_bracket_right",
+          "cob_reference",
+          "ntc_cob_reference",
+          "thermal_contact_screws",
+          "thermal_clamp_screws",
+          "complete_harness",
+          "optical_reflector",
+          "controller_wire_guide"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              0,
+              100
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "fuselage_cap",
+          "cap_liner_left",
+          "cap_liner_right",
+          "upper_heat_link_left",
+          "upper_heat_link_right",
+          "main_rotor",
+          "mast",
+          "magnet_base",
+          "bearing_pedestal",
+          "bearing_lower",
+          "bearing_upper",
+          "rotor_bearing_spacer",
+          "rotor_inner_spacer",
+          "hub_cover",
+          "suspension_screw"
+        ],
+        "path_length_mm": 100,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "thermal_bridge_left",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_bridge_right",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "complete_harness",
+            "min_clearance_mm": 0.3008,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 0.5,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 0.7057,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.01,
+              "travel_mm": 1,
+              "offset_mm": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "object_id": "motor_mount_screw",
+            "min_clearance_mm": 0.8342,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_contact_screws",
+            "min_clearance_mm": 1.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "motor_mount_screw_second",
+            "min_clearance_mm": 1.8066,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 2,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 3,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 3,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 3,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 3,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_aft_shoe_left",
+            "min_clearance_mm": 3.4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_aft_shoe_right",
+            "min_clearance_mm": 3.4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_left",
+            "min_clearance_mm": 3.8793,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_right",
+            "min_clearance_mm": 3.8793,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_fore_shoe_left",
+            "min_clearance_mm": 4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_fore_shoe_right",
+            "min_clearance_mm": 4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 44
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 201,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 7 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 945
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "COB collector",
+      "request": {
+        "moving": [
+          "heat_spreader",
+          "cob_reference",
+          "ntc_cob_reference"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right",
+          "thermal_bridge_left",
+          "thermal_bridge_right",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "led_bracket_left",
+          "led_bracket_right",
+          "thermal_contact_screws",
+          "optical_reflector",
+          "controller_wire_guide"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              -70,
+              0,
+              0
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "heat_spreader",
+          "cob_reference",
+          "ntc_cob_reference"
+        ],
+        "path_length_mm": 70,
+        "first_contact": {
+          "object_id": "led_bracket_left",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "led_bracket_left",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "led_bracket_right",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "thermal_bridge_left",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_bridge_right",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "optical_reflector",
+            "min_clearance_mm": 1.2039,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.0143,
+              "travel_mm": 1,
+              "offset_mm": [
+                -1,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 1.2254,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "pcb_mount_screws",
+            "min_clearance_mm": 1.8491,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 3.9837,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 5.05,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 6.05,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 49
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 141,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 5 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 144
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "thermal bridge 1",
+      "request": {
+        "moving": [
+          "thermal_bridge_left"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "thermal_bridge_right"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              -10.4,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              80
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "thermal_bridge_left"
+        ],
+        "path_length_mm": 90.4,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 0.0852,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 0.0868,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_fore_shoe_left",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_aft_shoe_left",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.185,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.5476,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0,
+              "travel_mm": 10.4,
+              "offset_mm": [
+                0,
+                -10.4,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_left",
+            "min_clearance_mm": 2.2204,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "ntc_shell_reference",
+            "min_clearance_mm": 2.645,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "key_board_left",
+            "min_clearance_mm": 4.5436,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 6.3441,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 6.6064,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.0813,
+              "travel_mm": 16.9,
+              "offset_mm": [
+                0,
+                -10.4,
+                6.5
+              ]
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 7.2097,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.125,
+              "travel_mm": 20.4,
+              "offset_mm": [
+                0,
+                -10.4,
+                10
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 40
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 182,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 486
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "thermal bridge -1",
+      "request": {
+        "moving": [
+          "thermal_bridge_right"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right",
+          "cradle_tie_front",
+          "cradle_tie_rear"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              10.4,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              80
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "thermal_bridge_right"
+        ],
+        "path_length_mm": 90.4,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 0.0852,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 0.0868,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_fore_shoe_right",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_aft_shoe_right",
+            "min_clearance_mm": 0.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.185,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.6,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.075,
+              "travel_mm": 16.4,
+              "offset_mm": [
+                0,
+                10.4,
+                6
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_right",
+            "min_clearance_mm": 2.2204,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "key_board_right",
+            "min_clearance_mm": 4.5436,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 6.3441,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 6.6064,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.0063,
+              "travel_mm": 10.9,
+              "offset_mm": [
+                0,
+                10.4,
+                0.5
+              ]
+            }
+          },
+          {
+            "object_id": "pcb_mount_screws",
+            "min_clearance_mm": 6.8328,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.5714,
+              "travel_mm": 5.943,
+              "offset_mm": [
+                0,
+                5.943,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 7.2097,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.125,
+              "travel_mm": 20.4,
+              "offset_mm": [
+                0,
+                10.4,
+                10
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 39
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 182,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 416
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "thermal_fore_shoe_left",
+      "request": {
+        "moving": [
+          "thermal_fore_shoe_left"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              -12,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              80
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "thermal_fore_shoe_left"
+        ],
+        "path_length_mm": 92,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 0.0861,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.7339,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 1.0059,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.1667,
+              "travel_mm": 2,
+              "offset_mm": [
+                0,
+                -2,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 48
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 185,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 156
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "thermal_fore_shoe_right",
+      "request": {
+        "moving": [
+          "thermal_fore_shoe_right"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "thermal_fore_shoe_left",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              12,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              80
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "thermal_fore_shoe_right"
+        ],
+        "path_length_mm": 92,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 0.0861,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.7339,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 1.0059,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.1667,
+              "travel_mm": 2,
+              "offset_mm": [
+                0,
+                2,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 48
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 185,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 158
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "thermal_aft_shoe_left",
+      "request": {
+        "moving": [
+          "thermal_aft_shoe_left"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_right"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              -12,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              80
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "thermal_aft_shoe_left"
+        ],
+        "path_length_mm": 92,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 0.0859,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.3612,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.1625,
+              "travel_mm": 25,
+              "offset_mm": [
+                0,
+                -12,
+                13
+              ]
+            }
+          },
+          {
+            "object_id": "ntc_shell_reference",
+            "min_clearance_mm": 0.3617,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.6057,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0,
+              "travel_mm": 12,
+              "offset_mm": [
+                0,
+                -12,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 2.2361,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 6.9169,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.225,
+              "travel_mm": 30,
+              "offset_mm": [
+                0,
+                -12,
+                18
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 7,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.9583,
+              "travel_mm": 11.5,
+              "offset_mm": [
+                0,
+                -11.5,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 9.6999,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.5833,
+              "travel_mm": 7,
+              "offset_mm": [
+                0,
+                -7,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 43
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 185,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 180
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "thermal_aft_shoe_right",
+      "request": {
+        "moving": [
+          "thermal_aft_shoe_right"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              12,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              80
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "thermal_aft_shoe_right"
+        ],
+        "path_length_mm": 92,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 0.0859,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.3612,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.1625,
+              "travel_mm": 25,
+              "offset_mm": [
+                0,
+                12,
+                13
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.6057,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0,
+              "travel_mm": 12,
+              "offset_mm": [
+                0,
+                12,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 2.2361,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 6.5002,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.0063,
+              "travel_mm": 12.5,
+              "offset_mm": [
+                0,
+                12,
+                0.5
+              ]
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 6.9169,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.225,
+              "travel_mm": 30,
+              "offset_mm": [
+                0,
+                12,
+                18
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 45
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 185,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 144
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "PCB",
+      "request": {
+        "moving": [
+          "connection_board"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "cradle_tie_front",
+          "cradle_tie_rear"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "move_mm": [
+              -90,
+              0,
+              0
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "connection_board"
+        ],
+        "path_length_mm": 93,
+        "first_contact": {
+          "object_id": "internal_carrier",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "cradle_tie_front",
+            "min_clearance_mm": 0.395,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "cradle_tie_rear",
+            "min_clearance_mm": 0.395,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.4796,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.2278,
+              "travel_mm": 23.5,
+              "offset_mm": [
+                -20.5,
+                0,
+                3
+              ]
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 1.6776,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 2.5436,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.2,
+              "travel_mm": 21,
+              "offset_mm": [
+                -18,
+                0,
+                3
+              ]
+            }
+          },
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 2.5436,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.2,
+              "travel_mm": 21,
+              "offset_mm": [
+                -18,
+                0,
+                3
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 2.59,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0,
+              "travel_mm": 3,
+              "offset_mm": [
+                0,
+                0,
+                3
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate",
+            "min_clearance_mm": 3.2504,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate_screws",
+            "min_clearance_mm": 4.165,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_left_screws",
+            "min_clearance_mm": 5.0415,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_right_screws",
+            "min_clearance_mm": 5.0415,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "key_board_left",
+            "min_clearance_mm": 6.4843,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0,
+              "travel_mm": 3,
+              "offset_mm": [
+                0,
+                0,
+                3
+              ]
+            }
+          },
+          {
+            "object_id": "key_board_right",
+            "min_clearance_mm": 6.4843,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0,
+              "travel_mm": 3,
+              "offset_mm": [
+                0,
+                0,
+                3
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_front",
+            "min_clearance_mm": 6.8107,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 7,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 7,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_rear",
+            "min_clearance_mm": 7.9397,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 8.4697,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_left",
+            "min_clearance_mm": 9,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_right",
+            "min_clearance_mm": 9,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 25
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 187,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 1863
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "motor carrier",
+      "request": {
+        "moving": [
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              0,
+              1.5
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              7.5
+            ],
+            "rotate_deg": -15,
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "pivot_mm": [
+              0,
+              0,
+              -6
+            ]
+          },
+          {
+            "move_mm": [
+              6,
+              2,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              55
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley"
+        ],
+        "path_length_mm": 73.587,
+        "turned_deg": 15,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_gate",
+            "min_clearance_mm": 0.7667,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0,
+              "travel_mm": 18.587,
+              "offset_mm": [
+                0.638,
+                4,
+                8.427
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_right_screws",
+            "min_clearance_mm": 1.4772,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.0612,
+              "travel_mm": 4.07,
+              "offset_mm": [
+                -0.331,
+                2,
+                1.965
+              ],
+              "turned_deg": 0.92
+            }
+          },
+          {
+            "object_id": "battery_gate_screws",
+            "min_clearance_mm": 2.1148,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.0204,
+              "travel_mm": 3.691,
+              "offset_mm": [
+                -0.11,
+                2,
+                1.655
+              ],
+              "turned_deg": 0.31
+            }
+          },
+          {
+            "object_id": "window_left_screws",
+            "min_clearance_mm": 3,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.0091,
+              "travel_mm": 19.087,
+              "offset_mm": [
+                0.638,
+                4,
+                8.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "window_right",
+            "min_clearance_mm": 3.1642,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.6667,
+              "travel_mm": 1,
+              "offset_mm": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_front",
+            "min_clearance_mm": 3.9419,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 4.048,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.2455,
+              "travel_mm": 32.087,
+              "offset_mm": [
+                0.638,
+                4,
+                21.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "key_board_left",
+            "min_clearance_mm": 4.53,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.1,
+              "travel_mm": 24.087,
+              "offset_mm": [
+                0.638,
+                4,
+                13.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 4.7038,
+            "min_clearance_at": {
+              "step": 4,
+              "fraction": 0.9231,
+              "travel_mm": 18.1,
+              "offset_mm": [
+                0.177,
+                3.846,
+                8.427
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "battery_strap_rear",
+            "min_clearance_mm": 4.8592,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 5.6005,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_left",
+            "min_clearance_mm": 6.9297,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.0091,
+              "travel_mm": 19.087,
+              "offset_mm": [
+                0.638,
+                4,
+                8.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 7.1026,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.2636,
+              "travel_mm": 33.087,
+              "offset_mm": [
+                0.638,
+                4,
+                22.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "key_board_right",
+            "min_clearance_mm": 7.2377,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "ntc_shell_reference",
+            "min_clearance_mm": 8.3561,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.0636,
+              "travel_mm": 22.087,
+              "offset_mm": [
+                0.638,
+                4,
+                11.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 8.4508,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.4455,
+              "travel_mm": 43.087,
+              "offset_mm": [
+                0.638,
+                4,
+                32.927
+              ],
+              "turned_deg": 15
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 20
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 180,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 873
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "outer window left",
+      "request": {
+        "moving": [
+          "window_left",
+          "button_left",
+          "window_bezel_left"
+        ],
+        "against": [
+          "fuselage",
+          "window_right",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "battery_gate_screws"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              30,
+              0
+            ]
+          }
+        ],
+        "step_mm": 0.25
+      },
+      "result": {
+        "moving": [
+          "window_left",
+          "button_left",
+          "window_bezel_left"
+        ],
+        "path_length_mm": 30,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "key_board_left",
+            "min_clearance_mm": 0.035,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 2.4398,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 2.4398,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate",
+            "min_clearance_mm": 5.2158,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_end_pad_front",
+            "min_clearance_mm": 7.1914,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 7.5498,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 7.7729,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate_screws",
+            "min_clearance_mm": 8.5859,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_left",
+            "min_clearance_mm": 9.1882,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_left_aft",
+            "min_clearance_mm": 9.9058,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamps_left",
+            "min_clearance_mm": 9.9093,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 22
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.25,
+          "poses": 121,
+          "contact_located_within_mm": 0.001,
+          "sampling": "No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 4 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 688
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "inner window left",
+      "request": {
+        "moving": [
+          "window_retainer_left",
+          "key_board_left"
+        ],
+        "against": [
+          "fuselage",
+          "window_retainer_right",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "battery_gate_screws"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              -3,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              7
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              -19,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              50
+            ]
+          }
+        ],
+        "step_mm": 0.25
+      },
+      "result": {
+        "moving": [
+          "window_retainer_left",
+          "key_board_left"
+        ],
+        "path_length_mm": 79,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.4474,
+              "travel_mm": 18.5,
+              "offset_mm": [
+                0,
+                -11.5,
+                7
+              ]
+            },
+            "first_contact": {
+              "step": 3,
+              "fraction": 0.4411,
+              "travel_mm": 18.381,
+              "offset_mm": [
+                0,
+                -11.381,
+                7
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 0.5025,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate",
+            "min_clearance_mm": 1,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.0789,
+              "travel_mm": 11.5,
+              "offset_mm": [
+                0,
+                -4.5,
+                7
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate_screws",
+            "min_clearance_mm": 1.2624,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.1447,
+              "travel_mm": 12.75,
+              "offset_mm": [
+                0,
+                -5.75,
+                7
+              ]
+            }
+          },
+          {
+            "object_id": "ntc_shell_reference",
+            "min_clearance_mm": 3.4163,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.7143,
+              "travel_mm": 8,
+              "offset_mm": [
+                0,
+                -3,
+                5
+              ]
+            }
+          },
+          {
+            "object_id": "battery_end_pad_front",
+            "min_clearance_mm": 5.5,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_front",
+            "min_clearance_mm": 5.8645,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.8816,
+              "travel_mm": 26.75,
+              "offset_mm": [
+                0,
+                -19.75,
+                7
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamps_left",
+            "min_clearance_mm": 6.4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_left_aft",
+            "min_clearance_mm": 6.4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_left",
+            "min_clearance_mm": 8.5037,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 18
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.25,
+          "poses": 317,
+          "contact_located_within_mm": 0.001,
+          "sampling": "No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 10 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 293
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "outer window right",
+      "request": {
+        "moving": [
+          "window_right",
+          "button_right",
+          "window_bezel_right"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "button_left",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "battery_gate_screws"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              -30,
+              0
+            ]
+          }
+        ],
+        "step_mm": 0.25
+      },
+      "result": {
+        "moving": [
+          "window_right",
+          "button_right",
+          "window_bezel_right"
+        ],
+        "path_length_mm": 30,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "key_board_right",
+            "min_clearance_mm": 0.035,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 2.4398,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 2.4398,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 5.2065,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_end_pad_rear",
+            "min_clearance_mm": 7.1914,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 7.5498,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_right",
+            "min_clearance_mm": 9.1882,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_right_aft",
+            "min_clearance_mm": 9.9058,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamps_right",
+            "min_clearance_mm": 9.9093,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 24
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.25,
+          "poses": 121,
+          "contact_located_within_mm": 0.001,
+          "sampling": "No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 4 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 686
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "inner window right",
+      "request": {
+        "moving": [
+          "window_retainer_right",
+          "key_board_right"
+        ],
+        "against": [
+          "fuselage",
+          "window_retainer_left",
+          "key_board_left",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "battery_gate_screws"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              7
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              19,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              50
+            ]
+          }
+        ],
+        "step_mm": 0.25
+      },
+      "result": {
+        "moving": [
+          "window_retainer_right",
+          "key_board_right"
+        ],
+        "path_length_mm": 79,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.4474,
+              "travel_mm": 18.5,
+              "offset_mm": [
+                0,
+                11.5,
+                7
+              ]
+            },
+            "first_contact": {
+              "step": 3,
+              "fraction": 0.4411,
+              "travel_mm": 18.381,
+              "offset_mm": [
+                0,
+                11.381,
+                7
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 0.5025,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_end_pad_rear",
+            "min_clearance_mm": 5.5,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_rear",
+            "min_clearance_mm": 5.8645,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.8816,
+              "travel_mm": 26.75,
+              "offset_mm": [
+                0,
+                19.75,
+                7
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamps_right",
+            "min_clearance_mm": 6.4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_right_aft",
+            "min_clearance_mm": 6.4,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_right",
+            "min_clearance_mm": 8.5037,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 21
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.25,
+          "poses": 317,
+          "contact_located_within_mm": 0.001,
+          "sampling": "No point of the moving objects travels more than 0.25 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 10 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 289
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "battery module",
+      "request": {
+        "moving": [
+          "battery_cradle",
+          "battery_gate",
+          "battery_gate_screws",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference"
+        ],
+        "against": [
+          "fuselage",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              0,
+              30
+            ]
+          },
+          {
+            "rotate_deg": -90,
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "pivot_mm": [
+              0,
+              0,
+              -24
+            ]
+          },
+          {
+            "move_mm": [
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "rotate_deg": 35,
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "pivot_mm": [
+              0,
+              0,
+              -24
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              70
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "battery_cradle",
+          "battery_gate",
+          "battery_gate_screws",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference"
+        ],
+        "path_length_mm": 105.031,
+        "turned_deg": 125,
+        "first_contact": {
+          "object_id": "tail_lock_screws",
+          "step": 4,
+          "fraction": 0.5209,
+          "travel_mm": 34.058,
+          "offset_mm": [
+            4.04,
+            0,
+            29.833
+          ],
+          "turned_deg": 108.23
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "tail_lock_screws",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 4,
+              "fraction": 0.5345,
+              "travel_mm": 34.086,
+              "offset_mm": [
+                4.066,
+                0,
+                29.824
+              ],
+              "turned_deg": 108.71
+            },
+            "first_contact": {
+              "step": 4,
+              "fraction": 0.5209,
+              "travel_mm": 34.058,
+              "offset_mm": [
+                4.04,
+                0,
+                29.833
+              ],
+              "turned_deg": 108.23
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.5045,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "controller_cassette",
+            "min_clearance_mm": 2.3196,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_left_aft",
+            "min_clearance_mm": 2.4115,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamps_right",
+            "min_clearance_mm": 2.4117,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamps_left",
+            "min_clearance_mm": 2.4129,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_right_aft",
+            "min_clearance_mm": 2.4129,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "xiao_reference",
+            "min_clearance_mm": 2.8421,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "tail",
+            "min_clearance_mm": 2.8934,
+            "min_clearance_at": {
+              "step": 4,
+              "fraction": 0.2586,
+              "travel_mm": 33.525,
+              "offset_mm": [
+                3.523,
+                0,
+                29.959
+              ],
+              "turned_deg": 99.05
+            }
+          },
+          {
+            "object_id": "xiao_shim",
+            "min_clearance_mm": 3.0696,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_left",
+            "min_clearance_mm": 4.5147,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_right",
+            "min_clearance_mm": 4.5147,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 4.7662,
+            "min_clearance_at": {
+              "step": 4,
+              "fraction": 0,
+              "travel_mm": 33,
+              "offset_mm": [
+                3,
+                0,
+                30
+              ],
+              "turned_deg": 90
+            }
+          },
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 4.7662,
+            "min_clearance_at": {
+              "step": 4,
+              "fraction": 0,
+              "travel_mm": 33,
+              "offset_mm": [
+                3,
+                0,
+                30
+              ],
+              "turned_deg": 90
+            }
+          },
+          {
+            "object_id": "ntc_shell_reference",
+            "min_clearance_mm": 4.9231,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.4324,
+              "travel_mm": 30,
+              "offset_mm": [
+                0,
+                0,
+                30
+              ],
+              "turned_deg": 38.92
+            }
+          },
+          {
+            "object_id": "skid_root_screws_left",
+            "min_clearance_mm": 5.9396,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_root_screws_right",
+            "min_clearance_mm": 5.9419,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 7.63,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.527,
+              "travel_mm": 30,
+              "offset_mm": [
+                0,
+                0,
+                30
+              ],
+              "turned_deg": 47.43
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 7.6411,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.0667,
+              "travel_mm": 2,
+              "offset_mm": [
+                0,
+                0,
+                2
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 1
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 413,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 13 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 2362
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "XIAO cassette",
+      "request": {
+        "moving": [
+          "controller_cassette",
+          "xiao_reference",
+          "xiao_shim"
+        ],
+        "against": [
+          "fuselage",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "ntc_shell_reference",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              -10,
+              0,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              -20
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "controller_cassette",
+          "xiao_reference",
+          "xiao_shim"
+        ],
+        "path_length_mm": 30,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "skid_root_screws_left",
+            "min_clearance_mm": 3.5831,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.2,
+              "travel_mm": 2,
+              "offset_mm": [
+                -2,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_root_screws_right",
+            "min_clearance_mm": 3.5831,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.2,
+              "travel_mm": 2,
+              "offset_mm": [
+                -2,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_left_aft",
+            "min_clearance_mm": 4.5386,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_right_aft",
+            "min_clearance_mm": 4.5386,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_left",
+            "min_clearance_mm": 8.1778,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_right",
+            "min_clearance_mm": 8.1778,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 9
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 61,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 2 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 126
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "battery gate on bench",
+      "request": {
+        "moving": [
+          "battery_gate",
+          "battery_end_pad_front"
+        ],
+        "against": [
+          "battery_cradle",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "battery_end_pad_rear",
+          "ntc_battery_reference"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              0,
+              30
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "battery_gate",
+          "battery_end_pad_front"
+        ],
+        "path_length_mm": 30,
+        "first_contact": {
+          "object_id": "battery_cradle",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_strap_front",
+            "min_clearance_mm": 9.8253,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 3
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 61,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 2 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 18
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "cell on bench",
+      "request": {
+        "moving": [
+          "battery_reference"
+        ],
+        "against": [
+          "battery_cradle",
+          "battery_end_pad_rear"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              80,
+              0
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "battery_reference"
+        ],
+        "path_length_mm": 80,
+        "first_contact": {
+          "object_id": "battery_end_pad_rear",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "battery_end_pad_rear",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 0.2916,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.0063,
+              "travel_mm": 0.5,
+              "offset_mm": [
+                0,
+                0.5,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 0
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 161,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 39
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "motor and PCB carrier",
+      "request": {
+        "moving": [
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              0,
+              1.5
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              7.5
+            ],
+            "rotate_deg": -15,
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "pivot_mm": [
+              0,
+              0,
+              -6
+            ]
+          },
+          {
+            "move_mm": [
+              4,
+              -0.5,
+              0
+            ]
+          },
+          {
+            "move_mm": [
+              0,
+              0,
+              55
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws"
+        ],
+        "path_length_mm": 71.293,
+        "turned_deg": 15,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "key_board_left",
+            "min_clearance_mm": 0.9355,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.8776,
+              "travel_mm": 11.255,
+              "offset_mm": [
+                -4.716,
+                2,
+                7.654
+              ],
+              "turned_deg": 13.16
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate",
+            "min_clearance_mm": 1.3994,
+            "min_clearance_at": {
+              "step": 4,
+              "fraction": 0.8889,
+              "travel_mm": 15.846,
+              "offset_mm": [
+                -1.806,
+                1.556,
+                8.427
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "window_right_screws",
+            "min_clearance_mm": 1.4772,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.0612,
+              "travel_mm": 4.07,
+              "offset_mm": [
+                -0.331,
+                2,
+                1.965
+              ],
+              "turned_deg": 0.92
+            }
+          },
+          {
+            "object_id": "battery_gate_screws",
+            "min_clearance_mm": 2.1148,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0.0204,
+              "travel_mm": 3.691,
+              "offset_mm": [
+                -0.11,
+                2,
+                1.655
+              ],
+              "turned_deg": 0.31
+            }
+          },
+          {
+            "object_id": "window_right",
+            "min_clearance_mm": 3.1642,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.6667,
+              "travel_mm": 1,
+              "offset_mm": [
+                0,
+                0,
+                1
+              ]
+            }
+          },
+          {
+            "object_id": "window_left_screws",
+            "min_clearance_mm": 3.5,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0.75,
+              "travel_mm": 3,
+              "offset_mm": [
+                0,
+                1.5,
+                1.5
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_front",
+            "min_clearance_mm": 3.9419,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "key_board_right",
+            "min_clearance_mm": 4.03,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.0273,
+              "travel_mm": 17.793,
+              "offset_mm": [
+                -1.362,
+                1.5,
+                9.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "liner_aft_right",
+            "min_clearance_mm": 4.4703,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.2455,
+              "travel_mm": 29.793,
+              "offset_mm": [
+                -1.362,
+                1.5,
+                21.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "battery_strap_rear",
+            "min_clearance_mm": 4.8592,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 5,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0,
+              "travel_mm": 3.5,
+              "offset_mm": [
+                0,
+                2,
+                1.5
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 5.6005,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_aft_left",
+            "min_clearance_mm": 6.7235,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.2091,
+              "travel_mm": 27.793,
+              "offset_mm": [
+                -1.362,
+                1.5,
+                19.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "window_left",
+            "min_clearance_mm": 7,
+            "min_clearance_at": {
+              "step": 3,
+              "fraction": 0,
+              "travel_mm": 3.5,
+              "offset_mm": [
+                0,
+                2,
+                1.5
+              ]
+            }
+          },
+          {
+            "object_id": "ntc_shell_reference",
+            "min_clearance_mm": 8.1656,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.0091,
+              "travel_mm": 16.793,
+              "offset_mm": [
+                -1.362,
+                1.5,
+                8.927
+              ],
+              "turned_deg": 15
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 9.1708,
+            "min_clearance_at": {
+              "step": 5,
+              "fraction": 0.4455,
+              "travel_mm": 40.793,
+              "offset_mm": [
+                -1.362,
+                1.5,
+                32.927
+              ],
+              "turned_deg": 15
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 20
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 176,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 2607
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "optical insert plus ASA supports",
+      "request": {
+        "moving": [
+          "optical_reflector",
+          "led_bracket_left",
+          "led_bracket_right"
+        ],
+        "against": [
+          "fuselage",
+          "window_left",
+          "window_right",
+          "button_left",
+          "button_right",
+          "window_retainer_left",
+          "window_retainer_right",
+          "key_board_left",
+          "key_board_right",
+          "liner_left",
+          "liner_right",
+          "liner_aft_left",
+          "liner_aft_right",
+          "battery_cradle",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_strap_rear",
+          "controller_cassette",
+          "xiao_reference",
+          "skid_left",
+          "skid_right",
+          "skid_clamps_left",
+          "skid_clamps_right",
+          "skid_clamp_left_aft",
+          "skid_clamp_right_aft",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "ntc_battery_reference",
+          "ntc_shell_reference",
+          "controller_mount_screws",
+          "xiao_shim",
+          "tail",
+          "tail_lock_screws",
+          "skid_root_screws_left",
+          "skid_root_screws_right",
+          "window_left_screws",
+          "window_right_screws",
+          "battery_gate_screws",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "motor_mount_screw_second",
+          "drive_pulley",
+          "connection_board",
+          "pcb_mount_screws",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right",
+          "thermal_bridge_left",
+          "thermal_bridge_right",
+          "cradle_tie_front",
+          "cradle_tie_rear",
+          "thermal_contact_screws",
+          "controller_wire_guide"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              -80,
+              0,
+              0
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "optical_reflector",
+          "led_bracket_left",
+          "led_bracket_right"
+        ],
+        "path_length_mm": 80,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_cradle",
+            "min_clearance_mm": 1.5,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "pcb_mount_screws",
+            "min_clearance_mm": 2.209,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_bridge_left",
+            "min_clearance_mm": 3.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_bridge_right",
+            "min_clearance_mm": 3.1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_front",
+            "min_clearance_mm": 3.6502,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_rear",
+            "min_clearance_mm": 3.6502,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate",
+            "min_clearance_mm": 3.9654,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_left",
+            "min_clearance_mm": 4.0284,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.15,
+              "travel_mm": 12,
+              "offset_mm": [
+                -12,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "liner_right",
+            "min_clearance_mm": 4.0284,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.15,
+              "travel_mm": 12,
+              "offset_mm": [
+                -12,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 4.5098,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate_screws",
+            "min_clearance_mm": 5.9494,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_left",
+            "min_clearance_mm": 9,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 9,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_left_screws",
+            "min_clearance_mm": 9.6545,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_right_screws",
+            "min_clearance_mm": 9.6545,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 38
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 161,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 326
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    },
+    {
+      "label": "wire guide after releasing tie/bond",
+      "request": {
+        "moving": [
+          "controller_wire_guide"
+        ],
+        "against": [
+          "fuselage",
+          "internal_carrier",
+          "fan_motor",
+          "motor_mount_screw",
+          "drive_pulley",
+          "connection_board",
+          "thermal_bridge_left",
+          "thermal_bridge_right",
+          "thermal_fore_shoe_left",
+          "thermal_fore_shoe_right",
+          "thermal_aft_shoe_left",
+          "thermal_aft_shoe_right",
+          "window_left",
+          "window_right",
+          "key_board_left",
+          "key_board_right",
+          "optical_reflector"
+        ],
+        "steps": [
+          {
+            "move_mm": [
+              0,
+              0,
+              80
+            ]
+          }
+        ],
+        "step_mm": 0.5
+      },
+      "result": {
+        "moving": [
+          "controller_wire_guide"
+        ],
+        "path_length_mm": 80,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.2,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.175,
+              "travel_mm": 14,
+              "offset_mm": [
+                0,
+                0,
+                14
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_bridge_right",
+            "min_clearance_mm": 1.5,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "thermal_aft_shoe_right",
+            "min_clearance_mm": 2.765,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 5.1128,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.1125,
+              "travel_mm": 9,
+              "offset_mm": [
+                0,
+                0,
+                9
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 6.7001,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 6.8565,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.2062,
+              "travel_mm": 16.5,
+              "offset_mm": [
+                0,
+                0,
+                16.5
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 11
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 161,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 61
+      },
+      "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
+    }
+  ]
+}

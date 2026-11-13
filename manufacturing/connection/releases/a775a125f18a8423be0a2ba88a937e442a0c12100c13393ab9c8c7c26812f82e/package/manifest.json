@@ -1,0 +1,655 @@
+{
+  "schemaVersion": 3,
+  "backend": "tscircuit-kicad",
+  "designId": "connection",
+  "candidateId": "208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e",
+  "exportId": "208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e",
+  "status": "ready",
+  "readyForFabrication": true,
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "manufacturing/drill/board-NPTH.drl",
+        "manufacturing/drill/board-PTH.drl",
+        "manufacturing/drill/connection-drill-report.txt",
+        "manufacturing/gerbers/board-B_Cu.gbl",
+        "manufacturing/gerbers/board-B_Mask.gbs",
+        "manufacturing/gerbers/board-B_Paste.gbp",
+        "manufacturing/gerbers/board-B_Silkscreen.gbo",
+        "manufacturing/gerbers/board-Edge_Cuts.gm1",
+        "manufacturing/gerbers/board-F_Cu.gtl",
+        "manufacturing/gerbers/board-F_Mask.gts",
+        "manufacturing/gerbers/board-F_Paste.gtp",
+        "manufacturing/gerbers/board-F_Silkscreen.gto",
+        "manufacturing/gerbers/board-In1_Cu.g1",
+        "manufacturing/gerbers/board-In2_Cu.g2",
+        "manufacturing/gerbers/board-In3_Cu.g3",
+        "manufacturing/gerbers/board-In4_Cu.g4",
+        "manufacturing/gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "manufacturing/jlc-smt-bom.csv",
+        "manufacturing/jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "manufacturing/3dmodels/connection.3dshapes/C_0603_1608Metric.step",
+        "manufacturing/3dmodels/connection.3dshapes/C_0805_2012Metric.step",
+        "manufacturing/3dmodels/connection.3dshapes/C_1210_3225Metric.step",
+        "manufacturing/3dmodels/connection.3dshapes/csd85301q2-supplier-faceted.step",
+        "manufacturing/3dmodels/connection.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+        "manufacturing/3dmodels/connection.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+        "manufacturing/3dmodels/connection.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+        "manufacturing/3dmodels/connection.3dshapes/R_0603_1608Metric.step",
+        "manufacturing/3dmodels/connection.3dshapes/R_1206_3216Metric.step",
+        "manufacturing/3dmodels/connection.3dshapes/tps61500pwp-supplier.step",
+        "manufacturing/assembly.glb",
+        "manufacturing/assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "generatedAt": "2026-11-13T08:24:34.468Z",
+  "files": [
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "sizeBytes": 43450
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "sizeBytes": 43618
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "sizeBytes": 43502
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/csd85301q2-supplier-faceted.step",
+      "sha256": "0fb568b58047397eb6ec2b695e392929bd8cedf3e2bfe9e56019b18baef75a1d",
+      "sizeBytes": 716887
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "sizeBytes": 75616
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+      "sizeBytes": 110633
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step",
+      "sha256": "e2494ee514c349bfd27fc085f05e73e35a61d73b2303a72b707c562b1f6b7dc6",
+      "sizeBytes": 251100
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "sizeBytes": 40618
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "sizeBytes": 40414
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/connection.3dshapes/tps61500pwp-supplier.step",
+      "sha256": "284276d725d48c4d5b8b4d6b8c356ebd11eb0de3fcba22be6d02ab2af45d5df1",
+      "sizeBytes": 1934827
+    },
+    {
+      "type": "glb",
+      "path": "manufacturing/assembly.glb",
+      "sha256": "36b69722efb8efd06eb468a5630a0e6c75defa0008e5704fd3cf5c28b451908e",
+      "sizeBytes": 81747044
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/assembly.step",
+      "sha256": "ed34eb03e927f6866d5bbc050583d91d288bcd12a09a49cda3c53fbb0bde3b60",
+      "sizeBytes": 37450551
+    },
+    {
+      "type": "manifest",
+      "path": "manufacturing/circuit.json",
+      "sha256": "fce546546f46f471a67f77528863ec1cc5ee4e3392add5d70d16e4ce0f414844",
+      "sizeBytes": 2887207
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-NPTH.drl",
+      "sha256": "ce4df28ba11a36fa1da9f6daaa2cdbc25cffc632ac98d7c318746bfa9f17a007",
+      "sizeBytes": 355
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-PTH.drl",
+      "sha256": "8cc72d28f6ba2debefb37c829d15effe3023ae0be4bf2ab5cbe3fd48edb013e0",
+      "sizeBytes": 2520
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/connection-drill-report.txt",
+      "sha256": "6840fca5fbb021c3da19f25bb158c0452b7587c2bb336aabc8d21f39e7bfcef8",
+      "sizeBytes": 878
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Cu.gbl",
+      "sha256": "b884e583edd13b78ffc5ea2f21af625f30c2ea7c7793ec2f1a3760b9bb9a5cbd",
+      "sizeBytes": 278095
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Mask.gbs",
+      "sha256": "2ff379d2354de6e39c42418261cb9bfdc1b2ff91d631fb40797e483c96ba3479",
+      "sizeBytes": 6921
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Paste.gbp",
+      "sha256": "06e39bb30873298f221fdc712fb00f98951cd756bc49c076c9bccfd9acf81776",
+      "sizeBytes": 5647
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Silkscreen.gbo",
+      "sha256": "201ac4948f6b980d3e12c25888dcd9b188d1b8acb2c207f62283c518add3907f",
+      "sizeBytes": 8228
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-Edge_Cuts.gm1",
+      "sha256": "e412437ebd9b870b4a15167bdd34215c0ef64d1c17398122f1c0dbad1902215b",
+      "sizeBytes": 680
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Cu.gtl",
+      "sha256": "b1f9381b0358e0b7a856756858370a92442f0b7d8c20cf17d17189481e85bba6",
+      "sizeBytes": 231420
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Mask.gts",
+      "sha256": "8502c1d8a98cabba63735fc9d51f20998048bfe3223c3baba3d13979d34d2df3",
+      "sizeBytes": 5252
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Paste.gtp",
+      "sha256": "e38c1f05b6c6bca9d63af392a3879db83726c43fbdfc000af98fd23ad7a44527",
+      "sizeBytes": 3973
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Silkscreen.gto",
+      "sha256": "e51eaf8b5b3148f1939ebbcb7f680a6782cb22f6521d2e7ef4b47b27a701edef",
+      "sizeBytes": 19825
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-In1_Cu.g1",
+      "sha256": "7b71fd351187121fff0ad560d210bfca7e20c395a946ca81b7af8f4ac1a23ea5",
+      "sizeBytes": 201555
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-In2_Cu.g2",
+      "sha256": "b381710179c76836c877eda809c45f79cfee4c0c48522587c233146813d1fc3c",
+      "sizeBytes": 260039
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-In3_Cu.g3",
+      "sha256": "0881e735e5c34ea0800a4202108d52ba9c029871f9cbaa3da395706160fa832d",
+      "sizeBytes": 9623
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-In4_Cu.g4",
+      "sha256": "54f3d80c1a0010c1ecf13cb75f5d1c1839f35d8a537a14c07d61cec6efa9a80f",
+      "sizeBytes": 196193
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-job.gbrjob",
+      "sha256": "176a54878e4e95ea82377d2a3ab383a47116334fc9d27f28a023387b932d50df",
+      "sizeBytes": 4427
+    },
+    {
+      "type": "bom",
+      "path": "manufacturing/jlc-smt-bom.csv",
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
+      "sizeBytes": 72
+    },
+    {
+      "type": "pick-and-place",
+      "path": "manufacturing/jlc-smt-placement.csv",
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
+      "sizeBytes": 83
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"led_regulator\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/9",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 138
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"probe_female_housings\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/112",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 1447
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"probe_crimp_contacts\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/121",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 1548
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Plotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-F_Cu.gtl'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-In1_Cu.g1'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-In2_Cu.g2'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-In3_Cu.g3'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-In4_Cu.g4'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-B_Cu.gbl'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-F_Paste.gtp'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-B_Paste.gbp'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-F_Silkscreen.gto'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-B_Silkscreen.gbo'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-F_Mask.gts'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-B_Mask.gbs'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/gerbers/board-Edge_Cuts.gm1'.",
+      "file": "manufacturing/gerbers",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Created file '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/drill/board-PTH.drl'\nCreated file '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/drill/board-NPTH.drl'\nDone.",
+      "file": "manufacturing/drill",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Fontconfig error: Cannot load default config file: No such file: (null)\nWrote bill of materials to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/bom.csv'.",
+      "file": "manufacturing/bom.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Wrote position data to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/placement.csv'.",
+      "file": "manufacturing/placement.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "STEP file '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/assembly.step' created.\n\nExport time 6.299 s",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_step_required_models_verified",
+      "message": "Verified 30 required mounted assembly model occurrence(s) in the final KiCad STEP: C1, C2, C3, C4, C5, C6, C7, C8, D1, F1, L1, Q3, Q4, Q5, Q6, Q7, R1, R10, R2, R3, R4, R5, R6, R7, R8, R9, U1, U2, U3, U4.",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "checked_model_refs": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8",
+          "D1",
+          "F1",
+          "L1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "R1",
+          "R10",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7",
+          "R8",
+          "R9",
+          "U1",
+          "U2",
+          "U3",
+          "U4"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_surface_appearance_built",
+      "message": "Prepared deterministic board appearance for the main PCB.",
+      "file": "manufacturing/assembly-appearance.json",
+      "details": {
+        "spec_sha256": "91e63b1130e89c7de5b77ba626ec2d2ace0be68cf169a688b389b09ee8327ed1",
+        "overlay_ids": [
+          "main-pcb:connection"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_glb_derived_from_step",
+      "message": "assembly.glb was generated from the final KiCad assembly.step, so the fabrication preview and released solid share one geometry source.",
+      "file": "manufacturing/assembly.glb",
+      "details": {
+        "source": "assembly-step",
+        "source_path": "manufacturing/assembly.step",
+        "source_step_sha256": "ed34eb03e927f6866d5bbc050583d91d288bcd12a09a49cda3c53fbb0bde3b60",
+        "preview_sha256": "36b69722efb8efd06eb468a5630a0e6c75defa0008e5704fd3cf5c28b451908e",
+        "appearance_spec_sha256": "91e63b1130e89c7de5b77ba626ec2d2ace0be68cf169a688b389b09ee8327ed1",
+        "surface_texture_overlay_ids": [
+          "main-pcb:connection"
+        ],
+        "surface_decal_ids": [],
+        "material_override_ids": [],
+        "verified_source_material_ids": []
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "dfm_via_below_advisory_capability",
+      "message": "70 via size advisory finding(s) below JLC 2-layer capability (min observed 0.500 mm).",
+      "file": "manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/board.kicad_pcb",
+      "nextAction": "Review the affected vias and increase diameter/drill toward the advisory floor where layout permits.",
+      "details": {
+        "count": 70,
+        "min_observed_mm": 0.5,
+        "samples": [
+          "(via\n\t\t(at 104.5445 96.3184)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_VCC\")\n\t\t(uuid \"b6e127f2-32cf-4f16-bd47-6b5064db984b\")\n\t)",
+          "(via\n\t\t(at 113.8885 89.0938)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_VCC\")\n\t\t(uuid \"bd990481-258b-4493-8d79-342c6abe8109\")\n\t)",
+          "(via\n\t\t(at 92.906399 96.2)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LIGHT_EN\")\n\t\t(uuid \"7beba221-aafe-4691-b66e-724416973f05\")\n\t)",
+          "(via\n\t\t(at 95.7859 102.1341)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LIGHT_EN\")\n\t\t(uuid \"eabf14e6-7ec4-4830-a0ab-8d82eaaa029b\")\n\t)",
+          "(via\n\t\t(at 109.500024 106.109999)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1693e638-ed64-441b-be07-7f53cf64d69f\")\n\t)",
+          "(via\n\t\t(at 112.09258 88.583993)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"171b60e8-cd14-431e-8d6e-6490baa8fc08\")\n\t)",
+          "(via\n\t\t(at 90.725 109.309)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1c12dee0-f733-4683-8b17-8c270d34811a\")\n\t)",
+          "(via\n\t\t(at 97 109.436)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1d94f58a-9812-41c0-bb90-22f916b7791b\")\n\t)",
+          "(via\n\t\t(at 98.775 107.488)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1f5fa91f-43cd-4e38-8345-04cda7e69f2c\")\n\t)",
+          "(via\n\t\t(at 96.075 100.261)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"20c32244-456b-4014-b2e5-29929647fec5\")\n\t)",
+          "(via\n\t\t(at 97.649986 94.362116)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"2241e71d-baa3-40f7-a4c6-0a880c779756\")\n\t)",
+          "(via\n\t\t(at 94.949958 104.140009)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"2d4f9cf3-41ac-4526-a273-83e3cf1a6710\")\n\t)",
+          "(via\n\t\t(at 104.8778 97.0256)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(net \"GND\")\n\t\t(uuid \"3c910625-e9d8-499d-9a6b-e4cabb6bc6f6\")\n\t)",
+          "(via\n\t\t(at 106.756601 105.3)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"5880a07a-547f-4239-89dd-916eaef92594\")\n\t)",
+          "(via\n\t\t(at 93 103.770122)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"6118226c-c9c5-461a-832a-c95e525bb9e4\")\n\t)",
+          "(via\n\t\t(at 101.975 103.13)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"64f85df9-afe4-4fbb-8d29-491abf2118fa\")\n\t)",
+          "(via\n\t\t(at 87.5 79.63)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"697dbcab-6b6b-4f4a-b321-1bf47deb571b\")\n\t)",
+          "(via\n\t\t(at 96.300002 85.084995)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"69afbef1-bff1-4b49-8d62-0e1ba4daafcd\")\n\t)",
+          "(via\n\t\t(at 109.109978 100.219997)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"75af1a8c-3546-43eb-8810-4b030e5a8603\")\n\t)",
+          "(via\n\t\t(at 87 119.335)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"7875c5f1-0903-4ef0-997e-c6954295192b\")\n\t)",
+          "(via\n\t\t(at 94.125 112.585)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"86d06958-4bd4-48a1-ab7c-4a7a4a00a00c\")\n\t)",
+          "(via\n\t\t(at 112.900024 97.790001)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"8ba0d7af-4d02-4d02-af2a-1c61c6d1f9cd\")\n\t)",
+          "(via\n\t\t(at 96.675 96.829)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"8c8c8b61-aac0-479e-86d7-cff7fcf3c956\")\n\t)",
+          "(via\n\t\t(at 91.050042 98.408499)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"aafc1faa-fe3d-4c5c-9188-588b9182a778\")\n\t)",
+          "(via\n\t\t(at 94.299972 104.140009)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"b6d0de4c-0ee8-4ee2-b8e6-e79b01992b79\")\n\t)",
+          "(via\n\t\t(at 110.925 99.793)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"bfa7e41f-4617-47d1-aade-cbccef95e9a0\")\n\t)",
+          "(via\n\t\t(at 95.175 114.925)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"cd3992f6-73d3-4b96-9150-c279126a38c8\")\n\t)",
+          "(via\n\t\t(at 87 105.200023)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"cf00f5d7-4db2-4cbc-a8dd-7dd51feff931\")\n\t)",
+          "(via\n\t\t(at 93.725 107.525)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"d1a01717-bcbc-40dc-937d-a2c608e460d1\")\n\t)",
+          "(via\n\t\t(at 108.125 104.125)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"d1ec5170-c7eb-461a-892a-059d4483a4aa\")\n\t)",
+          "(via\n\t\t(at 87 95.002127)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"db18203f-8e0c-4e97-b1b4-bb6025e20227\")\n\t)",
+          "(via\n\t\t(at 104.649986 94.362116)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e0bb7cc9-ab74-4358-9c5c-f01f83ad2d02\")\n\t)",
+          "(via\n\t\t(at 101.524992 93.939866)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e752a9f2-bdb1-457b-a7ca-578ffb805310\")\n\t)",
+          "(via\n\t\t(at 116 99.643399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e81e15c1-11e0-4c7a-9389-de1b489aa329\")\n\t)",
+          "(via\n\t\t(at 93.35 108.892)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e9915a4d-2136-4727-a19d-3905a3c7ed59\")\n\t)",
+          "(via\n\t\t(at 101.975 99.99)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"ece71da6-6ee4-4d0a-a824-7fd453e76452\")\n\t)",
+          "(via\n\t\t(at 93.649986 104.140009)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"f44592ec-5650-4a8b-b40f-cf820f9df934\")\n\t)",
+          "(via\n\t\t(at 101.225 100.573)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"f8748833-3a53-425e-ac0b-feeb5943a58e\")\n\t)",
+          "(via\n\t\t(at 103.225 108.997)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"fe4274eb-8ae0-4671-b986-013f27f1d1b3\")\n\t)",
+          "(via\n\t\t(at 105.6366 97.0881)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_VREF\")\n\t\t(uuid \"7b4d360a-019d-48d1-95ab-fce63bdc9c61\")\n\t)",
+          "(via\n\t\t(at 116 102.6287)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_EN\")\n\t\t(uuid \"08bec627-1bb2-43b6-848b-03e107624388\")\n\t)",
+          "(via\n\t\t(at 106.6287 94.7501)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_EN\")\n\t\t(uuid \"cced8263-577a-4f2e-8cd8-640f8d50b4ab\")\n\t)",
+          "(via\n\t\t(at 98.5666 109.199199)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FB\")\n\t\t(uuid \"c82630fa-d71e-45d9-bf06-5cd265a8525a\")\n\t)",
+          "(via\n\t\t(at 91.542899 107.0531)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FB\")\n\t\t(uuid \"ca6b98f7-c628-4a2d-9510-69392b08408c\")\n\t)",
+          "(via\n\t\t(at 97.8697 114.2425)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_PLUS\")\n\t\t(uuid \"a92b0705-8368-4eb6-9bec-ddd89e54a4c4\")\n\t)",
+          "(via\n\t\t(at 93.5768 98.156)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"VBOOST_BIAS\")\n\t\t(uuid \"333e2255-bfa6-423d-846e-ee8d8a496b73\")\n\t)",
+          "(via\n\t\t(at 92.8375 97.0106)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_SS\")\n\t\t(uuid \"8a3f1c19-5cfa-432a-9474-45383cd39e6d\")\n\t)",
+          "(via\n\t\t(at 97.9225 112.0752)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_SS\")\n\t\t(uuid \"8f811c4a-d166-4eee-9be1-abb50185e398\")\n\t)",
+          "(via\n\t\t(at 95.5143 114.197399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_SS\")\n\t\t(uuid \"c9e98ee2-b5d6-4adb-9bf8-f445dcd66377\")\n\t)",
+          "(via\n\t\t(at 90.3 101.6736)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_DIM\")\n\t\t(uuid \"dec7b838-1b19-487a-9459-df86326ab495\")\n\t)",
+          "(via\n\t\t(at 90.542899 107.218)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_COMP\")\n\t\t(uuid \"04f726fb-8db6-4864-9fe6-dfb269cc6795\")\n\t)",
+          "(via\n\t\t(at 97.825 102.343399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FREQ\")\n\t\t(uuid \"d023e3be-81ef-4797-8d05-a89809a7d9b6\")\n\t)",
+          "(via\n\t\t(at 92.3136 106.8986)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FREQ\")\n\t\t(uuid \"e9793253-a757-46ff-8d81-021039b7d5ea\")\n\t)",
+          "(via\n\t\t(at 109.2233 98.4352)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"V3V3\")\n\t\t(uuid \"dd3edbeb-7291-449a-ac05-dd0f5d96d59b\")\n\t)",
+          "(via\n\t\t(at 103.0233 99.814399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"V3V3\")\n\t\t(uuid \"f3a33eec-59c7-42d2-b6cb-634b8c2c1c2c\")\n\t)",
+          "(via\n\t\t(at 99.937 111.406)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"I2C_SDA\")\n\t\t(uuid \"e0ce4f55-ae0d-45fc-8227-26ebe1bc8bfd\")\n\t)",
+          "(via\n\t\t(at 106.2642 100.56)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"I2C_SCL\")\n\t\t(uuid \"600302ad-8348-4795-905e-9b97e580b0ef\")\n\t)",
+          "(via\n\t\t(at 105.536 95.4248)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_CTL\")\n\t\t(uuid \"78187838-cb59-40c5-815a-5549772e5a8b\")\n\t)",
+          "(via\n\t\t(at 104.4068 103.6433)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_IPROPI\")\n\t\t(uuid \"0ef88b42-da4f-4bc5-bb3f-f879f7d4b5f1\")\n\t)",
+          "(via\n\t\t(at 106.774 99.209899)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_IPROPI\")\n\t\t(uuid \"8e30c5e4-783d-44b9-aad3-577d57765299\")\n\t)",
+          "(via\n\t\t(at 111.825 106.753899)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"NTC_SHELL\")\n\t\t(uuid \"1bfaf1e4-3ef7-43a7-aae2-24374bf312d3\")\n\t)",
+          "(via\n\t\t(at 113.6091 104.006899)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"NTC_SHELL\")\n\t\t(uuid \"afc06ca2-9def-4bbb-a45a-16483a50e736\")\n\t)",
+          "(via\n\t\t(at 88.7171 109.2457)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"CHG_GATE\")\n\t\t(uuid \"4641af13-dec3-4a93-8928-221ae8ecaf80\")\n\t)",
+          "(via\n\t\t(at 86.1053 115.379)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"CHG_GATE\")\n\t\t(uuid \"7250abc5-61ce-4fdf-a32c-76fb845dd81c\")\n\t)",
+          "(via\n\t\t(at 87.9187 100.0577)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"DSG_GATE\")\n\t\t(uuid \"073d0126-6ad3-4be6-9cba-b574f64d4c46\")\n\t)",
+          "(via\n\t\t(at 88.6931 95.5658)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"DSG_GATE\")\n\t\t(uuid \"0916d709-beb0-48e8-8821-ea5c373b2a21\")\n\t)",
+          "(via\n\t\t(at 86.8201 114.0851)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"PROT_BAT\")\n\t\t(uuid \"90ffb61d-c58a-4343-a2dc-d38b8d1fdfe5\")\n\t)",
+          "(via\n\t\t(at 86.4597 117.348)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"PROT_BAT\")\n\t\t(uuid \"c771a6fb-b85f-4487-b7e9-a578e93f838c\")\n\t)",
+          "(via\n\t\t(at 102.642 106.9807)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"BAT_ADC\")\n\t\t(uuid \"243aefa4-12f0-4324-9125-b7d9670b7b00\")\n\t)",
+          "(via\n\t\t(at 107.000899 106.532)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"BAT_ADC\")\n\t\t(uuid \"a9e7c9cd-e237-4f08-8589-751a89436a47\")\n\t)"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "dfm_annular_ring_below_advisory_capability",
+      "message": "70 annular ring advisory finding(s) below JLC 2-layer capability (min observed 0.125 mm).",
+      "file": "manufacturing/connection/exports/.staging/208806779980d65d9b2a5cab581705f4f0327072e90820bc0709be7690784e6e-fc1a63c7-f490-4611-9109-19102673a186/board.kicad_pcb",
+      "nextAction": "Review the affected via annular rings and increase them where layout permits.",
+      "details": {
+        "count": 70,
+        "min_observed_mm": 0.125,
+        "samples": [
+          "(via\n\t\t(at 104.5445 96.3184)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_VCC\")\n\t\t(uuid \"b6e127f2-32cf-4f16-bd47-6b5064db984b\")\n\t)",
+          "(via\n\t\t(at 113.8885 89.0938)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_VCC\")\n\t\t(uuid \"bd990481-258b-4493-8d79-342c6abe8109\")\n\t)",
+          "(via\n\t\t(at 92.906399 96.2)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LIGHT_EN\")\n\t\t(uuid \"7beba221-aafe-4691-b66e-724416973f05\")\n\t)",
+          "(via\n\t\t(at 95.7859 102.1341)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LIGHT_EN\")\n\t\t(uuid \"eabf14e6-7ec4-4830-a0ab-8d82eaaa029b\")\n\t)",
+          "(via\n\t\t(at 109.500024 106.109999)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1693e638-ed64-441b-be07-7f53cf64d69f\")\n\t)",
+          "(via\n\t\t(at 112.09258 88.583993)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"171b60e8-cd14-431e-8d6e-6490baa8fc08\")\n\t)",
+          "(via\n\t\t(at 90.725 109.309)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1c12dee0-f733-4683-8b17-8c270d34811a\")\n\t)",
+          "(via\n\t\t(at 97 109.436)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1d94f58a-9812-41c0-bb90-22f916b7791b\")\n\t)",
+          "(via\n\t\t(at 98.775 107.488)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"1f5fa91f-43cd-4e38-8345-04cda7e69f2c\")\n\t)",
+          "(via\n\t\t(at 96.075 100.261)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"20c32244-456b-4014-b2e5-29929647fec5\")\n\t)",
+          "(via\n\t\t(at 97.649986 94.362116)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"2241e71d-baa3-40f7-a4c6-0a880c779756\")\n\t)",
+          "(via\n\t\t(at 94.949958 104.140009)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"2d4f9cf3-41ac-4526-a273-83e3cf1a6710\")\n\t)",
+          "(via\n\t\t(at 104.8778 97.0256)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(net \"GND\")\n\t\t(uuid \"3c910625-e9d8-499d-9a6b-e4cabb6bc6f6\")\n\t)",
+          "(via\n\t\t(at 106.756601 105.3)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"5880a07a-547f-4239-89dd-916eaef92594\")\n\t)",
+          "(via\n\t\t(at 93 103.770122)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"6118226c-c9c5-461a-832a-c95e525bb9e4\")\n\t)",
+          "(via\n\t\t(at 101.975 103.13)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"64f85df9-afe4-4fbb-8d29-491abf2118fa\")\n\t)",
+          "(via\n\t\t(at 87.5 79.63)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"697dbcab-6b6b-4f4a-b321-1bf47deb571b\")\n\t)",
+          "(via\n\t\t(at 96.300002 85.084995)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"69afbef1-bff1-4b49-8d62-0e1ba4daafcd\")\n\t)",
+          "(via\n\t\t(at 109.109978 100.219997)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"75af1a8c-3546-43eb-8810-4b030e5a8603\")\n\t)",
+          "(via\n\t\t(at 87 119.335)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"7875c5f1-0903-4ef0-997e-c6954295192b\")\n\t)",
+          "(via\n\t\t(at 94.125 112.585)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"86d06958-4bd4-48a1-ab7c-4a7a4a00a00c\")\n\t)",
+          "(via\n\t\t(at 112.900024 97.790001)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"8ba0d7af-4d02-4d02-af2a-1c61c6d1f9cd\")\n\t)",
+          "(via\n\t\t(at 96.675 96.829)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"8c8c8b61-aac0-479e-86d7-cff7fcf3c956\")\n\t)",
+          "(via\n\t\t(at 91.050042 98.408499)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"aafc1faa-fe3d-4c5c-9188-588b9182a778\")\n\t)",
+          "(via\n\t\t(at 94.299972 104.140009)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"b6d0de4c-0ee8-4ee2-b8e6-e79b01992b79\")\n\t)",
+          "(via\n\t\t(at 110.925 99.793)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"bfa7e41f-4617-47d1-aade-cbccef95e9a0\")\n\t)",
+          "(via\n\t\t(at 95.175 114.925)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"cd3992f6-73d3-4b96-9150-c279126a38c8\")\n\t)",
+          "(via\n\t\t(at 87 105.200023)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"cf00f5d7-4db2-4cbc-a8dd-7dd51feff931\")\n\t)",
+          "(via\n\t\t(at 93.725 107.525)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"d1a01717-bcbc-40dc-937d-a2c608e460d1\")\n\t)",
+          "(via\n\t\t(at 108.125 104.125)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"d1ec5170-c7eb-461a-892a-059d4483a4aa\")\n\t)",
+          "(via\n\t\t(at 87 95.002127)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"db18203f-8e0c-4e97-b1b4-bb6025e20227\")\n\t)",
+          "(via\n\t\t(at 104.649986 94.362116)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e0bb7cc9-ab74-4358-9c5c-f01f83ad2d02\")\n\t)",
+          "(via\n\t\t(at 101.524992 93.939866)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e752a9f2-bdb1-457b-a7ca-578ffb805310\")\n\t)",
+          "(via\n\t\t(at 116 99.643399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e81e15c1-11e0-4c7a-9389-de1b489aa329\")\n\t)",
+          "(via\n\t\t(at 93.35 108.892)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"e9915a4d-2136-4727-a19d-3905a3c7ed59\")\n\t)",
+          "(via\n\t\t(at 101.975 99.99)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"ece71da6-6ee4-4d0a-a824-7fd453e76452\")\n\t)",
+          "(via\n\t\t(at 93.649986 104.140009)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"f44592ec-5650-4a8b-b40f-cf820f9df934\")\n\t)",
+          "(via\n\t\t(at 101.225 100.573)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"f8748833-3a53-425e-ac0b-feeb5943a58e\")\n\t)",
+          "(via\n\t\t(at 103.225 108.997)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"GND\")\n\t\t(uuid \"fe4274eb-8ae0-4671-b986-013f27f1d1b3\")\n\t)",
+          "(via\n\t\t(at 105.6366 97.0881)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_VREF\")\n\t\t(uuid \"7b4d360a-019d-48d1-95ab-fce63bdc9c61\")\n\t)",
+          "(via\n\t\t(at 116 102.6287)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_EN\")\n\t\t(uuid \"08bec627-1bb2-43b6-848b-03e107624388\")\n\t)",
+          "(via\n\t\t(at 106.6287 94.7501)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_EN\")\n\t\t(uuid \"cced8263-577a-4f2e-8cd8-640f8d50b4ab\")\n\t)",
+          "(via\n\t\t(at 98.5666 109.199199)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FB\")\n\t\t(uuid \"c82630fa-d71e-45d9-bf06-5cd265a8525a\")\n\t)",
+          "(via\n\t\t(at 91.542899 107.0531)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FB\")\n\t\t(uuid \"ca6b98f7-c628-4a2d-9510-69392b08408c\")\n\t)",
+          "(via\n\t\t(at 97.8697 114.2425)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_PLUS\")\n\t\t(uuid \"a92b0705-8368-4eb6-9bec-ddd89e54a4c4\")\n\t)",
+          "(via\n\t\t(at 93.5768 98.156)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"VBOOST_BIAS\")\n\t\t(uuid \"333e2255-bfa6-423d-846e-ee8d8a496b73\")\n\t)",
+          "(via\n\t\t(at 92.8375 97.0106)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_SS\")\n\t\t(uuid \"8a3f1c19-5cfa-432a-9474-45383cd39e6d\")\n\t)",
+          "(via\n\t\t(at 97.9225 112.0752)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_SS\")\n\t\t(uuid \"8f811c4a-d166-4eee-9be1-abb50185e398\")\n\t)",
+          "(via\n\t\t(at 95.5143 114.197399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_SS\")\n\t\t(uuid \"c9e98ee2-b5d6-4adb-9bf8-f445dcd66377\")\n\t)",
+          "(via\n\t\t(at 90.3 101.6736)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_DIM\")\n\t\t(uuid \"dec7b838-1b19-487a-9459-df86326ab495\")\n\t)",
+          "(via\n\t\t(at 90.542899 107.218)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_COMP\")\n\t\t(uuid \"04f726fb-8db6-4864-9fe6-dfb269cc6795\")\n\t)",
+          "(via\n\t\t(at 97.825 102.343399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FREQ\")\n\t\t(uuid \"d023e3be-81ef-4797-8d05-a89809a7d9b6\")\n\t)",
+          "(via\n\t\t(at 92.3136 106.8986)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"LED_FREQ\")\n\t\t(uuid \"e9793253-a757-46ff-8d81-021039b7d5ea\")\n\t)",
+          "(via\n\t\t(at 109.2233 98.4352)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"V3V3\")\n\t\t(uuid \"dd3edbeb-7291-449a-ac05-dd0f5d96d59b\")\n\t)",
+          "(via\n\t\t(at 103.0233 99.814399)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"V3V3\")\n\t\t(uuid \"f3a33eec-59c7-42d2-b6cb-634b8c2c1c2c\")\n\t)",
+          "(via\n\t\t(at 99.937 111.406)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"I2C_SDA\")\n\t\t(uuid \"e0ce4f55-ae0d-45fc-8227-26ebe1bc8bfd\")\n\t)",
+          "(via\n\t\t(at 106.2642 100.56)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"I2C_SCL\")\n\t\t(uuid \"600302ad-8348-4795-905e-9b97e580b0ef\")\n\t)",
+          "(via\n\t\t(at 105.536 95.4248)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_CTL\")\n\t\t(uuid \"78187838-cb59-40c5-815a-5549772e5a8b\")\n\t)",
+          "(via\n\t\t(at 104.4068 103.6433)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_IPROPI\")\n\t\t(uuid \"0ef88b42-da4f-4bc5-bb3f-f879f7d4b5f1\")\n\t)",
+          "(via\n\t\t(at 106.774 99.209899)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"FAN_IPROPI\")\n\t\t(uuid \"8e30c5e4-783d-44b9-aad3-577d57765299\")\n\t)",
+          "(via\n\t\t(at 111.825 106.753899)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"NTC_SHELL\")\n\t\t(uuid \"1bfaf1e4-3ef7-43a7-aae2-24374bf312d3\")\n\t)",
+          "(via\n\t\t(at 113.6091 104.006899)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"NTC_SHELL\")\n\t\t(uuid \"afc06ca2-9def-4bbb-a45a-16483a50e736\")\n\t)",
+          "(via\n\t\t(at 88.7171 109.2457)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"CHG_GATE\")\n\t\t(uuid \"4641af13-dec3-4a93-8928-221ae8ecaf80\")\n\t)",
+          "(via\n\t\t(at 86.1053 115.379)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"CHG_GATE\")\n\t\t(uuid \"7250abc5-61ce-4fdf-a32c-76fb845dd81c\")\n\t)",
+          "(via\n\t\t(at 87.9187 100.0577)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"DSG_GATE\")\n\t\t(uuid \"073d0126-6ad3-4be6-9cba-b574f64d4c46\")\n\t)",
+          "(via\n\t\t(at 88.6931 95.5658)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"DSG_GATE\")\n\t\t(uuid \"0916d709-beb0-48e8-8821-ea5c373b2a21\")\n\t)",
+          "(via\n\t\t(at 86.8201 114.0851)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"PROT_BAT\")\n\t\t(uuid \"90ffb61d-c58a-4343-a2dc-d38b8d1fdfe5\")\n\t)",
+          "(via\n\t\t(at 86.4597 117.348)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"PROT_BAT\")\n\t\t(uuid \"c771a6fb-b85f-4487-b7e9-a578e93f838c\")\n\t)",
+          "(via\n\t\t(at 102.642 106.9807)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"BAT_ADC\")\n\t\t(uuid \"243aefa4-12f0-4324-9125-b7d9670b7b00\")\n\t)",
+          "(via\n\t\t(at 107.000899 106.532)\n\t\t(size 0.5)\n\t\t(drill 0.25)\n\t\t(layers \"F.Cu\" \"B.Cu\")\n\t\t(locked yes)\n\t\t(net \"BAT_ADC\")\n\t\t(uuid \"a9e7c9cd-e237-4f08-8589-751a89436a47\")\n\t)"
+        ]
+      }
+    }
+  ],
+  "previews": [
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-top.svg",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-top.png",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-bottom.svg",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-bottom.png",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "three-d-glb",
+      "path": "manufacturing/assembly.glb",
+      "role": "assembly"
+    }
+  ],
+  "finishedThicknessMm": 1.6,
+  "validatedBoardSpec": {
+    "layers": 6,
+    "material": "FR4",
+    "materialNote": "FR4 is the only substrate this system fabricates designs for; source/pcb.config.json has no material field to override it.",
+    "copperThicknessOz": {
+      "outer": 1,
+      "inner": 2
+    },
+    "capabilityProfileName": "jlcpcb-6layer-1oz-inner2oz",
+    "capabilityLimits": {
+      "minTrackWidthMm": 0.09,
+      "minInnerTrackWidthMm": 0.15,
+      "minViaDrillMm": 0.15,
+      "minViaDiameterMm": 0.25,
+      "minAnnularRingMm": 0.05,
+      "minPlatedHoleDrillMm": 0.15,
+      "minSilkLineWidthMm": 0.15,
+      "minSilkTextHeightMm": 1,
+      "minSilkPadClearanceMm": 0.15
+    },
+    "reorderWarning": "This design was DFM-validated as a 6-layer board at 1 oz outer copper and 2 oz inner copper (capability profile \"jlcpcb-6layer-1oz-inner2oz\", minimum trace width 0.09 mm). Ordering the board at a different layer count or copper weight invalidates this DFM check, because the real fabrication minimums (trace width, via drill/diameter, annular ring, plated-hole drill) change with both. To change either, edit manufacturing.layers or manufacturing.copperThicknessOz in source/pcb.config.json and re-run pcb.run(profile=\"check\")."
+  }
+}

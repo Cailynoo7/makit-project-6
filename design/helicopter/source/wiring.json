@@ -1,0 +1,560 @@
+{
+  "parts": [
+    {
+      "ref": "XIAO",
+      "platform": "seeed/xiao-esp32c3",
+      "quantity": 1
+    },
+    {
+      "ref": "PCB",
+      "name": "40x50mm6layerTPS61500+DRV8213+ADS1115+1SprotectionconnectionPCB",
+      "quantity": 1
+    },
+    {
+      "ref": "BAT",
+      "name": "FLY.18650.3200.3C3200mAh18650barecell,supplierweldedleads",
+      "quantity": 1
+    },
+    {
+      "ref": "MOTOR",
+      "name": "Pololu3060 5:1 HPCB6V no encoder",
+      "quantity": 1
+    },
+    {
+      "ref": "LED",
+      "name": "HONGLITRONICHL-LM002H384W-5B2C5(Ra2)(ANSI-4000K)COB",
+      "quantity": 1
+    },
+    {
+      "ref": "SW_L",
+      "name": "Window button daughterboard 14x18mm, KH-6X6X4.3H-STM, J1 KEY/GND",
+      "quantity": 1
+    },
+    {
+      "ref": "SW_R",
+      "name": "Window button daughterboard 14x18mm, KH-6X6X4.3H-STM, J1 KEY/GND",
+      "quantity": 1
+    },
+    {
+      "ref": "NTC_LED",
+      "name": "HNTC-103F3950FB-100P,COBtemperature",
+      "quantity": 1
+    },
+    {
+      "ref": "NTC_SHELL",
+      "name": "HNTC-103F3950FB-100P,shellhotspot",
+      "quantity": 1
+    },
+    {
+      "ref": "NTC_BAT",
+      "name": "HNTC-103F3950FB-100P,batterytemperature",
+      "quantity": 1
+    }
+  ],
+  "connections": [
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D1"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J1.1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "26AWG wire harness | ROUTE:H01;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D2"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J1.2"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "26AWG wire harness | ROUTE:H01;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D3"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J1.3"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "GPIO5, inverse20kHz PWM: IN1 high during brake portion; motor ON fraction=1-PWM_high_fraction, initial0.60; IN2 supplied separately by D5. | ROUTE:H01;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D4"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J1.4"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "GPIO6 -> TPS61500ENvia100ohm;DIMC1uFselectsanalogdimming.Normalfullcurrent267mA,5kHzfordimming.StartcontinuousHIGH50ms,OFFLOW>=10ms;USB/temperaturefaultoverrides. | ROUTE:H01;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D10"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J1.5"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "26AWG; VBUS divider top100k/bottom150k; GPIO10 digital INPUT, no pull resistor; nominal3.0V at5V USB | ROUTE:H01;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "VBUS"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J1.6"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "26AWG wire harness; sense only | ROUTE:H01;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J1.7"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "24AWG wire harness | ROUTE:H01;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J3.1"
+      },
+      "to": {
+        "part": "MOTOR",
+        "pin": "terminal_A"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://www.pololu.com/product/3060",
+        "https://www.ti.com.cn/cn/lit/ds/symlink/drv8213.pdf"
+      ],
+      "note": "24AWG; H-bridge output OUT1; during reverse/slow-decay PWM OUT2 is positive. Bench-verify CCW from above/downward air; swap motor leads if needed. Neither lead is fixed ground. | ROUTE:H03;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J3.2"
+      },
+      "to": {
+        "part": "MOTOR",
+        "pin": "terminal_B"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://www.pololu.com/product/3060",
+        "https://www.ti.com.cn/cn/lit/ds/symlink/drv8213.pdf"
+      ],
+      "note": "24AWG; H-bridge output OUT2; during reverse/slow-decay PWM OUT2 is positive. Bench-verify CCW from above/downward air; swap motor leads if needed. Neither lead is fixed ground. | ROUTE:H03;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J4.1"
+      },
+      "to": {
+        "part": "LED",
+        "pin": "+"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "design/connection/source/main.tsx",
+        "https://datasheet.lcsc.com/datasheet/pdf/7636cb76ede70875ee49a1607374b470.pdf?productCode=C22398553",
+        "https://datasheet.lcsc.com/datasheet/pdf/9766003e8b0d81036438896263c3df0e.pdf?productCode=C1554283"
+      ],
+      "note": "26AWGCOBpolarity;boosted14-18Vnominal,OVP19.65-21.67V;LEDnegativeisFBsense,NOTground. No hot-plugging. | ROUTE:H04;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J4.2"
+      },
+      "to": {
+        "part": "LED",
+        "pin": "-"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "design/connection/source/main.tsx",
+        "https://datasheet.lcsc.com/datasheet/pdf/7636cb76ede70875ee49a1607374b470.pdf?productCode=C22398553",
+        "https://datasheet.lcsc.com/datasheet/pdf/9766003e8b0d81036438896263c3df0e.pdf?productCode=C1554283"
+      ],
+      "note": "26AWGCOBpolarity;boosted14-18Vnominal,OVP19.65-21.67V;LEDnegativeisFBsense,NOTground. No hot-plugging. | ROUTE:H04;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J5.1"
+      },
+      "to": {
+        "part": "SW_L",
+        "pin": "J1.1"
+      },
+      "bus": "gpio",
+      "via": "dupont",
+      "evidence": [
+        "https://item.szlcsc.com/3009600.html",
+        "design/keys/source/main.tsx"
+      ],
+      "note": "26AWG left button harness; connect daughterboard J1, NOT bare switch leg numbers | ROUTE:H05;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J5.2"
+      },
+      "to": {
+        "part": "SW_L",
+        "pin": "J1.2"
+      },
+      "bus": "other",
+      "via": "dupont",
+      "evidence": [
+        "https://item.szlcsc.com/3009600.html",
+        "design/keys/source/main.tsx"
+      ],
+      "note": "26AWG left button harness; connect daughterboard J1, NOT bare switch leg numbers | ROUTE:H05;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J6.1"
+      },
+      "to": {
+        "part": "SW_R",
+        "pin": "J1.1"
+      },
+      "bus": "gpio",
+      "via": "dupont",
+      "evidence": [
+        "https://item.szlcsc.com/3009600.html",
+        "design/keys/source/main.tsx"
+      ],
+      "note": "26AWG right button harness; connect daughterboard J1, NOT bare switch leg numbers | ROUTE:H06;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "PCB",
+        "pin": "J6.2"
+      },
+      "to": {
+        "part": "SW_R",
+        "pin": "J1.2"
+      },
+      "bus": "other",
+      "via": "dupont",
+      "evidence": [
+        "https://item.szlcsc.com/3009600.html",
+        "design/keys/source/main.tsx"
+      ],
+      "note": "26AWG right button harness; connect daughterboard J1, NOT bare switch leg numbers | ROUTE:H06;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D5"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J7.1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "GPIO7; driver IN2 enable, with IN1 inverse20kHz PWM for slow-decay drive/brake. OFF requires both low >=10ms. | ROUTE:H07;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J7.2"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://files.seeedstudio.com/wiki/XIAO_WiFi/XIAO_ESP32-C3_front_pinout.png"
+      ],
+      "note": "Paired26AWG enable/ground harness. | ROUTE:H07;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "BAT",
+        "pin": "+"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J2.1"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://atta.szlcsc.com/upload/public/pdf/source/20221205/07E11C9A3B99BAAA3B7E607DC5FF771B.pdf",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "RAWcellonly;24AWG,doNOTbranchrawcellnegativetoXIAOorGND. | ROUTE:H02P/H02N;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "BAT",
+        "pin": "-"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J2.2"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://atta.szlcsc.com/upload/public/pdf/source/20221205/07E11C9A3B99BAAA3B7E607DC5FF771B.pdf",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "RAWcellonly;24AWG,doNOTbranchrawcellnegativetoXIAOorGND. | ROUTE:H02P/H02N;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "BAT+"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J12.1"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "ProtectedPACKoutputonly;24AWG;allUSB/XIAOgroundsarePACK-side. | ROUTE:H12;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "BAT-"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J12.2"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "ProtectedPACKoutputonly;24AWG;allUSB/XIAOgroundsarePACK-side. | ROUTE:H12;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J8.1"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32C3/pins_arduino.h",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "InternalADCinterface3V3/SDA20/SCL21;explicitWire.begin(20,21),100kHz;GPIO6/7alreadydriveLED/fan. | ROUTE:H08;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D7"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J8.2"
+      },
+      "bus": "i2c",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32C3/pins_arduino.h",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "InternalADCinterface3V3/SDA20/SCL21;explicitWire.begin(20,21),100kHz;GPIO6/7alreadydriveLED/fan. | ROUTE:H08;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "XIAO",
+        "pin": "D6"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J8.3"
+      },
+      "bus": "i2c",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32C3/pins_arduino.h",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "InternalADCinterface3V3/SDA20/SCL21;explicitWire.begin(20,21),100kHz;GPIO6/7alreadydriveLED/fan. | ROUTE:H08;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "NTC_LED",
+        "pin": "1"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J9.1"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "Probe10k/B3950;pin1NTCnode,pin2PACK_GND;labelbylocation,notpolarized. | ROUTE:H09;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "NTC_LED",
+        "pin": "2"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J9.2"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "Probe10k/B3950;pin1NTCnode,pin2PACK_GND;labelbylocation,notpolarized. | ROUTE:H09;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "NTC_SHELL",
+        "pin": "1"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J10.1"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "Probe10k/B3950;pin1NTCnode,pin2PACK_GND;labelbylocation,notpolarized. | ROUTE:H10;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "NTC_SHELL",
+        "pin": "2"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J10.2"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "Probe10k/B3950;pin1NTCnode,pin2PACK_GND;labelbylocation,notpolarized. | ROUTE:H10;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "NTC_BAT",
+        "pin": "1"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J11.1"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "Probe10k/B3950;pin1NTCnode,pin2PACK_GND;labelbylocation,notpolarized. | ROUTE:H11;see product/harness-routing.json and cut/assembly table."
+    },
+    {
+      "from": {
+        "part": "NTC_BAT",
+        "pin": "2"
+      },
+      "to": {
+        "part": "PCB",
+        "pin": "J11.2"
+      },
+      "bus": "other",
+      "via": "solder",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/75da80b46760b313f2ff79b66d32b944.pdf?productCode=C52204608",
+        "design/connection/source/main.tsx"
+      ],
+      "note": "Probe10k/B3950;pin1NTCnode,pin2PACK_GND;labelbylocation,notpolarized. | ROUTE:H11;see product/harness-routing.json and cut/assembly table."
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,78 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T09:44:25.504Z",
+  "lcsc_code": "C544396",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "CSD85301Q2",
+  "description": "N-Channel Array 20V 5A 2.3W Surface Mount WSON-6(2x2)",
+  "category": "场效应管(MOSFET)",
+  "package": "WSON-6(2x2)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Drain to Source Voltage": "20V",
+    "Current - Continuous Drain(Id)": "5A",
+    "Pd - Power Dissipation": "2.3W",
+    "RDS(on)": "27mΩ@4.5V",
+    "Ciss-Input Capacitance": "469pF",
+    "Number": "2 N-Channel",
+    "Gate Charge(Qg)": "5.4nC@4.5V",
+    "Operating Temperature": "-55°C~+150°C",
+    "Gate Threshold Voltage (Vgs(th))": "1.2V"
+  },
+  "lcsc_stock": 104,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.9045,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.5073,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 1.3134,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.1404,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.3148,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.2492,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.2171,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1885,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.1807,
+      "currency": "USD"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.1759,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/565047.html",
+  "datasheet_url": "https://www.ti.com/cn/lit/ds/symlink/csd85301q2.pdf",
+  "datasheet_file": "references/suppliers/c544396/c544396-datasheet.pdf"
+}

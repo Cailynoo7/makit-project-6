@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 3,
+  "backend": "tscircuit-kicad",
+  "designId": "keys",
+  "candidateId": "ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2",
+  "exportId": "ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2",
+  "status": "ready",
+  "readyForFabrication": true,
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "manufacturing/drill/board-NPTH.drl",
+        "manufacturing/drill/board-PTH.drl",
+        "manufacturing/drill/keys-drill-report.txt",
+        "manufacturing/gerbers/board-B_Cu.gbl",
+        "manufacturing/gerbers/board-B_Mask.gbs",
+        "manufacturing/gerbers/board-B_Paste.gbp",
+        "manufacturing/gerbers/board-B_Silkscreen.gbo",
+        "manufacturing/gerbers/board-Edge_Cuts.gm1",
+        "manufacturing/gerbers/board-F_Cu.gtl",
+        "manufacturing/gerbers/board-F_Mask.gts",
+        "manufacturing/gerbers/board-F_Paste.gtp",
+        "manufacturing/gerbers/board-F_Silkscreen.gto",
+        "manufacturing/gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "manufacturing/jlc-smt-bom.csv",
+        "manufacturing/jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "manufacturing/3dmodels/keys.3dshapes/kinghelm-kh-6x6x4p3h-drawing.step",
+        "manufacturing/3dmodels/keys.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+        "manufacturing/assembly.glb",
+        "manufacturing/assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "generatedAt": "2026-11-13T08:24:39.927Z",
+  "files": [
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/keys.3dshapes/kinghelm-kh-6x6x4p3h-drawing.step",
+      "sha256": "80513fc8b36095e813428bed6e5761dc41643385bb0ecd3eed9ce8c9b031f12c",
+      "sizeBytes": 152210
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/keys.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "sizeBytes": 75616
+    },
+    {
+      "type": "glb",
+      "path": "manufacturing/assembly.glb",
+      "sha256": "d49b396453f8ef40e99401fe323ab15ad130163105b107f53f6af8f0e50e990e",
+      "sizeBytes": 1569280
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/assembly.step",
+      "sha256": "c42cbd1899970a0b65dbc403007bc8a09b6aeb983f49f49b74fe2127acbbd928",
+      "sizeBytes": 517447
+    },
+    {
+      "type": "manifest",
+      "path": "manufacturing/circuit.json",
+      "sha256": "88636bb243ad69502a6b0dc6991dedbaafe94ffbf17ed0fc5abe35c1185dc796",
+      "sizeBytes": 59134
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-NPTH.drl",
+      "sha256": "63dbd8f02e57dbcf426b67bb5edfbca01cdd600be15afc8ccc56325991a8bac3",
+      "sizeBytes": 264
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-PTH.drl",
+      "sha256": "2cd599810eb760584e3c5d96687c6428ffb2c180bc7041ef9296895f72233209",
+      "sizeBytes": 413
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/keys-drill-report.txt",
+      "sha256": "e9501239be2000e9804b5f322b24373fdffff1ae05ecc1b38035a61f764e481e",
+      "sizeBytes": 637
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Cu.gbl",
+      "sha256": "90cb11a94b9e15d990f4975fc84d28b3a02cb515f3b1829c0e61ecf54beac56f",
+      "sizeBytes": 3913
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Mask.gbs",
+      "sha256": "b05d63ba6313c534050c2aac5b25ae8d0ae4d4046863c67fa81749cf43ec46ef",
+      "sizeBytes": 579
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Paste.gbp",
+      "sha256": "632c640f61ab6e0127f24ae2e153ce6f873754e603c859cade0fa4630a8fa9cf",
+      "sizeBytes": 450
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Silkscreen.gbo",
+      "sha256": "de83e98e078ef69905be012bb49d8200109d37cd4090bce006331cd1fe6b8fe5",
+      "sizeBytes": 1278
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-Edge_Cuts.gm1",
+      "sha256": "87b871bf1eb9da5ff881c77fff81605c9b211fae8704d08b76916d3c021c8b01",
+      "sizeBytes": 680
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Cu.gtl",
+      "sha256": "f2862793069366ed8503295ce95559ba52268aed51817f100d559d43811325f1",
+      "sizeBytes": 5967
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Mask.gts",
+      "sha256": "5518a99a65d747a04391c37edbbc8df223a72fa55f7475ec1c88e38306c89c1b",
+      "sizeBytes": 730
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Paste.gtp",
+      "sha256": "82bdc125bf671cadb5527b6574ee4cf45bb523fe6e0868b4dcc8f648429dab72",
+      "sizeBytes": 601
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Silkscreen.gto",
+      "sha256": "e30722463a817c0a5f09cbccbebe5678b4fbaf6b71dd6365356abdb69452b8a4",
+      "sizeBytes": 1450
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-job.gbrjob",
+      "sha256": "f21b643a4b9a7b11926eef15c9ee81b1b5c219b36aa5db961d30ec781b128de2",
+      "sizeBytes": 2658
+    },
+    {
+      "type": "bom",
+      "path": "manufacturing/jlc-smt-bom.csv",
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
+      "sizeBytes": 72
+    },
+    {
+      "type": "pick-and-place",
+      "path": "manufacturing/jlc-smt-placement.csv",
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
+      "sizeBytes": 83
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"led_regulator\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/9",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 138
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"probe_female_housings\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/112",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 1447
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"probe_crimp_contacts\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/121",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 1548
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Plotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-F_Cu.gtl'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-B_Cu.gbl'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-F_Paste.gtp'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-B_Paste.gbp'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-F_Silkscreen.gto'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-B_Silkscreen.gbo'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-F_Mask.gts'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-B_Mask.gbs'.\nPlotted to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/gerbers/board-Edge_Cuts.gm1'.",
+      "file": "manufacturing/gerbers",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Created file '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/drill/board-PTH.drl'\nCreated file '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/drill/board-NPTH.drl'\nDone.",
+      "file": "manufacturing/drill",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Fontconfig error: Cannot load default config file: No such file: (null)\nWrote bill of materials to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/bom.csv'.",
+      "file": "manufacturing/bom.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Wrote position data to '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/placement.csv'.",
+      "file": "manufacturing/placement.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "STEP file '/Users/xonar/Documents/Makit/磁吸直升机风扇台灯/manufacturing/keys/exports/.staging/ce8cc0d061be4b8d5d1790a141bd3934eac61fdf5ecaff14f52bde9697eb55e2-a5437636-0c1f-47e4-b35c-f105c13a4423/assembly.step' created.\n\nExport time 0.106 s",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_step_required_models_verified",
+      "message": "Verified 1 required mounted assembly model occurrence(s) in the final KiCad STEP: SW1.",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "checked_model_refs": [
+          "SW1"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_surface_appearance_built",
+      "message": "Prepared deterministic board appearance for the main PCB.",
+      "file": "manufacturing/assembly-appearance.json",
+      "details": {
+        "spec_sha256": "494d612a6c48317cedd38fa46c681c7013df571d0bf44b31bc0278bff28db44f",
+        "overlay_ids": [
+          "main-pcb:keys"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_glb_derived_from_step",
+      "message": "assembly.glb was generated from the final KiCad assembly.step, so the fabrication preview and released solid share one geometry source.",
+      "file": "manufacturing/assembly.glb",
+      "details": {
+        "source": "assembly-step",
+        "source_path": "manufacturing/assembly.step",
+        "source_step_sha256": "c42cbd1899970a0b65dbc403007bc8a09b6aeb983f49f49b74fe2127acbbd928",
+        "preview_sha256": "d49b396453f8ef40e99401fe323ab15ad130163105b107f53f6af8f0e50e990e",
+        "appearance_spec_sha256": "494d612a6c48317cedd38fa46c681c7013df571d0bf44b31bc0278bff28db44f",
+        "surface_texture_overlay_ids": [
+          "main-pcb:keys"
+        ],
+        "surface_decal_ids": [],
+        "material_override_ids": [],
+        "verified_source_material_ids": []
+      }
+    }
+  ],
+  "previews": [
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-top.svg",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-top.png",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-bottom.svg",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-bottom.png",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "three-d-glb",
+      "path": "manufacturing/assembly.glb",
+      "role": "assembly"
+    }
+  ],
+  "finishedThicknessMm": 1.6,
+  "validatedBoardSpec": {
+    "layers": 2,
+    "material": "FR4",
+    "materialNote": "FR4 is the only substrate this system fabricates designs for; source/pcb.config.json has no material field to override it.",
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "capabilityProfileName": "jlcpcb-2layer-1oz",
+    "capabilityLimits": {
+      "minTrackWidthMm": 0.1,
+      "minViaDrillMm": 0.15,
+      "minViaDiameterMm": 0.25,
+      "minAnnularRingMm": 0.05,
+      "minPlatedHoleDrillMm": 0.15,
+      "minSilkLineWidthMm": 0.15,
+      "minSilkTextHeightMm": 1,
+      "minSilkPadClearanceMm": 0.15
+    },
+    "reorderWarning": "This design was DFM-validated as a 2-layer board at 1 oz outer copper (capability profile \"jlcpcb-2layer-1oz\", minimum trace width 0.1 mm). Ordering the board at a different layer count or copper weight invalidates this DFM check, because the real fabrication minimums (trace width, via drill/diameter, annular ring, plated-hole drill) change with both. To change either, edit manufacturing.layers or manufacturing.copperThicknessOz in source/pcb.config.json and re-run pcb.run(profile=\"check\")."
+  }
+}

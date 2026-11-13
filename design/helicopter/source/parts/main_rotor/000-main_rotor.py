@@ -1,0 +1,27 @@
+s=part('fuselage')
+radius=param('enlarged_rotor_radius',125.0)
+chord=param('enlarged_rotor_chord',37.5)
+thickness=param('rotor_blade_thickness',1.6)
+pitch=param('rotor_blade_pitch_deg',12.0)
+hub_radius=param('enlarged_hub_radius',16.25)
+hub_height=param('enlarged_hub_height',13.75)
+bearing_pocket=param('bearing_pocket_diameter',19.2)
+bore=param('rotor_central_clearance',11.0)
+centre=57.875
+hub_bottom=centre-hub_height/2
+hub_top=centre+hub_height/2
+sleeve_bottom=param('rotor_sleeve_bottom_z',33.3)
+bearing_floor=param('lower_bearing_seat_z',41.1)
+body=Pos(0,0,centre)*Cylinder(hub_radius,hub_height)
+body=body.fuse(Pos(0,0,(sleeve_bottom+hub_bottom)/2)*Cylinder(13,hub_bottom-sleeve_bottom))
+body=body.fuse(Pos(0,0,35.3)*Cylinder(hub_radius,4))
+body=body.cut(Pos(0,0,(sleeve_bottom+hub_top)/2)*Cylinder(bore/2,hub_top-sleeve_bottom+1))
+body=body.cut(Pos(0,0,(bearing_floor+hub_top)/2)*Cylinder(bearing_pocket/2,hub_top-bearing_floor+0.002))
+blade=Pos((radius+12.5)/2,0,centre+3)*Rot(pitch,0,0)*extrude(Ellipse((radius-12.5)/2,chord/2),thickness/2,both=True)
+for a in [0,90,180,270]: body=body.fuse(Rot(0,0,a)*blade)
+groove_z=param('internal_driven_groove_z',35.3)
+groove=Torus(15.05,0.8)+(Cylinder(hub_radius+1,1.6)-Cylinder(15.05,2.6))
+body=body.cut(Pos(0,0,groove_z)*groove)
+body=Pos(0,0,-centre)*body
+body.color=srgb('#FFFFFF')
+publish('main_rotor',body,'加宽纯白主旋翼',material='petg')

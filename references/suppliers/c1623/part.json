@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T05:43:26.503Z",
+  "lcsc_code": "C1623",
+  "manufacturer": "SAMSUNG(三星)",
+  "manufacturer_part_number": "CL10B474KA8NNNC",
+  "description": "470nF ±10% 25V Ceramic Capacitor X7R 0603",
+  "category": "贴片电容(MLCC)",
+  "package": "0603",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Capacitance": "470nF",
+    "Temperature Coefficient": "X7R",
+    "Tolerance": "±10%",
+    "Voltage Rating": "25V"
+  },
+  "lcsc_stock": 15436,
+  "price_breaks": [
+    {
+      "quantity": 50,
+      "unitPrice": 0.0557,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0435,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.0381,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0278,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 24000,
+      "unitPrice": 0.0261,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.025,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0092,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0072,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.0063,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0046,
+      "currency": "USD"
+    },
+    {
+      "quantity": 24000,
+      "unitPrice": 0.0044,
+      "currency": "USD"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.0042,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/1975.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1623",
+  "datasheet_file": "references/suppliers/c1623/c1623-datasheet.pdf"
+}

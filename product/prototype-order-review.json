@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-13",
+  "purpose": "Current prototype order and supplier first-article review;two preassembled customer units,not a physical part-count reduction",
+  "requirements_digest": "a46f97b8c8edbb3cfb84e1c4ed2c7144fdfaab72c9fe0505785c2052a155eddb",
+  "CAD_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
+  "PCB": {
+    "connection_release": "a775a125f18a8423be0a2ba88a937e442a0c12100c13393ab9c8c7c26812f82e",
+    "key_release": "b957cd2114d3ced53b0880e8878ea2964d1e2e989303f3763fdcc0b3ff58ff3a",
+    "connection_drc_errors": 0,
+    "connection_unconnected": 0,
+    "connection_silkscreen_warnings": 4,
+    "key_drc_errors": 0,
+    "key_unconnected": 0,
+    "key_silkscreen_warnings": 1,
+    "manual_or_commissioned_assembly": true,
+    "automatic_SMT_lists_empty": true,
+    "connection_spec": {
+      "size_mm": [
+        40,
+        50,
+        1.6
+      ],
+      "layers": 6,
+      "outer_copper_oz": 1,
+      "inner_copper_oz": 2,
+      "min_plated_drill_mm": 0.25
+    },
+    "mechanical_compatibility": "product/pcb-release-fit-comparison.json"
+  },
+  "aluminium": {
+    "pieces": 15,
+    "A3_sheets": 15,
+    "specification": "product/铝件加工说明.md",
+    "supplier_must_return": "material,threads,contact-profile/flatness records plus installed dry-fit and split-interface demonstration"
+  },
+  "print_supplier_must_return": "charged-port coupon with actual soldered XIAO and USB cable;window/root fits;material declaration;rotor balance and trial spin",
+  "harness_supplier_must_return": "actual plug dimensions;every-wire continuity/polarity;power-contact pull records per actual terminal manufacturer;location labels and completed routing fixture check",
+  "customer_delivery": {
+    "lower_functional_assembly": 1,
+    "upper_rotor_assembly": 1,
+    "actions": [
+      "fit supplied belt",
+      "lower upper assembly without trapped wiring",
+      "fasten3M2x10"
+    ],
+    "factory_complete_lamp_preferred_when_available": true
+  },
+  "sample_performance_records_pending": [
+    "temperature calibration",
+    "thermal steady-state lux grid",
+    "USB and fault simulations",
+    "motor RMS current and air direction",
+    "magnetic holding and vibration"
+  ],
+  "engineering_BOM_rows": 140,
+  "BOM_correction": "104part_identity tags restored to validator-expected values after checking current exact-part/standard/custom specifications;no part/footprint/pin/quantity changed",
+  "excluded_from_commit": "runtime caches,build intermediates and temporary tool output;retain source assets,manufacturing releases,drawings and review evidence"
+}

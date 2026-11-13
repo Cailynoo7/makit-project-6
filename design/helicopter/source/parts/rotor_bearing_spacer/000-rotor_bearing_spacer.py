@@ -1,0 +1,6 @@
+od=param('bearing_spacer_diameter',19.0)
+id=param('bearing_spacer_clearance',16.0)
+height=param('bearing_outer_spacer_height',7.9)
+body=Pos(0,0,50.05)*(Cylinder(od/2,height)-Cylinder(id/2,height+1))
+body.color=srgb('#FFFFFF')
+publish('rotor_bearing_spacer',body,'轴承外圈隔套',material='petg')

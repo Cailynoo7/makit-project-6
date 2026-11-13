@@ -1,0 +1,84 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-12T14:07:52.577Z",
+  "lcsc_code": "C86473",
+  "manufacturer": "TE Connectivity(泰科电子)",
+  "manufacturer_part_number": "1375819-1",
+  "description": "Connector Terminal Tin 22~26 AWG Crimp",
+  "category": "胶壳端子",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Wire Gauge - mm2": "0.13~0.35",
+    "Wire Gauge - AWG": "22~26",
+    "Contact Plating": "Tin",
+    "Contact Material": "Phosphor Bronze",
+    "Insulation OD": "0.89mm~1.65mm"
+  },
+  "lcsc_stock": 35,
+  "price_breaks": [
+    {
+      "quantity": 100,
+      "unitPrice": 0.2626,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.2049,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5500,
+      "unitPrice": 0.1728,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 11000,
+      "unitPrice": 0.1535,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 49500,
+      "unitPrice": 0.1369,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 99000,
+      "unitPrice": 0.1279,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0435,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.034,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5500,
+      "unitPrice": 0.0287,
+      "currency": "USD"
+    },
+    {
+      "quantity": 11000,
+      "unitPrice": 0.0255,
+      "currency": "USD"
+    },
+    {
+      "quantity": 49500,
+      "unitPrice": 0.0227,
+      "currency": "USD"
+    },
+    {
+      "quantity": 99000,
+      "unitPrice": 0.0212,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/87650.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a26ea52adfaa35c6b4be41ca745dba3e.pdf?productCode=C86473",
+  "datasheet_file": "references/suppliers/c86473/c86473-datasheet.pdf"
+}

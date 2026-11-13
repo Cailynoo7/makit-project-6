@@ -1,0 +1,1 @@
+publish("key_board_left", asset("design/helicopter/source/assets/61bb522824f253e41ba5f03eeadca6c897be14ab9506143808c88acf5f8c076b.step"), "左窗按键小板")
