@@ -77,11 +77,10 @@ body=body-pack_relief
 gate=gate-pack_relief
 assert len(body.solids())==1
 assert len(gate.solids())==1
-# Recess the replaceable fabric straps into the saddle; protect the pack wrap.
+# Recess the single replaceable wide fabric strap into the saddle; protect the pack wrap.
 belt_outer=param('belt_groove_outer_radius',10.55)
-belt_width=param('belt_groove_width',11.0)
-for y in [-station,station]:
- body=body-Pos(0,y,cell_z)*Rot(90,0,0)*Cylinder(belt_outer,belt_width)
+belt_width=param('belt_groove_width',26.0)
+body=body-Pos(0,0,cell_z)*Rot(90,0,0)*Cylinder(belt_outer,belt_width)
 assert len(body.solids())==1
 # Pack reference remains unpublished: full wrapped/welded envelope for clearance checks.
 cell_envelope=Pos(0,0,cell_z)*Rot(90,0,0)*Cylinder(cell_d/2,cell_l)

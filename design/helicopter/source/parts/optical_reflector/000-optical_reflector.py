@@ -27,8 +27,10 @@ for side in [-1,1]:
 body=Compound(children=list(body.solids()))
 # Clear internal lands with0.5mm envelope, retaining one optical insert.
 clearance=param('optical_hard_clearance',0.5)
-for name in ['internal_carrier','battery_cradle','battery_gate','led_bracket_left','led_bracket_right','fuselage']:
- shape=part(name).body
+support_source=part('internal_carrier')
+supports=[support_source.led_brackets[side]-Pos(-26,side*15,-4)*Cylinder(0.8,4) for side in [-1,1]]
+clear_shapes=[part(name).body for name in ['internal_carrier','battery_cradle','battery_gate','fuselage']]+supports
+for shape in clear_shapes:
  for v in [(0,0,0),(clearance,0,0),(-clearance,0,0),(0,clearance,0),(0,-clearance,0),(0,0,clearance),(0,0,-clearance)]:
   body=body-Pos(*v)*shape
 # Nose-service cylinder and inverse sweep of fixed internal lands.
@@ -42,5 +44,11 @@ fragments=sorted(body.solids(),key=lambda s:s.volume,reverse=True)
 assert fragments[0].volume>1000
 body=fragments[0]
 assert len(body.solids())==1
+join_length=param('support_join_length',1.5)
+join_width=param('support_join_width',4.0)
+join_height=param('support_join_height',2.0)
+joins=[Pos(-26.35,side*18,-4)*Box(join_length,join_width,join_height) for side in [-1,1]]
+body=body.fuse(*supports,*joins)
+assert len(body.solids())==1
 body.color=srgb('#FFFFFF')
-publish('optical_reflector',body,'可拆白色混光反光罩',material='asa')
+publish('optical_reflector',body,'一体反光罩与灯源支座',material='asa')

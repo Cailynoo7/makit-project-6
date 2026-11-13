@@ -6639,5 +6639,7 @@
     "poses": 3883,
     "first_overlaps": [],
     "checked_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215"
-  }
+  },
+  "record_scope": "Original detailed validation for revision47a887e;physical part-reduction validation for revision1ed13b5 is in assembly-simplification-review.json",
+  "current_review": "product/assembly-simplification-review.json"
 }

@@ -21,7 +21,7 @@
       17.8
     ],
     "mechanical_source": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-DXF.zip",
-    "retention": "Horizontal cassette below battery;1.9mm slot,0.6mm removable shim for1.0mm reference PCB;omit shim for1.6mm PCB",
+    "retention": "Horizontal cassette with integral support ribs;support_height0.6mm for existing1.0mm reference PCB,0mm for1.6mm actual board;no separate shim",
     "model_status": "Community STEP imported and cross-checked against official planar board/USB layout; actual hardware trial still required",
     "usb_mouth_centre": [
       37.805111326373,
@@ -105,7 +105,6 @@
     "model_source": "https://tscircuit.com/vinjocarsales/xiao-series/blob/assets/xiao-esp32-c3.step",
     "model_sha256": "d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735",
     "model_pcb_thickness_mm": 1,
-    "optional_shim_thickness_mm": 0.6,
     "wire_exit_reliefs": {
       "radius_mm": 1,
       "centres_mm": [
@@ -126,7 +125,8 @@
         ]
       ],
       "axial_height_mm": 4.2
-    }
+    },
+    "integral_support_height_mm": 0.6
   },
   "connection_board": {
     "outline": [
@@ -323,11 +323,12 @@
       "saddle_band_width_mm": 12,
       "groove_wall_remaining_mm": 1.25,
       "cell_straps": {
-        "quantity": 2,
-        "width_mm": 10,
+        "quantity": 1,
+        "width_mm": 25,
         "cut_length_mm": 75,
         "max_single_layer_mm": 0.8,
-        "max_overlap_extra_mm": 0.8
+        "max_overlap_extra_mm": 0.8,
+        "centre_y_mm": 0
       },
       "end_stops": {
         "centre_y_mm": [
@@ -379,7 +380,8 @@
         "side_stop_height_mm": 3,
         "clearance_x_mm": 0.3,
         "clearance_y_mm": 0.4
-      }
+      },
+      "strap_groove_width_mm": 26
     }
   },
   "switch": {
@@ -821,7 +823,8 @@
       "ray_result": "four selected COB-to-belly segments unoccluded; not optical efficiency/photometry validation",
       "bond": "two front-facing ASA-support lands;0.2mm peelable adhesive gap",
       "service": "after collector removal, take reflector and both ASA supports together through nose -X80mm; separate adhesive outside shell"
-    }
+    },
+    "optical_support": "One-piece white ASA reflector with both COB support arms;original screw joints retained,no adhesive joints between reflector and arms"
   },
   "service_split": {
     "plane_z": 25,
@@ -1166,5 +1169,7 @@
       "threads": "M1.6x0.35-6H and M2x0.4-6H;chip-free,hand assembly"
     },
     "source": "default"
-  }
+  },
+  "assembly_owner": "user",
+  "factory_preassembly": false
 }

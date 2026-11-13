@@ -1,0 +1,287 @@
+{
+  "steps": [
+    {
+      "title": "托住下机壳",
+      "note": "先干装，前、底透光片暂不胶合；已确认外观不改变。",
+      "parts": [
+        "helicopter:fuselage"
+      ]
+    },
+    {
+      "title": "插入圆肩尾梁与装饰尾桨",
+      "note": "短圆柱插头定位，圆肩贴合；尾桨固定装饰。",
+      "parts": [
+        "helicopter:tail",
+        "helicopter:tail_propeller"
+      ],
+      "from": "+x"
+    },
+    {
+      "title": "从内部锁紧尾梁",
+      "note": "两颗M2×5；外部只露圆形尾梁。",
+      "parts": [
+        "helicopter:tail_lock_screws"
+      ]
+    },
+    {
+      "title": "装两侧弧形起落架",
+      "note": "根部承肩贴壳；前后对称，不修削外形。",
+      "parts": [
+        "helicopter:skid_left",
+        "helicopter:skid_right"
+      ]
+    },
+    {
+      "title": "锁紧四处起落架根部",
+      "note": "四颗M2×8内锁，压帽贴合球面。",
+      "parts": [
+        "helicopter:skid_clamps_left",
+        "helicopter:skid_clamps_right",
+        "helicopter:skid_clamp_left_aft",
+        "helicopter:skid_clamp_right_aft",
+        "helicopter:skid_root_screws_left",
+        "helicopter:skid_root_screws_right"
+      ]
+    },
+    {
+      "title": "贴下壳四片铝内衬",
+      "note": "0.5mm成形铝，≤0.15mm绝缘导热胶；窗口、USB、天线、根部与接缝均留空。",
+      "parts": [
+        "helicopter:liner_left",
+        "helicopter:liner_right",
+        "helicopter:liner_aft_left",
+        "helicopter:liner_aft_right"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "装壳体温度探头",
+      "note": "图纸最大尺寸参考，不打印；贴后部内衬热点，实测校准热点位置。",
+      "parts": [
+        "helicopter:ntc_shell_reference"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "安装XIAO与卡座",
+      "note": "先从底口进入，再向尾侧移10mm对准USB；卡座承托高度0.6mm适配现有1.0mm板模型，实际1.6mm板将承托高度设为0并使用匹配试件。无需独立垫片。",
+      "parts": [
+        "helicopter:controller_cassette",
+        "helicopter:xiao_reference"
+      ],
+      "from": "-z"
+    },
+    {
+      "title": "锁紧XIAO卡座",
+      "note": "两颗M1.6×5；此步在电池装入前完成。",
+      "parts": [
+        "helicopter:controller_mount_screws"
+      ]
+    },
+    {
+      "title": "组装独立18650托座",
+      "note": "电芯/探头是尺寸参考，不打印。一条25mm宽无扣绑带、7×3mm端部缓冲垫、M2×6端挡；点焊引线，电芯探头用可移除胶带固定。按检修路径逆序斜置装入，勿竖直硬压。",
+      "parts": [
+        "helicopter:battery_cradle",
+        "helicopter:battery_gate",
+        "helicopter:battery_gate_screws",
+        "helicopter:battery_reference",
+        "helicopter:battery_strap_front",
+        "helicopter:battery_end_pad_front",
+        "helicopter:battery_end_pad_rear",
+        "helicopter:ntc_battery_reference"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "先放左窗内板与压环",
+      "note": "此时外窗未装；按上提/内移路径逆序就位，托住小板。",
+      "parts": [
+        "helicopter:window_retainer_left",
+        "helicopter:key_board_left"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "先放右窗内板与压环",
+      "note": "电池留在托座内；不要让板自行掉入舱底。",
+      "parts": [
+        "helicopter:window_retainer_right",
+        "helicopter:key_board_right"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "从外侧插入左窗模块",
+      "note": "按钮Ø12mm，白框覆盖浅蓝窗面；对白色曲面框采用0.15mm薄胶。",
+      "parts": [
+        "helicopter:window_left",
+        "helicopter:button_left",
+        "helicopter:window_bezel_left"
+      ],
+      "from": "+y"
+    },
+    {
+      "title": "从外侧插入右窗模块",
+      "note": "对准开关，避免按钮预压。",
+      "parts": [
+        "helicopter:window_right",
+        "helicopter:button_right",
+        "helicopter:window_bezel_right"
+      ],
+      "from": "-y"
+    },
+    {
+      "title": "锁紧两侧圆窗压环",
+      "note": "每侧两颗M2×6；先确认按压、回弹和0.45mm限位。",
+      "parts": [
+        "helicopter:window_left_screws",
+        "helicopter:window_right_screws"
+      ]
+    },
+    {
+      "title": "装入主板、电机与托架总成",
+      "note": "先在壳外用两颗M2×4固定连接板，再装电机M1.6×3和小轮；预穿托座扎带。取出动作：上提1.5mm、+Y2mm、上提7.5mm同时向机头倾15°、+X4mm/-Y0.5mm、上提55mm；逆序装入。",
+      "parts": [
+        "helicopter:internal_carrier",
+        "helicopter:fan_motor",
+        "helicopter:motor_mount_screw",
+        "helicopter:motor_mount_screw_second",
+        "helicopter:drive_pulley",
+        "helicopter:connection_board",
+        "helicopter:pcb_mount_screws"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "锁住托架并绑稳电池座",
+      "note": "托架两颗M2×6；两条2.5×100扎带落入沉座，头朝外。一体硬支承确定高度，侧向止挡限位，扎带夹紧，不靠压缩泡棉定位。",
+      "parts": [
+        "helicopter:carrier_shell_screws",
+        "helicopter:cradle_tie_front",
+        "helicopter:cradle_tie_rear"
+      ]
+    },
+    {
+      "title": "就位四只可拆导热接触座",
+      "note": "球面用0.1mm非固化绝缘导热填料，暂时托住；不能永久胶死接触座。",
+      "parts": [
+        "helicopter:thermal_fore_shoe_left",
+        "helicopter:thermal_fore_shoe_right",
+        "helicopter:thermal_aft_shoe_left",
+        "helicopter:thermal_aft_shoe_right",
+        "helicopter:thermal_fore_pad_left",
+        "helicopter:thermal_fore_pad_right",
+        "helicopter:thermal_aft_pad_left",
+        "helicopter:thermal_aft_pad_right"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "装左右可拆铝导热桥",
+      "note": "先从上方进入，再各向外移10.4mm；搭接面补0.1mm非固化填料。",
+      "parts": [
+        "helicopter:thermal_bridge_left",
+        "helicopter:thermal_bridge_right",
+        "helicopter:thermal_couple_fore_pad_left",
+        "helicopter:thermal_couple_fore_pad_right",
+        "helicopter:thermal_couple_aft_pad_left",
+        "helicopter:thermal_couple_aft_pad_right"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "锁紧四处导热接触螺钉",
+      "note": "四颗M1.6×10；接触座M1.6×0.35攻牙，轻拧，沉头低于24mm桥顶0.1mm。",
+      "parts": [
+        "helicopter:thermal_contact_screws"
+      ]
+    },
+    {
+      "title": "装入一体ASA反光罩与支座",
+      "note": "白色哑面ASA一体打印，取消两处胶合。整体从机头进入，再锁两颗M1.6×4；COB集热板后装。检修先拆集热板再整体退出。",
+      "parts": [
+        "helicopter:led_bracket_screws",
+        "helicopter:optical_reflector"
+      ],
+      "from": "-x"
+    },
+    {
+      "title": "装入COB集热组件",
+      "note": "铝集热板18×34×3；COB/探头为图纸包络，不打印。COB胶层12×12×0.15mm，光面朝下；根部导热填料0.1mm。",
+      "parts": [
+        "helicopter:heat_spreader",
+        "helicopter:cob_reference",
+        "helicopter:cob_bond_film",
+        "helicopter:ntc_cob_reference",
+        "helicopter:thermal_root_pad_left",
+        "helicopter:thermal_root_pad_right"
+      ],
+      "from": "-x"
+    },
+    {
+      "title": "固定集热板和桥根",
+      "note": "两颗M1.6×5进ASA，两颗M2×8进集热板M2×0.4通牙；不要混用打印导孔与金属攻牙。",
+      "parts": [
+        "helicopter:heat_mount_screws",
+        "helicopter:thermal_clamp_screws"
+      ]
+    },
+    {
+      "title": "准备带散热连接件的上部组件",
+      "note": "帽内衬胶合，两个上盖导热连接件随盖；轴承胶只用于外圈/毂。M4×90承重连接不在普通检修时拆开。",
+      "parts": [
+        "helicopter:fuselage_cap",
+        "helicopter:cap_liner_left",
+        "helicopter:cap_liner_right",
+        "helicopter:upper_heat_link_left",
+        "helicopter:upper_heat_link_right",
+        "helicopter:thermal_cap_pad_left",
+        "helicopter:thermal_cap_pad_right",
+        "helicopter:thermal_couple_cap_pad_left",
+        "helicopter:thermal_couple_cap_pad_right",
+        "helicopter:bearing_pedestal",
+        "helicopter:bearing_lower",
+        "helicopter:bearing_upper",
+        "helicopter:rotor_bearing_spacer",
+        "helicopter:rotor_inner_spacer",
+        "helicopter:main_rotor",
+        "helicopter:hub_cover",
+        "helicopter:mast",
+        "helicopter:magnet_base",
+        "helicopter:suspension_screw"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "固定主束可拆导向夹",
+      "note": "0.2mm可剥离胶隙贴原电机柱平面，配一条2.5×100扎带。按H01–H12路由铺线，暂不通电；深检先放线再剥胶上提夹，之后才能内移铝桥。",
+      "parts": [
+        "helicopter:controller_wire_guide"
+      ]
+    },
+    {
+      "title": "接完整线束并套上皮带",
+      "note": "灰色线束/插壳为尺寸参考，不打印。普通母壳最高14mm，窗端总深≤11.5mm。按裁线表定型并逐线导通；J9按先直入/侧移逆路径。先断电，固定三路NTC、主束及端头应力释放，再套O形圈；不靠上盖压线。窗端插座检修须在主托架取出后再向中心拔。",
+      "parts": [
+        "helicopter:drive_belt",
+        "helicopter:complete_harness"
+      ]
+    },
+    {
+      "title": "合拢机身上盖",
+      "note": "下搭接面填0.1mm非固化材料，三颗M2×10合盖；不得夹线或挤压导热件。",
+      "parts": [
+        "helicopter:service_screws"
+      ]
+    },
+    {
+      "title": "试装后装透光件",
+      "note": "完成机械试装后再用可剥离点胶；温控固件、封壳温升及读写照度未验证，不能据CAD判定持续满功率通过。",
+      "parts": [
+        "helicopter:nose_lens",
+        "helicopter:belly_lens"
+      ]
+    }
+  ]
+}

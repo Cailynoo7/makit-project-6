@@ -377,7 +377,7 @@
           "target": "controller_cassette",
           "order": 0,
           "path": "design/helicopter/source/parts/controller_cassette/000-controller_cassette.py",
-          "sha256": "dee4a076d22d473c58e36470c69a34f8d83167bd021d4320c717cc5cf66a7eb1"
+          "sha256": "4c8bc37fe8630590ad31326006d26b815ffe152a7a31b746bd5f35ef0a5cc0bb"
         }
       ],
       "dependencies": [
@@ -428,38 +428,6 @@
       ],
       "dependencies": [
         "fuselage"
-      ]
-    },
-    {
-      "id": "led_bracket_left",
-      "label": "led_bracket_left",
-      "cells": [
-        {
-          "id": "led_bracket_left",
-          "target": "led_bracket_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/led_bracket_left/000-led_bracket_left.py",
-          "sha256": "4a39f51e8dc5a618566a637a61f940e2a8640090e6625b21ad40e356b3ebb04c"
-        }
-      ],
-      "dependencies": [
-        "internal_carrier"
-      ]
-    },
-    {
-      "id": "led_bracket_right",
-      "label": "led_bracket_right",
-      "cells": [
-        {
-          "id": "led_bracket_right",
-          "target": "led_bracket_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/led_bracket_right/000-led_bracket_right.py",
-          "sha256": "7c0010cb864877cfbcb9f03b46cb1705d26b208dc1b6dd563bc81ae69bdcc951"
-        }
-      ],
-      "dependencies": [
-        "internal_carrier"
       ]
     },
     {
@@ -612,22 +580,6 @@
       "dependencies": []
     },
     {
-      "id": "xiao_shim",
-      "label": "xiao_shim",
-      "cells": [
-        {
-          "id": "xiao_shim",
-          "target": "xiao_shim",
-          "order": 0,
-          "path": "design/helicopter/source/parts/xiao_shim/000-xiao_shim.py",
-          "sha256": "c9ed26a343e7f36280b8473c8021723ebf1fb5104568b35faefe7f886d51027d"
-        }
-      ],
-      "dependencies": [
-        "fuselage"
-      ]
-    },
-    {
       "id": "motor_mount_second",
       "label": "motor_mount_second",
       "cells": [
@@ -664,7 +616,7 @@
           "target": "battery_cradle",
           "order": 0,
           "path": "design/helicopter/source/parts/battery_cradle/000-battery_cradle.py",
-          "sha256": "e2e426ae66d03bc0e73c52a54fd4b094bb40afd451cc5c62b7b6598e9a8df28a"
+          "sha256": "80a5581b66735edc08e53bbf2ca55e39a55006ccfd2de6dd44474834b9db3f8f"
         }
       ],
       "dependencies": []
@@ -833,27 +785,10 @@
           "target": "battery_strap_front",
           "order": 0,
           "path": "design/helicopter/source/parts/battery_strap_front/000-battery_strap_front.py",
-          "sha256": "abde976549d1c79da22ff62f724da19f5336ff18c661c8288f9fe994313a0a2f"
+          "sha256": "62eb9ab3869cd1251f18a901ad636f55a19c31aa11b35e5ef59cf59dd0930dd8"
         }
       ],
       "dependencies": [
-        "battery_cradle"
-      ]
-    },
-    {
-      "id": "battery_strap_rear",
-      "label": "battery_strap_rear",
-      "cells": [
-        {
-          "id": "battery_strap_rear",
-          "target": "battery_strap_rear",
-          "order": 0,
-          "path": "design/helicopter/source/parts/battery_strap_rear/000-battery_strap_rear.py",
-          "sha256": "89b7013f071ebb7c6ba142aedd5e238425e1ea659877655c4da62eb776cdb649"
-        }
-      ],
-      "dependencies": [
-        "battery_strap_front",
         "battery_cradle"
       ]
     },
@@ -1160,15 +1095,13 @@
           "target": "optical_reflector",
           "order": 0,
           "path": "design/helicopter/source/parts/optical_reflector/000-optical_reflector.py",
-          "sha256": "506d41a0378bd374b02ac2680c9b7dd7ec6079404f076239a23ebcd4e4783c49"
+          "sha256": "c012e8b8ea4de30d3ce5c14f22359f3ff789bb01f57bd2953a2132dbbc7a18d2"
         }
       ],
       "dependencies": [
         "internal_carrier",
         "battery_cradle",
         "battery_gate",
-        "led_bracket_left",
-        "led_bracket_right",
         "fuselage"
       ]
     },
@@ -2212,10 +2145,10 @@
     {
       "id": "controller_cassette",
       "target": "controller_cassette",
-      "label": "XIAO尾根充电卡座",
+      "label": "一体承托XIAO卡座",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "1a3bfb1dba994221d47cc3cb1d9300e3f86d9b3921974a3fd1328d935c4e31e7",
+      "shapeHash": "b2293fad8f35f1cab9e1875341197222146c3f315834432471208c08ef2bdc88",
       "transform": {
         "positionMm": [
           0,
@@ -2298,60 +2231,6 @@
       "material": "petg",
       "kind": "generated",
       "shapeHash": "4bb3945c09ef87fa373e7e4aaebf1a55dbf76d630dd7782e3b92d3034b9008e8",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "led_bracket_left",
-      "target": "led_bracket_left",
-      "label": "耐温COB支座",
-      "material": "asa",
-      "kind": "generated",
-      "shapeHash": "b57dd52afa45287d689c08ee0c78e0412a5f2837547c0af7ce549acf5cea91d8",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "led_bracket_right",
-      "target": "led_bracket_right",
-      "label": "耐温COB支座",
-      "material": "asa",
-      "kind": "generated",
-      "shapeHash": "46864e4ad5ab5a375d64452ba83617f81df31c9484d9bf2b028941adda4ac4ce",
       "transform": {
         "positionMm": [
           0,
@@ -2644,33 +2523,6 @@
       "datums": []
     },
     {
-      "id": "xiao_shim",
-      "target": "xiao_shim",
-      "label": "XIAO板厚适配垫片",
-      "material": "petg",
-      "kind": "generated",
-      "shapeHash": "c90334d61f4eaa7ec2d060413d48ed075785d27477c7d410892627668d9406f6",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "motor_mount_screw_second",
       "target": "motor_mount_second",
       "label": "电机固定螺钉右",
@@ -2731,7 +2583,7 @@
       "label": "18650可拆托座",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "8285a44ed86273d5c31c43e7175c7a133cc446739073244f1d1862ffb9f8df87",
+      "shapeHash": "0060a58fe28c581a1f8a268d3429433c2bb38a70559ad267e23ed7d33197d35e",
       "transform": {
         "positionMm": [
           0,
@@ -3082,37 +2934,10 @@
     {
       "id": "battery_strap_front",
       "target": "battery_strap_front",
-      "label": "前电池绑带",
+      "label": "单条宽电池绑带",
       "material": "nylon",
       "kind": "generated",
-      "shapeHash": "02a5e4d468534a21a0c067dfb616a4221e3b07e06ca65829150074f4ce785821",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "battery_strap_rear",
-      "target": "battery_strap_rear",
-      "label": "后电池绑带",
-      "material": "nylon",
-      "kind": "generated",
-      "shapeHash": "cbdf40ed8d260adcaead16eb17c3bd1966a0d029cacbbc07b911375663662795",
+      "shapeHash": "915b7ea8c469ee2391f58b12075560aaa501e391fdf0115c3a1e3f0932e3e5fc",
       "transform": {
         "positionMm": [
           0,
@@ -3962,10 +3787,10 @@
     {
       "id": "optical_reflector",
       "target": "optical_reflector",
-      "label": "可拆白色混光反光罩",
+      "label": "一体反光罩与灯源支座",
       "material": "asa",
       "kind": "generated",
-      "shapeHash": "70fc8ee1c2b3b5ece923ac65183dcee5a31ad2148ef6c01fbc7c3ba1ff470415",
+      "shapeHash": "a925d2f1d5dd038dbf09e8d41d467f7567c22181a487c653b8f53d3cec8bbc1b",
       "transform": {
         "positionMm": [
           0,
@@ -4111,7 +3936,7 @@
     }
   ],
   "fits": [],
-  "updatedAt": "2026-11-13T07:22:53.693Z",
+  "updatedAt": "2026-11-13T09:24:56.450Z",
   "parameters": {
     "fuselage": {
       "body_length": 80,
@@ -4415,7 +4240,10 @@
     "controller_cassette": {
       "controller_wire_relief_diameter": 3,
       "cassette_lower_face_z": -33.5,
-      "edge_pad_wire_clearance_radius": 1
+      "edge_pad_wire_clearance_radius": 1,
+      "integral_board_support_height": 0.6,
+      "integral_board_support_length": 20.5,
+      "integral_board_support_width": 17.2
     },
     "heat_spreader": {
       "led_lead_hole_diameter": 2,
@@ -4438,14 +4266,6 @@
     "fuselage_cap": {
       "cap_seam_reveal": 0.12,
       "cap_minimum_outer_skin": 1.2
-    },
-    "led_bracket_left": {
-      "wire_guide_diameter": 1.6,
-      "led_wire_guide_diameter": 1.6
-    },
-    "led_bracket_right": {
-      "wire_guide_diameter": 1.6,
-      "led_wire_guide_diameter": 1.6
     },
     "skid_right": {
       "enlarged_right_skid_width": 3.75
@@ -4489,11 +4309,6 @@
       "bearing_inner_spacer_diameter": 12.6,
       "bearing_inner_spacer_bore": 10.2,
       "bearing_inner_spacer_height": 7.9
-    },
-    "xiao_shim": {
-      "shim_thickness": 0.6,
-      "shim_length": 20.5,
-      "shim_width": 17.2
     },
     "motor_mount_second": {
       "motor_mount_axis_x": 23,
@@ -4611,9 +4426,6 @@
       "strap_inner_radius": 9.55,
       "closure_overlap_thickness": 0.8
     },
-    "battery_strap_rear": {
-      "strap_width": 10
-    },
     "cob_reference": {
       "drawing_max_case_width": 13.8,
       "drawing_max_case_height": 1.8,
@@ -4699,7 +4511,10 @@
       "mount_ear_half_span": 25.5,
       "bracket_bond_pad_thickness": 1.6,
       "bracket_bond_gap": 0.2,
-      "nose_service_clear_radius": 25
+      "nose_service_clear_radius": 25,
+      "support_join_length": 1.5,
+      "support_join_width": 4,
+      "support_join_height": 2
     },
     "complete_harness": {
       "bundle_radius_scale": 1,

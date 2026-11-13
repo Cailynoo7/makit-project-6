@@ -1,12 +1,8 @@
-# 最简装配首样采购与询价清单
+# 自行制作与装配采购清单
 
-用户实际采购：下壳功能总成1套、上盖旋翼总成1套；可由厂家整机交付时优先整机交付。以下140行仅为加工商备料，不是要求用户逐件购买和装配。
+采购散件并自行焊接、接线和组装；不采购上下预装总成或代接线/代烧录服务。单条25mm绑带、一体ASA光学支座和集成承托卡座替换原分件。15件铝件和六层PCB仍保留。库存与报价未刷新，样机性能尚未验收。
 
-对应47a887e8机身、171fcced主板和53c419c4按键板。安装数量如下；MOQ与备用数量另行询价。本表从当前BOM同步，库存和价格未刷新，不承诺国内全有现货。
-
-铝件15件按AL01–15各1件，组别BOM行不得再另加完整总成。线束默认工厂预装：散料供料、服务行只计人工；工厂包料则扣除对应散料。普通母壳9只/触点24、窗端短母座2只自带4触点、TE壳3只/触点6；不要按旧21触点或旧100mm统长下单。
-
-|编号|确切料号/制造规格|安装数量|采购说明|
+|编号|型号或制作规格|数量|采购说明|
 |---|---|---|---|
 |controller|Seeed Studio XIAO ESP32C3|1|现成XIAO整板，自带Type-C与充电，无须另买充电模块。|
 |magnet|圆片强力磁铁 Ø30×2 mm（用户指定）|1|Ø30×2mm钕铁硼圆片，不用带壳加厚型。槽深1.5mm；磁力和涂层钢架上的保持力仍需验证。|
@@ -37,13 +33,13 @@
 |window_bezel_right_print|Printed white curved overlay window frame, right|1|Independent white PETG ring covering pale-blue window edge by 0.5mm; curved back follows cabin surface with nominal 0.15mm glue allowance; free curved adhesive interface.|
 |internal_carrier_print|PETG removable motor/PCB carrier with F1 relief, NTC guides and recessed cradle-tie seats|1|Approved exterior retained. Separate18650 cradle attaches using two2.5mm PA66 ties; integral PETG hard datums fix2mm deck gap and four stops locate laterally. Support cradle before cutting ties; PCB and motor stay on carrier during withdrawal.|
 |internal_mount_screws|M2 x 6mm ISO 7045 pan-head stainless steel machine screw|2||
-|battery_strap|10mm wide buckle-free double-sided hook-and-loop tape,<=0.8mm single layer,cut75mm|2|Two removable straps atY=+/-7mm. Recessed saddles accept0.8mm strap with0.8mm overlap at the top;no bulky buckle. Keep the bottom overlap-free.|
+|battery_strap|25mm wide buckle-free double-sided hook-and-loop tape,<=0.8mm single layer,cut75mm|1|One 25mm strap centred Y=0 replaces two 10mm straps;cradle groove widened to26mm. Top overlap only;axial end gate and two buffers retained.|
 |battery_foam|PET/polyimide insulating contact film,0.1mm thick,10x20mm|2|Include films,wrap and welded tabs within the reserved19x66.2mm pack envelope;do not add a70mm protected-cell variant.|
 |pcb_mount_screws|M2 x 4mm ISO 7045 pan-head stainless steel machine screw|2||
 |key_headers|1x02 2.54mm vertical pin header for window daughterboard|2|主板普通2P六组+J12一组；按键板另2组；NTC三组另列。不要将合计数量混写成同一BOM行。|
 |key_pcbs|Window button daughterboard,14x18mm,2-layer FR41.6mm|2|同一14×18mm按键板制作2块，2层FR4、1.6mm；左右同板不同装配朝向。|
 |drive_pulley_print|White PETG D-shaft pulley,8mm effective diameter,3mm bore with flat at1mm; calibrate fit and spot-epoxy axial retention|1||
-|controller_cassette_print|PETG removable horizontal XIAO cassette below battery,USB facing rear through raised opening|1|Current horizontal XIAO cassette plus three internalR1 solder-wire reliefs at D6/D7/VBUS;charging fit coupon synchronized. Port centre and visible opening unchanged.|
+|controller_cassette_print|PETG removable XIAO cassette with integral board-thickness support|1|Support height parameter0.6mm for existing1.0mm reference PCB;set to0 for1.6mm actual PCB. No loose shim;USB centre and three solder-wire reliefs retained. Fit coupon must match.|
 |led_thermal_adhesive|Electrically insulating thermal adhesive,k>=1.5W/mK,bond line0.10-0.15mm|1|Thin bond to finished COB metal substrate;keep light-emitting area and terminals clean. Thermal contact resistance target<=0.75K/W.|
 |tail_lock_screws|M2x5mm ISO4762 stainless steel socket-head cap screw|2||
 |service_screws|M2x10mm ISO4762 stainless steel socket-head screw|3||
@@ -51,8 +47,6 @@
 |heat_mount_screws|M1.6x5mm ISO7045 stainless steel pan-head screw|2|Through3mm aluminium collector into kit-generated ASA pilot joints;do not substitute the former4mm length.|
 |fuselage_lower_print|Sky-blue PETG100mm spherical lower cabin with fully internal mounting supports|1||
 |fuselage_cap_print|Sky-blue PETG removable upper cabin cap|1||
-|led_bracket_left_print|White ASA left detachable COB collector support|1|Use ASA for the two hot collector supports;0.2mm layers,0.4mm nozzle. Collector screw joint is generated for ASA. Keep the carrier and battery cradle PETG; machine no visible exterior openings.|
-|led_bracket_right_print|White ASA right detachable COB collector support|1|Use ASA for the two hot collector supports;0.2mm layers,0.4mm nozzle. Collector screw joint is generated for ASA. Keep the carrier and battery cradle PETG; machine no visible exterior openings.|
 |led_bracket_screws|M1.6x4mm ISO7045 stainless steel pan-head screw|2||
 |window_retainer_print|White PETG curved-window clamp with integrated removable button stop,PCB rear pads and lower ledge|2|Internal U-ring and curved saddle feet clamp each pane shoulder against the100mm cabin; twoM2x6 per window.|
 |window_retainer_screws|M2x6mm ISO4762 stainless steel socket-head cap screw|4|Four internal M2x6 socket-cap screws, two per pane; kit-derived nominal geometry, printed fit still needs coupon.|
@@ -80,7 +74,6 @@
 |heatshrink|Heat shrink tube assortment1-4mm,small pack|1||
 |insulation_tape|Polyimide insulating tape,10mm wide,one roll|1||
 |solder_consumables|Electronics solder+flux,small manual assembly kit|1||
-|xiao_shim_print|Removable PETG XIAO PCB support shim,20.5x17.2x0.6mm,for1.0mm model board in1.9mm slot;omit for1.6mm bare board|1||
 |charging_fit_shell_print|Optional local USB-C curved shell fit-test coupon,approximately25.55x46x20.25mm;reuse main XIAO cassette and2xM1.6x5 screws|1||
 |fan_driver|DRV8213RTER|1|Current regulation and latched stall shutdown at1S voltage; no Basic candidate with the same functions was found. WQFN requires reflow assembly.|
 |fan_current_scale|0603WAF4991T5E|1|4.99k IPROPI resistor; AIPROPI205uA/A.|
@@ -89,7 +82,6 @@
 |fan_bulk|CL31A476MPHNNNE|1|47uF10V1206 local motor input bulk; capacitance under DC bias must be checked on prototype.|
 |motor_mount_screws|ISO4762 M1.6x3 socket head cap screw, stainless|2|Through2mm motor plate into existing threaded metal gearbox;1mm engagement.|
 |motor_pulley_epoxy|Two-part epoxy adhesive suitable for PETG and steel, small tube|1|Spot at exposed D-shaft/pulley end provides axial retention only. Do not bond motor bearing or gearbox; replace pulley and motor together for service.|
-|fan_enable_harness|H07 two-wire harness assembly service,26AWG,cut stock160/170mm|1|J7 to XIAO D5/GND,joining H01 common loom. Housing,contacts and wire listed separately;this row is assembly labour,not a second materials kit.|
 |led_inductor|MHCC06030-100M-R7|1|MHCC06030-100M-R7 shielded10uH20%,DCR68mohm max,Isat5.5A typ at30% inductance drop,Irms4A typ at40C rise;7.3x6.6x3mm. At8uH and assumed480kHz low-frequency bound,calculated worst switch peak2.49A. Supplier datasheet pp2,17 marks series not for new design; accepted for limited-stock prototype,requires lifecycle substitution review before production.|
 |led_schottky|SS3P6L-M3/86A|1|SS3P6L-M3/86A,60V3A,TO-277A,chosen from TPS61500 recommended diode family; reverse rating exceeds40V switch rating. AverageLED current<=0.277A; calculated inductor peak2.49A. Datasheet pp1-2; footprint/polarity to be checked in PCB revision.|
 |thermal_adc|ADS1115IDGSR|1|ADS1115IDGSR,3.3V I2C four-input ADC: AIN0 COB NTC,AIN1 shell NTC,AIN2 battery NTC,AIN3 divided protected battery. ADDR ground gives0x48;100nF bypass,4.7k I2C pull-ups. Uses explicitly remapped XIAO D7/GPIO20 SDA and D6/GPIO21 SCL; default I2C GPIO6/7 already drive loads. Datasheet pp3-5,11,23.|
@@ -118,21 +110,18 @@
 |protection_gate_bleeds|5.1Mohm1%0603 resistor|2|Shared CHG/DSG gate-to-source bleed resistors,close to paired FET bank.|
 |added_bypass|100nF X7R16V0603 capacitor|2|One BQ29700 BAT-VSS,one ADS1115 VDD-GND.|
 |thermal_header|1x03 2.54mm vertical pin header,2.54mm body,6mm mating pin|1|Internal extension forXIAO3V3,D7 SDA,D6 SCL;not an exterior port.|
-|thermal_harness|H08 three-wire harness assembly service,26AWG,cut stock150/150/145mm|1|J8 to XIAO3V3/D7/D6,joining H01 common loom;housing,contacts and stock wire separately listed.|
 |probe_headers|1x02 2.54mm vertical pin header,2.54mm body,6mm mating pin|3|Three internal probe ports,NTC input plus ground;avoid swapped channels.|
 |probe_female_housings|TE Connectivity 1375820-2 CST-100 II 2-position housing,2.54mm|3|TE supplier drawing p1: housing2P A5.59+0.25/-0.13mm,12.95mm axial length,6.60mm max cross section,pitch2.54mm;accepts1375819 family. J10/J11 rotated90degrees,row alongX,centreX13.35;conservative installed/service reserve6.5x9x20mm includes14mm plug and6mm bend allowance. 3 probes labelled COB/SHELL/BAT. Supplier drawing envelope,not a supplier STEP model.|
 |battery_spot_weld_service|Supplier spot-weld service:18650 nickel tabs,24AWG insulated leads and positive insulating ring|1|Exact bare cell with nickel tabs,positive insulating ring,24AWG red/black leads supplied by battery service;cut stock125/165mm,trim on routing jig. Wrapped cell reserveØ19x66.2mm;do not solder directly to cell.|
 |conformal_heat_spreaders|Six-piece formed1050/1060 aluminium shell-liner set,0.5mm thick,about72.1cm2 equivalent area|1|Two fore,two aft,two cap liners fit the actual100mm cabin and avoid windows,skid roots,seams,USB and antenna. Bond to shell with<=0.15mm insulating thermal adhesive.72.1cm2 is volume/thickness equivalent metal area,not a verified thermal capacity. The500lx warm-state reading target remains unchanged.|
 |heat_transfer_straps|1050/1060 aluminium removable thermal bridge,left and right|2|Two1050/1060 aluminium thermal bridges AL02/03;open R4 NTC exit channel replaces R2.1. Mounting axes and thermal interfaces unchanged;use final STEP and drawings.|
-|internal_reflector|Opaque matte-white ASA internal reflector with front mixing port and glare visor|1|1.6mm wall;top Z-4,bottom Z-25.5;front16x2mm port,25deg visor. Bond two front-facing lands to ASA supports with0.2mm peelable adhesive. Remove with both supports as one group after collector removal;not a shell-glued hooked insert.|
+|internal_reflector|One-piece matte-white ASA reflector with integral left/right COB supports|1|Single connected ASA print combines reflector and two supports,retains original M1.6 mounting joints and screw positions;two bonded interfaces removed. Remove collector first,then withdraw entire insert through nose.|
 |protected_battery_header|1x02 2.54mm vertical power header,rated>=3A,2.54mm body,6mm mating pins|1|NewPACK+/-outputtoXIAOBAT+/BAT-;allXIAOgroundsPACK-side. Do not reuse raw-cell negative as ground.|
-|protected_battery_harness|H12 protected PACK harness assembly service,24AWG,cut stock150mm each|1|J12 to actual XIAO bottom BAT pads;housing/contacts/wire separately listed. Route under cassette;never join RAW negative.|
 |led_bias_link|0ohm0603 resistor|1|R31 populated0ohm0603 separates the TPS61500 VIN-bias/C3 branch from the 3A inductor feeder.|
 |protection_vss_link|0ohm0603 resistor|1|R32 populated0ohm0603 forms Kelvin raw-cell-negative reference for U4 VSS,C15 bypass andR19 discharge gate bleed; not a load return.|
 |probe_crimp_contacts|TE Connectivity 1375819-1 CST-100 II female crimp contact,22-26AWG|6|Exact1375820 housing contact family;datasheet p1:22-26AWG,insulationOD0.89-1.65mm. Crimp only onto specified26AWG adapter wire,not unspecified factory probe lead.|
-|probe_adapter_service|Three NTC harness adaptation services,finished head-to-housing stock125/80/105mm|1|H09 COB125,H10 SHELL80,H11 BAT105;includes7.5mm head and14mm housing,not extra extension. Use26AWG adapter OD0.89-1.4mm for TE1375819-1. Stagger splices>=8mm,individual heatshrink<=1.8mm and pair<=3.4mm;3housings/6contacts separately listed. Cut and preform on jig;no added15-20mm loose loops.|
 |ntc_guide_ties|PA66 cable ties 2.5x100mm,temperature rating>=85C|2|Two2.5x100 ties:one softly anchors H10 alongside+Y motor post,one closes existing lower guide for H11. New H01 guide tie is separately listed.|
-|battery_cradle_print|PETG transverse18650 cradle and removable end gate,two-piece set|1|For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,two straps,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer.|
+|battery_cradle_print|PETG transverse18650 cradle and removable end gate,two-piece set|1|For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,one25mm strap,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after 26mm strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer.|
 |battery_gate_screws|M2x6mm ISO4762 stainless steel socket-head cap screw|2|Kit-generated recessed joints atX=+/-11.3,Y=24,Z=-8mm. Self-forming PETG pilot holes;no metal tapping of the printed part.|
 |battery_end_spacers|Silicone foam cushions,7x3x3mm stock,compressed to2.3mm|2|Axial buffers between cell end faces and end stops atY=+/-36.4,Z=-21mm. Keep terminal centre and spot-welded lead exits clear.|
 |battery_cradle_ties|PA66 cable tie2.5x100mm,band<=0.8mm,head<=4.6x3.4x4.6mm|2|Route through aligned deck/cradle slots atX=-2,Y=+/-17mm. Heads face outward below PCB. Two recessed deck seats protect solder tails. Cut for deep service and replace;buy spare ties. Separate from the two NTC-guide ties.|
@@ -147,6 +136,3 @@
 |key_low_profile_sockets|2.54mm1x02 low-profile solder-wire female socket,body<=8.5mm,total depth<=11.5mm|2|采购/线束定制规格已确定：2.54mm1x2焊线母座，壳<=8.5mm、总深<=11.5mm、含热缩截面<=3x5.6mm；不是已经取得厂家认证STEP的特定商品。先让供应商按此规格交样，外形大于包络不得直接代替。|
 |controller_wire_guide_print|White ASA open main-loom guide,R3.6 bore,R5 outer,width2mm|1|Internal guide on existing rear motor post;0.2mm peelable adhesive gap to flat post side. Remove before thermal bridge service. No exterior hole or new screw.|
 |controller_guide_tie|PA66 cable tie2.5x100mm,temperature rating>=85C|1|Closes new H01 open guide. Release or replace for deep service;do not compress wire insulation.|
-|main_harness_assembly|H01-H06 preformed harness assembly and XIAO soldering service|1|Labour only:components/wire/housings separately listed. H07/H08/H09-11/H12 have their own labour rows. Supply routing jig data,individual labels,continuity test and strain relief. Shared Ø6 reserve is not an electrical splice.|
-
-现用六层主板采用双面手工/委托回流装配，空JLC SMT表不代表包焊订单。Pololu3060与M4×90 ISO10642按确切身份询交期；低型窗插座按已给总包络交样，不接受任意大壳替换。铝加工按同版STEP+15页图+中文说明。整机照度、温度、磁吸和风扇仍须首样实测；这些未实测项目不通过采购名称或CAD间隙自动获得合格结论。

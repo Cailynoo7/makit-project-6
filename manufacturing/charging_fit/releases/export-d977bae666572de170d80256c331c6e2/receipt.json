@@ -1,26 +1,26 @@
 {
   "designId": "charging_fit",
-  "revision": "4cdc95c52fd808f9b4b1fbfe1465f9e64dfebf9a6092427644b848acebffb225",
+  "revision": "ddd5afb68567bb0c4001b7b289d386b5996497ada35eda44b6f18f9617e52fdd",
   "schemaVersion": 3,
-  "exportId": "export-c5a7dac26042192cfd98ae7e069aa842",
-  "generatedAt": "2026-11-13T07:12:28.141Z",
-  "designSha256": "dbb4cb689ac78f427c3b6c6dafa3b39e56c98fe29fa49b9005ebce1202179d26",
+  "exportId": "export-d977bae666572de170d80256c331c6e2",
+  "generatedAt": "2026-11-13T09:25:45.958Z",
+  "designSha256": "57112e73e7b564e2afc7318e9985a4d2dc897a1d2a9044a249f0aaf5765c6e9c",
   "role": "charging_fit_test",
-  "stateHash": "fcbab36f87835b2a3f5ed9a9917255bad6f4bc34ee20484cbaeb8ce483fa79fd",
+  "stateHash": "03cc0df844c7d71e2d34346cfa671d409f6434be820de087f08c5f288d356c18",
   "stateManifest": {
     "schemaVersion": 4,
     "designId": "charging_fit",
     "role": "charging_fit_test",
     "design": {
-      "revision": "4cdc95c52fd808f9b4b1fbfe1465f9e64dfebf9a6092427644b848acebffb225",
-      "designSha256": "7efa71c613302d0521f5464b7a0bce538ef02b1871eedfe283b6bdadb524c5e7",
-      "manifestSha256": "188b3ffb5b16b6b1d4004d02cb1e51064ec6cc2cf5ab1214194482bec1e24b6b",
-      "modelSha256": "fa13958bcedf32cb65d59225b38bb819de310bcc55c7b498533e1f731f778067",
+      "revision": "ddd5afb68567bb0c4001b7b289d386b5996497ada35eda44b6f18f9617e52fdd",
+      "designSha256": "151c4db81a664f457f6648c75f23f98d8f914a7ca661ae2f4948a9f8d6115424",
+      "manifestSha256": "e5b97d4627a457ea97cb8b18b1d8d28512c2da8ac4653a101a9a9a97bf472a3f",
+      "modelSha256": "e845887ccf189c16332bd27475d56d7791f51cb2fa814f8e4d945b8f798fa1a8",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/charging_fit/README.md",
-      "sha256": "0652a735fc2df132dba637171715f8ba1eaaf3b920fbd1889c05a2063a8d9db3"
+      "sha256": "096bbc74b68c0478793d48aca398435e5e701de729e2d30789ed4dbf107ce5ba"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
@@ -42,31 +42,29 @@
         "step"
       ]
     },
-    "stateHash": "fcbab36f87835b2a3f5ed9a9917255bad6f4bc34ee20484cbaeb8ce483fa79fd"
+    "stateHash": "03cc0df844c7d71e2d34346cfa671d409f6434be820de087f08c5f288d356c18"
   },
   "buildArtifacts": {
-    "manifestSha256": "188b3ffb5b16b6b1d4004d02cb1e51064ec6cc2cf5ab1214194482bec1e24b6b",
-    "modelSha256": "fa13958bcedf32cb65d59225b38bb819de310bcc55c7b498533e1f731f778067"
+    "manifestSha256": "e5b97d4627a457ea97cb8b18b1d8d28512c2da8ac4653a101a9a9a97bf472a3f",
+    "modelSha256": "e845887ccf189c16332bd27475d56d7791f51cb2fa814f8e4d945b8f798fa1a8"
   },
   "exportAlgorithm": {
     "version": 1,
     "bootstrapSha256": "73e2a6d20ca2ee605997d4e1a375b8831f0b363e3d66e5778b9738224ab9bcea"
   },
   "sourceHashes": {
-    "controller_cassette/controller_cassette": "b3aa8e698545ebc576c205dd3c83bd099d5e3c8ecfc3f5c185c8f6a5a51d81b4",
+    "controller_cassette/controller_cassette": "04e80bf0793f2d02685e23d80aee626aedea4249f466c77e05bcdcf1bd237084",
     "coupon_shell/coupon_shell": "8fc1465bb900e2fe55b04c31b3dd5d0c8758f43f89f5126175e9018cbb61d763",
-    "imports/xiao_reference": "844714165454bafe4b39063fb1ff8a2d93ffae16f4501eab68b67912766088f5",
-    "xiao_shim/xiao_shim": "ecfea50382652ffd50ef20cb08f4d710bf4e4f0b80eb93388f4587430d418969"
+    "imports/xiao_reference": "844714165454bafe4b39063fb1ff8a2d93ffae16f4501eab68b67912766088f5"
   },
   "assetHashes": {
     "xiao_reference": "d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735"
   },
   "shapeHashes": {
-    "controller_cassette": "d621c8d3b914b3a096c925afff19b0a0fbad21ac91aa86dd7ad169b5fddbe2ac",
+    "controller_cassette": "84d6747da0ac5eaa7d6441846283529bb64be87456e5e7339941b95c4227f3ef",
     "controller_mount_screws": "75ecf7e778515f274c5e4fdfde1660d9fbc240ecbe7615c73ff758b1d73c739c",
     "coupon_shell": "f7fa9feae13d98897fd979934d0cc52a6ab6c7d473a01a7d8aae08ba10416392",
-    "xiao_reference": "f2f9cc8d4be228cfef62db922146c4fcd41b8f1c62e46f9f02b956c8547cff74",
-    "xiao_shim": "c90334d61f4eaa7ec2d060413d48ed075785d27477c7d410892627668d9406f6"
+    "xiao_reference": "f2f9cc8d4be228cfef62db922146c4fcd41b8f1c62e46f9f02b956c8547cff74"
   },
   "runtime": {
     "manifestHash": "fc14cea3fa144580d670f50a47b5e19f20d3314d173aa36fe6464963ee0359eb",
@@ -77,20 +75,20 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/charging_fit/releases/export-c5a7dac26042192cfd98ae7e069aa842/model.step",
+      "path": "manufacturing/charging_fit/releases/export-d977bae666572de170d80256c331c6e2/model.step",
       "role": "model/step",
-      "sha256": "a2b14aa3f32ccc7b8d286e32ffe12231d461ca32309a37e06794f24f9aa06d6d",
-      "sizeBytes": 4636172
+      "sha256": "00777f5d9bf07dfac443b9f973cdf73d0285687bda7e4b3136b821fd97b3994a",
+      "sizeBytes": 4639806
     }
   ],
   "interference": {
-    "summary": "No interference across 10 object pairs.",
+    "summary": "No interference across 6 object pairs.",
     "counts": {
-      "objects": 5,
-      "pairs": 10,
+      "objects": 4,
+      "pairs": 6,
       "exact": 0,
       "mesh": 0,
-      "cached": 10,
+      "cached": 6,
       "interference": 0,
       "undeclared": 0,
       "over_budget": 0,
@@ -103,9 +101,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "0b0b999ca4cc555ae066c0dd06277aa2",
     "projectId": "5420874b-8d43-4a1f-905a-cde1ff80993e",
-    "receiptPath": "manufacturing/charging_fit/releases/export-c5a7dac26042192cfd98ae7e069aa842/receipt.json",
-    "payloadSha256": "5121dc054224e683712b26bd85335d4c37ee106320f5a9d687ad18fe894a730a",
-    "mac": "10cb9f3a7de450d56fd40555aad82988c3101f69ec76654faa3ee1d21ce39b8d"
+    "receiptPath": "manufacturing/charging_fit/releases/export-d977bae666572de170d80256c331c6e2/receipt.json",
+    "payloadSha256": "3da309812d477d750c31c9d3b1810d52e6265577ff9079dc04abe5ce6a36dfa4",
+    "mac": "8ec2be866671e3f1e49815db6bfa6abc0f286c2c5fc735d60879a8e83c579c03"
   },
   "status": "handoff"
 }

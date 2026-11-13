@@ -184,6 +184,13 @@
       "share": false
     },
     {
+      "file": "structural-redesign-candidate.json",
+      "sha256": "450468b0d37f72fda00ad94e20d5d1c72a45d7d95460e683ef5e1da7675e29db",
+      "bytes": 41290,
+      "addedAt": "2026-11-13T11:26:25.940Z",
+      "share": false
+    },
+    {
       "file": "tps61500-ti-official.pdf",
       "sha256": "b932d253f6fc05d1db57ae7566f70855c9fdba1310bd00ccc5dff4594a8f1463",
       "bytes": 1217120,

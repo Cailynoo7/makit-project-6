@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "a46f97b8c8edbb3cfb84e1c4ed2c7144fdfaab72c9fe0505785c2052a155eddb",
+  "requirements_digest": "e0e8102bcb8985831859985e9d8388f469a4d180d722be1f095a936551efc071",
   "items": [
     {
       "id": "controller",
@@ -400,10 +400,10 @@
     },
     {
       "id": "battery_strap",
-      "name": "10mm wide buckle-free double-sided hook-and-loop tape,<=0.8mm single layer,cut75mm",
-      "quantity": 2,
+      "name": "25mm wide buckle-free double-sided hook-and-loop tape,<=0.8mm single layer,cut75mm",
+      "quantity": 1,
       "source": "default",
-      "selection_reason": "Two removable straps atY=+/-7mm. Recessed saddles accept0.8mm strap with0.8mm overlap at the top;no bulky buckle. Keep the bottom overlap-free.",
+      "selection_reason": "One 25mm strap centred Y=0 replaces two 10mm straps;cradle groove widened to26mm. Top overlap only;axial end gate and two buffers retained.",
       "part_identity": "df3f619804a92fdb"
     },
     {
@@ -445,10 +445,10 @@
     },
     {
       "id": "controller_cassette_print",
-      "name": "PETG removable horizontal XIAO cassette below battery,USB facing rear through raised opening",
+      "name": "PETG removable XIAO cassette with integral board-thickness support",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "Current horizontal XIAO cassette plus three internalR1 solder-wire reliefs at D6/D7/VBUS;charging fit coupon synchronized. Port centre and visible opening unchanged.",
+      "selection_reason": "Support height parameter0.6mm for existing1.0mm reference PCB;set to0 for1.6mm actual PCB. No loose shim;USB centre and three solder-wire reliefs retained. Fit coupon must match.",
       "part_identity": "df3f619804a92fdb"
     },
     {
@@ -496,22 +496,6 @@
       "name": "Sky-blue PETG removable upper cabin cap",
       "quantity": 1,
       "source": "default"
-    },
-    {
-      "id": "led_bracket_left_print",
-      "name": "White ASA left detachable COB collector support",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "Use ASA for the two hot collector supports;0.2mm layers,0.4mm nozzle. Collector screw joint is generated for ASA. Keep the carrier and battery cradle PETG; machine no visible exterior openings.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "led_bracket_right_print",
-      "name": "White ASA right detachable COB collector support",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "Use ASA for the two hot collector supports;0.2mm layers,0.4mm nozzle. Collector screw joint is generated for ASA. Keep the carrier and battery cradle PETG; machine no visible exterior openings.",
-      "part_identity": "df3f619804a92fdb"
     },
     {
       "id": "led_bracket_screws",
@@ -722,12 +706,6 @@
       "source": "default"
     },
     {
-      "id": "xiao_shim_print",
-      "name": "Removable PETG XIAO PCB support shim,20.5x17.2x0.6mm,for1.0mm model board in1.9mm slot;omit for1.6mm bare board",
-      "quantity": 1,
-      "source": "default"
-    },
-    {
       "id": "charging_fit_shell_print",
       "name": "Optional local USB-C curved shell fit-test coupon,approximately25.55x46x20.25mm;reuse main XIAO cassette and2xM1.6x5 screws",
       "quantity": 1,
@@ -882,14 +860,6 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Spot at exposed D-shaft/pulley end provides axial retention only. Do not bond motor bearing or gearbox; replace pulley and motor together for service.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "fan_enable_harness",
-      "name": "H07 two-wire harness assembly service,26AWG,cut stock160/170mm",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "J7 to XIAO D5/GND,joining H01 common loom. Housing,contacts and wire listed separately;this row is assembly labour,not a second materials kit.",
       "part_identity": "df3f619804a92fdb"
     },
     {
@@ -1419,14 +1389,6 @@
       ]
     },
     {
-      "id": "thermal_harness",
-      "name": "H08 three-wire harness assembly service,26AWG,cut stock150/150/145mm",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "J8 to XIAO3V3/D7/D6,joining H01 common loom;housing,contacts and stock wire separately listed.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
       "id": "probe_headers",
       "name": "1x02 2.54mm vertical pin header,2.54mm body,6mm mating pin",
       "quantity": 3,
@@ -1485,10 +1447,10 @@
     },
     {
       "id": "internal_reflector",
-      "name": "Opaque matte-white ASA internal reflector with front mixing port and glare visor",
+      "name": "One-piece matte-white ASA reflector with integral left/right COB supports",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "1.6mm wall;top Z-4,bottom Z-25.5;front16x2mm port,25deg visor. Bond two front-facing lands to ASA supports with0.2mm peelable adhesive. Remove with both supports as one group after collector removal;not a shell-glued hooked insert.",
+      "selection_reason": "Single connected ASA print combines reflector and two supports,retains original M1.6 mounting joints and screw positions;two bonded interfaces removed. Remove collector first,then withdraw entire insert through nose.",
       "part_identity": "df3f619804a92fdb"
     },
     {
@@ -1505,14 +1467,6 @@
         "population": "mounted",
         "method": "manual"
       }
-    },
-    {
-      "id": "protected_battery_harness",
-      "name": "H12 protected PACK harness assembly service,24AWG,cut stock150mm each",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "J12 to actual XIAO bottom BAT pads;housing/contacts/wire separately listed. Route under cassette;never join RAW negative.",
-      "part_identity": "df3f619804a92fdb"
     },
     {
       "id": "led_bias_link",
@@ -1561,14 +1515,6 @@
       "part_identity": "52e6783f7279b313"
     },
     {
-      "id": "probe_adapter_service",
-      "name": "Three NTC harness adaptation services,finished head-to-housing stock125/80/105mm",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "H09 COB125,H10 SHELL80,H11 BAT105;includes7.5mm head and14mm housing,not extra extension. Use26AWG adapter OD0.89-1.4mm for TE1375819-1. Stagger splices>=8mm,individual heatshrink<=1.8mm and pair<=3.4mm;3housings/6contacts separately listed. Cut and preform on jig;no added15-20mm loose loops.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
       "id": "ntc_guide_ties",
       "name": "PA66 cable ties 2.5x100mm,temperature rating>=85C",
       "quantity": 2,
@@ -1581,7 +1527,7 @@
       "name": "PETG transverse18650 cradle and removable end gate,two-piece set",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,two straps,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer.",
+      "selection_reason": "For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,one25mm strap,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after 26mm strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer.",
       "part_identity": "df3f619804a92fdb"
     },
     {
@@ -1694,14 +1640,6 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Closes new H01 open guide. Release or replace for deep service;do not compress wire insulation.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "main_harness_assembly",
-      "name": "H01-H06 preformed harness assembly and XIAO soldering service",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "Labour only:components/wire/housings separately listed. H07/H08/H09-11/H12 have their own labour rows. Supply routing jig data,individual labels,continuity test and strain relief. Shared Ø6 reserve is not an electrical splice.",
       "part_identity": "df3f619804a92fdb"
     }
   ],

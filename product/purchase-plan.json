@@ -1,9 +1,9 @@
 {
   "review_date": "2026-11-13",
   "ready_to_order": false,
-  "purpose": "最简用户装配首样询价：按两总成采购，140行散件仅供厂家备料，厂家另提供交样实测记录",
-  "cad_revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
-  "requirements_digest": "a46f97b8c8edbb3cfb84e1c4ed2c7144fdfaab72c9fe0505785c2052a155eddb",
+  "purpose": "自行制作与装配的散件采购；不采购功能总成或代接线服务",
+  "cad_revision": "1ed13b556dd67607f6f8415e081282c7cb72848184f51b21819d5633b7fed86a",
+  "requirements_digest": "e0e8102bcb8985831859985e9d8388f469a4d180d722be1f095a936551efc071",
   "items": [
     {
       "id": "controller",
@@ -326,14 +326,14 @@
     },
     {
       "id": "battery_strap",
-      "name": "10mm wide buckle-free double-sided hook-and-loop tape,<=0.8mm single layer,cut75mm",
-      "quantity": 2,
-      "purchase_quantity": 2,
+      "name": "25mm wide buckle-free double-sided hook-and-loop tape,<=0.8mm single layer,cut75mm",
+      "quantity": 1,
+      "purchase_quantity": 1,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Two removable straps atY=+/-7mm. Recessed saddles accept0.8mm strap with0.8mm overlap at the top;no bulky buckle. Keep the bottom overlap-free."
+      "notes": "One 25mm strap centred Y=0 replaces two 10mm straps;cradle groove widened to26mm. Top overlap only;axial end gate and two buffers retained."
     },
     {
       "id": "battery_foam",
@@ -392,14 +392,14 @@
     },
     {
       "id": "controller_cassette_print",
-      "name": "PETG removable horizontal XIAO cassette below battery,USB facing rear through raised opening",
+      "name": "PETG removable XIAO cassette with integral board-thickness support",
       "quantity": 1,
       "purchase_quantity": 1,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Current horizontal XIAO cassette plus three internalR1 solder-wire reliefs at D6/D7/VBUS;charging fit coupon synchronized. Port centre and visible opening unchanged."
+      "notes": "Support height parameter0.6mm for existing1.0mm reference PCB;set to0 for1.6mm actual PCB. No loose shim;USB centre and three solder-wire reliefs retained. Fit coupon must match."
     },
     {
       "id": "led_thermal_adhesive",
@@ -477,28 +477,6 @@
       "image_url": "",
       "state": "standard_or_custom_specification",
       "notes": ""
-    },
-    {
-      "id": "led_bracket_left_print",
-      "name": "White ASA left detachable COB collector support",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Use ASA for the two hot collector supports;0.2mm layers,0.4mm nozzle. Collector screw joint is generated for ASA. Keep the carrier and battery cradle PETG; machine no visible exterior openings."
-    },
-    {
-      "id": "led_bracket_right_print",
-      "name": "White ASA right detachable COB collector support",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Use ASA for the two hot collector supports;0.2mm layers,0.4mm nozzle. Collector screw joint is generated for ASA. Keep the carrier and battery cradle PETG; machine no visible exterior openings."
     },
     {
       "id": "led_bracket_screws",
@@ -798,17 +776,6 @@
       "notes": ""
     },
     {
-      "id": "xiao_shim_print",
-      "name": "Removable PETG XIAO PCB support shim,20.5x17.2x0.6mm,for1.0mm model board in1.9mm slot;omit for1.6mm bare board",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": ""
-    },
-    {
       "id": "charging_fit_shell_print",
       "name": "Optional local USB-C curved shell fit-test coupon,approximately25.55x46x20.25mm;reuse main XIAO cassette and2xM1.6x5 screws",
       "quantity": 1,
@@ -895,17 +862,6 @@
       "image_url": "",
       "state": "standard_or_custom_specification",
       "notes": "Spot at exposed D-shaft/pulley end provides axial retention only. Do not bond motor bearing or gearbox; replace pulley and motor together for service."
-    },
-    {
-      "id": "fan_enable_harness",
-      "name": "H07 two-wire harness assembly service,26AWG,cut stock160/170mm",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "J7 to XIAO D5/GND,joining H01 common loom. Housing,contacts and wire listed separately;this row is assembly labour,not a second materials kit."
     },
     {
       "id": "led_inductor",
@@ -1216,17 +1172,6 @@
       "notes": "Internal extension forXIAO3V3,D7 SDA,D6 SCL;not an exterior port."
     },
     {
-      "id": "thermal_harness",
-      "name": "H08 three-wire harness assembly service,26AWG,cut stock150/150/145mm",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "J8 to XIAO3V3/D7/D6,joining H01 common loom;housing,contacts and stock wire separately listed."
-    },
-    {
       "id": "probe_headers",
       "name": "1x02 2.54mm vertical pin header,2.54mm body,6mm mating pin",
       "quantity": 3,
@@ -1283,14 +1228,14 @@
     },
     {
       "id": "internal_reflector",
-      "name": "Opaque matte-white ASA internal reflector with front mixing port and glare visor",
+      "name": "One-piece matte-white ASA reflector with integral left/right COB supports",
       "quantity": 1,
       "purchase_quantity": 1,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "1.6mm wall;top Z-4,bottom Z-25.5;front16x2mm port,25deg visor. Bond two front-facing lands to ASA supports with0.2mm peelable adhesive. Remove with both supports as one group after collector removal;not a shell-glued hooked insert."
+      "notes": "Single connected ASA print combines reflector and two supports,retains original M1.6 mounting joints and screw positions;two bonded interfaces removed. Remove collector first,then withdraw entire insert through nose."
     },
     {
       "id": "protected_battery_header",
@@ -1302,17 +1247,6 @@
       "image_url": "",
       "state": "standard_or_custom_specification",
       "notes": "NewPACK+/-outputtoXIAOBAT+/BAT-;allXIAOgroundsPACK-side. Do not reuse raw-cell negative as ground."
-    },
-    {
-      "id": "protected_battery_harness",
-      "name": "H12 protected PACK harness assembly service,24AWG,cut stock150mm each",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "J12 to actual XIAO bottom BAT pads;housing/contacts/wire separately listed. Route under cassette;never join RAW negative."
     },
     {
       "id": "led_bias_link",
@@ -1348,17 +1282,6 @@
       "notes": "Exact1375820 housing contact family;datasheet p1:22-26AWG,insulationOD0.89-1.65mm. Crimp only onto specified26AWG adapter wire,not unspecified factory probe lead."
     },
     {
-      "id": "probe_adapter_service",
-      "name": "Three NTC harness adaptation services,finished head-to-housing stock125/80/105mm",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "H09 COB125,H10 SHELL80,H11 BAT105;includes7.5mm head and14mm housing,not extra extension. Use26AWG adapter OD0.89-1.4mm for TE1375819-1. Stagger splices>=8mm,individual heatshrink<=1.8mm and pair<=3.4mm;3housings/6contacts separately listed. Cut and preform on jig;no added15-20mm loose loops."
-    },
-    {
       "id": "ntc_guide_ties",
       "name": "PA66 cable ties 2.5x100mm,temperature rating>=85C",
       "quantity": 2,
@@ -1378,7 +1301,7 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,two straps,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer."
+      "notes": "For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,one25mm strap,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after 26mm strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer."
     },
     {
       "id": "battery_gate_screws",
@@ -1533,38 +1456,14 @@
       "image_url": "",
       "state": "standard_or_custom_specification",
       "notes": "Closes new H01 open guide. Release or replace for deep service;do not compress wire insulation."
-    },
-    {
-      "id": "main_harness_assembly",
-      "name": "H01-H06 preformed harness assembly and XIAO soldering service",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Labour only:components/wire/housings separately listed. H07/H08/H09-11/H12 have their own labour rows. Supply routing jig data,individual labels,continuity test and strain relief. Shared Ø6 reserve is not an electrical splice."
     }
   ],
   "order_notes": [
-    "厂家按两预装总成交货；若可整机交货，优先整机交付。不得重复采购总成和其内部散料。",
-    "按BOM安装数量询价，MOQ与备用数量另列。",
-    "现版主板171fcced、按键板53c419c4；不要沿用旧MEL7135板。",
-    "铝件按AL01–15各1件报价，材料及成形/攻牙工艺包含在报价内。",
-    "线束服务行与散料行按供料方式结算，不能重复下单整套。",
-    "窄身插壳/低型窗端插座为确定的加工采购包络，先交样验证实际接触及打印公差。",
-    "采购前刷新库存交期，结构允许打样不等于500lx/温升/风量已验收。"
+    "用户自行组装，采购散件和裸PCB；取消两套预装总成、代接线和代烧录服务。",
+    "PCB保持已发布六层规格；其焊接仍由用户完成，未将空SMT清单当作已焊板。",
+    "电芯选带点焊引线规格；不直接锡焊裸电芯。",
+    "15件铝件的热路保持，仍须定制加工或自行制作，不能以打印塑料替代。",
+    "按当前BOM买料，先做局部配合和通电试验；热稳定照度、温升、风量及磁吸承载未实测。"
   ],
-  "user_order_units": [
-    {
-      "id": "lower_functional_assembly",
-      "quantity": 1,
-      "name": "厂家预装下壳功能总成，含电池、PCBA、灯源/散热和线束"
-    },
-    {
-      "id": "upper_rotor_assembly",
-      "quantity": 1,
-      "name": "厂家预装上盖旋翼总成，含磁铁和承重连接"
-    }
-  ]
+  "user_order_units": []
 }

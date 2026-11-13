@@ -1,26 +1,26 @@
 {
   "designId": "helicopter",
-  "revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
+  "revision": "1ed13b556dd67607f6f8415e081282c7cb72848184f51b21819d5633b7fed86a",
   "schemaVersion": 3,
-  "exportId": "export-5e92f8d55d183d0781587eb2c4657a79",
-  "generatedAt": "2026-11-13T07:22:53.693Z",
-  "designSha256": "eabdb4ad1f4aa576b4804315ed2ae5935c520d9a6433376930477ac5ba5bf81d",
+  "exportId": "export-cf40480294f0ccc0c7df30eb2851d425",
+  "generatedAt": "2026-11-13T09:24:56.450Z",
+  "designSha256": "37650260a47e9cc95682e9d397f8be7ba06674b78172a8f690ec98d63ebc9f35",
   "role": "enclosure",
-  "stateHash": "07dff0d7a10a16bd901dad5bfe0ed1e8ca1493b27286d7ed93c9495f29e68e72",
+  "stateHash": "0b764c79f2c38fdb334a85a061a5fdd3968a7730a6e9648d9386a15b5072d5e1",
   "stateManifest": {
     "schemaVersion": 4,
     "designId": "helicopter",
     "role": "enclosure",
     "design": {
-      "revision": "47a887e839e175fa4a7871d123fec53edee557b5591e25c0bd9984db2ecd4215",
-      "designSha256": "fbf1fa0fa38ffae89926d41e557c93ad1057dccc8152fa089831338ce34cf430",
-      "manifestSha256": "8881f800ed73aed8138474d2f8cd61ca8c627944178b116924999c3cfaa245aa",
-      "modelSha256": "c542462f83f963e1df2e8c0f783d51c1d3858c2936b87fc2ab9a81e0c6e0e966",
+      "revision": "1ed13b556dd67607f6f8415e081282c7cb72848184f51b21819d5633b7fed86a",
+      "designSha256": "3f366ad625083957ab2e820c1f5a8507bc2b13973162d53a25e2deb5f199da51",
+      "manifestSha256": "7bc9f9c7bc1d5c47f2c59084923d747701ab3b51c2b78ed925b1d47f4a3af1d5",
+      "modelSha256": "f023e54ce24008cf6e51f2f37b368d13aebc18c90172ddb7ddfb8dc017fd8e00",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/helicopter/README.md",
-      "sha256": "c7e0d6dd5002dbd5969719c1838052f8a8fdcde90805fbd76e060e8d12509731"
+      "sha256": "cc41be85f89783e237120ea17502e7fdf9e19d64eedc73639dfb18c76a9277bc"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
@@ -49,24 +49,23 @@
         "step"
       ]
     },
-    "stateHash": "07dff0d7a10a16bd901dad5bfe0ed1e8ca1493b27286d7ed93c9495f29e68e72"
+    "stateHash": "0b764c79f2c38fdb334a85a061a5fdd3968a7730a6e9648d9386a15b5072d5e1"
   },
   "buildArtifacts": {
-    "manifestSha256": "8881f800ed73aed8138474d2f8cd61ca8c627944178b116924999c3cfaa245aa",
-    "modelSha256": "c542462f83f963e1df2e8c0f783d51c1d3858c2936b87fc2ab9a81e0c6e0e966"
+    "manifestSha256": "7bc9f9c7bc1d5c47f2c59084923d747701ab3b51c2b78ed925b1d47f4a3af1d5",
+    "modelSha256": "f023e54ce24008cf6e51f2f37b368d13aebc18c90172ddb7ddfb8dc017fd8e00"
   },
   "exportAlgorithm": {
     "version": 1,
     "bootstrapSha256": "73e2a6d20ca2ee605997d4e1a375b8831f0b363e3d66e5778b9738224ab9bcea"
   },
   "sourceHashes": {
-    "battery_cradle/battery_cradle": "e2e426ae66d03bc0e73c52a54fd4b094bb40afd451cc5c62b7b6598e9a8df28a",
+    "battery_cradle/battery_cradle": "80a5581b66735edc08e53bbf2ca55e39a55006ccfd2de6dd44474834b9db3f8f",
     "battery_end_pad_front/battery_end_pad_front": "b09d481508abfc77390265992d525a72aa841b63b55e9de4fd2b04c03de2f974",
     "battery_end_pad_rear/battery_end_pad_rear": "20ee0f584deeb67a28582bc93c3d1022f914f1abe7577f0f244a008a7ab66c74",
     "battery_gate/battery_gate": "157d32cf6b83310ca9957dedad960b6a52f432371f3907af1cfb72481007630e",
     "battery_reference/battery_reference": "a0d934ec40412183ba760b5133a9354acaae02ad5d49e406c15c3a018126ad6d",
-    "battery_strap_front/battery_strap_front": "abde976549d1c79da22ff62f724da19f5336ff18c661c8288f9fe994313a0a2f",
-    "battery_strap_rear/battery_strap_rear": "89b7013f071ebb7c6ba142aedd5e238425e1ea659877655c4da62eb776cdb649",
+    "battery_strap_front/battery_strap_front": "62eb9ab3869cd1251f18a901ad636f55a19c31aa11b35e5ef59cf59dd0930dd8",
     "bearing_pair/bearing_pair": "726aedaee807a64296ab65196fd43b628e3f5d227ae32a485c07d9178aa93372",
     "bearing_pedestal/bearing_pedestal": "d78b41e9752f69455e4fadd591cd951e7ad51da3bfabf924f3d15598b81236aa",
     "belly_lens/belly_lens": "62907cfc27fb6f15c104fbc28111c51679a3b6eea1dcc0d0544096d79f28ca6b",
@@ -77,7 +76,7 @@
     "cob_bond_film/cob_bond_film": "8a2aed6b2e04c686905d950beb5dfefe10ae2e6fd4f2f57eebd193b529a4cf76",
     "cob_reference/cob_reference": "456a44fc960c5b6bc78f6df488fccac9e34a198b50d26c89bc89c22c8c877b8f",
     "complete_harness/complete_harness": "12068f5adbf94ca0fbbeff4214b3c179efa7a430baae03ca1de9d8a3ebb8e67b",
-    "controller_cassette/controller_cassette": "dee4a076d22d473c58e36470c69a34f8d83167bd021d4320c717cc5cf66a7eb1",
+    "controller_cassette/controller_cassette": "4c8bc37fe8630590ad31326006d26b815ffe152a7a31b746bd5f35ef0a5cc0bb",
     "controller_wire_guide/controller_wire_guide": "3d43c212bdd6b7334276f5de697f36c57ae6fd84a009f0c94ffaf3c7311c6d5b",
     "cradle_tie_front/cradle_tie_front": "5f647ca5928810df19b71f9cbb656fc79691337ce96eec1598ae446c6921e22a",
     "cradle_tie_rear/cradle_tie_rear": "cc088b7b77fe6f9fb6307b87629e29d286736cbe6c5d6052f73e0459729daad0",
@@ -95,8 +94,6 @@
     "imports/xiao_reference": "d456cce158aca1a1aeb89f11de63bd47962d7608d1f5cec299f8629b8cb6e685",
     "internal_carrier/internal_carrier": "743ffc231c2d1007f147191fb57292c8193ffb34167a2be76c50622d5539f555",
     "key_board_pair/key_board_pair": "ffc333b1fac7903ab20d249e73219f94dd82409e7e8935af83ef3e1961289951",
-    "led_bracket_left/led_bracket_left": "4a39f51e8dc5a618566a637a61f940e2a8640090e6625b21ad40e356b3ebb04c",
-    "led_bracket_right/led_bracket_right": "7c0010cb864877cfbcb9f03b46cb1705d26b208dc1b6dd563bc81ae69bdcc951",
     "liner_aft_left/liner_aft_left": "6da544395fb86bc953a45488508698a379e0bd955090e6091623c7ac424d2078",
     "liner_aft_right/liner_aft_right": "cba813e552153a81d70a690d6dc6884e100ed0c5c99b22f60008d397a808ba34",
     "liner_left/liner_left": "166562d42f8b884b1a0d2439bcc036be111d424c5301bd166c15649be3084ba4",
@@ -109,7 +106,7 @@
     "ntc_battery_reference/ntc_battery_reference": "70f6e74e640d8f8f39c35384701ceda95411e61bd2fddb66c38a84c7371351e3",
     "ntc_cob_reference/ntc_cob_reference": "6176cf74f40ddb44f85eb21633c9642424b9d10bc4e01c4ac24000cc4151f217",
     "ntc_shell_reference/ntc_shell_reference": "b5b5aed8d949ad63ee0f051fcba69ece0899afd830e49a325d6c016b283aef82",
-    "optical_reflector/optical_reflector": "506d41a0378bd374b02ac2680c9b7dd7ec6079404f076239a23ebcd4e4783c49",
+    "optical_reflector/optical_reflector": "c012e8b8ea4de30d3ce5c14f22359f3ff789bb01f57bd2953a2132dbbc7a18d2",
     "rotor_bearing_spacer/rotor_bearing_spacer": "86beeb355ff079490a3d08df06ed38e5e05e005939f96d49b580b8e217acb2c1",
     "rotor_inner_spacer/rotor_inner_spacer": "326c026368e2c0a0c0d46156a396616448d7eada40b0d67f77cb49613dfd77e6",
     "skid_left/skid_left": "6194b53787a5cf7d6628bf6de6e5c87a9520385ad9f984829ed2012e681958a4",
@@ -135,8 +132,7 @@
     "window_left/window_left": "e8d09aeab19030d636cc2f2ce968a5e274c49bb67cfb18efdbdf0240414df216",
     "window_retainer_left/window_retainer_left": "f222e82494cb1460d9c539ff4bced7cd30dcfbde0b9ed48dc3a15e7dc55c0340",
     "window_retainer_right/window_retainer_right": "75dbacc408816338631f23c286678eff610803a743075b7e35d845d01f5021a1",
-    "window_right/window_right": "971c64c29518409600ba97d16aef30b810c03bb1b57dd240afd5cec3e15b3e2c",
-    "xiao_shim/xiao_shim": "c9ed26a343e7f36280b8473c8021723ebf1fb5104568b35faefe7f886d51027d"
+    "window_right/window_right": "971c64c29518409600ba97d16aef30b810c03bb1b57dd240afd5cec3e15b3e2c"
   },
   "assetHashes": {
     "bearing_lower": "6cf33efeb8fe32725a1a155d6954e6ae308a159887b4417ea369cf881fb90549",
@@ -147,14 +143,13 @@
     "xiao_reference": "d3eb22a99dade7b2fb6ccc2ac102d9a5a5fac6c92ef4d58a8c496357b1ae3735"
   },
   "shapeHashes": {
-    "battery_cradle": "8285a44ed86273d5c31c43e7175c7a133cc446739073244f1d1862ffb9f8df87",
+    "battery_cradle": "0060a58fe28c581a1f8a268d3429433c2bb38a70559ad267e23ed7d33197d35e",
     "battery_end_pad_front": "f19e1ce81d451c2818e0f41c28dbe964b615cb3eb2dca25968a05722dcdacb65",
     "battery_end_pad_rear": "ae45a398eaffa2dbc155138ae90edb7fbcb67f0c30b1d21fdfee77166666322e",
     "battery_gate": "459dcb997e1755da22c0bd3e17056f1824316a03f8e9bf793f6518ae152f84af",
     "battery_gate_screws": "726c0462333c054563f9338713cf9ddeb3775011cda4331c1325cd8fafe7b575",
     "battery_reference": "4f41e1757a4ac6b57004509064198db511736d21f587647efd76d181fe30578e",
-    "battery_strap_front": "02a5e4d468534a21a0c067dfb616a4221e3b07e06ca65829150074f4ce785821",
-    "battery_strap_rear": "cbdf40ed8d260adcaead16eb17c3bd1966a0d029cacbbc07b911375663662795",
+    "battery_strap_front": "915b7ea8c469ee2391f58b12075560aaa501e391fdf0115c3a1e3f0932e3e5fc",
     "bearing_lower": "bf68690f6f7767e51f49a13dde5b630afec9a75e4eddeca5dff56747b7f10395",
     "bearing_pedestal": "7c2666489747262bfb95daf5e2096438b7cb5e5dc88499ceb07f94ce750f5690",
     "bearing_upper": "ea003b438fe8c2e10ca7deaf14be54def0904060a20a241ad630a3ee2554de2f",
@@ -168,7 +163,7 @@
     "cob_reference": "98c118ade2331c9c5dbd7022b589cec9eba76585b0482b27b1952bd6bacb181b",
     "complete_harness": "5478e5b47c1f6f85ffc817e05b3e92da0cbfae1442dbbcda791f83a35315f53e",
     "connection_board": "260dea7880f6b2cd911081358d20f8bfa0935d268c02e84df6dc889f6d358f23",
-    "controller_cassette": "1a3bfb1dba994221d47cc3cb1d9300e3f86d9b3921974a3fd1328d935c4e31e7",
+    "controller_cassette": "b2293fad8f35f1cab9e1875341197222146c3f315834432471208c08ef2bdc88",
     "controller_mount_screws": "75ecf7e778515f274c5e4fdfde1660d9fbc240ecbe7615c73ff758b1d73c739c",
     "controller_wire_guide": "8494264f47ce0b34935e84986e13a07b4ec00dd07023dcad75301699e5f63e1d",
     "cradle_tie_front": "872a3ff88412f2f29f7a3097339bf40868b011d71d21283a1e2415e7d433c542",
@@ -184,8 +179,6 @@
     "internal_carrier": "139979eb4ade89b1f06786c3620f3bd7f0790a384c1a9aca1c184e87c721e46b",
     "key_board_left": "08ec566bd6a7cadee033e9ed244f2f5ad846aeb2b89293df7765ad12980505fb",
     "key_board_right": "b07ca689e936c9064a0f12c7037bd1f9e8d71e7bf9b80dd7633d04450c6d610b",
-    "led_bracket_left": "b57dd52afa45287d689c08ee0c78e0412a5f2837547c0af7ce549acf5cea91d8",
-    "led_bracket_right": "46864e4ad5ab5a375d64452ba83617f81df31c9484d9bf2b028941adda4ac4ce",
     "led_bracket_screws": "45fe1d7e6f1e8c1677d3888bc7e1b4d0484a529e90db698d09e073df454c58fb",
     "liner_aft_left": "f7455f51941261463b71811f0222acbb31274b1dcfc01bca89dfb7be87e0bc46",
     "liner_aft_right": "49fe9cb486654b620f8aec8874ffbc4468b5fb939cd6a31532eb6153428227ed",
@@ -200,7 +193,7 @@
     "ntc_battery_reference": "31819024dd30db2f5abe37c014e1c9d18100f9b1c6fb894cd70c082297c6a235",
     "ntc_cob_reference": "673beacfb995a54ef47c4ec2ce937267a89b74e162c623ede686f9b3b17ddb2e",
     "ntc_shell_reference": "e77d896510d186bce549a0e5a91e9ea4b9cba7c144ea62d7bab4942058dc3629",
-    "optical_reflector": "70fc8ee1c2b3b5ece923ac65183dcee5a31ad2148ef6c01fbc7c3ba1ff470415",
+    "optical_reflector": "a925d2f1d5dd038dbf09e8d41d467f7567c22181a487c653b8f53d3cec8bbc1b",
     "pcb_mount_screws": "a3e182f370d44f4336bee638eb1d386a067738266cbe3407b815dcce3520250f",
     "rotor_bearing_spacer": "cf071b34a894e9b6d6dfd8188f2b56514acba4f5854ec7a2a1195c6c0b01cf7a",
     "rotor_inner_spacer": "516401ec8ad42a7a0886f2d5966f2cb923d6a99c616a74b8cfe0fa5783bda4c8",
@@ -249,8 +242,7 @@
     "window_retainer_right": "6bace886434c025c2655cb4749c3210c29bd552be32d4b8b8892deb83c472275",
     "window_right": "cc81efbfe27171b4f4e23e0d41cf0b0b99ec4d371b5e09a70620367fdd33140f",
     "window_right_screws": "d87bae7f9a880d3cf7db3aa127995d8d90aa1a76655ceeff3ba92419a0c7e37f",
-    "xiao_reference": "f2f9cc8d4be228cfef62db922146c4fcd41b8f1c62e46f9f02b956c8547cff74",
-    "xiao_shim": "c90334d61f4eaa7ec2d060413d48ed075785d27477c7d410892627668d9406f6"
+    "xiao_reference": "f2f9cc8d4be228cfef62db922146c4fcd41b8f1c62e46f9f02b956c8547cff74"
   },
   "runtime": {
     "manifestHash": "fc14cea3fa144580d670f50a47b5e19f20d3314d173aa36fe6464963ee0359eb",
@@ -261,20 +253,20 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/helicopter/releases/export-5e92f8d55d183d0781587eb2c4657a79/model.step",
+      "path": "manufacturing/helicopter/releases/export-cf40480294f0ccc0c7df30eb2851d425/model.step",
       "role": "model/step",
-      "sha256": "f3dd4f36dd9bcfaab2b2d80d02a04854c7822de192cdbffb3fc87958e2d05eba",
-      "sizeBytes": 146479705
+      "sha256": "de41c5c24938cd949a51b1fcc7fe35846c71cd3f0ca7fe8643eb53e4ba950006",
+      "sizeBytes": 146377106
     }
   ],
   "interference": {
-    "summary": "No interference across 5356 object pairs.",
+    "summary": "No interference across 4950 object pairs.",
     "counts": {
-      "objects": 104,
-      "pairs": 5356,
+      "objects": 100,
+      "pairs": 4950,
       "exact": 0,
       "mesh": 0,
-      "cached": 573,
+      "cached": 551,
       "interference": 0,
       "undeclared": 0,
       "over_budget": 0,
@@ -287,9 +279,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "0b0b999ca4cc555ae066c0dd06277aa2",
     "projectId": "5420874b-8d43-4a1f-905a-cde1ff80993e",
-    "receiptPath": "manufacturing/helicopter/releases/export-5e92f8d55d183d0781587eb2c4657a79/receipt.json",
-    "payloadSha256": "b5d9ecb1fe6dfaca0790a8feb8b19eaec5437f7fd82a0faa17d15848e99fc55b",
-    "mac": "5ae64f68a03a62844c3a0707b2b8c22ff8bf01cd3a53190e2184d25722e816ed"
+    "receiptPath": "manufacturing/helicopter/releases/export-cf40480294f0ccc0c7df30eb2851d425/receipt.json",
+    "payloadSha256": "f15d1c44209226e447130d4afc433cde10454b4bf63d3556435ff3dba20581f6",
+    "mac": "e7c8a7e5796a708a3f15c2fa7e22344887b2dc3d17da7d61c955554fdf882719"
   },
   "status": "handoff"
 }

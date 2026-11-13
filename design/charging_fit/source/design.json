@@ -40,23 +40,7 @@
           "target": "controller_cassette",
           "order": 0,
           "path": "design/charging_fit/source/parts/controller_cassette/000-controller_cassette.py",
-          "sha256": "b3aa8e698545ebc576c205dd3c83bd099d5e3c8ecfc3f5c185c8f6a5a51d81b4"
-        }
-      ],
-      "dependencies": [
-        "coupon_shell"
-      ]
-    },
-    {
-      "id": "xiao_shim",
-      "label": "xiao_shim",
-      "cells": [
-        {
-          "id": "xiao_shim",
-          "target": "xiao_shim",
-          "order": 0,
-          "path": "design/charging_fit/source/parts/xiao_shim/000-xiao_shim.py",
-          "sha256": "ecfea50382652ffd50ef20cb08f4d710bf4e4f0b80eb93388f4587430d418969"
+          "sha256": "04e80bf0793f2d02685e23d80aee626aedea4249f466c77e05bcdcf1bd237084"
         }
       ],
       "dependencies": [
@@ -149,37 +133,10 @@
     {
       "id": "controller_cassette",
       "target": "controller_cassette",
-      "label": "XIAO尾根充电卡座",
+      "label": "一体承托XIAO卡座",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "d621c8d3b914b3a096c925afff19b0a0fbad21ac91aa86dd7ad169b5fddbe2ac",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "xiao_shim",
-      "target": "xiao_shim",
-      "label": "XIAO板厚适配垫片",
-      "material": "petg",
-      "kind": "generated",
-      "shapeHash": "c90334d61f4eaa7ec2d060413d48ed075785d27477c7d410892627668d9406f6",
+      "shapeHash": "84d6747da0ac5eaa7d6441846283529bb64be87456e5e7339941b95c4227f3ef",
       "transform": {
         "positionMm": [
           0,
@@ -218,7 +175,7 @@
     }
   ],
   "fits": [],
-  "updatedAt": "2026-11-13T07:12:28.141Z",
+  "updatedAt": "2026-11-13T09:25:45.958Z",
   "parameters": {
     "imports": {},
     "coupon_shell": {
@@ -240,12 +197,10 @@
     "controller_cassette": {
       "controller_wire_relief_diameter": 3,
       "cassette_lower_face_z": -33.5,
-      "solder_wire_relief_radius": 1
-    },
-    "xiao_shim": {
-      "shim_thickness": 0.6,
-      "shim_length": 20.5,
-      "shim_width": 17.2
+      "solder_wire_relief_radius": 1,
+      "integral_board_support_height": 0.6,
+      "integral_board_support_length": 20.5,
+      "integral_board_support_width": 17.2
     }
   }
 }
