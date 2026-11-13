@@ -1,5 +1,13 @@
 {
   "formatVersion": 4,
   "name": "磁吸直升机风扇台灯",
+  "title": "Magnetic Helicopter Fan Light",
+  "summary": "A magnetic helicopter-shaped fan light that combines a cooling fan and a lamp in one playful design, easily attaching to metal surfaces for hands-free use.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "QY G"
+    }
+  ],
   "artifacts": "rebuild"
 }

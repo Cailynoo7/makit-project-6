@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "file": "models/charging_fit.glb",
+      "design": "charging_fit"
+    },
+    {
+      "file": "models/connection.glb",
+      "design": "connection"
+    },
+    {
+      "file": "models/helicopter.glb",
+      "design": "helicopter"
+    },
+    {
+      "file": "models/keys.glb",
+      "design": "keys"
+    },
+    {
+      "file": "models/switch_reference.glb",
+      "design": "switch_reference"
+    }
+  ]
+}
