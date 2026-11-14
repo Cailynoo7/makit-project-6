@@ -1,0 +1,6553 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "cad_revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+  "status": "geometry_and_assembly_paths_passed",
+  "handoff_status": "current",
+  "assembly_owner": "user",
+  "factory_preassembly": false,
+  "baseline_revision": "1ed13b556dd67607f6f8415e081282c7cb72848184f51b21819d5633b7fed86a",
+  "implemented": {
+    "thermal_metal_pieces": [
+      15,
+      1
+    ],
+    "thermal_fasteners": [
+      8,
+      2
+    ],
+    "structural_support_pieces": [
+      4,
+      1
+    ],
+    "main_controller_cassette_fasteners": [
+      2,
+      0
+    ],
+    "cradle_ties": [
+      2,
+      0
+    ],
+    "frame_fasteners": [
+      2,
+      1
+    ],
+    "case_fasteners": [
+      3,
+      2
+    ],
+    "tail_fasteners": [
+      2,
+      1
+    ],
+    "physical_structure_and_fastener_items_removed": 30
+  },
+  "comparison_limit": "Counts independent structural parts and fasteners;consumable tape,adhesives,wire termination and cure time are separate. No timed assembly trial. XIAO adds one removable tape tab.",
+  "static_analysis": {
+    "main64": {
+      "observations": [
+        {
+          "code": "interference_none",
+          "message": "No pair among carrier_shell_screws, case_front_screw, case_rear_screw, fuselage, suspension_screw, nose_lens, belly_lens, tail, tail_lock_screws, main_rotor, mast, magnet_base, skid_left, skid_root_screws_left, tail_propeller, window_left, window_left_screws, button_left, window_right, window_right_screws, button_right, bearing_pedestal, bearing_lower, connection_board, fan_motor, key_board_left, motor_mount_screw, xiao_reference, bearing_upper, hub_cover, window_bezel_left, window_bezel_right, led_bracket_screws, heat_mount_screws, unit_frame_gate_screws, internal_carrier, pcb_mount_screws, drive_pulley, heat_spreader, drive_belt, fuselage_cap, skid_right, skid_root_screws_right, window_retainer_left, window_retainer_right, skid_clamps_left, skid_clamps_right, rotor_bearing_spacer, skid_clamp_left_aft, skid_clamp_right_aft, rotor_inner_spacer, motor_mount_screw_second, key_board_right, battery_gate, battery_strap_front, cob_reference, battery_reference, cob_bond_film, battery_end_pad_front, battery_end_pad_rear, ntc_battery_reference, ntc_cob_reference, ntc_shell_reference, optical_reflector shares solid volume. Parts that touch, sit flush, or run tangent are reported as contact rather than interference.",
+          "objectIds": [
+            "carrier_shell_screws",
+            "case_front_screw",
+            "case_rear_screw",
+            "fuselage",
+            "suspension_screw",
+            "nose_lens",
+            "belly_lens",
+            "tail",
+            "tail_lock_screws",
+            "main_rotor",
+            "mast",
+            "magnet_base",
+            "skid_left",
+            "skid_root_screws_left",
+            "tail_propeller",
+            "window_left",
+            "window_left_screws",
+            "button_left",
+            "window_right",
+            "window_right_screws",
+            "button_right",
+            "bearing_pedestal",
+            "bearing_lower",
+            "connection_board",
+            "fan_motor",
+            "key_board_left",
+            "motor_mount_screw",
+            "xiao_reference",
+            "bearing_upper",
+            "hub_cover",
+            "window_bezel_left",
+            "window_bezel_right",
+            "led_bracket_screws",
+            "heat_mount_screws",
+            "unit_frame_gate_screws",
+            "internal_carrier",
+            "pcb_mount_screws",
+            "drive_pulley",
+            "heat_spreader",
+            "drive_belt",
+            "fuselage_cap",
+            "skid_right",
+            "skid_root_screws_right",
+            "window_retainer_left",
+            "window_retainer_right",
+            "skid_clamps_left",
+            "skid_clamps_right",
+            "rotor_bearing_spacer",
+            "skid_clamp_left_aft",
+            "skid_clamp_right_aft",
+            "rotor_inner_spacer",
+            "motor_mount_screw_second",
+            "key_board_right",
+            "battery_gate",
+            "battery_strap_front",
+            "cob_reference",
+            "battery_reference",
+            "cob_bond_film",
+            "battery_end_pad_front",
+            "battery_end_pad_rear",
+            "ntc_battery_reference",
+            "ntc_cob_reference",
+            "ntc_shell_reference",
+            "optical_reflector"
+          ],
+          "data": {
+            "counts": {
+              "objects": 64,
+              "pairs": 2016,
+              "exact": 67,
+              "mesh": 179,
+              "cached": 16,
+              "interference": 0,
+              "undeclared": 0,
+              "over_budget": 0,
+              "undetermined": 0
+            }
+          }
+        }
+      ]
+    },
+    "changed_harness_interfaces": {
+      "observations": [
+        {
+          "code": "interference_none",
+          "message": "No pair among complete_harness, internal_carrier, xiao_reference, fuselage, fuselage_cap, heat_spreader, case_front_screw, case_rear_screw shares solid volume. Parts that touch, sit flush, or run tangent are reported as contact rather than interference.",
+          "objectIds": [
+            "complete_harness",
+            "internal_carrier",
+            "xiao_reference",
+            "fuselage",
+            "fuselage_cap",
+            "heat_spreader",
+            "case_front_screw",
+            "case_rear_screw"
+          ],
+          "data": {
+            "counts": {
+              "objects": 8,
+              "pairs": 28,
+              "exact": 0,
+              "mesh": 0,
+              "cached": 23,
+              "interference": 0,
+              "undeclared": 0,
+              "over_budget": 0,
+              "undetermined": 0
+            }
+          }
+        }
+      ]
+    },
+    "all65_pairs": {
+      "summary": "No interference across 2080 object pairs.",
+      "counts": {
+        "objects": 65,
+        "pairs": 2080,
+        "exact": 39,
+        "mesh": 4,
+        "cached": 272,
+        "interference": 0,
+        "undeclared": 0,
+        "over_budget": 0,
+        "undetermined": 0
+      },
+      "overlaps": []
+    }
+  },
+  "path_checks": [
+    {
+      "name": "whole_module_side",
+      "moving": [
+        "internal_carrier",
+        "battery_gate",
+        "battery_reference",
+        "battery_strap_front",
+        "battery_end_pad_front",
+        "battery_end_pad_rear",
+        "xiao_reference",
+        "connection_board",
+        "fan_motor",
+        "drive_pulley",
+        "optical_reflector",
+        "heat_spreader",
+        "cob_reference",
+        "ntc_battery_reference",
+        "ntc_cob_reference",
+        "ntc_shell_reference"
+      ],
+      "against": [
+        "fuselage",
+        "window_right",
+        "button_right",
+        "window_bezel_right",
+        "window_retainer_right",
+        "key_board_right",
+        "skid_right",
+        "skid_clamps_right",
+        "skid_clamp_right_aft",
+        "skid_root_screws_right",
+        "tail",
+        "tail_lock_screws",
+        "bearing_pedestal",
+        "suspension_screw",
+        "mast",
+        "main_rotor",
+        "hub_cover",
+        "magnet_base",
+        "bearing_upper",
+        "rotor_bearing_spacer",
+        "rotor_inner_spacer"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            70,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "internal_carrier",
+          "battery_gate",
+          "battery_reference",
+          "battery_strap_front",
+          "battery_end_pad_front",
+          "battery_end_pad_rear",
+          "xiao_reference",
+          "connection_board",
+          "fan_motor",
+          "drive_pulley",
+          "optical_reflector",
+          "heat_spreader",
+          "cob_reference",
+          "ntc_battery_reference",
+          "ntc_cob_reference",
+          "ntc_shell_reference"
+        ],
+        "path_length_mm": 70,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 0.5025,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "main_rotor",
+            "min_clearance_mm": 1,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.2429,
+              "travel_mm": 17,
+              "offset_mm": [
+                0,
+                17,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "suspension_screw",
+            "min_clearance_mm": 1.15,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.3286,
+              "travel_mm": 23,
+              "offset_mm": [
+                0,
+                23,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamp_right_aft",
+            "min_clearance_mm": 1.1817,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "tail",
+            "min_clearance_mm": 1.8494,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.0143,
+              "travel_mm": 1,
+              "offset_mm": [
+                0,
+                1,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_root_screws_right",
+            "min_clearance_mm": 1.9687,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_clamps_right",
+            "min_clearance_mm": 2.4117,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_right",
+            "min_clearance_mm": 2.4416,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_bezel_right",
+            "min_clearance_mm": 3.6202,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "skid_right",
+            "min_clearance_mm": 4.5147,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "key_board_right",
+            "min_clearance_mm": 4.5677,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "tail_lock_screws",
+            "min_clearance_mm": 4.8,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.2714,
+              "travel_mm": 19,
+              "offset_mm": [
+                0,
+                19,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "rotor_bearing_spacer",
+            "min_clearance_mm": 7.9897,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.0286,
+              "travel_mm": 2,
+              "offset_mm": [
+                0,
+                2,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "bearing_pedestal",
+            "min_clearance_mm": 8.8645,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 6
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 141,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 5 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 3649
+      }
+    },
+    {
+      "name": "case_side",
+      "moving": [
+        "fuselage_cap",
+        "window_left",
+        "button_left",
+        "window_bezel_left",
+        "window_retainer_left",
+        "key_board_left",
+        "skid_left",
+        "skid_clamps_left",
+        "skid_clamp_left_aft",
+        "skid_root_screws_left",
+        "window_left_screws"
+      ],
+      "against": [
+        "fuselage",
+        "window_right",
+        "button_right",
+        "window_bezel_right",
+        "window_retainer_right",
+        "key_board_right",
+        "skid_right",
+        "skid_clamps_right",
+        "skid_clamp_right_aft",
+        "skid_root_screws_right",
+        "tail",
+        "tail_lock_screws",
+        "bearing_pedestal",
+        "suspension_screw",
+        "internal_carrier",
+        "battery_gate",
+        "battery_reference",
+        "battery_strap_front",
+        "battery_end_pad_front",
+        "battery_end_pad_rear",
+        "xiao_reference",
+        "connection_board",
+        "fan_motor",
+        "drive_pulley",
+        "optical_reflector",
+        "heat_spreader",
+        "cob_reference",
+        "ntc_battery_reference",
+        "ntc_cob_reference",
+        "pcb_mount_screws",
+        "complete_harness",
+        "drive_belt",
+        "mast",
+        "main_rotor",
+        "hub_cover",
+        "magnet_base",
+        "bearing_upper",
+        "rotor_bearing_spacer",
+        "rotor_inner_spacer"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            70,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "fuselage_cap",
+          "window_left",
+          "button_left",
+          "window_bezel_left",
+          "window_retainer_left",
+          "key_board_left",
+          "skid_left",
+          "skid_clamps_left",
+          "skid_clamp_left_aft",
+          "skid_root_screws_left",
+          "window_left_screws"
+        ],
+        "path_length_mm": 70,
+        "first_contact": {
+          "object_id": "fuselage",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "tail",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "complete_harness",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "heat_spreader",
+            "min_clearance_mm": 0.1353,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "main_rotor",
+            "min_clearance_mm": 0.2902,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_gate",
+            "min_clearance_mm": 0.5,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 0.5015,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "xiao_reference",
+            "min_clearance_mm": 0.845,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 1.0185,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 1.3109,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "tail_lock_screws",
+            "min_clearance_mm": 2.0156,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "drive_belt",
+            "min_clearance_mm": 2.4036,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "rotor_bearing_spacer",
+            "min_clearance_mm": 3.7904,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 5.0415,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_end_pad_front",
+            "min_clearance_mm": 5.4978,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "rotor_inner_spacer",
+            "min_clearance_mm": 6.9903,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "bearing_upper",
+            "min_clearance_mm": 7.0456,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "optical_reflector",
+            "min_clearance_mm": 7.9153,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "bearing_pedestal",
+            "min_clearance_mm": 8.3703,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "ntc_cob_reference",
+            "min_clearance_mm": 8.5039,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "battery_strap_front",
+            "min_clearance_mm": 8.5404,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "cob_reference",
+            "min_clearance_mm": 8.65,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 16
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 141,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 5 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 1813
+      }
+    },
+    {
+      "name": "thermal_on_bench",
+      "moving": [
+        "heat_spreader",
+        "cob_reference",
+        "cob_bond_film",
+        "ntc_cob_reference"
+      ],
+      "against": [
+        "internal_carrier",
+        "connection_board",
+        "fan_motor",
+        "drive_pulley",
+        "xiao_reference",
+        "battery_reference",
+        "optical_reflector"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            0,
+            60
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "heat_spreader",
+          "cob_reference",
+          "cob_bond_film",
+          "ntc_cob_reference"
+        ],
+        "path_length_mm": 60,
+        "first_contact": {
+          "object_id": "optical_reflector",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "optical_reflector",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "drive_pulley",
+            "min_clearance_mm": 0.3278,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.7337,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.1667,
+              "travel_mm": 10,
+              "offset_mm": [
+                0,
+                0,
+                10
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 0.8482,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 1.2254,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 2
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 121,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 4 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 1502
+      }
+    },
+    {
+      "name": "PCB_on_bench_before_optics",
+      "moving": [
+        "connection_board"
+      ],
+      "against": [
+        "internal_carrier",
+        "fan_motor",
+        "drive_pulley",
+        "xiao_reference",
+        "battery_reference"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "move_mm": [
+            -90,
+            0,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "connection_board"
+        ],
+        "path_length_mm": 93,
+        "first_contact": {
+          "object_id": "internal_carrier",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 2.59,
+            "min_clearance_at": {
+              "step": 2,
+              "fraction": 0,
+              "travel_mm": 3,
+              "offset_mm": [
+                0,
+                0,
+                3
+              ]
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 8.4697,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 2
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 187,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 535
+      }
+    },
+    {
+      "name": "battery_gate",
+      "moving": [
+        "battery_gate",
+        "battery_end_pad_front"
+      ],
+      "against": [
+        "internal_carrier",
+        "connection_board",
+        "fan_motor",
+        "drive_pulley",
+        "xiao_reference",
+        "battery_reference",
+        "optical_reflector",
+        "heat_spreader"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            80,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "battery_gate",
+          "battery_end_pad_front"
+        ],
+        "path_length_mm": 80,
+        "first_contact": {
+          "object_id": "internal_carrier",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 4.4598,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "optical_reflector",
+            "min_clearance_mm": 6.6524,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "heat_spreader",
+            "min_clearance_mm": 8.9,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.075,
+              "travel_mm": 6,
+              "offset_mm": [
+                0,
+                6,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 3
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 161,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 84
+      }
+    },
+    {
+      "name": "cell_released",
+      "moving": [
+        "battery_reference"
+      ],
+      "against": [
+        "internal_carrier",
+        "connection_board",
+        "fan_motor",
+        "drive_pulley",
+        "xiao_reference",
+        "optical_reflector",
+        "heat_spreader"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            80,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "battery_reference"
+        ],
+        "path_length_mm": 80,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.2947,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "optical_reflector",
+            "min_clearance_mm": 4.5098,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "xiao_reference",
+            "min_clearance_mm": 6.3262,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 8.4697,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.3,
+              "travel_mm": 24,
+              "offset_mm": [
+                0,
+                24,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 3
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 161,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 6 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 450
+      }
+    },
+    {
+      "name": "controller_rear_exit",
+      "moving": [
+        "xiao_reference"
+      ],
+      "against": [
+        "internal_carrier",
+        "connection_board",
+        "fan_motor",
+        "drive_pulley",
+        "battery_reference",
+        "optical_reflector",
+        "heat_spreader"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            30,
+            0,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "xiao_reference"
+        ],
+        "path_length_mm": 30,
+        "first_contact": {
+          "object_id": "internal_carrier",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "battery_reference",
+            "min_clearance_mm": 6.3262,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 5
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 61,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 2 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 157
+      }
+    },
+    {
+      "name": "frame_screw_withdraw",
+      "moving": [
+        "carrier_shell_screws"
+      ],
+      "against": [
+        "internal_carrier",
+        "connection_board",
+        "fan_motor",
+        "drive_pulley",
+        "xiao_reference",
+        "battery_reference",
+        "optical_reflector",
+        "heat_spreader",
+        "fuselage",
+        "complete_harness"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            100,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "carrier_shell_screws"
+        ],
+        "path_length_mm": 100,
+        "first_contact": {
+          "object_id": "internal_carrier",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.0506,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "heat_spreader",
+            "min_clearance_mm": 0.51,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.545,
+              "travel_mm": 54.5,
+              "offset_mm": [
+                0,
+                54.5,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "complete_harness",
+            "min_clearance_mm": 1.5184,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.06,
+              "travel_mm": 6,
+              "offset_mm": [
+                0,
+                6,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fan_motor",
+            "min_clearance_mm": 9.198,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.225,
+              "travel_mm": 22.5,
+              "offset_mm": [
+                0,
+                22.5,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "connection_board",
+            "min_clearance_mm": 9.4131,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 4
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 201,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 7 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 707
+      }
+    },
+    {
+      "name": "unit_attached_fasteners",
+      "moving": [
+        "pcb_mount_screws",
+        "heat_mount_screws",
+        "led_bracket_screws",
+        "unit_frame_gate_screws",
+        "motor_mount_screw",
+        "motor_mount_screw_second"
+      ],
+      "against": [
+        "fuselage",
+        "window_right",
+        "button_right",
+        "window_bezel_right",
+        "window_retainer_right",
+        "key_board_right",
+        "skid_right",
+        "skid_clamps_right",
+        "skid_clamp_right_aft",
+        "skid_root_screws_right",
+        "tail",
+        "tail_lock_screws",
+        "bearing_pedestal",
+        "suspension_screw",
+        "mast",
+        "main_rotor",
+        "hub_cover",
+        "magnet_base",
+        "bearing_upper",
+        "rotor_bearing_spacer",
+        "rotor_inner_spacer"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            70,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "pcb_mount_screws",
+          "heat_mount_screws",
+          "led_bracket_screws",
+          "unit_frame_gate_screws",
+          "motor_mount_screw",
+          "motor_mount_screw_second"
+        ],
+        "path_length_mm": 70,
+        "first_contact": null,
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "main_rotor",
+            "min_clearance_mm": 0.8342,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 3.7429,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "window_retainer_right",
+            "min_clearance_mm": 9.9045,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 18
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 141,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 5 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 109
+      }
+    },
+    {
+      "name": "front_screw",
+      "moving": [
+        "case_front_screw"
+      ],
+      "against": [
+        "carrier_shell_screws",
+        "case_rear_screw",
+        "fuselage",
+        "suspension_screw",
+        "tail",
+        "tail_lock_screws",
+        "main_rotor",
+        "mast",
+        "magnet_base",
+        "skid_left",
+        "skid_root_screws_left",
+        "tail_propeller",
+        "window_left",
+        "window_left_screws",
+        "button_left",
+        "window_right",
+        "window_right_screws",
+        "button_right",
+        "bearing_pedestal",
+        "bearing_lower",
+        "connection_board",
+        "fan_motor",
+        "key_board_left",
+        "motor_mount_screw",
+        "xiao_reference",
+        "bearing_upper",
+        "hub_cover",
+        "window_bezel_left",
+        "window_bezel_right",
+        "led_bracket_screws",
+        "heat_mount_screws",
+        "unit_frame_gate_screws",
+        "internal_carrier",
+        "pcb_mount_screws",
+        "drive_pulley",
+        "heat_spreader",
+        "drive_belt",
+        "fuselage_cap",
+        "skid_right",
+        "skid_root_screws_right",
+        "window_retainer_left",
+        "window_retainer_right",
+        "skid_clamps_left",
+        "skid_clamps_right",
+        "rotor_bearing_spacer",
+        "skid_clamp_left_aft",
+        "skid_clamp_right_aft",
+        "rotor_inner_spacer",
+        "motor_mount_screw_second",
+        "key_board_right",
+        "battery_gate",
+        "battery_strap_front",
+        "cob_reference",
+        "battery_reference",
+        "cob_bond_film",
+        "battery_end_pad_front",
+        "battery_end_pad_rear",
+        "ntc_battery_reference",
+        "ntc_cob_reference",
+        "ntc_shell_reference",
+        "optical_reflector",
+        "complete_harness"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            8.5,
+            0
+          ]
+        },
+        {
+          "move_mm": [
+            -65,
+            0,
+            0
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "case_front_screw"
+        ],
+        "path_length_mm": 73.5,
+        "first_contact": {
+          "object_id": "fuselage_cap",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage_cap",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.0506,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "complete_harness",
+            "min_clearance_mm": 1.889,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.4706,
+              "travel_mm": 4,
+              "offset_mm": [
+                0,
+                4,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "heat_spreader",
+            "min_clearance_mm": 3.3027,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.9412,
+              "travel_mm": 8,
+              "offset_mm": [
+                0,
+                8,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 58
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 148,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 5 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 183
+      }
+    },
+    {
+      "name": "rear_screw",
+      "moving": [
+        "case_rear_screw"
+      ],
+      "against": [
+        "carrier_shell_screws",
+        "case_front_screw",
+        "fuselage",
+        "suspension_screw",
+        "tail",
+        "tail_lock_screws",
+        "main_rotor",
+        "mast",
+        "magnet_base",
+        "skid_left",
+        "skid_root_screws_left",
+        "tail_propeller",
+        "window_left",
+        "window_left_screws",
+        "button_left",
+        "window_right",
+        "window_right_screws",
+        "button_right",
+        "bearing_pedestal",
+        "bearing_lower",
+        "connection_board",
+        "fan_motor",
+        "key_board_left",
+        "motor_mount_screw",
+        "xiao_reference",
+        "bearing_upper",
+        "hub_cover",
+        "window_bezel_left",
+        "window_bezel_right",
+        "led_bracket_screws",
+        "heat_mount_screws",
+        "unit_frame_gate_screws",
+        "internal_carrier",
+        "pcb_mount_screws",
+        "drive_pulley",
+        "heat_spreader",
+        "drive_belt",
+        "fuselage_cap",
+        "skid_right",
+        "skid_root_screws_right",
+        "window_retainer_left",
+        "window_retainer_right",
+        "skid_clamps_left",
+        "skid_clamps_right",
+        "rotor_bearing_spacer",
+        "skid_clamp_left_aft",
+        "skid_clamp_right_aft",
+        "rotor_inner_spacer",
+        "motor_mount_screw_second",
+        "key_board_right",
+        "battery_gate",
+        "battery_strap_front",
+        "cob_reference",
+        "battery_reference",
+        "cob_bond_film",
+        "battery_end_pad_front",
+        "battery_end_pad_rear",
+        "ntc_battery_reference",
+        "ntc_cob_reference",
+        "ntc_shell_reference",
+        "optical_reflector",
+        "complete_harness"
+      ],
+      "steps": [
+        {
+          "move_mm": [
+            0,
+            8.5,
+            0
+          ]
+        },
+        {
+          "move_mm": [
+            0,
+            0,
+            -70
+          ]
+        }
+      ],
+      "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+      "data": {
+        "moving": [
+          "case_rear_screw"
+        ],
+        "path_length_mm": 78.5,
+        "first_contact": {
+          "object_id": "fuselage_cap",
+          "step": 1,
+          "fraction": 0,
+          "travel_mm": 0,
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "at_start": true
+        },
+        "first_overlap": null,
+        "objects": [
+          {
+            "object_id": "fuselage_cap",
+            "min_clearance_mm": 0,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            },
+            "first_contact": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ],
+              "at_start": true
+            }
+          },
+          {
+            "object_id": "fuselage",
+            "min_clearance_mm": 0.0506,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "internal_carrier",
+            "min_clearance_mm": 0.8156,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0.2353,
+              "travel_mm": 2,
+              "offset_mm": [
+                0,
+                2,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "xiao_reference",
+            "min_clearance_mm": 1.3606,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "object_id": "complete_harness",
+            "min_clearance_mm": 1.6322,
+            "min_clearance_at": {
+              "step": 1,
+              "fraction": 0,
+              "travel_mm": 0,
+              "offset_mm": [
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "objects_never_within": {
+          "mm": 10,
+          "count": 57
+        },
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing.",
+          "step_mm": 0.5,
+          "poses": 158,
+          "contact_located_within_mm": 0.002,
+          "sampling": "No point of the moving objects travels more than 0.5 mm between two poses. A contact shorter than that along the path can fall between poses, and a smallest clearance is within that much of the smallest over the poses. Inside a run of overlapping poses one pose in up to 5 is measured and the run counts as overlapping throughout; the swept overlap is the union of up to 32 of the overlapping poses, spread evenly along them."
+        },
+        "query_ms": 161
+      }
+    }
+  ],
+  "tools": {
+    "manufacturer": "Wera",
+    "part_number": "05022040001",
+    "url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05022040001.pdf",
+    "arms_mm": [
+      90,
+      4.5
+    ],
+    "AF_mm": 1.5,
+    "shaft_envelope_mm": 1.8,
+    "bend_envelope_mm": 4.5,
+    "envelope_source": "Engineering conservative defaults;manufacturer does not specify bend radius",
+    "threaded_withdrawal_mm": 5,
+    "key_disengagement_mm": 1.2,
+    "front_angles_deg": [
+      155,
+      215
+    ],
+    "rear_angles_deg": [
+      195,
+      255
+    ],
+    "configs": [
+      {
+        "id": "front",
+        "probes": [
+          {
+            "id": "front_shaft",
+            "shape": "cylinder",
+            "at_mm": [
+              -35,
+              9.35,
+              12
+            ],
+            "height_mm": 10.7,
+            "radius_mm": 0.9,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "front_long_turn",
+            "shape": "extrusion",
+            "at_mm": [
+              -35,
+              14.46,
+              12
+            ],
+            "height_mm": 7.82,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -91.05999999999999,
+                1.1151633753035798e-14
+              ],
+              [
+                -90.71714229806626,
+                -7.852732421563981
+              ],
+              [
+                -90.68443109130378,
+                -8.101198704862401
+              ],
+              [
+                -89.65846733963744,
+                -15.894167091088855
+              ],
+              [
+                -87.95720574188256,
+                -23.568062247035503
+              ],
+              [
+                -85.59359392604786,
+                -31.064481196941163
+              ],
+              [
+                -85.49768952044342,
+                -31.296014913642743
+              ],
+              [
+                -82.48971599963522,
+                -38.557905382837
+              ],
+              [
+                -78.86027326861098,
+                -45.53
+              ],
+              [
+                -74.63698357807124,
+                -52.15923691522922
+              ],
+              [
+                -74.48442170037725,
+                -52.358059425168314
+              ],
+              [
+                -74.28559919043818,
+                -52.51062130286228
+              ],
+              [
+                -74.05406547373659,
+                -52.606525708466734
+              ],
+              [
+                -73.80559919043817,
+                -52.639236915229226
+              ],
+              [
+                -73.55713290713976,
+                -52.606525708466734
+              ],
+              [
+                -73.32559919043817,
+                -52.51062130286228
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                -81.17833161200215,
+                38.90928977047008
+              ],
+              [
+                -81.40986532870375,
+                39.00519417607453
+              ],
+              [
+                -81.65833161200216,
+                39.037905382837025
+              ],
+              [
+                -81.90679789530057,
+                39.00519417607453
+              ],
+              [
+                -82.13833161200216,
+                38.90928977047008
+              ],
+              [
+                -82.33715412194124,
+                38.75672789277611
+              ],
+              [
+                -82.48971599963522,
+                38.55790538283702
+              ],
+              [
+                -82.58562040523967,
+                38.326371666135444
+              ],
+              [
+                -85.4976895204434,
+                31.296014913642765
+              ],
+              [
+                -85.59359392604784,
+                31.064481196941184
+              ],
+              [
+                -87.95720574188255,
+                23.568062247035563
+              ],
+              [
+                -89.65846733963744,
+                15.894167091088837
+              ],
+              [
+                -90.68443109130378,
+                8.101198704862464
+              ],
+              [
+                -90.71714229806626,
+                7.852732421564043
+              ]
+            ]
+          },
+          {
+            "id": "front_bend_turn",
+            "shape": "extrusion",
+            "at_mm": [
+              -35,
+              14.46,
+              12
+            ],
+            "height_mm": 10.46,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -5.46,
+                6.686571523344548e-16
+              ],
+              [
+                -5.442876141412855,
+                -0.3922008423644606
+              ],
+              [
+                -5.410164934650361,
+                -0.6406671256628806
+              ],
+              [
+                -5.358923681792442,
+                -1.029883082799607
+              ],
+              [
+                -5.273955011538313,
+                -1.4131519862597615
+              ],
+              [
+                -5.155905586774094,
+                -1.7875569282639288
+              ],
+              [
+                -5.06000118116965,
+                -2.0190906449655084
+              ],
+              [
+                -4.909769429297986,
+                -2.3817821778331463
+              ],
+              [
+                -4.728498704663035,
+                -2.73
+              ],
+              [
+                -4.517568586933526,
+                -3.061093963579706
+              ],
+              [
+                -4.36500670923955,
+                -3.2599164735187918
+              ],
+              [
+                -4.1661841993004645,
+                -3.412478351212767
+              ],
+              [
+                -3.934650482598884,
+                -3.5083827568172117
+              ],
+              [
+                -3.686184199300464,
+                -3.5410939635797063
+              ],
+              [
+                -3.4377179160020446,
+                -3.508382756817212
+              ],
+              [
+                -3.206184199300464,
+                -3.4124783512127674
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                -3.598385041664925,
+                2.7331665654662087
+              ],
+              [
+                -3.829918758366505,
+                2.829070971070653
+              ],
+              [
+                -4.078385041664925,
+                2.8617821778331476
+              ],
+              [
+                -4.326851324963345,
+                2.829070971070653
+              ],
+              [
+                -4.558385041664924,
+                2.7331665654662087
+              ],
+              [
+                -4.757207551604011,
+                2.580604687772233
+              ],
+              [
+                -4.909769429297986,
+                2.3817821778331476
+              ],
+              [
+                -5.005673834902431,
+                2.150248461131568
+              ],
+              [
+                -5.155905586774093,
+                1.78755692826393
+              ],
+              [
+                -5.2739550115383125,
+                1.4131519862597648
+              ],
+              [
+                -5.358923681792442,
+                1.0298830827996064
+              ],
+              [
+                -5.410164934650361,
+                0.640667125662884
+              ],
+              [
+                -5.442876141412855,
+                0.39220084236446395
+              ]
+            ]
+          },
+          {
+            "id": "front_reindex_long_155",
+            "shape": "extrusion",
+            "at_mm": [
+              -35,
+              15.66,
+              12
+            ],
+            "height_mm": 9.02,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -82.61833161200215,
+                38.077905382837024
+              ],
+              [
+                -82.58562040523967,
+                37.829439099538604
+              ],
+              [
+                -82.48971599963522,
+                37.59790538283703
+              ],
+              [
+                -82.33715412194124,
+                37.399082872897935
+              ],
+              [
+                -82.13833161200216,
+                37.246520995203966
+              ],
+              [
+                -0.4800000000000004,
+                -0.8313843876330608
+              ],
+              [
+                -0.2484662832984198,
+                -0.9272887932375056
+              ],
+              [
+                -1.7634913907721884e-16,
+                -0.96
+              ],
+              [
+                0.24846628329841947,
+                -0.9272887932375057
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                -81.17833161200215,
+                38.90928977047008
+              ],
+              [
+                -81.40986532870375,
+                39.00519417607453
+              ],
+              [
+                -81.65833161200216,
+                39.037905382837025
+              ],
+              [
+                -81.90679789530057,
+                39.00519417607453
+              ],
+              [
+                -82.13833161200216,
+                38.90928977047008
+              ],
+              [
+                -82.33715412194124,
+                38.75672789277611
+              ],
+              [
+                -82.48971599963522,
+                38.55790538283702
+              ],
+              [
+                -82.58562040523967,
+                38.326371666135444
+              ]
+            ]
+          },
+          {
+            "id": "front_reindex_bend_155",
+            "shape": "extrusion",
+            "at_mm": [
+              -35,
+              15.66,
+              12
+            ],
+            "height_mm": 11.66,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -5.038385041664925,
+                1.9017821778331478
+              ],
+              [
+                -5.005673834902431,
+                1.6533158945347277
+              ],
+              [
+                -4.909769429297986,
+                1.4217821778331479
+              ],
+              [
+                -4.757207551604011,
+                1.2229596678940624
+              ],
+              [
+                -4.558385041664925,
+                1.070397790200087
+              ],
+              [
+                -0.4800000000000004,
+                -0.8313843876330608
+              ],
+              [
+                -0.2484662832984198,
+                -0.9272887932375056
+              ],
+              [
+                -1.7634913907721884e-16,
+                -0.96
+              ],
+              [
+                0.24846628329841947,
+                -0.9272887932375057
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                -3.598385041664925,
+                2.7331665654662087
+              ],
+              [
+                -3.829918758366505,
+                2.829070971070653
+              ],
+              [
+                -4.078385041664925,
+                2.8617821778331476
+              ],
+              [
+                -4.326851324963345,
+                2.829070971070653
+              ],
+              [
+                -4.558385041664924,
+                2.7331665654662087
+              ],
+              [
+                -4.757207551604011,
+                2.580604687772233
+              ],
+              [
+                -4.909769429297986,
+                2.3817821778331476
+              ],
+              [
+                -5.005673834902431,
+                2.150248461131568
+              ]
+            ]
+          },
+          {
+            "id": "front_reindex_long_215",
+            "shape": "extrusion",
+            "at_mm": [
+              -35,
+              15.66,
+              12
+            ],
+            "height_mm": 9.02,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -74.76559919043817,
+                -51.679236915229225
+              ],
+              [
+                -74.73288798367568,
+                -51.927703198527645
+              ],
+              [
+                -74.63698357807124,
+                -52.15923691522922
+              ],
+              [
+                -74.48442170037725,
+                -52.358059425168314
+              ],
+              [
+                -74.28559919043818,
+                -52.51062130286228
+              ],
+              [
+                -74.05406547373659,
+                -52.606525708466734
+              ],
+              [
+                -73.80559919043817,
+                -52.639236915229226
+              ],
+              [
+                -73.55713290713976,
+                -52.606525708466734
+              ],
+              [
+                -73.32559919043817,
+                -52.51062130286228
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -0.47999999999999976,
+                0.8313843876330611
+              ],
+              [
+                -74.28559919043818,
+                -50.84785252759617
+              ],
+              [
+                -74.48442170037725,
+                -51.00041440529014
+              ],
+              [
+                -74.63698357807124,
+                -51.19923691522923
+              ],
+              [
+                -74.73288798367568,
+                -51.430770631930805
+              ]
+            ]
+          },
+          {
+            "id": "front_reindex_bend_215",
+            "shape": "extrusion",
+            "at_mm": [
+              -35,
+              15.66,
+              12
+            ],
+            "height_mm": 11.66,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -4.646184199300464,
+                -2.5810939635797063
+              ],
+              [
+                -4.61347299253797,
+                -2.8295602468781262
+              ],
+              [
+                -4.517568586933526,
+                -3.061093963579706
+              ],
+              [
+                -4.36500670923955,
+                -3.2599164735187918
+              ],
+              [
+                -4.1661841993004645,
+                -3.412478351212767
+              ],
+              [
+                -3.934650482598884,
+                -3.5083827568172117
+              ],
+              [
+                -3.686184199300464,
+                -3.5410939635797063
+              ],
+              [
+                -3.4377179160020446,
+                -3.508382756817212
+              ],
+              [
+                -3.206184199300464,
+                -3.4124783512127674
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -0.47999999999999976,
+                0.8313843876330611
+              ],
+              [
+                -4.166184199300464,
+                -1.7497095759466452
+              ],
+              [
+                -4.36500670923955,
+                -1.9022714536406207
+              ],
+              [
+                -4.517568586933525,
+                -2.1010939635797063
+              ],
+              [
+                -4.61347299253797,
+                -2.332627680281286
+              ]
+            ]
+          }
+        ],
+        "candidates": [
+          "cob_reference",
+          "complete_harness",
+          "fuselage",
+          "fuselage_cap",
+          "heat_spreader",
+          "internal_carrier",
+          "optical_reflector",
+          "main_rotor",
+          "suspension_screw",
+          "bearing_pedestal"
+        ],
+        "angles": [
+          155,
+          215
+        ]
+      },
+      {
+        "id": "rear",
+        "probes": [
+          {
+            "id": "rear_shaft",
+            "shape": "cylinder",
+            "at_mm": [
+              21.5,
+              9.35,
+              -32.2
+            ],
+            "height_mm": 10.7,
+            "radius_mm": 0.9,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "rear_long_turn",
+            "shape": "extrusion",
+            "at_mm": [
+              21.5,
+              14.46,
+              -32.2
+            ],
+            "height_mm": 7.82,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -87.98991694864505,
+                -23.319595963737083
+              ],
+              [
+                -87.95720574188256,
+                -23.568062247035503
+              ],
+              [
+                -85.59359392604786,
+                -31.064481196941163
+              ],
+              [
+                -85.49768952044342,
+                -31.296014913642743
+              ],
+              [
+                -82.48971599963522,
+                -38.557905382837
+              ],
+              [
+                -78.86027326861098,
+                -45.53
+              ],
+              [
+                -74.63698357807124,
+                -52.15923691522922
+              ],
+              [
+                -69.85198871265298,
+                -58.39516363275718
+              ],
+              [
+                -69.699426834959,
+                -58.593986142696274
+              ],
+              [
+                -64.38914349484703,
+                -64.389143494847
+              ],
+              [
+                -58.593986142696295,
+                -69.69942683495898
+              ],
+              [
+                -58.3951636327572,
+                -69.85198871265297
+              ],
+              [
+                -52.15923691522927,
+                -74.6369835780712
+              ],
+              [
+                -45.530000000000044,
+                -78.86027326861095
+              ],
+              [
+                -38.55790538283706,
+                -82.4897159996352
+              ],
+              [
+                -31.29601491364281,
+                -85.49768952044339
+              ],
+              [
+                -31.06448119694123,
+                -85.59359392604783
+              ],
+              [
+                -23.568062247035527,
+                -87.95720574188256
+              ],
+              [
+                -23.319595963737108,
+                -87.98991694864505
+              ],
+              [
+                -23.071129680438688,
+                -87.95720574188256
+              ],
+              [
+                -22.839595963737107,
+                -87.86130133627812
+              ],
+              [
+                -22.640773453798023,
+                -87.70873945858413
+              ],
+              [
+                -22.488211576104046,
+                -87.50991694864506
+              ],
+              [
+                -22.392307170499603,
+                -87.27838323194348
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -87.27838323194347,
+                -22.392307170499578
+              ],
+              [
+                -87.50991694864506,
+                -22.48821157610402
+              ],
+              [
+                -87.70873945858413,
+                -22.640773453797998
+              ],
+              [
+                -87.86130133627812,
+                -22.839595963737082
+              ],
+              [
+                -87.95720574188256,
+                -23.071129680438663
+              ]
+            ]
+          },
+          {
+            "id": "rear_bend_turn",
+            "shape": "extrusion",
+            "at_mm": [
+              21.5,
+              14.46,
+              -32.2
+            ],
+            "height_mm": 10.46,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -5.3066662183008075,
+                -1.1646857029613413
+              ],
+              [
+                -5.273955011538313,
+                -1.4131519862597615
+              ],
+              [
+                -5.155905586774094,
+                -1.7875569282639288
+              ],
+              [
+                -5.06000118116965,
+                -2.0190906449655084
+              ],
+              [
+                -4.909769429297986,
+                -2.3817821778331463
+              ],
+              [
+                -4.728498704663035,
+                -2.73
+              ],
+              [
+                -4.517568586933526,
+                -3.061093963579706
+              ],
+              [
+                -4.36500670923955,
+                -3.2599164735187918
+              ],
+              [
+                -4.126022503974487,
+                -3.571366753528512
+              ],
+              [
+                -3.8608030252785506,
+                -3.860803025278549
+              ],
+              [
+                -3.5713667535285136,
+                -4.126022503974486
+              ],
+              [
+                -3.372544243589428,
+                -4.278584381668462
+              ],
+              [
+                -3.061093963579709,
+                -4.517568586933523
+              ],
+              [
+                -2.730000000000002,
+                -4.728498704663034
+              ],
+              [
+                -2.3817821778331503,
+                -4.9097694292979845
+              ],
+              [
+                -2.1502484611315698,
+                -5.00567383490243
+              ],
+              [
+                -1.7875569282639319,
+                -5.155905586774093
+              ],
+              [
+                -1.4131519862597628,
+                -5.273955011538313
+              ],
+              [
+                -1.164685702961343,
+                -5.3066662183008075
+              ],
+              [
+                -0.9162194196629234,
+                -5.273955011538313
+              ],
+              [
+                -0.6846857029613428,
+                -5.178050605933868
+              ],
+              [
+                -0.48586319302225744,
+                -5.0254887282398935
+              ],
+              [
+                -0.3333013153282821,
+                -4.826666218300808
+              ],
+              [
+                -0.23739690972383753,
+                -4.595132501599228
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -4.5951325015992275,
+                -0.23739690972383598
+              ],
+              [
+                -4.826666218300807,
+                -0.33330131532828045
+              ],
+              [
+                -5.0254887282398935,
+                -0.4858631930222559
+              ],
+              [
+                -5.178050605933869,
+                -0.6846857029613416
+              ],
+              [
+                -5.273955011538313,
+                -0.9162194196629214
+              ]
+            ]
+          },
+          {
+            "id": "rear_reindex_long_195",
+            "shape": "extrusion",
+            "at_mm": [
+              21.5,
+              15.66,
+              -32.2
+            ],
+            "height_mm": 9.02,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -87.98991694864505,
+                -23.319595963737083
+              ],
+              [
+                -87.95720574188256,
+                -23.568062247035503
+              ],
+              [
+                -87.86130133627812,
+                -23.799595963737083
+              ],
+              [
+                -87.70873945858413,
+                -23.998418473676168
+              ],
+              [
+                -87.50991694864506,
+                -24.150980351370144
+              ],
+              [
+                -87.27838323194347,
+                -24.246884756974588
+              ],
+              [
+                -87.02991694864505,
+                -24.279595963737084
+              ],
+              [
+                -86.78145066534664,
+                -24.246884756974588
+              ],
+              [
+                0.24846628329841947,
+                -0.9272887932375057
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -87.27838323194347,
+                -22.392307170499578
+              ],
+              [
+                -87.50991694864506,
+                -22.48821157610402
+              ],
+              [
+                -87.70873945858413,
+                -22.640773453797998
+              ],
+              [
+                -87.86130133627812,
+                -22.839595963737082
+              ],
+              [
+                -87.95720574188256,
+                -23.071129680438663
+              ]
+            ]
+          },
+          {
+            "id": "rear_reindex_bend_195",
+            "shape": "extrusion",
+            "at_mm": [
+              21.5,
+              15.66,
+              -32.2
+            ],
+            "height_mm": 11.66,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -5.3066662183008075,
+                -1.1646857029613413
+              ],
+              [
+                -5.273955011538313,
+                -1.4131519862597615
+              ],
+              [
+                -5.178050605933869,
+                -1.6446857029613413
+              ],
+              [
+                -5.0254887282398935,
+                -1.8435082129004268
+              ],
+              [
+                -4.826666218300808,
+                -1.9960700905944022
+              ],
+              [
+                -4.5951325015992275,
+                -2.091974496198847
+              ],
+              [
+                -4.346666218300808,
+                -2.1246857029613415
+              ],
+              [
+                -4.098199935002388,
+                -2.0919744961988473
+              ],
+              [
+                0.24846628329841947,
+                -0.9272887932375057
+              ],
+              [
+                0.4800000000000001,
+                -0.831384387633061
+              ],
+              [
+                0.6788225099390854,
+                -0.6788225099390858
+              ],
+              [
+                0.8313843876330608,
+                -0.4800000000000004
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -4.5951325015992275,
+                -0.23739690972383598
+              ],
+              [
+                -4.826666218300807,
+                -0.33330131532828045
+              ],
+              [
+                -5.0254887282398935,
+                -0.4858631930222559
+              ],
+              [
+                -5.178050605933869,
+                -0.6846857029613416
+              ],
+              [
+                -5.273955011538313,
+                -0.9162194196629214
+              ]
+            ]
+          },
+          {
+            "id": "rear_reindex_long_255",
+            "shape": "extrusion",
+            "at_mm": [
+              21.5,
+              15.66,
+              -32.2
+            ],
+            "height_mm": 9.02,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -24.27959596373711,
+                -87.02991694864505
+              ],
+              [
+                -24.246884756974612,
+                -87.27838323194348
+              ],
+              [
+                -24.15098035137017,
+                -87.50991694864506
+              ],
+              [
+                -23.998418473676193,
+                -87.70873945858413
+              ],
+              [
+                -23.799595963737108,
+                -87.86130133627812
+              ],
+              [
+                -23.568062247035527,
+                -87.95720574188256
+              ],
+              [
+                -23.319595963737108,
+                -87.98991694864505
+              ],
+              [
+                -23.071129680438688,
+                -87.95720574188256
+              ],
+              [
+                -22.839595963737107,
+                -87.86130133627812
+              ],
+              [
+                -22.640773453798023,
+                -87.70873945858413
+              ],
+              [
+                -22.488211576104046,
+                -87.50991694864506
+              ],
+              [
+                -22.392307170499603,
+                -87.27838323194348
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -0.47999999999999976,
+                0.8313843876330611
+              ],
+              [
+                -0.6788225099390855,
+                0.6788225099390857
+              ],
+              [
+                -0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                -0.9272887932375055,
+                0.24846628329842016
+              ],
+              [
+                -24.246884756974612,
+                -86.78145066534663
+              ]
+            ]
+          },
+          {
+            "id": "rear_reindex_bend_255",
+            "shape": "extrusion",
+            "at_mm": [
+              21.5,
+              15.66,
+              -32.2
+            ],
+            "height_mm": 11.66,
+            "rotation_deg": [
+              90,
+              0,
+              0
+            ],
+            "outline_mm": [
+              [
+                -2.124685702961343,
+                -4.346666218300808
+              ],
+              [
+                -2.0919744961988487,
+                -4.5951325015992275
+              ],
+              [
+                -1.996070090594404,
+                -4.826666218300807
+              ],
+              [
+                -1.8435082129004288,
+                -5.025488728239893
+              ],
+              [
+                -1.6446857029613433,
+                -5.178050605933868
+              ],
+              [
+                -1.4131519862597628,
+                -5.273955011538313
+              ],
+              [
+                -1.164685702961343,
+                -5.3066662183008075
+              ],
+              [
+                -0.9162194196629234,
+                -5.273955011538313
+              ],
+              [
+                -0.6846857029613428,
+                -5.178050605933868
+              ],
+              [
+                -0.48586319302225744,
+                -5.0254887282398935
+              ],
+              [
+                -0.3333013153282821,
+                -4.826666218300808
+              ],
+              [
+                -0.23739690972383753,
+                -4.595132501599228
+              ],
+              [
+                0.9272887932375053,
+                -0.2484662832984207
+              ],
+              [
+                0.96,
+                0
+              ],
+              [
+                0.9272887932375056,
+                0.2484662832984199
+              ],
+              [
+                0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                0.6788225099390857,
+                0.6788225099390855
+              ],
+              [
+                0.4800000000000001,
+                0.831384387633061
+              ],
+              [
+                0.2484662832984199,
+                0.9272887932375056
+              ],
+              [
+                5.878304635907295e-17,
+                0.96
+              ],
+              [
+                -0.2484662832984198,
+                0.9272887932375056
+              ],
+              [
+                -0.47999999999999976,
+                0.8313843876330611
+              ],
+              [
+                -0.6788225099390855,
+                0.6788225099390857
+              ],
+              [
+                -0.8313843876330611,
+                0.4799999999999999
+              ],
+              [
+                -0.9272887932375055,
+                0.24846628329842016
+              ],
+              [
+                -2.0919744961988482,
+                -4.098199935002388
+              ]
+            ]
+          }
+        ],
+        "candidates": [
+          "battery_reference",
+          "battery_strap_front",
+          "complete_harness",
+          "fuselage",
+          "fuselage_cap",
+          "internal_carrier"
+        ]
+      }
+    ],
+    "front": {
+      "pairs": [
+        {
+          "a": "fuselage",
+          "b": "fuselage_cap",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "fuselage",
+          "b": "internal_carrier",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "fuselage",
+          "b": "suspension_screw",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "fuselage",
+          "b": "bearing_pedestal",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "internal_carrier",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "heat_spreader",
+          "b": "optical_reflector",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "optical_reflector",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "cob_reference",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.1
+        },
+        {
+          "a": "fuselage",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.133
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.1353
+        },
+        {
+          "a": "cob_reference",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.15
+        },
+        {
+          "a": "complete_harness",
+          "b": "internal_carrier",
+          "status": "separated",
+          "min_distance_mm": 0.1636
+        },
+        {
+          "a": "complete_harness",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.2736
+        },
+        {
+          "a": "fuselage",
+          "b": "main_rotor",
+          "status": "separated",
+          "min_distance_mm": 0.2902
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "main_rotor",
+          "status": "separated",
+          "min_distance_mm": 0.2902
+        },
+        {
+          "a": "main_rotor",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 0.2903
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 0.4382
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 0.4382
+        },
+        {
+          "a": "complete_harness",
+          "b": "fuselage_cap",
+          "status": "separated",
+          "min_distance_mm": 0.5035
+        },
+        {
+          "a": "complete_harness",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 0.5745
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 0.6536
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 0.6536
+        },
+        {
+          "a": "suspension_screw",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 0.677
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 1
+        },
+        {
+          "a": "heat_spreader",
+          "b": "internal_carrier",
+          "status": "separated",
+          "min_distance_mm": 1
+        },
+        {
+          "a": "complete_harness",
+          "b": "fuselage",
+          "status": "separated",
+          "min_distance_mm": 1.0084
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 1.0431
+        },
+        {
+          "a": "cob_reference",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 1.1
+        },
+        {
+          "a": "complete_harness",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 1.1334
+        },
+        {
+          "a": "complete_harness",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 1.1334
+        },
+        {
+          "a": "complete_harness",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 1.3716
+        },
+        {
+          "a": "complete_harness",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 1.3716
+        },
+        {
+          "a": "internal_carrier",
+          "b": "main_rotor",
+          "status": "separated",
+          "min_distance_mm": 2
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 2.5699
+        },
+        {
+          "a": "complete_harness",
+          "b": "suspension_screw",
+          "status": "separated",
+          "min_distance_mm": 2.8912
+        },
+        {
+          "a": "complete_harness",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 2.9187
+        },
+        {
+          "a": "complete_harness",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 2.9187
+        },
+        {
+          "a": "complete_harness",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 2.9883
+        },
+        {
+          "a": "complete_harness",
+          "b": "main_rotor",
+          "status": "separated",
+          "min_distance_mm": 3.602
+        },
+        {
+          "a": "cob_reference",
+          "b": "internal_carrier",
+          "status": "separated",
+          "min_distance_mm": 3.9837
+        },
+        {
+          "a": "fuselage",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 4
+        },
+        {
+          "a": "fuselage",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 4
+        },
+        {
+          "a": "fuselage",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 4
+        },
+        {
+          "a": "fuselage",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 4.0689
+        },
+        {
+          "a": "heat_spreader",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 4.2047
+        },
+        {
+          "a": "heat_spreader",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 4.2047
+        },
+        {
+          "a": "heat_spreader",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 4.2047
+        },
+        {
+          "a": "heat_spreader",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 4.2047
+        },
+        {
+          "a": "heat_spreader",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 4.2977
+        },
+        {
+          "a": "heat_spreader",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 4.2977
+        },
+        {
+          "a": "heat_spreader",
+          "b": "main_rotor",
+          "status": "separated",
+          "min_distance_mm": 4.3173
+        },
+        {
+          "a": "heat_spreader",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 4.3925
+        },
+        {
+          "a": "main_rotor",
+          "b": "suspension_screw",
+          "status": "separated",
+          "min_distance_mm": 4.9692
+        },
+        {
+          "a": "complete_harness",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 5.1657
+        },
+        {
+          "a": "fuselage",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 6.64
+        },
+        {
+          "a": "fuselage",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 6.64
+        },
+        {
+          "a": "fuselage",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 6.64
+        },
+        {
+          "a": "main_rotor",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 6.9719
+        },
+        {
+          "a": "main_rotor",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 6.9719
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 7.9153
+        },
+        {
+          "a": "fuselage",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 7.9161
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 8.3703
+        },
+        {
+          "a": "cob_reference",
+          "b": "fuselage",
+          "status": "separated",
+          "min_distance_mm": 8.65
+        },
+        {
+          "a": "cob_reference",
+          "b": "fuselage_cap",
+          "status": "separated",
+          "min_distance_mm": 8.65
+        },
+        {
+          "a": "internal_carrier",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 8.8645
+        },
+        {
+          "a": "cob_reference",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 9.0537
+        },
+        {
+          "a": "cob_reference",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 9.0537
+        },
+        {
+          "a": "cob_reference",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 9.3377
+        },
+        {
+          "a": "cob_reference",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 9.3377
+        },
+        {
+          "a": "optical_reflector",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 9.8558
+        },
+        {
+          "a": "optical_reflector",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 9.8558
+        },
+        {
+          "a": "internal_carrier",
+          "b": "suspension_screw",
+          "status": "separated",
+          "min_distance_mm": 11.0544
+        },
+        {
+          "a": "cob_reference",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 11.1904
+        },
+        {
+          "a": "cob_reference",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 11.1904
+        },
+        {
+          "a": "cob_reference",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 11.2504
+        },
+        {
+          "a": "heat_spreader",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 11.2722
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "suspension_screw",
+          "status": "separated",
+          "min_distance_mm": 11.6691
+        },
+        {
+          "a": "optical_reflector",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 12.4589
+        },
+        {
+          "a": "optical_reflector",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 12.4589
+        },
+        {
+          "a": "optical_reflector",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 14.6647
+        },
+        {
+          "a": "optical_reflector",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 14.6647
+        },
+        {
+          "a": "optical_reflector",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 14.7244
+        },
+        {
+          "a": "heat_spreader",
+          "b": "suspension_screw",
+          "status": "separated",
+          "min_distance_mm": 15.6975
+        },
+        {
+          "a": "internal_carrier",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 18.1314
+        },
+        {
+          "a": "internal_carrier",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 18.1314
+        },
+        {
+          "a": "internal_carrier",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 18.1314
+        },
+        {
+          "a": "internal_carrier",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 18.1314
+        },
+        {
+          "a": "internal_carrier",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 18.2761
+        },
+        {
+          "a": "internal_carrier",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 18.2761
+        },
+        {
+          "a": "internal_carrier",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 18.3396
+        },
+        {
+          "a": "main_rotor",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 27.5777
+        },
+        {
+          "a": "main_rotor",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 27.5777
+        },
+        {
+          "a": "main_rotor",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 27.5777
+        },
+        {
+          "a": "main_rotor",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 27.6375
+        },
+        {
+          "a": "main_rotor",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 27.846
+        },
+        {
+          "a": "cob_reference",
+          "b": "suspension_screw",
+          "status": "separated",
+          "min_distance_mm": 29.6094
+        },
+        {
+          "a": "optical_reflector",
+          "b": "suspension_screw",
+          "status": "separated",
+          "min_distance_mm": 30.4227
+        },
+        {
+          "a": "suspension_screw",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 32.8492
+        },
+        {
+          "a": "suspension_screw",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 32.8492
+        },
+        {
+          "a": "suspension_screw",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 32.8492
+        },
+        {
+          "a": "suspension_screw",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 32.9008
+        },
+        {
+          "a": "suspension_screw",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 33.2739
+        },
+        {
+          "a": "suspension_screw",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 33.2739
+        },
+        {
+          "a": "suspension_screw",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 33.2739
+        },
+        {
+          "a": "cob_reference",
+          "b": "main_rotor",
+          "status": "separated",
+          "min_distance_mm": 33.7998
+        },
+        {
+          "a": "optical_reflector",
+          "b": "main_rotor",
+          "status": "separated",
+          "min_distance_mm": 33.8773
+        },
+        {
+          "a": "bearing_pedestal",
+          "b": "front_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 34.7965
+        },
+        {
+          "a": "bearing_pedestal",
+          "b": "front_reindex_bend_155",
+          "status": "separated",
+          "min_distance_mm": 34.7965
+        },
+        {
+          "a": "bearing_pedestal",
+          "b": "front_reindex_bend_215",
+          "status": "separated",
+          "min_distance_mm": 34.7965
+        },
+        {
+          "a": "bearing_pedestal",
+          "b": "front_shaft",
+          "status": "separated",
+          "min_distance_mm": 34.8615
+        },
+        {
+          "a": "bearing_pedestal",
+          "b": "front_long_turn",
+          "status": "separated",
+          "min_distance_mm": 35.1283
+        },
+        {
+          "a": "bearing_pedestal",
+          "b": "front_reindex_long_155",
+          "status": "separated",
+          "min_distance_mm": 35.1283
+        },
+        {
+          "a": "bearing_pedestal",
+          "b": "front_reindex_long_215",
+          "status": "separated",
+          "min_distance_mm": 35.1283
+        },
+        {
+          "a": "cob_reference",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 36.3038
+        },
+        {
+          "a": "optical_reflector",
+          "b": "bearing_pedestal",
+          "status": "separated",
+          "min_distance_mm": 36.7511
+        }
+      ],
+      "precision": {
+        "method": "triangle meshes (Manifold)",
+        "mesh_tolerance_mm": 0.02,
+        "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing."
+      },
+      "query_ms": 777
+    },
+    "rear": {
+      "pairs": [
+        {
+          "a": "fuselage",
+          "b": "fuselage_cap",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "fuselage",
+          "b": "internal_carrier",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "internal_carrier",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "battery_reference",
+          "b": "battery_strap_front",
+          "status": "separated",
+          "min_distance_mm": 0.0499
+        },
+        {
+          "a": "complete_harness",
+          "b": "internal_carrier",
+          "status": "separated",
+          "min_distance_mm": 0.1636
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "internal_carrier",
+          "status": "separated",
+          "min_distance_mm": 0.191
+        },
+        {
+          "a": "battery_reference",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.2574
+        },
+        {
+          "a": "battery_reference",
+          "b": "internal_carrier",
+          "status": "separated",
+          "min_distance_mm": 0.2947
+        },
+        {
+          "a": "battery_reference",
+          "b": "fuselage",
+          "status": "separated",
+          "min_distance_mm": 0.5015
+        },
+        {
+          "a": "battery_reference",
+          "b": "fuselage_cap",
+          "status": "separated",
+          "min_distance_mm": 0.5015
+        },
+        {
+          "a": "complete_harness",
+          "b": "fuselage_cap",
+          "status": "separated",
+          "min_distance_mm": 0.5035
+        },
+        {
+          "a": "internal_carrier",
+          "b": "rear_long_turn",
+          "status": "separated",
+          "min_distance_mm": 0.9622
+        },
+        {
+          "a": "internal_carrier",
+          "b": "rear_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 0.9622
+        },
+        {
+          "a": "internal_carrier",
+          "b": "rear_reindex_long_195",
+          "status": "separated",
+          "min_distance_mm": 0.9622
+        },
+        {
+          "a": "internal_carrier",
+          "b": "rear_reindex_bend_195",
+          "status": "separated",
+          "min_distance_mm": 0.9622
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "rear_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 1
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "rear_reindex_bend_195",
+          "status": "separated",
+          "min_distance_mm": 1
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "rear_reindex_bend_255",
+          "status": "separated",
+          "min_distance_mm": 1
+        },
+        {
+          "a": "complete_harness",
+          "b": "fuselage",
+          "status": "separated",
+          "min_distance_mm": 1.0084
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "rear_shaft",
+          "status": "separated",
+          "min_distance_mm": 1.0431
+        },
+        {
+          "a": "internal_carrier",
+          "b": "rear_reindex_long_255",
+          "status": "separated",
+          "min_distance_mm": 1.84
+        },
+        {
+          "a": "internal_carrier",
+          "b": "rear_reindex_bend_255",
+          "status": "separated",
+          "min_distance_mm": 1.84
+        },
+        {
+          "a": "internal_carrier",
+          "b": "rear_shaft",
+          "status": "separated",
+          "min_distance_mm": 1.9
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "rear_long_turn",
+          "status": "separated",
+          "min_distance_mm": 2.1752
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "rear_reindex_long_195",
+          "status": "separated",
+          "min_distance_mm": 2.1752
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "rear_long_turn",
+          "status": "separated",
+          "min_distance_mm": 2.4259
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "rear_reindex_long_195",
+          "status": "separated",
+          "min_distance_mm": 2.4259
+        },
+        {
+          "a": "fuselage_cap",
+          "b": "rear_reindex_long_255",
+          "status": "separated",
+          "min_distance_mm": 2.4259
+        },
+        {
+          "a": "complete_harness",
+          "b": "rear_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 2.6637
+        },
+        {
+          "a": "complete_harness",
+          "b": "rear_reindex_bend_195",
+          "status": "separated",
+          "min_distance_mm": 2.6637
+        },
+        {
+          "a": "complete_harness",
+          "b": "rear_reindex_bend_255",
+          "status": "separated",
+          "min_distance_mm": 2.6637
+        },
+        {
+          "a": "complete_harness",
+          "b": "rear_shaft",
+          "status": "separated",
+          "min_distance_mm": 2.7169
+        },
+        {
+          "a": "complete_harness",
+          "b": "rear_long_turn",
+          "status": "separated",
+          "min_distance_mm": 2.7862
+        },
+        {
+          "a": "complete_harness",
+          "b": "rear_reindex_long_195",
+          "status": "separated",
+          "min_distance_mm": 2.7862
+        },
+        {
+          "a": "complete_harness",
+          "b": "rear_reindex_long_255",
+          "status": "separated",
+          "min_distance_mm": 2.7862
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 2.9905
+        },
+        {
+          "a": "battery_reference",
+          "b": "rear_long_turn",
+          "status": "separated",
+          "min_distance_mm": 3.0307
+        },
+        {
+          "a": "battery_reference",
+          "b": "rear_reindex_long_195",
+          "status": "separated",
+          "min_distance_mm": 3.0307
+        },
+        {
+          "a": "fuselage",
+          "b": "rear_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 4
+        },
+        {
+          "a": "fuselage",
+          "b": "rear_reindex_bend_195",
+          "status": "separated",
+          "min_distance_mm": 4
+        },
+        {
+          "a": "fuselage",
+          "b": "rear_reindex_bend_255",
+          "status": "separated",
+          "min_distance_mm": 4
+        },
+        {
+          "a": "fuselage",
+          "b": "rear_shaft",
+          "status": "separated",
+          "min_distance_mm": 4.0689
+        },
+        {
+          "a": "fuselage",
+          "b": "rear_long_turn",
+          "status": "separated",
+          "min_distance_mm": 6.64
+        },
+        {
+          "a": "fuselage",
+          "b": "rear_reindex_long_195",
+          "status": "separated",
+          "min_distance_mm": 6.64
+        },
+        {
+          "a": "fuselage",
+          "b": "rear_reindex_long_255",
+          "status": "separated",
+          "min_distance_mm": 6.64
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "rear_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 8.2383
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "rear_reindex_bend_195",
+          "status": "separated",
+          "min_distance_mm": 8.2383
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "fuselage",
+          "status": "separated",
+          "min_distance_mm": 8.5404
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "fuselage_cap",
+          "status": "separated",
+          "min_distance_mm": 8.5404
+        },
+        {
+          "a": "battery_reference",
+          "b": "rear_bend_turn",
+          "status": "separated",
+          "min_distance_mm": 9.0932
+        },
+        {
+          "a": "battery_reference",
+          "b": "rear_reindex_bend_195",
+          "status": "separated",
+          "min_distance_mm": 9.0932
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "rear_reindex_long_255",
+          "status": "separated",
+          "min_distance_mm": 11.712
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "rear_reindex_bend_255",
+          "status": "separated",
+          "min_distance_mm": 11.712
+        },
+        {
+          "a": "battery_strap_front",
+          "b": "rear_shaft",
+          "status": "separated",
+          "min_distance_mm": 11.7647
+        },
+        {
+          "a": "battery_reference",
+          "b": "rear_reindex_long_255",
+          "status": "separated",
+          "min_distance_mm": 12.5561
+        },
+        {
+          "a": "battery_reference",
+          "b": "rear_reindex_bend_255",
+          "status": "separated",
+          "min_distance_mm": 12.5561
+        },
+        {
+          "a": "battery_reference",
+          "b": "rear_shaft",
+          "status": "separated",
+          "min_distance_mm": 12.611
+        }
+      ],
+      "precision": {
+        "method": "triangle meshes (Manifold)",
+        "mesh_tolerance_mm": 0.02,
+        "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing."
+      },
+      "query_ms": 181
+    },
+    "frame": {
+      "pairs": [
+        {
+          "a": "fuselage",
+          "b": "internal_carrier",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "connection_board",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "fan_motor",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "xiao_reference",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "optical_reflector",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "connection_board",
+          "b": "optical_reflector",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "connection_board",
+          "b": "complete_harness",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "heat_spreader",
+          "b": "optical_reflector",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "xiao_reference",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.0267
+        },
+        {
+          "a": "fuselage",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.133
+        },
+        {
+          "a": "internal_carrier",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.1636
+        },
+        {
+          "a": "battery_reference",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.2574
+        },
+        {
+          "a": "heat_spreader",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.2736
+        },
+        {
+          "a": "internal_carrier",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 0.2947
+        },
+        {
+          "a": "fan_motor",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.4198
+        },
+        {
+          "a": "fuselage",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 0.5015
+        },
+        {
+          "a": "optical_reflector",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 0.5745
+        },
+        {
+          "a": "fuselage",
+          "b": "xiao_reference",
+          "status": "separated",
+          "min_distance_mm": 0.845
+        },
+        {
+          "a": "fan_motor",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.8482
+        },
+        {
+          "a": "internal_carrier",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 1
+        },
+        {
+          "a": "fuselage",
+          "b": "complete_harness",
+          "status": "separated",
+          "min_distance_mm": 1.0084
+        },
+        {
+          "a": "internal_carrier",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 1.0431
+        },
+        {
+          "a": "fuselage",
+          "b": "fan_motor",
+          "status": "separated",
+          "min_distance_mm": 1.3109
+        },
+        {
+          "a": "heat_spreader",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 1.6
+        },
+        {
+          "a": "connection_board",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 1.73
+        },
+        {
+          "a": "complete_harness",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 2.6084
+        },
+        {
+          "a": "fuselage",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 3.0912
+        },
+        {
+          "a": "connection_board",
+          "b": "fan_motor",
+          "status": "separated",
+          "min_distance_mm": 3.2776
+        },
+        {
+          "a": "battery_reference",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 4.5098
+        },
+        {
+          "a": "xiao_reference",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 6.3262
+        },
+        {
+          "a": "fuselage",
+          "b": "connection_board",
+          "status": "separated",
+          "min_distance_mm": 7.0711
+        },
+        {
+          "a": "fuselage",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 7.9161
+        },
+        {
+          "a": "connection_board",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 8.4697
+        },
+        {
+          "a": "fan_motor",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 10.2838
+        },
+        {
+          "a": "connection_board",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 10.5096
+        },
+        {
+          "a": "xiao_reference",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 16.745
+        },
+        {
+          "a": "battery_reference",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 18.1699
+        },
+        {
+          "a": "connection_board",
+          "b": "xiao_reference",
+          "status": "separated",
+          "min_distance_mm": 20.7978
+        },
+        {
+          "a": "xiao_reference",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 21.3465
+        },
+        {
+          "a": "fan_motor",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 24.0683
+        },
+        {
+          "a": "battery_reference",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 24.9704
+        },
+        {
+          "a": "heat_spreader",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 27.1414
+        },
+        {
+          "a": "fan_motor",
+          "b": "xiao_reference",
+          "status": "separated",
+          "min_distance_mm": 28.077
+        },
+        {
+          "a": "xiao_reference",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 29.5136
+        },
+        {
+          "a": "fan_motor",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 33.9828
+        },
+        {
+          "a": "internal_carrier",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 35.9749
+        },
+        {
+          "a": "complete_harness",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 36.624
+        },
+        {
+          "a": "battery_reference",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 38.7865
+        },
+        {
+          "a": "connection_board",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 41.5217
+        },
+        {
+          "a": "optical_reflector",
+          "b": "frame_long_shaft",
+          "status": "separated",
+          "min_distance_mm": 44.1255
+        },
+        {
+          "a": "fuselage",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_at_least_mm": 58.1
+        },
+        {
+          "a": "fan_motor",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_at_least_mm": 61.27
+        },
+        {
+          "a": "xiao_reference",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_at_least_mm": 58.49
+        },
+        {
+          "a": "optical_reflector",
+          "b": "frame_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_at_least_mm": 58.48
+        }
+      ],
+      "precision": {
+        "method": "triangle meshes (Manifold)",
+        "mesh_tolerance_mm": 0.02,
+        "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing."
+      },
+      "query_ms": 121719
+    },
+    "gate": {
+      "pairs": [
+        {
+          "a": "internal_carrier",
+          "b": "battery_gate",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "connection_board",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "fan_motor",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "xiao_reference",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "optical_reflector",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "connection_board",
+          "b": "optical_reflector",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "fan_motor",
+          "b": "drive_pulley",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "optical_reflector",
+          "b": "heat_spreader",
+          "status": "contact",
+          "min_distance_mm": 0
+        },
+        {
+          "a": "internal_carrier",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 0.2947
+        },
+        {
+          "a": "battery_gate",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 0.295
+        },
+        {
+          "a": "drive_pulley",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.3278
+        },
+        {
+          "a": "fan_motor",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 0.8482
+        },
+        {
+          "a": "internal_carrier",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 1
+        },
+        {
+          "a": "battery_gate",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 1.2361
+        },
+        {
+          "a": "battery_gate",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 1.2361
+        },
+        {
+          "a": "connection_board",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 1.73
+        },
+        {
+          "a": "internal_carrier",
+          "b": "drive_pulley",
+          "status": "separated",
+          "min_distance_mm": 2
+        },
+        {
+          "a": "connection_board",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 3.04
+        },
+        {
+          "a": "connection_board",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 3.04
+        },
+        {
+          "a": "connection_board",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 3.1
+        },
+        {
+          "a": "connection_board",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 3.1
+        },
+        {
+          "a": "connection_board",
+          "b": "fan_motor",
+          "status": "separated",
+          "min_distance_mm": 3.2776
+        },
+        {
+          "a": "battery_gate",
+          "b": "connection_board",
+          "status": "separated",
+          "min_distance_mm": 4.4598
+        },
+        {
+          "a": "battery_reference",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 4.5098
+        },
+        {
+          "a": "battery_gate",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 4.5402
+        },
+        {
+          "a": "battery_gate",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 4.5402
+        },
+        {
+          "a": "internal_carrier",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 5.0553
+        },
+        {
+          "a": "internal_carrier",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 5.0553
+        },
+        {
+          "a": "xiao_reference",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 6.3262
+        },
+        {
+          "a": "battery_gate",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 6.6524
+        },
+        {
+          "a": "heat_spreader",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 7.627
+        },
+        {
+          "a": "heat_spreader",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 7.6275
+        },
+        {
+          "a": "connection_board",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 8.4697
+        },
+        {
+          "a": "internal_carrier",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 8.54
+        },
+        {
+          "a": "internal_carrier",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 8.54
+        },
+        {
+          "a": "optical_reflector",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 9.6117
+        },
+        {
+          "a": "optical_reflector",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 9.6845
+        },
+        {
+          "a": "battery_gate",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 10.1208
+        },
+        {
+          "a": "battery_reference",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 10.4325
+        },
+        {
+          "a": "battery_reference",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 10.4347
+        },
+        {
+          "a": "battery_reference",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 12.2608
+        },
+        {
+          "a": "battery_reference",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 12.2662
+        },
+        {
+          "a": "heat_spreader",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 13.3731
+        },
+        {
+          "a": "heat_spreader",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 13.6938
+        },
+        {
+          "a": "battery_reference",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 18.1699
+        },
+        {
+          "a": "battery_gate",
+          "b": "xiao_reference",
+          "status": "separated",
+          "min_distance_mm": 19.8672
+        },
+        {
+          "a": "connection_board",
+          "b": "xiao_reference",
+          "status": "separated",
+          "min_distance_mm": 20.7978
+        },
+        {
+          "a": "xiao_reference",
+          "b": "heat_spreader",
+          "status": "separated",
+          "min_distance_mm": 21.3465
+        },
+        {
+          "a": "fan_motor",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_mm": 24.0683
+        },
+        {
+          "a": "fan_motor",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 24.6665
+        },
+        {
+          "a": "fan_motor",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 24.934
+        },
+        {
+          "a": "battery_gate",
+          "b": "fan_motor",
+          "status": "separated",
+          "min_distance_mm": 25.8269
+        },
+        {
+          "a": "optical_reflector",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 27.3472
+        },
+        {
+          "a": "connection_board",
+          "b": "drive_pulley",
+          "status": "separated",
+          "min_distance_mm": 27.5506
+        },
+        {
+          "a": "optical_reflector",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 27.6463
+        },
+        {
+          "a": "fan_motor",
+          "b": "xiao_reference",
+          "status": "separated",
+          "min_distance_mm": 28.077
+        },
+        {
+          "a": "xiao_reference",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 28.9005
+        },
+        {
+          "a": "xiao_reference",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 29.5136
+        },
+        {
+          "a": "xiao_reference",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 31.5072
+        },
+        {
+          "a": "fan_motor",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_mm": 33.9828
+        },
+        {
+          "a": "fan_motor",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 38.0922
+        },
+        {
+          "a": "fan_motor",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 38.2877
+        },
+        {
+          "a": "xiao_reference",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 39.2544
+        },
+        {
+          "a": "drive_pulley",
+          "b": "gate_1_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 40.5128
+        },
+        {
+          "a": "xiao_reference",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_mm": 41.1961
+        },
+        {
+          "a": "drive_pulley",
+          "b": "gate_1_short_shaft",
+          "status": "separated",
+          "min_distance_mm": 41.6132
+        },
+        {
+          "a": "battery_gate",
+          "b": "drive_pulley",
+          "status": "separated",
+          "min_distance_mm": 47.4955
+        },
+        {
+          "a": "drive_pulley",
+          "b": "xiao_reference",
+          "status": "separated",
+          "min_distance_at_least_mm": 57.94
+        },
+        {
+          "a": "drive_pulley",
+          "b": "battery_reference",
+          "status": "separated",
+          "min_distance_at_least_mm": 50
+        },
+        {
+          "a": "drive_pulley",
+          "b": "optical_reflector",
+          "status": "separated",
+          "min_distance_at_least_mm": 50
+        },
+        {
+          "a": "drive_pulley",
+          "b": "gate_0_handle_turn_stroke",
+          "status": "separated",
+          "min_distance_at_least_mm": 50
+        },
+        {
+          "a": "drive_pulley",
+          "b": "gate_0_short_shaft",
+          "status": "separated",
+          "min_distance_at_least_mm": 50
+        }
+      ],
+      "precision": {
+        "method": "triangle meshes (Manifold)",
+        "mesh_tolerance_mm": 0.02,
+        "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing."
+      },
+      "query_ms": 151995
+    },
+    "short_arm_elbow_allowance_mm": 0.9,
+    "note": "Case long-arm envelope additionally extends0.9mm inward to cover outside-dimension versus centreline uncertainty. Actual vendor bend not specified;trial required."
+  },
+  "plug_sweeps": {
+    "revision": "975ce7be5ebec1e3f7e63352e375a8834f1df0ec8e576e527f01d795457d91ee",
+    "checks": [
+      {
+        "pairs": [
+          {
+            "a": "internal_carrier",
+            "b": "optical_reflector",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "internal_carrier",
+            "b": "fan_motor",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "heat_spreader",
+            "b": "optical_reflector",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "fan_motor",
+            "b": "drive_pulley",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "internal_carrier",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 0.2947
+          },
+          {
+            "a": "heat_spreader",
+            "b": "drive_pulley",
+            "status": "separated",
+            "min_distance_mm": 0.3299
+          },
+          {
+            "a": "heat_spreader",
+            "b": "fan_motor",
+            "status": "separated",
+            "min_distance_mm": 0.8467
+          },
+          {
+            "a": "internal_carrier",
+            "b": "heat_spreader",
+            "status": "separated",
+            "min_distance_mm": 1
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J1_sweep",
+            "status": "separated",
+            "min_distance_mm": 1.5
+          },
+          {
+            "a": "internal_carrier",
+            "b": "drive_pulley",
+            "status": "separated",
+            "min_distance_mm": 2
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J2_sweep",
+            "status": "separated",
+            "min_distance_mm": 2.5765
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J3_sweep",
+            "status": "separated",
+            "min_distance_mm": 2.5765
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J4_sweep",
+            "status": "separated",
+            "min_distance_mm": 2.5765
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J5_sweep",
+            "status": "separated",
+            "min_distance_mm": 2.5765
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J6_sweep",
+            "status": "separated",
+            "min_distance_mm": 3.48
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J1_sweep",
+            "status": "separated",
+            "min_distance_mm": 3.5026
+          },
+          {
+            "a": "optical_reflector",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 4.5098
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J1_sweep",
+            "status": "separated",
+            "min_distance_mm": 5.7112
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J2_sweep",
+            "status": "separated",
+            "min_distance_mm": 6.135
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J3_sweep",
+            "status": "separated",
+            "min_distance_mm": 6.135
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J4_sweep",
+            "status": "separated",
+            "min_distance_mm": 6.135
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J5_sweep",
+            "status": "separated",
+            "min_distance_mm": 6.135
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J6_sweep",
+            "status": "separated",
+            "min_distance_mm": 6.135
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J2_sweep",
+            "status": "separated",
+            "min_distance_mm": 9.2343
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J5_sweep",
+            "status": "separated",
+            "min_distance_mm": 9.2343
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J6_sweep",
+            "status": "separated",
+            "min_distance_mm": 13.3818
+          },
+          {
+            "a": "battery_reference",
+            "b": "J6_sweep",
+            "status": "separated",
+            "min_distance_mm": 14.6375
+          },
+          {
+            "a": "battery_reference",
+            "b": "J3_sweep",
+            "status": "separated",
+            "min_distance_mm": 14.8487
+          },
+          {
+            "a": "battery_reference",
+            "b": "J4_sweep",
+            "status": "separated",
+            "min_distance_mm": 14.8487
+          },
+          {
+            "a": "fan_motor",
+            "b": "J3_sweep",
+            "status": "separated",
+            "min_distance_mm": 15.1069
+          },
+          {
+            "a": "fan_motor",
+            "b": "J4_sweep",
+            "status": "separated",
+            "min_distance_mm": 15.1069
+          },
+          {
+            "a": "battery_reference",
+            "b": "J2_sweep",
+            "status": "separated",
+            "min_distance_mm": 15.198
+          },
+          {
+            "a": "battery_reference",
+            "b": "J5_sweep",
+            "status": "separated",
+            "min_distance_mm": 15.198
+          },
+          {
+            "a": "heat_spreader",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 18.1699
+          },
+          {
+            "a": "battery_reference",
+            "b": "J1_sweep",
+            "status": "separated",
+            "min_distance_mm": 18.658
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J3_sweep",
+            "status": "separated",
+            "min_distance_mm": 18.8357
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J4_sweep",
+            "status": "separated",
+            "min_distance_mm": 18.8357
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J3_sweep",
+            "status": "separated",
+            "min_distance_mm": 19.2581
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J4_sweep",
+            "status": "separated",
+            "min_distance_mm": 19.2581
+          },
+          {
+            "a": "fan_motor",
+            "b": "J6_sweep",
+            "status": "separated",
+            "min_distance_mm": 19.91
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J6_sweep",
+            "status": "separated",
+            "min_distance_mm": 23.538
+          },
+          {
+            "a": "fan_motor",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 24.0683
+          },
+          {
+            "a": "fan_motor",
+            "b": "J2_sweep",
+            "status": "separated",
+            "min_distance_mm": 25.7037
+          },
+          {
+            "a": "fan_motor",
+            "b": "J5_sweep",
+            "status": "separated",
+            "min_distance_mm": 25.7037
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J2_sweep",
+            "status": "separated",
+            "min_distance_mm": 29.0455
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J5_sweep",
+            "status": "separated",
+            "min_distance_mm": 29.0455
+          },
+          {
+            "a": "fan_motor",
+            "b": "J1_sweep",
+            "status": "separated",
+            "min_distance_mm": 31.5
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J1_sweep",
+            "status": "separated",
+            "min_distance_mm": 33.3781
+          },
+          {
+            "a": "optical_reflector",
+            "b": "fan_motor",
+            "status": "separated",
+            "min_distance_mm": 33.9828
+          },
+          {
+            "a": "optical_reflector",
+            "b": "drive_pulley",
+            "status": "separated",
+            "min_distance_at_least_mm": 50
+          },
+          {
+            "a": "drive_pulley",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_at_least_mm": 50
+          }
+        ],
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing."
+        },
+        "query_ms": 2589
+      },
+      {
+        "pairs": [
+          {
+            "a": "internal_carrier",
+            "b": "optical_reflector",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "internal_carrier",
+            "b": "fan_motor",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "heat_spreader",
+            "b": "optical_reflector",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "fan_motor",
+            "b": "drive_pulley",
+            "status": "contact",
+            "min_distance_mm": 0
+          },
+          {
+            "a": "internal_carrier",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 0.2947
+          },
+          {
+            "a": "heat_spreader",
+            "b": "drive_pulley",
+            "status": "separated",
+            "min_distance_mm": 0.3299
+          },
+          {
+            "a": "fan_motor",
+            "b": "J10_sweep",
+            "status": "separated",
+            "min_distance_mm": 0.4
+          },
+          {
+            "a": "fan_motor",
+            "b": "J11_sweep",
+            "status": "separated",
+            "min_distance_mm": 0.4
+          },
+          {
+            "a": "heat_spreader",
+            "b": "fan_motor",
+            "status": "separated",
+            "min_distance_mm": 0.8467
+          },
+          {
+            "a": "internal_carrier",
+            "b": "heat_spreader",
+            "status": "separated",
+            "min_distance_mm": 1
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J9_sweep",
+            "status": "separated",
+            "min_distance_mm": 1.2208
+          },
+          {
+            "a": "internal_carrier",
+            "b": "drive_pulley",
+            "status": "separated",
+            "min_distance_mm": 2
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J10_sweep",
+            "status": "separated",
+            "min_distance_mm": 3.165
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J11_sweep",
+            "status": "separated",
+            "min_distance_mm": 3.165
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J12_sweep",
+            "status": "separated",
+            "min_distance_mm": 3.48
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J9_sweep",
+            "status": "separated",
+            "min_distance_mm": 3.5628
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J8_sweep",
+            "status": "separated",
+            "min_distance_mm": 3.8077
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J7_sweep",
+            "status": "separated",
+            "min_distance_mm": 4.1706
+          },
+          {
+            "a": "optical_reflector",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 4.5098
+          },
+          {
+            "a": "internal_carrier",
+            "b": "J12_sweep",
+            "status": "separated",
+            "min_distance_mm": 6.135
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J7_sweep",
+            "status": "separated",
+            "min_distance_mm": 6.2
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J11_sweep",
+            "status": "separated",
+            "min_distance_mm": 7.325
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J10_sweep",
+            "status": "separated",
+            "min_distance_mm": 7.3336
+          },
+          {
+            "a": "fan_motor",
+            "b": "J8_sweep",
+            "status": "separated",
+            "min_distance_mm": 7.4321
+          },
+          {
+            "a": "fan_motor",
+            "b": "J9_sweep",
+            "status": "separated",
+            "min_distance_mm": 7.4372
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J7_sweep",
+            "status": "separated",
+            "min_distance_mm": 7.8529
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J8_sweep",
+            "status": "separated",
+            "min_distance_mm": 8.676
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J9_sweep",
+            "status": "separated",
+            "min_distance_mm": 10.4718
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J8_sweep",
+            "status": "separated",
+            "min_distance_mm": 12.149
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J10_sweep",
+            "status": "separated",
+            "min_distance_mm": 12.6088
+          },
+          {
+            "a": "heat_spreader",
+            "b": "J11_sweep",
+            "status": "separated",
+            "min_distance_mm": 13.0952
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J12_sweep",
+            "status": "separated",
+            "min_distance_mm": 13.3818
+          },
+          {
+            "a": "battery_reference",
+            "b": "J12_sweep",
+            "status": "separated",
+            "min_distance_mm": 14.6375
+          },
+          {
+            "a": "battery_reference",
+            "b": "J8_sweep",
+            "status": "separated",
+            "min_distance_mm": 15.1374
+          },
+          {
+            "a": "battery_reference",
+            "b": "J7_sweep",
+            "status": "separated",
+            "min_distance_mm": 15.6955
+          },
+          {
+            "a": "battery_reference",
+            "b": "J10_sweep",
+            "status": "separated",
+            "min_distance_mm": 16.6638
+          },
+          {
+            "a": "battery_reference",
+            "b": "J11_sweep",
+            "status": "separated",
+            "min_distance_mm": 16.6638
+          },
+          {
+            "a": "battery_reference",
+            "b": "J9_sweep",
+            "status": "separated",
+            "min_distance_mm": 17.6799
+          },
+          {
+            "a": "heat_spreader",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 18.1699
+          },
+          {
+            "a": "fan_motor",
+            "b": "J12_sweep",
+            "status": "separated",
+            "min_distance_mm": 19.91
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J8_sweep",
+            "status": "separated",
+            "min_distance_mm": 20.8246
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J12_sweep",
+            "status": "separated",
+            "min_distance_mm": 23.538
+          },
+          {
+            "a": "fan_motor",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_mm": 24.0683
+          },
+          {
+            "a": "fan_motor",
+            "b": "J7_sweep",
+            "status": "separated",
+            "min_distance_mm": 25.2338
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J10_sweep",
+            "status": "separated",
+            "min_distance_mm": 25.6003
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J11_sweep",
+            "status": "separated",
+            "min_distance_mm": 25.6003
+          },
+          {
+            "a": "optical_reflector",
+            "b": "J9_sweep",
+            "status": "separated",
+            "min_distance_mm": 27.8714
+          },
+          {
+            "a": "drive_pulley",
+            "b": "J7_sweep",
+            "status": "separated",
+            "min_distance_mm": 28.2663
+          },
+          {
+            "a": "optical_reflector",
+            "b": "fan_motor",
+            "status": "separated",
+            "min_distance_mm": 33.9828
+          },
+          {
+            "a": "optical_reflector",
+            "b": "drive_pulley",
+            "status": "separated",
+            "min_distance_at_least_mm": 50
+          },
+          {
+            "a": "drive_pulley",
+            "b": "battery_reference",
+            "status": "separated",
+            "min_distance_at_least_mm": 50
+          }
+        ],
+        "precision": {
+          "method": "triangle meshes (Manifold)",
+          "mesh_tolerance_mm": 0.02,
+          "note": "Flat faces are exact; curved faces are within 0.02 mm of the true surface, so a distance up to 0.02 mm counts as contact. Depth is sampled at about 0.2 mm spacing."
+        },
+        "query_ms": 1848
+      }
+    ],
+    "scope": "12 main-board plug outer envelopes swept+Z12 on bench,excluding own PCB. Final revision only removes more thermal material aboveZ21;no added material. Mating-pin withdrawal is axial;electrical pinouts unchanged."
+  },
+  "preconditions": {
+    "case": "Remove BOTH front and belly diffusers,USB/J2 and two clamp screws. Hold moving-window socket as male withdraws. Rear tongue guides normal-Y closure. Mast,bearings,rotor stay;SHELL probe stays on bridge.",
+    "unit": "Release belt and fixed-side key lead;release/park flexible wires. Remove single frame screw;slide unit+Y70. No M4/bearing disassembly.",
+    "battery": "On bench,disconnect cell leads,release strap and probe. Remove two gate screws;gate+Y80 then cell+Y80. No heat/PCB removal.",
+    "controller": "On bench,release retention tape and leads;slide XIAO+X30,cell may remain.",
+    "thermal": "On bench,release optical leads and remove two thermal screws;lift+Z60.",
+    "PCB": "Before heat/optics installation;move+Z3 then-X90 for removal,reverse to assemble."
+  },
+  "single_solids": [
+    "fuselage",
+    "fuselage_cap",
+    "internal_carrier",
+    "heat_spreader"
+  ],
+  "physical_validation_pending": [
+    "打印/实际插头配合与线材弯曲",
+    "封壳温升和SHELL探头相对壳体热点校准",
+    "热稳定读写照度≥500lx、最低≥300lx和均匀度≤3",
+    "三路温控、电池保护、充电互锁",
+    "风量、噪声、RMS电流、旋翼平衡",
+    "磁吸承重、振动",
+    "装配用时与反复检修耐久"
+  ],
+  "manufacturing_note": "Complex single metal bridge needs manufacturing process/accessibility/thin-face deformation and quotation review;oldAL01-15 drawings invalid;never plastic print as substitute.",
+  "handoff_interference_pairs": 0,
+  "shell_probe_mount": "Bond to underside of thermal bridge shell-contact face,fill nominal0.3mm gap with insulating thermal adhesive. Stays with unit,not removable cap;calibrate against actual opaque-shell hot spot.",
+  "case_closure": {
+    "axis": "Y",
+    "screw_count": 2,
+    "screw_size": "M2x8 ISO4762",
+    "clamp_centres_mm": [
+      [
+        -35,
+        3,
+        12
+      ],
+      [
+        21.5,
+        3,
+        -32.2
+      ]
+    ],
+    "through_thickness_mm": 3,
+    "receiver_thickness_mm": 5,
+    "engagement_mm": 4,
+    "extra_nuts_inserts_locators": 0,
+    "guide": {
+      "inner_x_mm": 37.5,
+      "centre_z_mm": 18,
+      "tongue_projection_mm": 6,
+      "pocket_depth_mm": 6.5,
+      "clearance_per_side_mm": 0.2,
+      "male_height_mm": 6,
+      "backing_height_mm": 9,
+      "entry_chamfer_mm": 0.5
+    },
+    "guide_capture": "CAD eval at revision 24f9b00, nothing committed: {\"value\":null,\"eval_ms\":472,\"parts_run\":[],\"parts_from_cache\":[\"tail\",\"fuselage\"]}\n```text\n{'local_guide_capture_only': [{'initial_offset_mm': [0.3, 0], 'max_intersection_mm3': 0}, {'initial_offset_mm': [-0.3, 0], 'max_intersection_mm3': 0}, {'initial_offset_mm': [0, 0.3], 'max_intersection_mm3': 0}, {'initial_offset_mm': [0, -0.3], 'max_intersection_mm3': 0}], 'whole_cap_offset_limit': 'Tail fit and hand-held flexible window socket require alignment before closure;this local check does not claim whole cap captures arbitrary offset.'}\n```",
+    "guide_location_observed_intersection_mm3": {
+      "aligned": 0,
+      "xplus03": 3.3296666666667094,
+      "xminus03": 2.7471744451099656,
+      "zplus03": 2.9990166013505313,
+      "zminus03": 1.6305186428638532
+    },
+    "force_path": "Heads bear on moving-half through ears;normal-Y screws engage fixed-half receiver bosses and compress Y=0 mating lands. Guide constrains X/Z;boards and battery do not carry clamp load.",
+    "preconditions": "Align existing tail key and rear guide;hold/mate window connector by hand;route/park flexible wires,do not pull them with shell. Remove both diffusers before service.",
+    "limits": "Local guide entry accepts specified0.3mm offsets;whole-cap offset sweeps encounter existing tail fit and window connector,so no claim of arbitrary whole-cap offset capture. No physical torque,pull-off,print-fit or assembly-time test."
+  },
+  "scope_limit": "Geometry and specified kinematic/tool envelopes only;no measured torque,pull-off load,print tolerance,assembly time or vibration result.",
+  "handoff_release": "export-afcaedea74409a1686064a6f25ee28fe",
+  "handoff_state_hash": "c8b5fc952dc9247d08ecfa7ad56437040c8be060eb5c39baf7e007011bcec210"
+}

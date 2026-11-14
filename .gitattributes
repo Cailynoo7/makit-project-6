@@ -1,0 +1,2 @@
+# Keep exact CAD handoff bytes; review geometry through CAD rather than text diffs.
+manufacturing/**/model.step binary

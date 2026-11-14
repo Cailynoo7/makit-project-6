@@ -23,6 +23,13 @@
       "share": false
     },
     {
+      "file": "case-closure-check.json",
+      "sha256": "f2b1b9b86c529cb1f6039b266d26f7042d0c1e9c3786947a35ba9c23663ab97a",
+      "bytes": 199916,
+      "addedAt": "2026-11-14T00:00:00Z",
+      "share": false
+    },
+    {
       "file": "connection-model-measurements.json",
       "sha256": "6802c8a91072ee2fc637c668cac3a41e895a744b0c2f8dc06c07e83d431a1419",
       "bytes": 3679,
@@ -188,6 +195,20 @@
       "sha256": "450468b0d37f72fda00ad94e20d5d1c72a45d7d95460e683ef5e1da7675e29db",
       "bytes": 41290,
       "addedAt": "2026-11-13T11:26:25.940Z",
+      "share": false
+    },
+    {
+      "file": "structural-redesign-followup.json",
+      "sha256": "9f58d238df899b31397512e28d68c13b51df5f962560d3ddc527669f89ce94b4",
+      "bytes": 202,
+      "addedAt": "2026-11-13T16:57:07.316Z",
+      "share": false
+    },
+    {
+      "file": "structural-redesign-harness-geometry.json",
+      "sha256": "41ce18e16a89202b1a924785c5ef4ced87dc0497591ed10b0d572a61bac1b82d",
+      "bytes": 8224,
+      "addedAt": "2026-11-14T00:00:00Z",
       "share": false
     },
     {

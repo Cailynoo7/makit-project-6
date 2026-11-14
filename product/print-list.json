@@ -1,0 +1,668 @@
+{
+  "schema_version": 1,
+  "cad_revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+  "handoff_release": "export-afcaedea74409a1686064a6f25ee28fe",
+  "quantity_basis": "One complete lamp;no spares;optional test prints excluded",
+  "finished_device_print_count": 31,
+  "items": [
+    {
+      "design_id": "helicopter",
+      "object_id": "fuselage",
+      "bom_id": "fuselage_lower_print",
+      "name": "固定侧机壳（负Y半壳）",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "天蓝",
+      "assembled_bbox_mm": [
+        89.65,
+        53.118,
+        84.449
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "fuselage_cap",
+      "bom_id": "fuselage_cap_print",
+      "name": "可拆侧机壳（正Y半壳）",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "天蓝",
+      "assembled_bbox_mm": [
+        89.65,
+        45.118,
+        84.449
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "internal_carrier",
+      "bom_id": "internal_carrier_print",
+      "name": "单一内架，含电池鞍座、控制板承托及导线槽",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        72.27,
+        69.4,
+        62.7
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "battery_gate",
+      "bom_id": "battery_cradle_print",
+      "name": "可拆电池端挡",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        36.2,
+        10.9,
+        14.7
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "tail",
+      "bom_id": "tail_print",
+      "name": "一体尾梁与尾翼",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "天蓝",
+      "assembled_bbox_mm": [
+        138.024,
+        35.638,
+        50.048
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "main_rotor",
+      "bom_id": "main_rotor_print",
+      "name": "一体主旋翼",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        250.0,
+        250.0,
+        32.256
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "tail_propeller",
+      "bom_id": "tail_prop_print",
+      "name": "装饰尾桨",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        35.571,
+        7.688,
+        31.735
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "skid_left",
+      "bom_id": "skid_print",
+      "name": "左右起落架，分别打印",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        93.75,
+        30.325,
+        31.625
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "skid_right",
+      "bom_id": "skid_print",
+      "name": "左右起落架，分别打印",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        93.75,
+        30.325,
+        31.625
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "window_left",
+      "bom_id": "fixed_windows",
+      "name": "左右不透明浅蓝窗面",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "浅蓝",
+      "assembled_bbox_mm": [
+        42.6,
+        15.608,
+        42.6
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "window_right",
+      "bom_id": "fixed_windows",
+      "name": "左右不透明浅蓝窗面",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "浅蓝",
+      "assembled_bbox_mm": [
+        42.6,
+        15.608,
+        42.6
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "button_left",
+      "bom_id": "button_caps",
+      "name": "灯与风扇按钮，分别打印",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "浅蓝",
+      "assembled_bbox_mm": [
+        14.0,
+        7.8,
+        14.0
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "button_right",
+      "bom_id": "button_caps",
+      "name": "灯与风扇按钮，分别打印",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "浅蓝",
+      "assembled_bbox_mm": [
+        14.0,
+        7.788,
+        14.0
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "window_bezel_left",
+      "bom_id": "window_bezel_left_print",
+      "name": "左窗装饰外框",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        43.75,
+        2.384,
+        43.75
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "window_bezel_right",
+      "bom_id": "window_bezel_right_print",
+      "name": "右窗装饰外框",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        43.75,
+        2.384,
+        43.75
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "window_retainer_left",
+      "bom_id": "window_retainer_print",
+      "name": "左右窗内压环，分别打印",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        52.0,
+        12.121,
+        28.0
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "window_retainer_right",
+      "bom_id": "window_retainer_print",
+      "name": "左右窗内压环，分别打印",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        52.0,
+        12.121,
+        28.0
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "skid_clamps_left",
+      "bom_id": "skid_root_caps_print",
+      "name": "四处起落架根部曲面压帽",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        9.2,
+        13.22,
+        9.2
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "skid_clamp_right_aft",
+      "bom_id": "skid_root_caps_print",
+      "name": "四处起落架根部曲面压帽",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        9.2,
+        13.22,
+        9.2
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "skid_clamps_right",
+      "bom_id": "skid_root_caps_print",
+      "name": "四处起落架根部曲面压帽",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        9.2,
+        13.22,
+        9.2
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "skid_clamp_left_aft",
+      "bom_id": "skid_root_caps_print",
+      "name": "四处起落架根部曲面压帽",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        9.2,
+        13.22,
+        9.2
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "bearing_pedestal",
+      "bom_id": "rotor_fixed_axle_print",
+      "name": "固定轴与轴承内圈承重支座",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        12.6,
+        12.6,
+        25.8
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "rotor_bearing_spacer",
+      "bom_id": "rotor_bearing_spacer_print",
+      "name": "轴承外圈隔套",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        19.0,
+        19.0,
+        7.9
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "rotor_inner_spacer",
+      "bom_id": "rotor_inner_spacer_print",
+      "name": "轴承内圈隔套",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        12.6,
+        12.6,
+        7.9
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "hub_cover",
+      "bom_id": "hub_cover_print",
+      "name": "主旋翼轴承压盖",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        32.5,
+        32.5,
+        6.95
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "mast",
+      "bom_id": "mast_print",
+      "name": "固定吊杆",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        13.5,
+        13.5,
+        41.0
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "magnet_base",
+      "bom_id": "magnet_base_print",
+      "name": "磁吸顶部座",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        45.43,
+        45.43,
+        13.75
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "drive_pulley",
+      "bom_id": "drive_pulley_print",
+      "name": "电机D轴小带轮",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "白",
+      "assembled_bbox_mm": [
+        9.8,
+        9.8,
+        4.0
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "nose_lens",
+      "bom_id": "nose_diffuser",
+      "name": "前透光罩",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "半透明",
+      "assembled_bbox_mm": [
+        9.563,
+        58.815,
+        58.815
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "belly_lens",
+      "bom_id": "belly_diffuser",
+      "name": "底透光片",
+      "quantity": 1,
+      "material": "PETG",
+      "colour": "半透明",
+      "assembled_bbox_mm": [
+        63.75,
+        63.75,
+        1.2
+      ],
+      "scope": "finished_device"
+    },
+    {
+      "design_id": "helicopter",
+      "object_id": "optical_reflector",
+      "bom_id": "internal_reflector",
+      "name": "一体反光罩及左右光源支座",
+      "quantity": 1,
+      "material": "ASA",
+      "colour": "哑白",
+      "assembled_bbox_mm": [
+        25.0,
+        46.0,
+        25.0
+      ],
+      "scope": "finished_device"
+    }
+  ],
+  "optional_test_items": [
+    {
+      "design_id": "charging_fit",
+      "object_id": "coupon_shell",
+      "quantity": 1,
+      "material": "PETG"
+    },
+    {
+      "design_id": "charging_fit",
+      "object_id": "controller_cassette",
+      "quantity": 1,
+      "material": "PETG"
+    }
+  ],
+  "excluded_objects": [
+    {
+      "object_id": "carrier_shell_screws",
+      "label": "内架单颗固定螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "case_front_screw",
+      "label": "前口锁壳螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "case_rear_screw",
+      "label": "底口后锁壳螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "suspension_screw",
+      "label": "吊杆承重螺栓螺母",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "tail_lock_screws",
+      "label": "尾梁锁紧螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "skid_root_screws_left",
+      "label": "左起落架内部螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "window_left_screws",
+      "label": "圆窗内部压紧螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "window_right_screws",
+      "label": "圆窗内部压紧螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "bearing_lower",
+      "label": "下轴承6800",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "connection_board",
+      "label": "COB连接板：横排NTC与电机避让",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "fan_motor",
+      "label": "Pololu 3060 减速电机",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "key_board_left",
+      "label": "左窗按键小板",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "motor_mount_screw",
+      "label": "电机M1.6×3螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "xiao_reference",
+      "label": "XIAO ESP32C3参考模型",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "bearing_upper",
+      "label": "上轴承6800",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "led_bracket_screws",
+      "label": "COB支座固定螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "heat_mount_screws",
+      "label": "COB集热板固定螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "unit_frame_gate_screws",
+      "label": "电池端挡固定螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "pcb_mount_screws",
+      "label": "连接板固定螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "heat_spreader",
+      "label": "一体金属散热桥",
+      "reason": "定制铝件，整体加工，不打印"
+    },
+    {
+      "object_id": "drive_belt",
+      "label": "32×1.5 O形圈工作状态示意",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "skid_root_screws_right",
+      "label": "右起落架内部螺钉",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "motor_mount_screw_second",
+      "label": "电机固定螺钉右",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "key_board_right",
+      "label": "右窗按键小板",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "battery_strap_front",
+      "label": "单条宽电池绑带",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "cob_reference",
+      "label": "COB图纸上限包络",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "battery_reference",
+      "label": "18650保守包络",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "cob_bond_film",
+      "label": "COB绝缘导热胶层",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "battery_end_pad_front",
+      "label": "前端缓冲垫",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "battery_end_pad_rear",
+      "label": "后端缓冲垫",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "ntc_battery_reference",
+      "label": "电芯探头上限包络",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "ntc_cob_reference",
+      "label": "COB探头上限包络",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "ntc_shell_reference",
+      "label": "热桥贴壳处温度探头",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    },
+    {
+      "object_id": "complete_harness",
+      "label": "整套线束与插壳包络",
+      "reason": "采购件、线束/插壳占位、电池/电子件/缓冲垫或胶层参考，不打印"
+    }
+  ],
+  "notes": [
+    "仅逐项选择打印清单对象，不能全选整个装配体。",
+    "整套线束与插壳包络 complete_harness 为走线/插拔空间参考，绝不打印。内架导线槽已包含在 internal_carrier 内。",
+    "一体反光罩必须用ASA；其余按PETG分色打印。",
+    "主旋翼XY外廓250x250mm，需要可用打印面积大于250mm并留边缘余量的平台或打印服务。",
+    "尺寸为装配姿态包围盒，非切片摆放方案；支撑、方向及排版由切片软件完成。",
+    "主机不再打印旧独立均热片、接触座、分体热桥、电池托座、控制板卡座或单独线束夹。"
+  ]
+}

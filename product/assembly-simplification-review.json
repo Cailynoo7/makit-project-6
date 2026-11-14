@@ -23,7 +23,7 @@
     "battery protection and3temperature sensors",
     "PCB and firmware"
   ],
-  "scope_limit": "Static geometry and sampled paths only;no physical thermal,lux,airflow,magnetic or fastening validation",
+  "scope_limit": "历史第一轮简化，仅对应本记录cad_revision。当前左右分壳/单一内架/整体热桥重构另见structural-redesign-validation.json，旧路径不得当作新版本通过证据。",
   "clearance_checks": [
     {
       "object": "optical_reflector",
@@ -1077,5 +1077,18 @@
         "query_ms": 400
       }
     }
-  ]
+  ],
+  "current_case_closure_review": {
+    "revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+    "handoff": "export-afcaedea74409a1686064a6f25ee28fe",
+    "object_count": 65,
+    "static_pairs": 2080,
+    "unintended_interference": 0,
+    "specified_paths_passed": 11,
+    "report": "product/references/case-closure-check.json",
+    "case_screws": 2,
+    "extra_nuts_inserts_locators": 0,
+    "access": "Both front and belly diffusers removed;Wera05022040001 ultra-short1.5mm key",
+    "physical_fit_torque_strength": "Not measured"
+  }
 }

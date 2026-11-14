@@ -1,6 +1,6 @@
-c=part('battery_cradle')
+c=part('internal_carrier')
 t=param('compressed_end_foam_thickness',2.3)
 w=param('end_foam_width',10.0)
 h=param('end_foam_height',3.0)
-body=Pos(0,c.end_y-c.end_bar_t/2-t/2,c.end_z)*Box(w,t,h)
+body=Pos(0,c.pack_end_y-c.pack_end_bar_t/2-t/2,c.pack_end_z)*Box(w,t,h)
 publish('battery_end_pad_front',body,'前端缓冲垫',material='silicone')

@@ -2,18 +2,26 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "e0e8102bcb8985831859985e9d8388f469a4d180d722be1f095a936551efc071",
+  "requirements_digest": "fd883fe93941885f918e4a4ddb7215599353573c6baa22ed87a8c4cc94531093",
   "items": [
     {
       "id": "controller",
       "name": "Seeed Studio XIAO ESP32C3",
       "platform_ref": "seeed/xiao-esp32c3",
-      "quantity": 1
+      "quantity": 1,
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "magnet",
       "name": "圆片强力磁铁 Ø30×2 mm（用户指定）",
-      "quantity": 1
+      "quantity": 1,
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "connection_pcb",
@@ -21,7 +29,11 @@
       "quantity": 1,
       "source": "user",
       "selection_reason": "40x50x1.6mm6layer,outer1oz/inner2oz;X40 and mounting holes(-16,-11),(16,-11) unchanged. J10/J11 row centres[13.35,5.3912]and[13.35,-4.9048],90degree rotation,pin1originX12.08,pin2X14.62, same pinout. Neighbouring passives,fan bias tap,inner2 sensor GND corridors and off-hole ground transfers updated;F1 relief and cable guides internal only.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery",
@@ -46,7 +58,11 @@
       "supply_risk": "No approved drop-in alternate. Preserve exact MPN; recheck LCSC stock at purchase. Extended or unknown library is acceptable here because assembly is commissioned/manual, not a JLC SMT placement order.",
       "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20230105/B2E82B40C6A197EC38D59527C58C9F35.jpg",
       "unit_price_cny": 19.98,
-      "part_identity": "f86a160e22b1d79b"
+      "part_identity": "f86a160e22b1d79b",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "motor",
@@ -68,7 +84,11 @@
         "source_url": "https://www.pololu.com/file/0J2042/Pololu%20Micro%20Metal%20Gearmotor%203D%20%28STEP%29%20Models.zip",
         "file_name": "mmgm-cb.step"
       },
-      "part_identity": "057639216d3fe995"
+      "part_identity": "057639216d3fe995",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_star",
@@ -93,13 +113,21 @@
       "supply_risk": "No approved drop-in alternate. Preserve exact MPN; recheck LCSC stock at purchase. Extended or unknown library is acceptable here because assembly is commissioned/manual, not a JLC SMT placement order.",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240622_HONGLITRONIC-Hongli-Zhihui--HONGLITRONIC-HL-LM002H384W-5B2C5-Ra2-ANSI-4000K_C22398553_front.jpg",
       "unit_price_cny": 3.21,
-      "part_identity": "a8e5a947cc6b063a"
+      "part_identity": "a8e5a947cc6b063a",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "bearings",
       "name": "6800 deep-groove ball bearing 10x19x5mm",
       "quantity": 2,
-      "source": "research"
+      "source": "research",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "headers_2",
@@ -119,7 +147,11 @@
         "J7"
       ],
       "selection_reason": "J2 raw cell, J3 motor, J4 COB, J5/J6 keys, J7 fan enable; choose0.64mm square-pin2.54mm vertical family rated>=3A for power circuits.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "headers_7",
@@ -132,7 +164,11 @@
       },
       "designators": [
         "J1"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_regulator",
@@ -159,7 +195,11 @@
       "part_identity": "c71ff8cc23c281d9",
       "designators": [
         "U1"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "gate_resistors",
@@ -186,7 +226,11 @@
       },
       "part_identity": "c89c362af0b7031b",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20251025_UNI-ROYAL-0603WAF1000T5E_C22775_front.jpg",
-      "selection_reason": "R1 filtered DRV8213 VCC feed100ohm;R3 TPS61500 EN control series100ohm."
+      "selection_reason": "R1 filtered DRV8213 VCC feed100ohm;R3 TPS61500 EN control series100ohm.",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "bias_resistors",
@@ -215,7 +259,11 @@
       },
       "part_identity": "417ab355c24bb59b",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250410_YAGEO-RC0603FR-07100KL_C14675_front.jpg",
-      "selection_reason": "R2 fan-input pulldown,R4 lamp EN pulldown,R5 USB sense divider top,R10 fan nFAULT pullup,100kohm each."
+      "selection_reason": "R2 fan-input pulldown,R4 lamp EN pulldown,R5 USB sense divider top,R10 fan nFAULT pullup,100kohm each.",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "decoupling",
@@ -244,7 +292,11 @@
         "method": "manual"
       },
       "part_identity": "793924b009c093b0",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250715_YAGEO-CC0603KRX7R9BB104_C14663_front.jpg"
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250715_YAGEO-CC0603KRX7R9BB104_C14663_front.jpg",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "bulk",
@@ -269,7 +321,11 @@
         "method": "manual"
       },
       "part_identity": "9c45cb58e1625d26",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20180914_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850_front_10.jpg"
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20180914_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850_front_10.jpg",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "switches",
@@ -294,7 +350,11 @@
         "method": "manual"
       },
       "part_identity": "e4c01306691d06c6",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230120_Shenzhen-Kinghelm-Elec-KH-6X6X4-3H-STM_C2837530_front.jpg"
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230120_Shenzhen-Kinghelm-Elec-KH-6X6X4-3H-STM_C2837530_front.jpg",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "drive_belt",
@@ -302,33 +362,72 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Nominal5.53% neutral-line stretch at23mm centres,30/8mm pitch diameters. Hidden motor slots give+/-0.3mm adjustment. Choose actual preload by slip,current and bearing-temperature tests.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_spreader",
-      "name": "1050/1060 aluminium COB collector,18x34x3mm,2xM2 tapped thermal-bridge holes",
+      "name": "One-piece aluminium COB thermal bridge with integral branches and shell-contact faces",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "Finished internal collector centred[-28,0,1.5]mm. COB faces downward with12x12mm insulating adhesive land,0.15mm bond. Two M1.6x5 screws retain it to ASA supports. M2x0.4 through threads use1.6mm tap drill; modeled2mm major-envelope holes are not untapped clearance holes.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "Custom machined solid metal part;COB platform and both shell-contact branches are one piece. Replaces15 aluminium pieces,including6 separate liners;no separate thermal contact shoes or internal clamp screws. Keep electrically insulating thin shell TIM and COB bond.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "machine",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "belly_diffuser",
       "name": "Printed translucent PETG belly diffuser, diameter 63.75mm, thickness 1.2mm",
       "quantity": 1,
-      "source": "user"
+      "source": "user",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "belly_lens"
+        ],
+        "material": "PETG",
+        "colour": "半透明",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "nose_diffuser",
       "name": "Printed translucent PETG nose diffuser, opening approximately59.5mm",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "nose_lens"
+        ],
+        "material": "PETG",
+        "colour": "半透明",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "button_caps",
       "name": "Opaque pale-blue curved Ø12mm button caps,Ø14mm internal flange,calibrated pusher,bulb/fan icons",
       "quantity": 2,
-      "source": "user"
+      "source": "user",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "button_left",
+          "button_right"
+        ],
+        "material": "PETG",
+        "colour": "浅蓝",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "fixed_windows",
@@ -336,13 +435,34 @@
       "quantity": 2,
       "source": "user",
       "selection_reason": "Pale-blue pane with37.5mm register,42.6mm shoulder; separate12mm button in12.5mm clearance hole; internal retaining ring; independent white overlay frame.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "window_left",
+          "window_right"
+        ],
+        "material": "PETG",
+        "colour": "浅蓝",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "main_rotor_print",
       "name": "Printed white four-blade main rotor,diameter250mm,chord37.5mm,blade thickness1.6mm",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "main_rotor"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "skid_print",
@@ -350,15 +470,36 @@
       "quantity": 2,
       "source": "default",
       "selection_reason": "Curved struts; rail Z=-51.25mm,Y=+/-56.25mm; mounts X=+/-22.5mm,Z=-25mm;26.25mm vertical drop; front/rear symmetric; internally retained5mm pins.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "skid_left",
+          "skid_right"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "tail_print",
       "name": "Solid sky-blue tail boom,50mm symmetric vertical fin,right half-profile trim,4mm cylindrical locating plug and circular shoulder",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "Solid circular taper and full-round4mm locating plug with circular bearing shoulder; two hidden axial M2 screws. Symmetric vertical fin and same-half-profile right trim are integral; left white decorative tail propeller is separate.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "Solid circular taper,4mm-long locating plug with internal D-flat and circular bearing shoulder;one hidden axial M2 screw on fixed half. Visible round tail shoulder unchanged.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "tail"
+        ],
+        "material": "PETG",
+        "colour": "天蓝",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "tail_prop_print",
@@ -366,7 +507,17 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "White three-blade decorative left tail propeller; centre[176.875,-4.625,13.75]mm; aft offset1.875mm;3mm pin in3.5mm blind socket.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "tail_propeller"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "window_bezel_left_print",
@@ -374,7 +525,17 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Independent white PETG ring covering pale-blue window edge by 0.5mm; curved back follows cabin surface with nominal 0.15mm glue allowance; free curved adhesive interface.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "window_bezel_left"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "window_bezel_right_print",
@@ -382,21 +543,47 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Independent white PETG ring covering pale-blue window edge by 0.5mm; curved back follows cabin surface with nominal 0.15mm glue allowance; free curved adhesive interface.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "window_bezel_right"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "internal_carrier_print",
-      "name": "PETG removable motor/PCB carrier with F1 relief, NTC guides and recessed cradle-tie seats",
+      "name": "PETG single internal chassis with integral battery cradle,XIAO support,motor/PCB mounts and loom guide",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "Approved exterior retained. Separate18650 cradle attaches using two2.5mm PA66 ties; integral PETG hard datums fix2mm deck gap and four stops locate laterally. Support cradle before cutting ties; PCB and motor stay on carrier during withdrawal.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "One PETG chassis integrates battery cradle,motor/PCB mounts,XIAO rails and open loom guide. One front locator and oneM2x6 clamp. XIAO slides from rear on bench;one removable insulating-tape tab retains it axially.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "internal_carrier"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "internal_mount_screws",
-      "name": "M2 x 6mm ISO 7045 pan-head stainless steel machine screw",
-      "quantity": 2,
-      "source": "default"
+      "name": "M2x6mm ISO4762 stainless steel socket-head screw",
+      "quantity": 1,
+      "source": "default",
+      "selection_reason": "Single rear horizontal chassis clamp plus front locating pin;length verified by screw-joint build.",
+      "part_identity": "709e80c88487a241",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_strap",
@@ -404,7 +591,11 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "One 25mm strap centred Y=0 replaces two 10mm straps;cradle groove widened to26mm. Top overlap only;axial end gate and two buffers retained.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_foam",
@@ -412,13 +603,21 @@
       "quantity": 2,
       "source": "default",
       "selection_reason": "Include films,wrap and welded tabs within the reserved19x66.2mm pack envelope;do not add a70mm protected-cell variant.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "pcb_mount_screws",
       "name": "M2 x 4mm ISO 7045 pan-head stainless steel machine screw",
       "quantity": 2,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "key_headers",
@@ -429,27 +628,37 @@
         "population": "mounted",
         "method": "through_hole",
         "side": "bottom"
+      },
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
       }
     },
     {
       "id": "key_pcbs",
       "name": "Window button daughterboard,14x18mm,2-layer FR41.6mm",
       "quantity": 2,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "drive_pulley_print",
       "name": "White PETG D-shaft pulley,8mm effective diameter,3mm bore with flat at1mm; calibrate fit and spot-epoxy axial retention",
       "quantity": 1,
-      "source": "default"
-    },
-    {
-      "id": "controller_cassette_print",
-      "name": "PETG removable XIAO cassette with integral board-thickness support",
-      "quantity": 1,
       "source": "default",
-      "selection_reason": "Support height parameter0.6mm for existing1.0mm reference PCB;set to0 for1.6mm actual PCB. No loose shim;USB centre and three solder-wire reliefs retained. Fit coupon must match.",
-      "part_identity": "df3f619804a92fdb"
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "drive_pulley"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_thermal_adhesive",
@@ -457,25 +666,47 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Thin bond to finished COB metal substrate;keep light-emitting area and terminals clean. Thermal contact resistance target<=0.75K/W.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "tail_lock_screws",
       "name": "M2x5mm ISO4762 stainless steel socket-head cap screw",
-      "quantity": 2,
-      "source": "default"
+      "quantity": 1,
+      "source": "default",
+      "selection_reason": "One hidden screw on fixed negative-Y half;D-flat short plug supplies anti-rotation.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "service_screws",
-      "name": "M2x10mm ISO4762 stainless steel socket-head screw",
-      "quantity": 3,
-      "source": "default"
+      "name": "M2x8mm ISO4762 stainless steel socket-head screw",
+      "quantity": 2,
+      "source": "default",
+      "selection_reason": "Two M2x8 normal-Y case clamps,front-upper and rear-lower;kit-generated4mm engagement. Integral rear tongue/groove aligns before clamping. Front and bottom diffusers must both be removed for access;no separate locating parts,new exterior holes,nuts or inserts.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "controller_mount_screws",
       "name": "M1.6x5mm ISO4762 stainless steel socket-head cap screw",
       "quantity": 2,
-      "source": "default"
+      "source": "default",
+      "selection_reason": "Optional charging-fit coupon only;main XIAO support is integral and uses no separate mounting screws.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "optional_fit_test"
+      }
     },
     {
       "id": "heat_mount_screws",
@@ -483,25 +714,57 @@
       "quantity": 2,
       "source": "default",
       "selection_reason": "Through3mm aluminium collector into kit-generated ASA pilot joints;do not substitute the former4mm length.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "fuselage_lower_print",
-      "name": "Sky-blue PETG100mm spherical lower cabin with fully internal mounting supports",
+      "name": "Sky-blue PETG fixed negative-Y cabin half with integral locating tongue and normal-Y clamp receivers",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "fuselage"
+        ],
+        "material": "PETG",
+        "colour": "天蓝",
+        "scope": "finished_device"
+      },
+      "selection_reason": "One fixed side shell;integral rear locating tongue and two normal-Y M2x8 receiver bosses. Printed from fuselage only;metal hardware is purchased separately.",
+      "part_identity": "df3f619804a92fdb"
     },
     {
       "id": "fuselage_cap_print",
-      "name": "Sky-blue PETG removable upper cabin cap",
+      "name": "Sky-blue PETG removable positive-Y cabin half with integral locating groove and normal-Y clamp ears",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "fuselage_cap"
+        ],
+        "material": "PETG",
+        "colour": "天蓝",
+        "scope": "finished_device"
+      },
+      "selection_reason": "One removable side shell;integral locating groove and two through ears. No separate locating parts;front and belly diffusers fitted after tightening both case screws.",
+      "part_identity": "df3f619804a92fdb"
     },
     {
       "id": "led_bracket_screws",
       "name": "M1.6x4mm ISO7045 stainless steel pan-head screw",
       "quantity": 2,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "window_retainer_print",
@@ -510,7 +773,18 @@
       "category": "mechanical",
       "source": "default",
       "selection_reason": "Internal U-ring and curved saddle feet clamp each pane shoulder against the100mm cabin; twoM2x6 per window.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "window_retainer_left",
+          "window_retainer_right"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "window_retainer_screws",
@@ -519,7 +793,11 @@
       "category": "mechanical",
       "source": "default",
       "selection_reason": "Four internal M2x6 socket-cap screws, two per pane; kit-derived nominal geometry, printed fit still needs coupon.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "skid_root_caps_print",
@@ -528,7 +806,20 @@
       "category": "mechanical",
       "source": "default",
       "selection_reason": "Four independently printable curved saddle caps,9.2mm OD,6.7mm cavity; two per skid, matching the sphere interior.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "skid_clamps_left",
+          "skid_clamp_right_aft",
+          "skid_clamps_right",
+          "skid_clamp_left_aft"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "skid_root_screws",
@@ -537,7 +828,11 @@
       "category": "mechanical",
       "source": "default",
       "selection_reason": "Four M2x8 socket-cap screws into5mm locating pins; internal heads; kit-derived nominal geometry, printed fit still needs coupon.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "rotor_bearing_spacer_print",
@@ -546,61 +841,137 @@
       "category": "mechanical",
       "source": "default",
       "selection_reason": "7.9mm spacer bears only on the two6800 outer races; separate from stationary inner spacer.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "rotor_bearing_spacer"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "rotor_inner_spacer_print",
       "name": "PETG bearing inner-race spacer,12.6mm OD,10.2mm ID,7.9mm long",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "rotor_inner_spacer"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "suspension_bolt",
       "name": "M4x90mm ISO10642 stainless steel countersunk socket screw",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "suspension_nut",
       "name": "M4 ISO4032 stainless steel hex nut",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "bearing_retaining_adhesive",
       "name": "Bearing-retaining adhesive compatible with PETG and steel; bond only outer races to rotor hub",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "magnet_base_print",
       "name": "White PETG magnetic cup,45mm OD,13.75mm high,30.3mm pocket1.5mm deep",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "magnet_base"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "mast_print",
       "name": "White PETG stepped hollow mast,visible13.5x33.95mm,12.6mm inner-race foot7.05mm long",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "mast"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "rotor_fixed_axle_print",
       "name": "White PETG9.8mm fixed axle with12.6mm lower inner-race shoulder,4.6mm bolt bore",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "bearing_pedestal"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "hub_cover_print",
       "name": "White PETG32.5mm rotor hub cover with integral outer-race retainer",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "hub_cover"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "diffuser_reversible_adhesive",
       "name": "Peelable elastic adhesive compatible with PETG for curved front and belly diffusers",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "usb_sense_bottom",
@@ -627,7 +998,11 @@
         "method": "manual"
       },
       "part_identity": "a768158e90bf6980",
-      "selection_reason": "Two150kohm resistors:R6 USB sense bottom andR7 fan VREF divider top."
+      "selection_reason": "Two150kohm resistors:R6 USB sense bottom andR7 fan VREF divider top.",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "female_housing_2",
@@ -635,7 +1010,11 @@
       "quantity": 7,
       "source": "default",
       "selection_reason": "Seven mainboard housings:J2,J3,J4,J5,J6,J7,J12;14mm total installed height. Side-window ends are separate low-profile solder sockets;do not buy nine standard crimp housings.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "female_housing_7",
@@ -643,7 +1022,11 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "J1;0.64mm square mating pins,7contacts;wire fanout to XIAO solder pads.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "female_contacts",
@@ -651,7 +1034,11 @@
       "quantity": 24,
       "source": "default",
       "selection_reason": "24 loose matching crimp contacts=7x2+7+3 for mainboard generic housings;window sockets include their own4contacts;three TE probe plugs use separate6TE contacts. >=3A for power contacts.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "power_wire",
@@ -659,7 +1046,11 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "24AWG red1m+black1m for protected PACK,motor and shared GND;raw cell leads supplied by spot-weld service. Finished cuts in harness table;no RAW negative Y split.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "signal_wire",
@@ -667,49 +1058,90 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "H01/H04/H05/H06/H07/H08 stock;total4m includes>=0.5m white for visible optical cavity. Finished26AWG OD<=1.1mm to match fanout/tip envelopes;NTC adapter OD0.89-1.4mm as separately specified. White COB insulation uses red/yellow end labels,not an extra thick sleeve.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "usb_cable",
       "name": "USB Type-C data+charge cable1m,slim plug body at most12.35x6.5mm at enclosure entry",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "usb_adapter",
       "name": "Regulated5V USB power supply,at least1A,matching USB cable",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "magnet_adhesive",
       "name": "Thin-bond two-part epoxy compatible with PETG and nickel-plated NdFeB,small kit",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "heatshrink",
       "name": "Heat shrink tube assortment1-4mm,small pack",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "insulation_tape",
       "name": "Polyimide insulating tape,10mm wide,one roll",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "solder_consumables",
       "name": "Electronics solder+flux,small manual assembly kit",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "charging_fit_shell_print",
-      "name": "Optional local USB-C curved shell fit-test coupon,approximately25.55x46x20.25mm;reuse main XIAO cassette and2xM1.6x5 screws",
+      "name": "Optional USB fit-test print set: local coupon shell x1 and test XIAO cassette x1",
       "quantity": 1,
-      "source": "default"
+      "source": "default",
+      "selection_reason": "Test fixture only;main unit uses integral chassis rails. Two M1.6x5 screws belong to coupon,not final lamp.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "scope": "optional_fit_test",
+        "design_id": "charging_fit",
+        "object_ids": [
+          "coupon_shell",
+          "controller_cassette"
+        ],
+        "material": "PETG",
+        "quantity_unit": "set"
+      }
     },
     {
       "id": "fan_driver",
@@ -736,7 +1168,11 @@
       },
       "selection_reason": "Current regulation and latched stall shutdown at1S voltage; no Basic candidate with the same functions was found. WQFN requires reflow assembly.",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20260228_TI-DRV8213RTER_C31829946_front.jpg",
-      "part_identity": "fd0f98923f06b2f6"
+      "part_identity": "fd0f98923f06b2f6",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "fan_current_scale",
@@ -763,7 +1199,11 @@
       },
       "selection_reason": "4.99k IPROPI resistor; AIPROPI205uA/A.",
       "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20221228/1B8B71093E88E17E066B810DDA7DEB84.jpg",
-      "part_identity": "8d35cea5d2708bde"
+      "part_identity": "8d35cea5d2708bde",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "fan_vref_bottom",
@@ -790,7 +1230,11 @@
       },
       "selection_reason": "22k bottom with150k top gives VREF=VBAT*22/172.",
       "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20251013/B224F7A864E47E44EFFD65D2C0C0EEFC.jpg",
-      "part_identity": "87defe7f967dadbb"
+      "part_identity": "87defe7f967dadbb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "fan_start_timer",
@@ -817,7 +1261,11 @@
       },
       "selection_reason": "470nF timer: nominal3.055s startup blanking.",
       "part_identity": "b716255ee5ac5e29",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250904_Samsung-Electro-Mechanics-CL10B474KA8NNNC_C1623_front.jpg"
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250904_Samsung-Electro-Mechanics-CL10B474KA8NNNC_C1623_front.jpg",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "fan_bulk",
@@ -844,7 +1292,11 @@
       },
       "selection_reason": "47uF10V1206 local motor input bulk; capacitance under DC bias must be checked on prototype.",
       "part_identity": "d75d2b09d9438e4d",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240318_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123_front.jpg"
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240318_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123_front.jpg",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "motor_mount_screws",
@@ -852,7 +1304,11 @@
       "quantity": 2,
       "source": "default",
       "selection_reason": "Through2mm motor plate into existing threaded metal gearbox;1mm engagement.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "motor_pulley_epoxy",
@@ -860,7 +1316,11 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Spot at exposed D-shaft/pulley end provides axial retention only. Do not bond motor bearing or gearbox; replace pulley and motor together for service.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_inductor",
@@ -888,7 +1348,11 @@
       "part_identity": "5150237d3fe3006c",
       "designators": [
         "L1"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_schottky",
@@ -916,7 +1380,11 @@
       "part_identity": "41c6c2dbcf61d42b",
       "designators": [
         "D1"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "thermal_adc",
@@ -944,7 +1412,11 @@
       "part_identity": "18b591faf1133c74",
       "designators": [
         "U3"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "thermal_probes",
@@ -969,7 +1441,11 @@
       "supply_risk": "No approved drop-in alternate. Preserve exact MPN; recheck LCSC stock at purchase. Extended or unknown library is acceptable here because assembly is commissioned/manual, not a JLC SMT placement order.",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20260603_R-O-HNTC-103F3950FB-100P_C52204608_front.jpg",
       "unit_price_cny": 1.3679,
-      "part_identity": "dd183359c4d6908c"
+      "part_identity": "dd183359c4d6908c",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_protection_ic",
@@ -997,7 +1473,11 @@
       "part_identity": "987c0d4d5dd22bf6",
       "designators": [
         "U4"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_protection_fets",
@@ -1029,7 +1509,11 @@
         "Q5",
         "Q6",
         "Q7"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_fuse",
@@ -1057,7 +1541,11 @@
       "part_identity": "942b5d8d4a9f1193",
       "designators": [
         "F1"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_sense_resistor",
@@ -1072,7 +1560,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R11"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_freq_resistor",
@@ -1088,7 +1580,11 @@
       "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9766003e8b0d81036438896263c3df0e.pdf?productCode=C1554283",
       "designators": [
         "R12"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_ovp_top",
@@ -1103,7 +1599,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R13"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_ovp_bottom",
@@ -1118,7 +1618,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R14"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_soft_start",
@@ -1133,7 +1637,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "C9"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_compensation",
@@ -1148,7 +1656,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "C10"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_dim_filter",
@@ -1164,7 +1676,11 @@
       "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/9766003e8b0d81036438896263c3df0e.pdf?productCode=C1554283",
       "designators": [
         "C11"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_input_cap",
@@ -1179,7 +1695,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "C12"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_output_caps",
@@ -1195,7 +1715,11 @@
       "designators": [
         "C13",
         "C14"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "led_bleeder",
@@ -1210,7 +1734,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R15"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "temperature_pullups",
@@ -1227,7 +1755,11 @@
         "R20",
         "R22",
         "R24"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "temperature_input_filter",
@@ -1245,7 +1777,11 @@
         "R23",
         "R25",
         "R28"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "temperature_filter_caps",
@@ -1263,7 +1799,11 @@
         "C18",
         "C19",
         "C20"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "i2c_pullups",
@@ -1279,7 +1819,11 @@
       "designators": [
         "R29",
         "R30"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_adc_top",
@@ -1294,7 +1838,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R26"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_adc_bottom",
@@ -1309,7 +1857,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R27"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "protection_bat_filter",
@@ -1324,7 +1876,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R16"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "protection_vminus",
@@ -1339,7 +1895,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R17"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "protection_gate_bleeds",
@@ -1355,7 +1915,11 @@
       "designators": [
         "R18",
         "R19"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "added_bypass",
@@ -1371,7 +1935,11 @@
       "designators": [
         "C15",
         "C16"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "thermal_header",
@@ -1386,7 +1954,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "J8"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "probe_headers",
@@ -1403,7 +1975,11 @@
         "J9",
         "J10",
         "J11"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "probe_female_housings",
@@ -1419,7 +1995,11 @@
       "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/2152979cf067360e65f60e8071bbc3ab.pdf?productCode=C457186",
       "selection_reason": "TE supplier drawing p1: housing2P A5.59+0.25/-0.13mm,12.95mm axial length,6.60mm max cross section,pitch2.54mm;accepts1375819 family. J10/J11 rotated90degrees,row alongX,centreX13.35;conservative installed/service reserve6.5x9x20mm includes14mm plug and6mm bend allowance. 3 probes labelled COB/SHELL/BAT. Supplier drawing envelope,not a supplier STEP model.",
       "supply_risk": "No substitute larger housing accepted without fit check. Supplied as commissioned terminated pigtail; mating pin force still requires physical trial.",
-      "part_identity": "18bfd25a90ea331e"
+      "part_identity": "18bfd25a90ea331e",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_spot_weld_service",
@@ -1427,23 +2007,11 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Exact bare cell with nickel tabs,positive insulating ring,24AWG red/black leads supplied by battery service;cut stock125/165mm,trim on routing jig. Wrapped cell reserveØ19x66.2mm;do not solder directly to cell.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "conformal_heat_spreaders",
-      "name": "Six-piece formed1050/1060 aluminium shell-liner set,0.5mm thick,about72.1cm2 equivalent area",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "Two fore,two aft,two cap liners fit the actual100mm cabin and avoid windows,skid roots,seams,USB and antenna. Bond to shell with<=0.15mm insulating thermal adhesive.72.1cm2 is volume/thickness equivalent metal area,not a verified thermal capacity. The500lx warm-state reading target remains unchanged.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "heat_transfer_straps",
-      "name": "1050/1060 aluminium removable thermal bridge,left and right",
-      "quantity": 2,
-      "source": "default",
-      "selection_reason": "Two1050/1060 aluminium thermal bridges AL02/03;open R4 NTC exit channel replaces R2.1. Mounting axes and thermal interfaces unchanged;use final STEP and drawings.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "internal_reflector",
@@ -1451,7 +2019,17 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Single connected ASA print combines reflector and two supports,retains original M1.6 mounting joints and screw positions;two bonded interfaces removed. Remove collector first,then withdraw entire insert through nose.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "optical_reflector"
+        ],
+        "material": "ASA",
+        "colour": "哑白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "protected_battery_header",
@@ -1466,6 +2044,10 @@
       "assembly": {
         "population": "mounted",
         "method": "manual"
+      },
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
       }
     },
     {
@@ -1481,7 +2063,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R31"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "protection_vss_link",
@@ -1496,7 +2082,11 @@
       "part_identity": "df3f619804a92fdb",
       "designators": [
         "R32"
-      ]
+      ],
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "probe_crimp_contacts",
@@ -1512,7 +2102,11 @@
       "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a26ea52adfaa35c6b4be41ca745dba3e.pdf?productCode=C86473",
       "selection_reason": "Exact1375820 housing contact family;datasheet p1:22-26AWG,insulationOD0.89-1.65mm. Crimp only onto specified26AWG adapter wire,not unspecified factory probe lead.",
       "supply_risk": "No substitute terminal without mechanical review. Order as a terminated pigtail to avoid crimp-tool minimum-order cost.",
-      "part_identity": "52e6783f7279b313"
+      "part_identity": "52e6783f7279b313",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "ntc_guide_ties",
@@ -1520,15 +2114,29 @@
       "quantity": 2,
       "source": "default",
       "selection_reason": "Two2.5x100 ties:one softly anchors H10 alongside+Y motor post,one closes existing lower guide for H11. New H01 guide tie is separately listed.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_cradle_print",
-      "name": "PETG transverse18650 cradle and removable end gate,two-piece set",
+      "name": "PETG removable battery end gate for integral chassis",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,one25mm strap,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after 26mm strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "Only the removable end gate is printed separately;cradle belongs to the unit chassis. Preserve two M2 gate screws and terminal/cushion clearances.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "print",
+        "design_id": "helicopter",
+        "object_ids": [
+          "battery_gate"
+        ],
+        "material": "PETG",
+        "colour": "白",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_gate_screws",
@@ -1536,7 +2144,11 @@
       "quantity": 2,
       "source": "default",
       "selection_reason": "Kit-generated recessed joints atX=+/-11.3,Y=24,Z=-8mm. Self-forming PETG pilot holes;no metal tapping of the printed part.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "battery_end_spacers",
@@ -1544,71 +2156,58 @@
       "quantity": 2,
       "source": "default",
       "selection_reason": "Axial buffers between cell end faces and end stops atY=+/-36.4,Z=-21mm. Keep terminal centre and spot-welded lead exits clear.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "battery_cradle_ties",
-      "name": "PA66 cable tie2.5x100mm,band<=0.8mm,head<=4.6x3.4x4.6mm",
-      "quantity": 2,
-      "source": "default",
-      "selection_reason": "Route through aligned deck/cradle slots atX=-2,Y=+/-17mm. Heads face outward below PCB. Two recessed deck seats protect solder tails. Cut for deep service and replace;buy spare ties. Separate from the two NTC-guide ties.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "thermal_upper_links",
-      "name": "1050/1060 aluminium upper-cap heat link,left and right",
-      "quantity": 2,
-      "source": "default",
-      "selection_reason": "Bond spherical feet to the cap liners with0.1mm insulating thermal adhesive. Lower planar lap interfaces atZ26/26.1 use0.1mm non-curing thermal filler;links leave with upper cap.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "thermal_contact_shoes",
-      "name": "1050/1060 aluminium spherical thermal contact shoes,fore/aft,left/right set",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "Four metal pieces. Spherical faces couple to lower shell liners through0.1mm non-curing insulating thermal filler;they remain removable. M1.6x0.35 through threads:1.25mm tap drill,not the modeled1.6mm major envelope. Disconnect four bridge screws before extracting shoes.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "thermal_contact_screws",
-      "name": "M1.6x10mm ISO4762 stainless steel socket-head cap screw",
-      "quantity": 4,
-      "source": "default",
-      "selection_reason": "Recessed0.1mm below thermal-bridge top.3.4mm counterbore,1.7mm deep;1.9mm bridge clearance bore. About1.6mm engagement in aluminium contact shoes. Fore axes[-28,+/-24],aft[27,+/-24.5].",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "thermal_clamp_screws",
-      "name": "M2x8mm ISO4762 stainless steel socket-head cap screw",
-      "quantity": 2,
-      "source": "default",
-      "selection_reason": "Clamp4mm bridge root plus0.1mm thermal layer into3mm tapped collector. Tip protrusion about0.9mm occurs beyond the COB footprint atY=+/-14.5.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "noncuring_thermal_filler",
       "name": "Electrically insulating non-curing thermal filler,k>=3W/mK,0.1mm installed gaps",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "Collector roots,bridge/shoe laps,shoe/liner spherical interfaces and cap split laps. Fill the specified thin gaps;avoid thick pads. Do not permanently glue removable contact shoes.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "Only thin electrically insulating shell-contact interfaces;no filler interfaces within monolithic thermal bridge.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "probe_retention_tape",
       "name": "10mm polyimide electrical-insulation tape,<=0.06mm thick",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "Hold battery NTC over a thin non-curing thermal layer so it can be removed without stripping the cell sleeve. COB and liner probes use insulating thermal adhesive away from solder pads and emitting area.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "Hold battery NTC over a thin non-curing thermal layer so it can be removed without stripping the cell sleeve. COB and shell probes use insulating thermal adhesive away from solder pads and emitting area.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "hex_key_1p5",
-      "name": "1.5mm hex key with slender shaft<=1.8mm diameter",
+      "name": "Wera950 PKLS L-key,metric,chrome plated,1.5x90mm (05022040001)",
       "quantity": 1,
       "source": "default",
-      "selection_reason": "For internal ISO4762 screws. Remove the upper assembly before reaching thermal-contact screws;verify the purchased key against the checked access corridor.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "Manufacturer90/4.5mm arms,Wera05022040001. Tool geometry checks include5mm threaded withdrawal,60degree re-indexing,key disengagement and ordinary hand seating/removal of freed screws. Shaft envelope1.8mm,bend envelope4.5mm are conservative engineering defaults;actual fit/torque not measured.",
+      "part_identity": "9e326b3cebec3f63",
+      "manufacturer": "Wera",
+      "part_number": "05022040001",
+      "product_url": "https://www.wera.de/en/05022040001",
+      "source_url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05022040001.pdf",
+      "manufacturer_dimensions": {
+        "across_flats_mm": 1.5,
+        "long_arm_mm": 90,
+        "short_arm_mm": 4.5,
+        "source": "manufacturer"
+      },
+      "datasheet_url": "https://hybris-media.wera.de/download/pdfgenerator-datasheets/en/05022040001.pdf",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "tool"
+      }
     },
     {
       "id": "female_housing_3",
@@ -1616,23 +2215,23 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "J8;3matching contacts included in24 loose contacts;0.64mm square mating pins.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "key_low_profile_sockets",
       "name": "2.54mm1x02 low-profile solder-wire female socket,body<=8.5mm,total depth<=11.5mm",
       "quantity": 2,
       "source": "default",
-      "selection_reason": "Custom harness termination specification;cross section<=3x5.6mm including insulation,contacts included. No extra PCB. Window ends only;fit actual0.64mm pins. Factory weld/solder and shrink must remain inside total envelope. Physical sample inspection required.",
-      "part_identity": "df3f619804a92fdb"
-    },
-    {
-      "id": "controller_wire_guide_print",
-      "name": "White ASA open main-loom guide,R3.6 bore,R5 outer,width2mm",
-      "quantity": 1,
-      "source": "default",
-      "selection_reason": "Internal guide on existing rear motor post;0.2mm peelable adhesive gap to flat post side. Remove before thermal bridge service. No exterior hole or new screw.",
-      "part_identity": "df3f619804a92fdb"
+      "selection_reason": "Custom harness termination specification;cross section<=3x5.6mm including insulation,contacts included. No extra PCB. Window ends only;fit actual0.64mm pins. Self-made soldered and heat-shrunk terminations must remain inside total envelope. Physical sample inspection required.",
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     },
     {
       "id": "controller_guide_tie",
@@ -1640,7 +2239,11 @@
       "quantity": 1,
       "source": "default",
       "selection_reason": "Closes new H01 open guide. Release or replace for deep service;do not compress wire insulation.",
-      "part_identity": "df3f619804a92fdb"
+      "part_identity": "df3f619804a92fdb",
+      "fulfilment": {
+        "method": "buy",
+        "scope": "finished_device"
+      }
     }
   ],
   "unresolved_items": []

@@ -241,8 +241,6 @@
         "deck_top_z": -6,
         "pcb_fr4_bottom_z": -4,
         "motor_axis_x": 23,
-        "motor_floor_z": 16.7,
-        "motor_cup_id": 24.8,
         "battery_envelope": {
           "shape": "cylinder",
           "diameter": 19,
@@ -257,14 +255,18 @@
         "printed_material": "PETG",
         "shell_mount_points": [
           [
-            -26,
-            -6
+            -30.5,
+            -33.8,
+            -7
           ],
           [
-            24,
-            -20
+            31,
+            -24,
+            -7
           ]
-        ]
+        ],
+        "mounting": "front horizontal locating pin,rear single M2x6 clamp;side insertion +Y removal",
+        "controller_support": "integral with carrier"
       },
       "source": "default"
     },
@@ -346,15 +348,11 @@
         "contact_face_flatness": 0.05,
         "contact_face_size_tolerance": 0.05,
         "unilateral_maximum_material_profile_tolerance": 0.1,
-        "liner_nominal_thickness": 0.5,
-        "liner_minimum_after_forming": 0.4,
-        "liner_max_outer_radius": 47.45,
-        "liner_min_inner_radius": 46.95,
         "edge_break_range": [
           0.1,
           0.2
         ],
-        "threads": "M1.6x0.35-6H and M2x0.4-6H;chip-free,hand assembly"
+        "threads": "整体热桥保留支座安装通孔，无旧接触座及桥根攻牙孔；通孔按螺钉连接模型加工"
       },
       "source": "default"
     },
@@ -367,8 +365,20 @@
       "source": "user"
     },
     "assembly_simplification": {
-      "value": "反光罩与两只ASA灯源支座合为一件；XIAO卡座集成可调板厚承托，取消独立垫片；两条10mm电池绑带改为一条25mm无扣绑带，轴向端挡仍独立可拆；保留现有照明热路、电池保护、三路温控和承重结构",
+      "value": "左右两半机壳；电池、主板/电机、XIAO承托和束线导向一体内架；反光罩/热桥先在壳外安装，单条宽绑带固定电池，可拆端挡；最终侧向装入，减少嵌套装配",
       "source": "default"
+    },
+    "assembly_architecture": {
+      "value": "左右分壳、单一内架、一体金属散热桥，尽可能减少组装动作；取消独立均热片",
+      "source": "user"
+    },
+    "thermal_construction": {
+      "value": "一件铝合金热桥集成COB承台、左右分支及大面积贴壳导热面；取消六片独立内衬、四只独立接触座、两个上部连接件及对应内部热界面。贴壳薄层导热材料和温控保留，读写照度验收不降低",
+      "source": "default"
+    },
+    "case_closure": {
+      "value": "左右壳连接须能自定位，并沿左右合壳方向真正拉紧拼缝；尽量减少独立零件和装配步骤，重做后验证完整装配顺序。",
+      "source": "user"
     }
   },
   "open_questions": []

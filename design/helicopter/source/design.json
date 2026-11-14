@@ -12,7 +12,7 @@
           "target": "fuselage",
           "order": 0,
           "path": "design/helicopter/source/parts/fuselage/000-fuselage.py",
-          "sha256": "c46695eba0eccce90eeaccb3ca191515f7a7d8224cab23e7a69746be4a29ebe4"
+          "sha256": "b70be96e9ca896534a060118bc35d39c23227a9e9b782ec161bd53504c856807"
         }
       ],
       "dependencies": [
@@ -60,7 +60,7 @@
           "target": "tail",
           "order": 0,
           "path": "design/helicopter/source/parts/tail/000-tail.py",
-          "sha256": "6d5920e04fe8cbc3940363c7adb79df8c7376ea2fded20b639e6755e724970a0"
+          "sha256": "6f9b721512451f1d8482c9029383bcad28a7ad602f40b4041123429b60d32f23"
         }
       ],
       "dependencies": []
@@ -345,7 +345,7 @@
           "target": "internal_carrier",
           "order": 0,
           "path": "design/helicopter/source/parts/internal_carrier/000-internal_carrier.py",
-          "sha256": "743ffc231c2d1007f147191fb57292c8193ffb34167a2be76c50622d5539f555"
+          "sha256": "003f40475787b5b5c4b72a62c50298484d9889f43e6a4d41d2d8478072d6fdf7"
         }
       ],
       "dependencies": [
@@ -369,22 +369,6 @@
       ]
     },
     {
-      "id": "controller_cassette",
-      "label": "controller_cassette",
-      "cells": [
-        {
-          "id": "controller_cassette",
-          "target": "controller_cassette",
-          "order": 0,
-          "path": "design/helicopter/source/parts/controller_cassette/000-controller_cassette.py",
-          "sha256": "4c8bc37fe8630590ad31326006d26b815ffe152a7a31b746bd5f35ef0a5cc0bb"
-        }
-      ],
-      "dependencies": [
-        "fuselage"
-      ]
-    },
-    {
       "id": "heat_spreader",
       "label": "heat_spreader",
       "cells": [
@@ -393,11 +377,22 @@
           "target": "heat_spreader",
           "order": 0,
           "path": "design/helicopter/source/parts/heat_spreader/000-heat_spreader.py",
-          "sha256": "ee6738d9147f3581a847e621663b942e8177b18239fbd32a4571d8597e31620e"
+          "sha256": "17b1ea100c79539cfc80a9e748ef56d0c689611e06c3caf03b0e2c3a4ed9c85d"
         }
       ],
       "dependencies": [
-        "internal_carrier"
+        "fuselage",
+        "internal_carrier",
+        "fuselage_cap",
+        "skid_left",
+        "skid_right",
+        "tail",
+        "window_retainer_left",
+        "window_retainer_right",
+        "skid_retainer_left",
+        "skid_retainer_right",
+        "skid_retainer_left_aft",
+        "skid_retainer_right_aft"
       ]
     },
     {
@@ -423,7 +418,7 @@
           "target": "fuselage_cap",
           "order": 0,
           "path": "design/helicopter/source/parts/fuselage_cap/000-fuselage_cap.py",
-          "sha256": "9844884eec089041ec5f6db5755989415cad03db11f167e6c3b55023d5369bcb"
+          "sha256": "2c8c18b72f06cec9489b09e08655d80dabe946b78cba19cb43e59a904dfa6915"
         }
       ],
       "dependencies": [
@@ -608,20 +603,6 @@
       "dependencies": []
     },
     {
-      "id": "battery_cradle",
-      "label": "battery_cradle",
-      "cells": [
-        {
-          "id": "battery_cradle",
-          "target": "battery_cradle",
-          "order": 0,
-          "path": "design/helicopter/source/parts/battery_cradle/000-battery_cradle.py",
-          "sha256": "80a5581b66735edc08e53bbf2ca55e39a55006ccfd2de6dd44474834b9db3f8f"
-        }
-      ],
-      "dependencies": []
-    },
-    {
       "id": "battery_gate",
       "label": "battery_gate",
       "cells": [
@@ -630,150 +611,11 @@
           "target": "battery_gate",
           "order": 0,
           "path": "design/helicopter/source/parts/battery_gate/000-battery_gate.py",
-          "sha256": "157d32cf6b83310ca9957dedad960b6a52f432371f3907af1cfb72481007630e"
+          "sha256": "7159759f4302f1d7204bc30ae7937b82ec18aa3938ff2727d62ce76f4dcf1f04"
         }
       ],
       "dependencies": [
-        "battery_cradle"
-      ]
-    },
-    {
-      "id": "liner_left",
-      "label": "liner_left",
-      "cells": [
-        {
-          "id": "liner_left",
-          "target": "liner_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/liner_left/000-liner_left.py",
-          "sha256": "166562d42f8b884b1a0d2439bcc036be111d424c5301bd166c15649be3084ba4"
-        }
-      ],
-      "dependencies": [
-        "fuselage",
-        "fuselage_cap",
-        "skid_left",
-        "skid_right",
-        "tail",
-        "window_retainer_left",
-        "window_retainer_right",
-        "skid_retainer_left",
-        "skid_retainer_right",
-        "skid_retainer_left_aft",
-        "skid_retainer_right_aft"
-      ]
-    },
-    {
-      "id": "liner_right",
-      "label": "liner_right",
-      "cells": [
-        {
-          "id": "liner_right",
-          "target": "liner_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/liner_right/000-liner_right.py",
-          "sha256": "3dd1d60d393819ddfb5fa09db715d2edd815e27ea5eba921930814b1423f6144"
-        }
-      ],
-      "dependencies": [
-        "liner_left"
-      ]
-    },
-    {
-      "id": "cap_liner_left",
-      "label": "cap_liner_left",
-      "cells": [
-        {
-          "id": "cap_liner_left",
-          "target": "cap_liner_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/cap_liner_left/000-cap_liner_left.py",
-          "sha256": "c382d3798e49dfe9707efc964fc45964ecd827f2a38534e2e45f1e7b7a2f0b69"
-        }
-      ],
-      "dependencies": [
-        "liner_left"
-      ]
-    },
-    {
-      "id": "cap_liner_right",
-      "label": "cap_liner_right",
-      "cells": [
-        {
-          "id": "cap_liner_right",
-          "target": "cap_liner_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/cap_liner_right/000-cap_liner_right.py",
-          "sha256": "68a0a1d31572a32c881c1a8bc152ba14807151b917f3bbe8f4ff9fd2c8afc866"
-        }
-      ],
-      "dependencies": [
-        "liner_left"
-      ]
-    },
-    {
-      "id": "liner_aft_left",
-      "label": "liner_aft_left",
-      "cells": [
-        {
-          "id": "liner_aft_left",
-          "target": "liner_aft_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/liner_aft_left/000-liner_aft_left.py",
-          "sha256": "6da544395fb86bc953a45488508698a379e0bd955090e6091623c7ac424d2078"
-        }
-      ],
-      "dependencies": [
-        "liner_left"
-      ]
-    },
-    {
-      "id": "liner_aft_right",
-      "label": "liner_aft_right",
-      "cells": [
-        {
-          "id": "liner_aft_right",
-          "target": "liner_aft_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/liner_aft_right/000-liner_aft_right.py",
-          "sha256": "cba813e552153a81d70a690d6dc6884e100ed0c5c99b22f60008d397a808ba34"
-        }
-      ],
-      "dependencies": [
-        "liner_left"
-      ]
-    },
-    {
-      "id": "thermal_bridge_left",
-      "label": "thermal_bridge_left",
-      "cells": [
-        {
-          "id": "thermal_bridge_left",
-          "target": "thermal_bridge_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_bridge_left/000-thermal_bridge_left.py",
-          "sha256": "0476834fdfd6a0ec99e78286f6454e6eb0b0cdb58551ec2929a96414f68dfef4"
-        }
-      ],
-      "dependencies": [
-        "internal_carrier",
-        "liner_left"
-      ]
-    },
-    {
-      "id": "thermal_bridge_right",
-      "label": "thermal_bridge_right",
-      "cells": [
-        {
-          "id": "thermal_bridge_right",
-          "target": "thermal_bridge_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_bridge_right/000-thermal_bridge_right.py",
-          "sha256": "93d85a22df5aaf146af0667a645292e874efc64bb660f3f184d6469a3861196e"
-        }
-      ],
-      "dependencies": [
-        "thermal_bridge_left"
+        "internal_carrier"
       ]
     },
     {
@@ -785,11 +627,11 @@
           "target": "battery_strap_front",
           "order": 0,
           "path": "design/helicopter/source/parts/battery_strap_front/000-battery_strap_front.py",
-          "sha256": "62eb9ab3869cd1251f18a901ad636f55a19c31aa11b35e5ef59cf59dd0930dd8"
+          "sha256": "7a5b75bf8ed9310e3db6bd24f766503620d5bdbf1c8c55b4dde19865797bf945"
         }
       ],
       "dependencies": [
-        "battery_cradle"
+        "internal_carrier"
       ]
     },
     {
@@ -817,43 +659,11 @@
           "target": "battery_reference",
           "order": 0,
           "path": "design/helicopter/source/parts/battery_reference/000-battery_reference.py",
-          "sha256": "a0d934ec40412183ba760b5133a9354acaae02ad5d49e406c15c3a018126ad6d"
+          "sha256": "b75d4626e348ad20728522ae4146d4803c89e29f0f433c31ecbdb39ce78dcddb"
         }
       ],
       "dependencies": [
-        "battery_cradle"
-      ]
-    },
-    {
-      "id": "cradle_tie_front",
-      "label": "cradle_tie_front",
-      "cells": [
-        {
-          "id": "cradle_tie_front",
-          "target": "cradle_tie_front",
-          "order": 0,
-          "path": "design/helicopter/source/parts/cradle_tie_front/000-cradle_tie_front.py",
-          "sha256": "5f647ca5928810df19b71f9cbb656fc79691337ce96eec1598ae446c6921e22a"
-        }
-      ],
-      "dependencies": [
-        "battery_cradle"
-      ]
-    },
-    {
-      "id": "cradle_tie_rear",
-      "label": "cradle_tie_rear",
-      "cells": [
-        {
-          "id": "cradle_tie_rear",
-          "target": "cradle_tie_rear",
-          "order": 0,
-          "path": "design/helicopter/source/parts/cradle_tie_rear/000-cradle_tie_rear.py",
-          "sha256": "cc088b7b77fe6f9fb6307b87629e29d286736cbe6c5d6052f73e0459729daad0"
-        }
-      ],
-      "dependencies": [
-        "cradle_tie_front"
+        "internal_carrier"
       ]
     },
     {
@@ -881,11 +691,11 @@
           "target": "battery_end_pad_front",
           "order": 0,
           "path": "design/helicopter/source/parts/battery_end_pad_front/000-battery_end_pad_front.py",
-          "sha256": "b09d481508abfc77390265992d525a72aa841b63b55e9de4fd2b04c03de2f974"
+          "sha256": "04fb56d7c31595866e8406081fc0f36ebe85714c0972bb2b3be364501bec60f7"
         }
       ],
       "dependencies": [
-        "battery_cradle"
+        "internal_carrier"
       ]
     },
     {
@@ -905,139 +715,6 @@
       ]
     },
     {
-      "id": "thermal_interfaces_left",
-      "label": "thermal_interfaces_left",
-      "cells": [
-        {
-          "id": "thermal_interfaces_left",
-          "target": "thermal_interfaces_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_interfaces_left/000-thermal_interfaces_left.py",
-          "sha256": "913f0a7822c673015b5b53365be92671d79311dbf671fc37fd43215db02db330"
-        }
-      ],
-      "dependencies": [
-        "thermal_bridge_left",
-        "internal_carrier",
-        "liner_left",
-        "liner_aft_left",
-        "cap_liner_left",
-        "heat_spreader"
-      ]
-    },
-    {
-      "id": "thermal_interfaces_right",
-      "label": "thermal_interfaces_right",
-      "cells": [
-        {
-          "id": "thermal_interfaces_right",
-          "target": "thermal_interfaces_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_interfaces_right/000-thermal_interfaces_right.py",
-          "sha256": "a0305619e914098a056ff49b6d68d93a47d15bf5a06266ffc942b199b9d6cbfd"
-        }
-      ],
-      "dependencies": [
-        "thermal_interfaces_left"
-      ]
-    },
-    {
-      "id": "upper_heat_link_left",
-      "label": "upper_heat_link_left",
-      "cells": [
-        {
-          "id": "upper_heat_link_left",
-          "target": "upper_heat_link_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/upper_heat_link_left/000-upper_heat_link_left.py",
-          "sha256": "d6e9cef7b0cd0c2779f5cbe8ba89789e43dd387aaf501e87356244ddf6ceb50c"
-        }
-      ],
-      "dependencies": [
-        "thermal_bridge_left"
-      ]
-    },
-    {
-      "id": "upper_heat_link_right",
-      "label": "upper_heat_link_right",
-      "cells": [
-        {
-          "id": "upper_heat_link_right",
-          "target": "upper_heat_link_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/upper_heat_link_right/000-upper_heat_link_right.py",
-          "sha256": "4db375d1d5fee057d22287b7eb1efec21413e62e89502d4a9d67c2057979b21c"
-        }
-      ],
-      "dependencies": [
-        "upper_heat_link_left"
-      ]
-    },
-    {
-      "id": "thermal_fore_shoe_left",
-      "label": "thermal_fore_shoe_left",
-      "cells": [
-        {
-          "id": "thermal_fore_shoe_left",
-          "target": "thermal_fore_shoe_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_fore_shoe_left/000-thermal_fore_shoe_left.py",
-          "sha256": "664fafdf8a152ad751145c3017047c58e40301b6c7065d2d239cd5a15de4cf37"
-        }
-      ],
-      "dependencies": [
-        "thermal_bridge_left"
-      ]
-    },
-    {
-      "id": "thermal_fore_shoe_right",
-      "label": "thermal_fore_shoe_right",
-      "cells": [
-        {
-          "id": "thermal_fore_shoe_right",
-          "target": "thermal_fore_shoe_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_fore_shoe_right/000-thermal_fore_shoe_right.py",
-          "sha256": "60d31b016335735b07ad356d841e7d26b912dae44852725a355abf3ad2ca4b99"
-        }
-      ],
-      "dependencies": [
-        "thermal_bridge_left"
-      ]
-    },
-    {
-      "id": "thermal_aft_shoe_left",
-      "label": "thermal_aft_shoe_left",
-      "cells": [
-        {
-          "id": "thermal_aft_shoe_left",
-          "target": "thermal_aft_shoe_left",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_aft_shoe_left/000-thermal_aft_shoe_left.py",
-          "sha256": "c5b94abe54e12318e34e6a0dd288aca2f8a095ef8ac4805520685fed15b2bfb1"
-        }
-      ],
-      "dependencies": [
-        "thermal_bridge_left"
-      ]
-    },
-    {
-      "id": "thermal_aft_shoe_right",
-      "label": "thermal_aft_shoe_right",
-      "cells": [
-        {
-          "id": "thermal_aft_shoe_right",
-          "target": "thermal_aft_shoe_right",
-          "order": 0,
-          "path": "design/helicopter/source/parts/thermal_aft_shoe_right/000-thermal_aft_shoe_right.py",
-          "sha256": "1df1dc92b0efc1c4471405dffc21148e9904987d455d7a643505bacb59513953"
-        }
-      ],
-      "dependencies": [
-        "thermal_bridge_left"
-      ]
-    },
-    {
       "id": "ntc_battery_reference",
       "label": "ntc_battery_reference",
       "cells": [
@@ -1046,11 +723,11 @@
           "target": "ntc_battery_reference",
           "order": 0,
           "path": "design/helicopter/source/parts/ntc_battery_reference/000-ntc_battery_reference.py",
-          "sha256": "70f6e74e640d8f8f39c35384701ceda95411e61bd2fddb66c38a84c7371351e3"
+          "sha256": "0d67d593d98733c61094bd87b7e38783c1d7a65977b24dc52bdc562837e0211e"
         }
       ],
       "dependencies": [
-        "battery_cradle"
+        "internal_carrier"
       ]
     },
     {
@@ -1079,12 +756,10 @@
           "target": "ntc_shell_reference",
           "order": 0,
           "path": "design/helicopter/source/parts/ntc_shell_reference/000-ntc_shell_reference.py",
-          "sha256": "b5b5aed8d949ad63ee0f051fcba69ece0899afd830e49a325d6c016b283aef82"
+          "sha256": "c944b350699586c20c8108dbbcaeb8f232759dca50902170e96fdb2e71f05422"
         }
       ],
-      "dependencies": [
-        "liner_left"
-      ]
+      "dependencies": []
     },
     {
       "id": "optical_reflector",
@@ -1095,12 +770,11 @@
           "target": "optical_reflector",
           "order": 0,
           "path": "design/helicopter/source/parts/optical_reflector/000-optical_reflector.py",
-          "sha256": "c012e8b8ea4de30d3ce5c14f22359f3ff789bb01f57bd2953a2132dbbc7a18d2"
+          "sha256": "979513ed8121204965d0e9f28f4b1b72e0e3ae3da0ad6400ab191d61f7660bf3"
         }
       ],
       "dependencies": [
         "internal_carrier",
-        "battery_cradle",
         "battery_gate",
         "fuselage"
       ]
@@ -1114,37 +788,24 @@
           "target": "complete_harness",
           "order": 0,
           "path": "design/helicopter/source/parts/complete_harness/000-complete_harness.py",
-          "sha256": "12068f5adbf94ca0fbbeff4214b3c179efa7a430baae03ca1de9d8a3ebb8e67b"
+          "sha256": "5b8ee1de5de88fc7ca7480c39be66c3c3ed533b083d3dde1e7ad4a3e42b1cf39"
         }
       ],
       "dependencies": [
+        "internal_carrier",
         "key_board_pair"
       ]
-    },
-    {
-      "id": "controller_wire_guide",
-      "label": "controller_wire_guide",
-      "cells": [
-        {
-          "id": "controller_wire_guide",
-          "target": "controller_wire_guide",
-          "order": 0,
-          "path": "design/helicopter/source/parts/controller_wire_guide/000-controller_wire_guide.py",
-          "sha256": "3d43c212bdd6b7334276f5de697f36c57ae6fd84a009f0c94ffaf3c7311c6d5b"
-        }
-      ],
-      "dependencies": []
     }
   ],
   "objects": [
     {
       "id": "carrier_shell_screws",
       "target": "fuselage",
-      "label": "内部托架固定螺钉",
+      "label": "内架单颗固定螺钉",
       "material": "stainless_steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "d52b4d50243337a9967ec7a2aadf81fec79d2e370815eb581c6baed2159d425e",
+      "shapeHash": "837a790a2f394a28c6f95aea7c6079fecc546384e610ea38d0ffea93272a7aed",
       "transform": {
         "positionMm": [
           0,
@@ -1166,13 +827,41 @@
       "datums": []
     },
     {
-      "id": "controller_mount_screws",
+      "id": "case_front_screw",
       "target": "fuselage",
-      "label": "充电基板卡座螺钉",
+      "label": "前口锁壳螺钉",
       "material": "stainless_steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "75ecf7e778515f274c5e4fdfde1660d9fbc240ecbe7615c73ff758b1d73c739c",
+      "shapeHash": "ffecb50f4ccbb0a59bd1802975badf3c0df94bfb9c54d7866189849e2ee1b6ba",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "case_rear_screw",
+      "target": "fuselage",
+      "label": "底口后锁壳螺钉",
+      "material": "stainless_steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "7febc0a5fd044675d8ce3ff3a30e3fee3903b1a73facc6dcc6d509422d3faebf",
       "transform": {
         "positionMm": [
           0,
@@ -1199,35 +888,7 @@
       "label": "天蓝色机身",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "d6cbcff9d0af22cb9e717efc46cb01715f9c95fd9bb1539dc4da5d672266256c",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "service_screws",
-      "target": "fuselage",
-      "label": "机身检修固定螺钉",
-      "material": "stainless_steel",
-      "role": "fastener",
-      "kind": "generated",
-      "shapeHash": "8509cb90724099b3ce4fbdfe9ce2efac711150fa10dfcc8cd05e53b0721605c0",
+      "shapeHash": "c91a31d500db4de71e5763d8848424370a6bdaab5237da982220de8767c8c4f3",
       "transform": {
         "positionMm": [
           0,
@@ -1255,7 +916,7 @@
       "material": "stainless_steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "78b732616a3100879fedfcc2856c4c21584b27e540457704bf91b32e88c3a5b0",
+      "shapeHash": "baa04a05f2823a6a91db25e921b914f83aabfd189d70874f5cba24b804af19e2",
       "transform": {
         "positionMm": [
           0,
@@ -1336,7 +997,7 @@
       "label": "尾梁与尾翼",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "d2f8d5681110e64ee4a4c85001de695262bfb016c98908822dfcb75432535a43",
+      "shapeHash": "efbfaeaf69649260549cba7bf3bac1ac62039fb092f48dbd8df2663905515a21",
       "transform": {
         "positionMm": [
           47.5,
@@ -1364,7 +1025,7 @@
       "material": "stainless_steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "d9ea7a529118e61ff71958911b648c39285c3963c425c267efe0629009628f16",
+      "shapeHash": "c7c432fc7dd817d4dd1ae67dfc59f61b5aa98750a74f83233ae46065bc63d9b9",
       "transform": {
         "positionMm": [
           47.5,
@@ -2005,6 +1666,34 @@
       "datums": []
     },
     {
+      "id": "led_bracket_screws",
+      "target": "internal_carrier",
+      "label": "COB支座固定螺钉",
+      "material": "stainless_steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "45fe1d7e6f1e8c1677d3888bc7e1b4d0484a529e90db698d09e073df454c58fb",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
       "id": "heat_mount_screws",
       "target": "internal_carrier",
       "label": "COB集热板固定螺钉",
@@ -2033,12 +1722,13 @@
       "datums": []
     },
     {
-      "id": "internal_carrier",
+      "id": "unit_frame_gate_screws",
       "target": "internal_carrier",
-      "label": "电路电池电机托架",
-      "material": "petg",
+      "label": "电池端挡固定螺钉",
+      "material": "stainless_steel",
+      "role": "fastener",
       "kind": "generated",
-      "shapeHash": "139979eb4ade89b1f06786c3620f3bd7f0790a384c1a9aca1c184e87c721e46b",
+      "shapeHash": "1ff43743e1c2eb701c8e29f8f610ef0e1579765538a6cbd55f72cc5a5d736319",
       "transform": {
         "positionMm": [
           0,
@@ -2060,13 +1750,12 @@
       "datums": []
     },
     {
-      "id": "led_bracket_screws",
+      "id": "internal_carrier",
       "target": "internal_carrier",
-      "label": "COB支座固定螺钉",
-      "material": "stainless_steel",
-      "role": "fastener",
+      "label": "电池电路电机一体内架",
+      "material": "petg",
       "kind": "generated",
-      "shapeHash": "45fe1d7e6f1e8c1677d3888bc7e1b4d0484a529e90db698d09e073df454c58fb",
+      "shapeHash": "e6e82578a1253bd7e867f0167ab8bc7c2bb94290d87f55ddc39610086e3468a8",
       "transform": {
         "positionMm": [
           0,
@@ -2143,39 +1832,12 @@
       "datums": []
     },
     {
-      "id": "controller_cassette",
-      "target": "controller_cassette",
-      "label": "一体承托XIAO卡座",
-      "material": "petg",
-      "kind": "generated",
-      "shapeHash": "b2293fad8f35f1cab9e1875341197222146c3f315834432471208c08ef2bdc88",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "heat_spreader",
       "target": "heat_spreader",
-      "label": "COB铝集热板",
+      "label": "一体金属散热桥",
       "material": "aluminum",
       "kind": "generated",
-      "shapeHash": "8d86e6a5801810177f010217eaf91a8a4586d04f1682b41f3c06a9c1577c2c32",
+      "shapeHash": "06a1bd0d638fa1685051d2f884e5019836b59c694f040666f5b6629b8e009c67",
       "transform": {
         "positionMm": [
           0,
@@ -2227,10 +1889,10 @@
     {
       "id": "fuselage_cap",
       "target": "fuselage_cap",
-      "label": "天蓝色可拆机身上盖",
+      "label": "可拆机壳半边",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "4bb3945c09ef87fa373e7e4aaebf1a55dbf76d630dd7782e3b92d3034b9008e8",
+      "shapeHash": "e4e161ace61f9fcb4fd4379545df2011e4a1a106a010de685e001d01ccdb12d5",
       "transform": {
         "positionMm": [
           0,
@@ -2339,7 +2001,7 @@
       "label": "右圆窗压环及限位",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "6bace886434c025c2655cb4749c3210c29bd552be32d4b8b8892deb83c472275",
+      "shapeHash": "07bc64a3c0c4a6a863789d7a0e8ac1320e39400efa44ca90c9fa7c031bfb9ba5",
       "transform": {
         "positionMm": [
           0,
@@ -2578,339 +2240,12 @@
       "datums": []
     },
     {
-      "id": "battery_cradle",
-      "target": "battery_cradle",
-      "label": "18650可拆托座",
-      "material": "petg",
-      "kind": "generated",
-      "shapeHash": "0060a58fe28c581a1f8a268d3429433c2bb38a70559ad267e23ed7d33197d35e",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "battery_gate_screws",
-      "target": "battery_cradle",
-      "label": "电池端挡固定螺钉",
-      "material": "stainless_steel",
-      "role": "fastener",
-      "kind": "generated",
-      "shapeHash": "726c0462333c054563f9338713cf9ddeb3775011cda4331c1325cd8fafe7b575",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "battery_gate",
       "target": "battery_gate",
       "label": "电池可拆端挡",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "459dcb997e1755da22c0bd3e17056f1824316a03f8e9bf793f6518ae152f84af",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "liner_left",
-      "target": "liner_left",
-      "label": "左前贴壳均热片",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "1a31449993ebe3e8c71ca84d62798bcb5cbff920ecf9b3bbf2fc7ed42952bc84",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "liner_right",
-      "target": "liner_right",
-      "label": "右前贴壳均热片",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "4010f7673a761a96542f85b67f9d316be06b0d52e06e65660b969041606ad853",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "cap_liner_left",
-      "target": "cap_liner_left",
-      "label": "上盖左均热片",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "2d89d5d82b706816c5f477316337c294eb780087d27572bd94108a588668bec1",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "cap_liner_right",
-      "target": "cap_liner_right",
-      "label": "上盖右均热片",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "f3e6fec0e88417ae0b16fc8aa9371c6577c10228f6e27ed886e6398b97a80ee3",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "liner_aft_left",
-      "target": "liner_aft_left",
-      "label": "左后贴壳均热片",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "f7455f51941261463b71811f0222acbb31274b1dcfc01bca89dfb7be87e0bc46",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "liner_aft_right",
-      "target": "liner_aft_right",
-      "label": "右后贴壳均热片",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "49fe9cb486654b620f8aec8874ffbc4468b5fb939cd6a31532eb6153428227ed",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_bridge_left",
-      "target": "thermal_bridge_left",
-      "label": "左铝导热桥",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "77c7b35d8e7e4427349bc12de46942232495cea9903ecbbda02f624b68d75b4f",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_clamp_screws",
-      "target": "thermal_bridge_left",
-      "label": "导热桥M2×8夹紧螺钉",
-      "material": "stainless_steel",
-      "role": "fastener",
-      "kind": "generated",
-      "shapeHash": "a97d62d522c75f10405395bb4065056dc829925fa0885416950c667d5ae27015",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_contact_screws",
-      "target": "thermal_bridge_left",
-      "label": "导热接触座M1.6螺钉",
-      "material": "stainless_steel",
-      "role": "fastener",
-      "kind": "generated",
-      "shapeHash": "529ba29b2d3ed468c8d83078d74e257908c8f0f4805209d51b451c46fc432f84",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_bridge_right",
-      "target": "thermal_bridge_right",
-      "label": "右铝导热桥",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "4193b6062c7db8dfbdd5df551faab1eff47b107e6a12783463ab42104078ec92",
+      "shapeHash": "f1a4906488b01622d52bad07fdf68997ac50cfcc343c43070aed570f9ebddcb5",
       "transform": {
         "positionMm": [
           0,
@@ -2937,7 +2272,7 @@
       "label": "单条宽电池绑带",
       "material": "nylon",
       "kind": "generated",
-      "shapeHash": "915b7ea8c469ee2391f58b12075560aaa501e391fdf0115c3a1e3f0932e3e5fc",
+      "shapeHash": "e30f1909e62d4a2d73664280011272e3de941e1240f838e9c7cbe80cf6ca6cf9",
       "transform": {
         "positionMm": [
           0,
@@ -2992,62 +2327,6 @@
       "role": "reference",
       "kind": "generated",
       "shapeHash": "4f41e1757a4ac6b57004509064198db511736d21f587647efd76d181fe30578e",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "cradle_tie_front",
-      "target": "cradle_tie_front",
-      "label": "前托座扎带包络",
-      "material": "nylon",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "872a3ff88412f2f29f7a3097339bf40868b011d71d21283a1e2415e7d433c542",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "cradle_tie_rear",
-      "target": "cradle_tie_rear",
-      "label": "后托座扎带包络",
-      "material": "nylon",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "1b5fb40c66fb624e50339025000764ad4ac2d3532850f35c54c12206cbf45497",
       "transform": {
         "positionMm": [
           0,
@@ -3150,560 +2429,6 @@
       "datums": []
     },
     {
-      "id": "thermal_aft_pad_left",
-      "target": "thermal_interfaces_left",
-      "label": "左导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "20bbc8217dbd4592433b902c6636bb6b2bc993afccd624000f236c2f2d02dc08",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_cap_pad_left",
-      "target": "thermal_interfaces_left",
-      "label": "左导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "9ff201217f9ed65fce266da94c7a5ca5fa4dd565b334b95aa17774b7dd40a87c",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_couple_aft_pad_left",
-      "target": "thermal_interfaces_left",
-      "label": "左导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "a3d8578471dad900d9b10b709c2ddfb99a3d7f2ff774716ce75aac1dcab9761c",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_couple_cap_pad_left",
-      "target": "thermal_interfaces_left",
-      "label": "左导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "eb3f11760e816b5aec7eef3e41ea945306867f2149fec1824118cf72c5be675d",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_couple_fore_pad_left",
-      "target": "thermal_interfaces_left",
-      "label": "左导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "7b4aee616501b956d19dba3955804138a966d595ad9b19daad636bfbc1c20e57",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_fore_pad_left",
-      "target": "thermal_interfaces_left",
-      "label": "左导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "d7d5112322bfa534416819d78d359e2bee791b035857bbc12d11bbd1f12e3aa3",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_root_pad_left",
-      "target": "thermal_interfaces_left",
-      "label": "左导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "d800582fadc877b4579b1ff960baafea3b53656d92101a745adbfe5fd206bf6c",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_aft_pad_right",
-      "target": "thermal_interfaces_right",
-      "label": "右导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "db3d5446f3484d65be0c1f263b30039fb1d121baa60c6b171453e9596cdce69a",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_cap_pad_right",
-      "target": "thermal_interfaces_right",
-      "label": "右导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "df66ebd9c0667d9e0575d94c2e799d9f9b8d9436b0233289dfcc7f0c30ec220b",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_couple_aft_pad_right",
-      "target": "thermal_interfaces_right",
-      "label": "右导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "441dd4eff251f693143c1044b0fdb348f8ac8899725f3e355cc4b80c115de0aa",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_couple_cap_pad_right",
-      "target": "thermal_interfaces_right",
-      "label": "右导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "5fbc0e6ba508c6d04a6d3bc07e5616e3d5dfea43a95df9277680a6c4a098b377",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_couple_fore_pad_right",
-      "target": "thermal_interfaces_right",
-      "label": "右导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "1c5d2424acdbdb7d17e7ac145175b4a0568c2cb017418816595db66718d8563a",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_fore_pad_right",
-      "target": "thermal_interfaces_right",
-      "label": "右导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "e09402809435969a8e0fcff6d20020f7342b7909ac8fdaad8218da0f95015ce2",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_root_pad_right",
-      "target": "thermal_interfaces_right",
-      "label": "右导热界面层",
-      "material": "silicone",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "d7990abca7532f324393bfb44305391a33e9e2399107be64e7d30421d0d7d0aa",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "upper_heat_link_left",
-      "target": "upper_heat_link_left",
-      "label": "上盖左导热连接件",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "adda2e99a1c925f55a13b9a6824f14889b4c20318751d036dc2ab104dadd8ed4",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "upper_heat_link_right",
-      "target": "upper_heat_link_right",
-      "label": "上盖右导热连接件",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "395361836c4c21cfad6b91c98683d7936b582c98c982b7f4144b0682663790ed",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_fore_shoe_left",
-      "target": "thermal_fore_shoe_left",
-      "label": "固定导热接触座",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "dae1f701bc1c9af730344a7b1534c2c05664fd4ebd74cfe4599c9b92e253b061",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_fore_shoe_right",
-      "target": "thermal_fore_shoe_right",
-      "label": "固定导热接触座",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "1da0ae313728e7589b3c76ae381f47e5fbb4e2bec05d370cccd45e7a0cdb72ba",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_aft_shoe_left",
-      "target": "thermal_aft_shoe_left",
-      "label": "固定导热接触座",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "920854b8cea2278a327a86747dc039fe5d7ebe196b2a1b853832c3f346a7e2b0",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "thermal_aft_shoe_right",
-      "target": "thermal_aft_shoe_right",
-      "label": "固定导热接触座",
-      "material": "aluminum",
-      "kind": "generated",
-      "shapeHash": "56539acca150e35066ead95963356491b3416e656230521d95a8bdc839ba4a70",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "ntc_battery_reference",
       "target": "ntc_battery_reference",
       "label": "电芯探头上限包络",
@@ -3760,10 +2485,10 @@
     {
       "id": "ntc_shell_reference",
       "target": "ntc_shell_reference",
-      "label": "壳体探头上限包络",
+      "label": "热桥贴壳处温度探头",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "e77d896510d186bce549a0e5a91e9ea4b9cba7c144ea62d7bab4942058dc3629",
+      "shapeHash": "030dfee96152c81f18d6ba6a3bdb3600656bc92a05305636705487f9d41bb21a",
       "transform": {
         "positionMm": [
           0,
@@ -3790,7 +2515,7 @@
       "label": "一体反光罩与灯源支座",
       "material": "asa",
       "kind": "generated",
-      "shapeHash": "a925d2f1d5dd038dbf09e8d41d467f7567c22181a487c653b8f53d3cec8bbc1b",
+      "shapeHash": "56010b6cb2af979b61542669d351af65229534c694bb1af78d53fb8721510ba1",
       "transform": {
         "positionMm": [
           0,
@@ -3817,34 +2542,7 @@
       "label": "整套线束与插壳包络",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "5478e5b47c1f6f85ffc817e05b3e92da0cbfae1442dbbcda791f83a35315f53e",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "controller_wire_guide",
-      "target": "controller_wire_guide",
-      "label": "主线束可开扎带导向夹",
-      "material": "asa",
-      "kind": "generated",
-      "shapeHash": "8494264f47ce0b34935e84986e13a07b4ec00dd07023dcad75301699e5f63e1d",
+      "shapeHash": "7e9a458af3fc246d988522c2081a9ae9417c2d2ece3e96e2ad477fd9b18f61b0",
       "transform": {
         "positionMm": [
           0,
@@ -3936,50 +2634,19 @@
     }
   ],
   "fits": [],
-  "updatedAt": "2026-11-13T09:24:56.450Z",
+  "updatedAt": "2026-11-14T04:17:34.104Z",
   "parameters": {
     "fuselage": {
-      "body_length": 80,
-      "body_width": 80,
-      "body_height": 80,
-      "wall_thickness": 2,
-      "front_lens_plane": -32.15,
-      "bottom_lens_plane": -29,
-      "window_radius": 15.5,
       "window_x": 0,
       "window_z": 0,
       "tail_socket_clearance": 0.25,
-      "skid_socket_diameter": 3.2,
       "suspension_roof_radius": 8,
       "suspension_roof_thickness": 3,
-      "belly_aperture_diameter": 51,
-      "skid_mount_half_pitch": 18,
-      "skid_mount_z": -20,
-      "skid_rail_y": 45,
-      "skid_rail_z": -41,
       "carrier_width": 43,
       "carrier_depth": 38,
       "carrier_thickness": 2,
       "carrier_top": -6,
-      "carrier_mount_x": 26,
-      "carrier_tab_radius": 4,
-      "drive_axis_x": 18.5,
-      "drive_bearing_od": 9,
-      "drive_bearing_bottom": 34,
-      "controller_pcb_plane_x": 25,
-      "controller_centre_z": -15.8,
       "controller_edge_clearance": 0.25,
-      "usb_mouth_centre_x": 28.2,
-      "usb_recess_depth": 2.7,
-      "thermal_vent_width": 1.4,
-      "heat_plan_width": 32,
-      "heat_plan_height": 20,
-      "heat_plan_thickness": 2,
-      "service_split_z": 22,
-      "service_rib_inner_x": -24,
-      "cassette_driver_access_diameter": 2.5,
-      "carrier_front_mount_y": -6,
-      "lower_service_plane_y": 0,
       "cabin_diameter": 100,
       "shell_wall": 2.4,
       "enlarged_front_plane": -40.1875,
@@ -3991,18 +2658,63 @@
       "enlarged_skid_rail_y": 56.25,
       "enlarged_skid_rail_z": -51.25,
       "enlarged_belly_aperture_diameter": 63.75,
-      "enlarged_controller_pcb_plane_x": 31,
       "enlarged_controller_centre_z": -21,
-      "enlarged_usb_mouth_centre_x": 34.2,
       "enlarged_usb_recess_depth": 4.75,
-      "enlarged_service_split_z": 25,
-      "controller_install_plane_x": 32.4,
-      "charging_mouth_x": 35.6,
       "charging_board_plane_x": 32.8,
       "charging_mouth_final_x": 36,
       "charging_opening_raise": 10,
       "controller_slot_clearance": 0.3,
-      "charging_plug_corner_radius": 0.5
+      "charging_plug_corner_radius": 0.5,
+      "frame_flange_width": 8,
+      "frame_flange_height": 8,
+      "frame_flange_thickness": 2,
+      "frame_locator_diameter": 3,
+      "frame_locator_radial_clearance": 0.2,
+      "frame_locator_length": 6,
+      "frame_mount_engagement": 4,
+      "service_split_y": 0,
+      "frame_front_locator_x": -30.5,
+      "frame_front_host_y": -34,
+      "frame_rear_mount_x": 31,
+      "frame_rear_host_y": -31,
+      "fixed_roof_beam_width": 16,
+      "fixed_roof_beam_thickness": 5,
+      "fixed_roof_crosslap_y": 8,
+      "case_clamp_front_x": -35,
+      "case_clamp_front_z": 12,
+      "case_clamp_rear_x": 21.5,
+      "case_clamp_rear_z": -32.2,
+      "case_clamp_through_t": 3,
+      "case_clamp_receiver_t": 5,
+      "case_clamp_engagement": 4,
+      "case_front_pad_width": 8,
+      "case_front_pad_height": 7,
+      "case_rear_pad_width": 7,
+      "case_rear_pad_height": 5,
+      "case_root_web_thickness": 6,
+      "case_front_web_x": -37.75,
+      "case_front_web_width": 3.5,
+      "case_front_web_top_z": 34,
+      "case_rear_web_end_x": 36.5,
+      "case_root_overlap": 0.2,
+      "case_guide_backing_half_y": 8,
+      "case_guide_radial_limit": 46.9,
+      "case_guide_clearance": 0.2,
+      "case_joint_keepout_gap": 0.6,
+      "case_rear_low_web_centre_z": -33.45,
+      "case_rear_low_web_height": 2.5,
+      "case_tool_mouth_inner_radius": 27,
+      "case_tool_mouth_leadin_depth": 1.2,
+      "case_tool_mouth_end_radius": 25.5,
+      "case_rear_wire_edge_x": 24.4,
+      "case_rear_wire_relief_low_z": -31.8,
+      "closure_alignment_inner_x": 37.5,
+      "closure_alignment_z": 18,
+      "closure_alignment_tongue_height": 6,
+      "closure_alignment_backing_height": 9,
+      "closure_alignment_entry_chamfer": 0.5,
+      "closure_front_wire_relief_x": -34,
+      "closure_front_wire_relief_top_z": 10
     },
     "nose_lens": {
       "nose_lens_thickness": 1.2,
@@ -4028,7 +2740,8 @@
       "enlarged_tail_prop_pin_hole": 3.5,
       "tail_plug_length": 4,
       "tail_plug_radius": 8,
-      "tail_plug_clearance": 0.2
+      "tail_plug_clearance": 0.2,
+      "hidden_tail_key_flat_z": 6.5
     },
     "main_rotor": {
       "rotor_radius": 100,
@@ -4211,10 +2924,8 @@
       "ntc_wire_guide_wall": 1.5,
       "ntc_wire_guide_width": 4,
       "ntc_battery_guide_y": -27.5,
-      "ntc_shell_guide_z": 24.135,
       "ntc_battery_bridge_width": 7,
       "ntc_battery_bridge_thickness": 2,
-      "ntc_shell_support_radius": 1.5,
       "cob_collector_x": -28,
       "cob_collector_bottom_z": 0,
       "cob_collector_length_x": 18,
@@ -4222,9 +2933,85 @@
       "cob_collector_thickness": 3,
       "cob_bracket_station_y": 20.5,
       "cob_collector_mount_y": 10.5,
-      "thermal_strap_tap_y": 14.5,
-      "thermal_strap_thread_envelope": 2,
-      "deck_tie_recess_floor_z": -6.7
+      "pack_design_diameter": 19,
+      "pack_design_length": 66.2,
+      "pack_axis_z": -24,
+      "pack_radial_clearance": 0.3,
+      "saddle_wall": 2,
+      "cradle_rail_x": 11.3,
+      "cradle_rail_width": 2.4,
+      "cradle_top_z": -10,
+      "cradle_rail_thickness": 2,
+      "cradle_rail_length": 56,
+      "inner_saddle_station": 7,
+      "inner_saddle_band_width": 12,
+      "saddle_lowest_z": -30.5,
+      "deck_tie_slot_x": -2,
+      "cradle_deck_tie_slot_width": 4,
+      "cradle_deck_tie_slot_thickness": 1.3,
+      "cell_end_stop_y": 36.4,
+      "end_bar_width": 12,
+      "end_bar_height": 3,
+      "end_bar_thickness": 2,
+      "end_stop_centre_z": -21,
+      "end_brace_radius": 1.2,
+      "gate_thread_engagement": 2.2,
+      "belt_groove_outer_radius": 10.55,
+      "belt_groove_width": 26,
+      "deck_datum_height": 2,
+      "deck_stop_height": 3,
+      "deck_stop_wall": 1.2,
+      "carrier_half_width": 21.5,
+      "carrier_half_depth": 19,
+      "carrier_side_clearance": 0.3,
+      "carrier_end_clearance": 0.4,
+      "controller_wire_relief_diameter": 3,
+      "cassette_lower_face_z": -33.5,
+      "edge_pad_wire_clearance_radius": 1,
+      "integral_board_support_height": 0.6,
+      "integral_board_support_length": 20.5,
+      "integral_board_support_width": 17.2,
+      "guide_axis_x": 23,
+      "guide_axis_y": -16,
+      "guide_axis_z": 15,
+      "guide_width": 2,
+      "post_adhesive_gap": 0.2,
+      "unit_controller_support_radius": 2.2,
+      "unit_controller_support_bottom_z": -30.8,
+      "unit_controller_support_top_z": -7,
+      "frame_fastener_passage_radius": 2.2,
+      "raw_pair_drop_x": 21,
+      "raw_positive_drop_y": 18.5,
+      "raw_negative_drop_y": 20.5,
+      "battery_gate_station_y": 29,
+      "controller_post_axis_x": 28.5,
+      "controller_post_axis_y": 21.5,
+      "gate_foot_actual_thickness": 3.8,
+      "gate_foot_actual_top_z": -8.2,
+      "gate_foot_width_x": 7,
+      "gate_foot_depth_y": 5,
+      "unit_loom_bore_radius": 4,
+      "unit_loom_outer_radius": 5.2,
+      "pcb_driver_corridor_radius": 1.3,
+      "battery_rear_brace_station_y": 24,
+      "controller_bridge_thickness": 3.2,
+      "controller_bridge_centre_z": -11.5,
+      "case_pack_wire_relief_z": -30.9,
+      "case_pack_wire_relief_height": 4.4,
+      "closure_pack_channel_x": 24.5,
+      "closure_pack_channel_y": 14.5,
+      "closure_pack_channel_width": 3.4,
+      "closure_pack_channel_depth": 18,
+      "closure_rear_service_x": 21.5,
+      "closure_rear_service_z": -32.35,
+      "closure_rear_service_width": 7.8,
+      "closure_rear_service_height": 5.9,
+      "closure_pack_exit_x": 26.137,
+      "closure_pack_exit_y": 9.5,
+      "closure_pack_exit_width": 4,
+      "closure_pack_exit_depth": 8,
+      "closure_pack_exit_route_y": 10.75,
+      "closure_pack_exit_route_depth": 10.5
     },
     "drive_pulley": {
       "pulley_flange_radius": 4.9,
@@ -4237,20 +3024,34 @@
       "motor_d_shaft_bore": 3,
       "motor_d_shaft_flat": 1
     },
-    "controller_cassette": {
-      "controller_wire_relief_diameter": 3,
-      "cassette_lower_face_z": -33.5,
-      "edge_pad_wire_clearance_radius": 1,
-      "integral_board_support_height": 0.6,
-      "integral_board_support_length": 20.5,
-      "integral_board_support_width": 17.2
-    },
     "heat_spreader": {
       "led_lead_hole_diameter": 2,
       "heatsink_fin_height": 4.5,
       "heatsink_fin_width": 1,
       "heatsink_fin_pitch": 2,
-      "collector_edge_relief": 0.2
+      "collector_edge_relief": 0.2,
+      "manifold_root_thickness": 4,
+      "manifold_stem_width": 10,
+      "manifold_web_thickness": 4,
+      "manifold_outer_radius": 46.85,
+      "manifold_contact_thickness": 1,
+      "service_inward_shift": 10.4,
+      "root_plate_width": 8,
+      "upper_contact_x": -17,
+      "upper_contact_z": 40.4,
+      "contact_shoe_thickness": 2,
+      "shoe_contact_gap": 0.1,
+      "shoe_bolt_clearance": 1.9,
+      "shoe_thread_major": 1.6,
+      "shell_ntc_exit_channel_radius": 4,
+      "integral_shoe_web_thickness": 0.4,
+      "thermal_contact_outer_radius": 47.45,
+      "integral_contact_thickness": 0.65,
+      "liner_centre_gap": 1.5,
+      "integral_upper_web_thickness": 0.4,
+      "integral_collector_root_fill": 0.3,
+      "mount_hole_mouth_chamfer": 0.25,
+      "collector_root_offset_x": -1
     },
     "drive_belt": {
       "belt_driven_pitch_radius": 12,
@@ -4319,110 +3120,12 @@
       "right_pcb_back_y": -26.155,
       "right_pcb_centre_z": 2
     },
-    "battery_cradle": {
-      "pack_design_diameter": 19,
-      "pack_design_length": 66.2,
-      "pack_axis_z": -24,
-      "pack_radial_clearance": 0.3,
-      "saddle_wall": 2,
-      "cradle_rail_x": 11.3,
-      "cradle_rail_width": 2.4,
-      "cradle_top_z": -10,
-      "cradle_rail_thickness": 2,
-      "cradle_rail_length": 56,
-      "saddle_station": 17,
-      "saddle_band_width": 14,
-      "saddle_lowest_z": -30.5,
-      "cell_strap_slot_width": 10.5,
-      "cell_strap_slot_height": 1.5,
-      "cradle_deck_tie_slot_width": 4,
-      "cradle_deck_tie_slot_thickness": 1.3,
-      "cell_end_stop_y": 36.4,
-      "end_bar_width": 12,
-      "end_bar_height": 3,
-      "end_bar_thickness": 2,
-      "end_bar_z": -27,
-      "end_gate_arm_radius": 1.5,
-      "gate_screw_y": 28,
-      "gate_foot_thickness": 4,
-      "gate_foot_top_z": -8,
-      "gate_thread_engagement": 2.2,
-      "belt_groove_outer_radius": 10.55,
-      "belt_groove_width": 11,
-      "deck_tie_slot_x": -2,
-      "gate_service_station_y": 24,
-      "end_stop_centre_z": -21,
-      "end_brace_radius": 1.2,
-      "inner_saddle_station": 7,
-      "inner_saddle_band_width": 12,
-      "deck_datum_height": 2,
-      "deck_stop_height": 3,
-      "deck_stop_wall": 1.2,
-      "carrier_half_width": 21.5,
-      "carrier_half_depth": 19,
-      "carrier_side_clearance": 0.3,
-      "carrier_end_clearance": 0.4
-    },
     "battery_gate": {
       "terminal_wire_relief_radius": 1.5
     },
-    "liner_left": {
-      "liner_outer_radius": 47.45,
-      "liner_sheet_thickness": 0.5,
-      "liner_front_limit_x": -38,
-      "liner_bottom_limit_z": -31,
-      "lower_liner_top_z": 24.7,
-      "cap_liner_start_z": 28,
-      "liner_window_keepout_radius": 22.5,
-      "liner_centre_gap": 1.5,
-      "cap_contact_tongue_halfwidth": 10,
-      "cap_contact_tongue_top": 32,
-      "liner_feature_clearance": 0.4,
-      "cap_contact_pad_installed_thickness": 0.1,
-      "cap_contact_shoe_thickness": 0.5,
-      "liner_thickness": 0.5
-    },
-    "liner_right": {
-      "right_liner_centre_gap": 1.5,
-      "liner_split_gap": 1.5
-    },
-    "cap_liner_left": {
-      "cap_left_liner_centre_gap": 1.5,
-      "liner_split_gap": 1.5
-    },
-    "cap_liner_right": {
-      "cap_right_liner_centre_gap": 1.5,
-      "liner_split_gap": 1.5
-    },
-    "liner_aft_left": {
-      "centre_gap": 1.5
-    },
-    "liner_aft_right": {
-      "centre_gap": 1.5
-    },
-    "thermal_bridge_left": {
-      "manifold_root_thickness": 4,
-      "manifold_stem_width": 10,
-      "manifold_web_thickness": 4,
-      "manifold_outer_radius": 46.85,
-      "manifold_contact_thickness": 1,
-      "manifold_release_travel": 4,
-      "upper_contact_x": -17,
-      "upper_contact_z": 40.4,
-      "service_inward_shift": 10.4,
-      "contact_shoe_thickness": 2,
-      "shoe_contact_gap": 0.1,
-      "shoe_bolt_clearance": 1.9,
-      "shoe_thread_major": 1.6,
-      "root_plate_width": 8,
-      "shell_ntc_exit_channel_radius": 4
-    },
-    "thermal_bridge_right": {
-      "minimum_web": 4
-    },
     "battery_strap_front": {
       "strap_installed_thickness": 0.8,
-      "strap_width": 10,
+      "strap_width": 25,
       "strap_inner_radius": 9.55,
       "closure_overlap_thickness": 0.8
     },
@@ -4435,15 +3138,6 @@
       "drawing_max_wrapped_diameter": 19,
       "drawing_max_welded_length": 66.2
     },
-    "cradle_tie_front": {
-      "tie_width": 2.5,
-      "tie_installed_thickness": 0.8,
-      "loop_depth_y": 8.6,
-      "loop_height_z": 7.6
-    },
-    "cradle_tie_rear": {
-      "tie_width": 2.5
-    },
     "cob_bond_film": {
       "bond_thickness": 0.15,
       "bond_contact_width": 12
@@ -4455,30 +3149,6 @@
     },
     "battery_end_pad_rear": {
       "end_pad_thickness": 2.3
-    },
-    "thermal_interfaces_left": {
-      "installed_putty_gap": 0.1
-    },
-    "thermal_interfaces_right": {
-      "installed_gap": 0.1
-    },
-    "upper_heat_link_left": {
-      "lap_gap": 0.1
-    },
-    "upper_heat_link_right": {
-      "lap_gap": 0.1
-    },
-    "thermal_fore_shoe_left": {
-      "contact_wall": 1
-    },
-    "thermal_fore_shoe_right": {
-      "contact_wall": 1
-    },
-    "thermal_aft_shoe_left": {
-      "contact_wall": 1
-    },
-    "thermal_aft_shoe_right": {
-      "contact_wall": 1
     },
     "ntc_battery_reference": {
       "head_max_radius": 1.4,
@@ -4494,7 +3164,8 @@
       "head_max_radius": 1.4,
       "head_max_length": 7.5,
       "liner_probe_anchor_x": 34,
-      "liner_probe_anchor_z": 10.5
+      "liner_probe_anchor_z": 10.5,
+      "shell_probe_mount_radius": 46.95
     },
     "optical_reflector": {
       "reflector_wall": 1.6,
@@ -4521,17 +3192,6 @@
       "standard_plug_height": 14,
       "key_socket_total_depth": 11.5,
       "header_mating_base_z": 0.135
-    },
-    "controller_wire_guide": {
-      "guide_axis_x": 23,
-      "guide_axis_y": -16,
-      "guide_axis_z": 15,
-      "wire_bundle_bore_radius": 3.6,
-      "guide_outer_radius": 5,
-      "guide_width": 2,
-      "post_bond_inner_radius": 2.4,
-      "post_bond_outer_radius": 4,
-      "post_adhesive_gap": 0.2
     }
   }
 }

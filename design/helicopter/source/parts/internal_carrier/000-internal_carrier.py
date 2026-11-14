@@ -1,5 +1,6 @@
 # cell: internal_carrier
 # cell: internal_carrier
+# cell: internal_carrier
 from screwjoint import make_screw_joint_v1
 f=part('fuselage')
 pcb_z=param('pcb_bottom_z',-4.0)
@@ -32,8 +33,7 @@ for side in [-1,1]:
  # Hidden deck extension joins posts to the existing carrier without crossing PCB.
  body=body+Pos(21,y,f.carrier_top-1)*Box(8,7,2)
  body=body+Pos(motor_axis_x,y,(f.carrier_top+motor_front_z+0.5)/2)*Cylinder(support_d/2,motor_front_z+0.5-f.carrier_top)
-for y in [-17,17]:
- body=body-Pos(0,y,f.carrier_top-1)*Box(strap_width,strap_gap,4)
+
 board_thickness=param('pcb_stack_thickness',1.58)
 board_w=param('pcb_mount_outline_width',40.0)
 board_d=param('pcb_mount_outline_depth',30.0)
@@ -79,15 +79,13 @@ for side in [-1,1]:
  assert len(bracket.solids())==1
  led_brackets[side]=bracket
  print('COB support screws',mount.screw_length_mm,joint.screw_length_mm)
-strap_tap_y=param('thermal_strap_tap_y',14.5)
-strap_tap_major=param('thermal_strap_thread_envelope',2.0)
-for side in [-1,1]:
- heat_cut=heat_cut-Pos(heat_x,side*strap_tap_y,heat_bottom+heat_thickness/2)*Cylinder(strap_tap_major/2,heat_thickness+2)
 publish('led_bracket_screws',bracket_hardware,'COB支座固定螺钉',role='fastener',material='stainless_steel')
 publish('heat_mount_screws',heat_hardware,'COB集热板固定螺钉',role='fastener',material='stainless_steel')
 
-connections={'shell':'kit: f.carrier_joints','pcb':'kit: M2 self-forming joints','motor':'free: Pololu3060 metal gearbox front face, 2xM1.6x3 through 2mm PETG plate, 1mm metal engagement','battery':'free: separate19x66.2mm18650cradle;two removable deck ties,cell straps and captive end gate'}
-assert len(connections)==4
+connections={'shell':'kit: f.carrier_joints','pcb':'kit: M2 self-forming joints','motor':'free: Pololu3060 metal gearbox front face, 2xM1.6x3 through 2mm PETG plate, 1mm metal engagement','battery':'free: integral19x66.2mm18650cradle with removable end gate'}
+connections['controller']='free: integral controller rails on two frame supports'
+connections['loom']='free: integral open guide closed with one nylon tie'
+assert len(connections)==6
 assert len(body.solids())==1
 body=body-Pos(0,18.5,-7.5)*Box(4,5,6)
 # F1 underside relief: blind pocket, with a locally reinforced floor.
@@ -119,30 +117,254 @@ wire_guide_r=param('ntc_wire_guide_inner_radius',2.0)
 wire_guide_wall=param('ntc_wire_guide_wall',1.5)
 wire_guide_t=param('ntc_wire_guide_width',4.0)
 wire_guide_y=param('ntc_battery_guide_y',-27.5)
-wire_guide_z=param('ntc_shell_guide_z',24.135)
 wire_bridge_w=param('ntc_battery_bridge_width',7.0)
 wire_bridge_t=param('ntc_battery_bridge_thickness',2.0)
-wire_arm_r=param('ntc_shell_support_radius',1.5)
 outer_r=wire_guide_r+wire_guide_wall
 # Lower saddle lies outside the board edge; extension roots in the existing deck at Y=-18.
 low=Pos(wire_x,wire_guide_y,-7)*Cylinder(outer_r,wire_guide_t)
 low=low.fuse(Pos(wire_x,-22.5,-7)*Box(wire_bridge_w,10,wire_bridge_t))
 low=low-Pos(wire_x,wire_guide_y,-7)*Cylinder(wire_guide_r,wire_guide_t+2)
 low=low-Pos(wire_x+outer_r/2,wire_guide_y,-7)*Box(outer_r,2*outer_r+0.2,wire_guide_t+2)
-# Upper saddle is supported from the existing motor plate, outside the plug service volume.
-a=Vector(15.5,8,30.0); b=Vector(wire_x+2,17,wire_guide_z+2)
-upper=Solid.make_cylinder(wire_arm_r,(b-a).length,Plane(origin=a,z_dir=b-a))
-upper=upper.fuse(Pos(wire_x,17,wire_guide_z)*Rot(90,0,0)*Cylinder(outer_r,wire_guide_t))
-upper=upper-Pos(wire_x,17,wire_guide_z)*Rot(90,0,0)*Cylinder(wire_guide_r,wire_guide_t+2)
-upper=upper-Pos(wire_x-outer_r/2,17,wire_guide_z)*Box(outer_r,wire_guide_t+2,2*outer_r+0.2)
-body=body.fuse(low,upper)
+# Upper NTC branches tie directly to the existing motor post; no redundant ring.
+body=body.fuse(low)
 assert len(body.solids())==1
 print('NTC wire guides: pair diameter',2*wire_pair_r,'bore',2*wire_guide_r,'wall',wire_guide_wall)
-# Recess the deck straps below the PCB's solder-tail envelope.
-tie_seat_floor=param('deck_tie_recess_floor_z',-6.7)
-for sy in [-1,1]:
- body=body-Pos(-2,sy*18.6,(tie_seat_floor-5.9)/2)*Box(3.5,1.4,-5.9-tie_seat_floor)
-assert len(body.solids())==1
+def make_cradle():
+ from screwjoint import make_screw_joint_v1
+ cell_d=param('pack_design_diameter',19)
+ cell_l=param('pack_design_length',66.2)
+ cell_z=param('pack_axis_z',-24)
+ radial_gap=param('pack_radial_clearance',0.3)
+ wall=param('saddle_wall',2)
+ rail_x=param('cradle_rail_x',11.3)
+ rail_w=param('cradle_rail_width',2.4)
+ rail_top=param('cradle_top_z',-10)
+ rail_t=param('cradle_rail_thickness',2)
+ rail_l=param('cradle_rail_length',56)
+ station=param('inner_saddle_station',7)
+ band=param('inner_saddle_band_width',12)
+ saddle_floor=param('saddle_lowest_z',-30.5)
+ tie_slot_x=param('deck_tie_slot_x',-2)
+ tie_slot_w=param('cradle_deck_tie_slot_width',4)
+ tie_slot_t=param('cradle_deck_tie_slot_thickness',1.3)
+ end_y=param('cell_end_stop_y',36.4)
+ end_bar_w=param('end_bar_width',12)
+ end_bar_h=param('end_bar_height',3)
+ end_bar_t=param('end_bar_thickness',2)
+ end_z=param('end_stop_centre_z',-21)
+ arm_r=param('end_brace_radius',1.2)
+ rear_brace_y=param('battery_rear_brace_station_y',24.0)
+ gate_pad_y=param('battery_gate_station_y',29.0)
+ gate_t=param('gate_foot_actual_thickness',3.8)
+ gate_top=param('gate_foot_actual_top_z',-8.2)
+ gate_engage=param('gate_thread_engagement',2.2)
+ gate_foot_w=param('gate_foot_width_x',7.0)
+ gate_foot_d=param('gate_foot_depth_y',5.0)
+ inner=cell_d/2+radial_gap
+ outer=inner+wall
+ body=Pos(-rail_x,0,rail_top-rail_t/2)*Box(rail_w,rail_l,rail_t)
+ body=body+Pos(rail_x,0,rail_top-rail_t/2)*Box(rail_w,rail_l,rail_t)
+ for y in [-17,17]:
+  body=body+Pos(0,y,rail_top-rail_t/2)*Box(2*rail_x+rail_w,14,rail_t)
+
+ for y in [-station,station]:
+  ring=Pos(0,y,cell_z)*Rot(90,0,0)*(Cylinder(outer,band)-Cylinder(inner,band+2))
+  ring=ring & Pos(0,y,(saddle_floor+cell_z+1)/2)*Box(2*outer+2,band+2,cell_z+1-saddle_floor)
+  for side in [-1,1]:
+   rib=Pos(side*rail_x,y,(saddle_floor+rail_top)/2)*Box(rail_w,band,rail_top-saddle_floor)
+   ring=ring+rib
+  body=body+ring
+ body=body-Pos(0,27.5,-10)*Box(40,14,4)
+ # End stops leave the centre of each terminal free for spot-welded leads.
+ rear=Pos(0,-end_y,end_z)*Box(end_bar_w,end_bar_t,end_bar_h)
+ gate=Pos(0,end_y,end_z)*Box(end_bar_w,end_bar_t,end_bar_h)
+ for side in [-1,1]:
+  # Narrow braces remain inboard of the four skid-root clamps.
+  a=Vector(side*rail_x,-rear_brace_y,rail_top-1)
+  m1=Vector(side*16.9,-24,-16);m2=Vector(side*16.9,-28,-19)
+  b=Vector(side*5,-end_y,end_z)
+  rods=[Solid.make_cylinder(arm_r,(q-p).length,Plane(origin=p,z_dir=q-p)) for p,q in [(a,m1),(m1,m2),(m2,b)]]
+  rear=rear.fuse(*rods,Pos(m1)*Sphere(arm_r),Pos(m2)*Sphere(arm_r))
+  host=Pos(side*rail_x,gate_pad_y,-17)*extrude(RectangleRounded(gate_foot_w,gate_foot_d,1),5)
+  body=body.fuse(Pos(side*rail_x,(18.5+gate_pad_y)/2,-13.5)*Box(7,gate_pad_y-12.5,3),host)
+  foot=Pos(side*rail_x,gate_pad_y,gate_top-gate_t)*extrude(RectangleRounded(gate_foot_w,gate_foot_d,1),gate_t)
+  a=Vector(side*14,gate_pad_y,-9);m0=Vector(side*16.9,gate_pad_y,-9)
+  m1=Vector(side*16.9,gate_pad_y,-16);m2=Vector(side*16.9,28,-19);b=Vector(side*5,end_y,end_z)
+  rods=[Solid.make_cylinder(arm_r,(q-p).length,Plane(origin=p,z_dir=q-p)) for p,q in [(a,m0),(m0,m1),(m1,m2),(m2,b)]]
+  gate=gate.fuse(foot,*rods,Pos(m0)*Sphere(arm_r),Pos(m1)*Sphere(arm_r),Pos(m2)*Sphere(arm_r))
+ body=body+rear
+ assert len(body.solids())==1
+ assert len(gate.solids())==1
+ gate_hardware=[]
+ for side in [-1,1]:
+  j=make_screw_joint_v1(size='M2',at=Location((side*rail_x,gate_pad_y,gate_top)),through=[(gate,gate_t)],seat='surface',head='socket_cap',engage_depth=gate_engage,into=body,material='PETG',label='18650-end-gate-'+str(side),finish='stainless')
+  body=body+j.bosses-j.engage_cuts
+  gate=gate-j.through_cuts[0]
+  gate_hardware.append(j.hardware)
+  print('Gate screw',j.screw_length_mm,'head land',j.head_land_mm)
+ assert len(body.solids())==1
+ assert len(gate.solids())==1
+ # The J11 pair descends outside the shortened free rail end.
+ body=body-Pos(rail_x,-27.65,rail_top-1)*Box(rail_w+1,4.7,4)
+ # The end braces follow the pack clearance envelope, with no load on its insulation.
+ pack_relief=Pos(0,0,cell_z)*Rot(90,0,0)*Cylinder(cell_d/2+radial_gap,cell_l+0.6)
+ body=body-pack_relief
+ gate=gate-pack_relief
+ assert len(body.solids())==1
+ assert len(gate.solids())==1
+ # Recess the single replaceable wide fabric strap into the saddle; protect the pack wrap.
+ belt_outer=param('belt_groove_outer_radius',10.55)
+ belt_width=param('belt_groove_width',26)
+ body=body-Pos(0,0,cell_z)*Rot(90,0,0)*Cylinder(belt_outer,belt_width)
+ assert len(body.solids())==1
+ # Pack reference remains unpublished: full wrapped/welded envelope for clearance checks.
+ cell_envelope=Pos(0,0,cell_z)*Rot(90,0,0)*Cylinder(cell_d/2,cell_l)
+ # Integral hard datums fix cell height; zip ties supply clamp force, not a compressible Z datum.
+ datum_h=param('deck_datum_height',2)
+ stop_h=param('deck_stop_height',3)
+ stop_t=param('deck_stop_wall',1.2)
+ deck_half_x=param('carrier_half_width',21.5)
+ deck_half_y=param('carrier_half_depth',19)
+ clear_x=param('carrier_side_clearance',0.3)
+ clear_y=param('carrier_end_clearance',0.4)
+ members=[Pos(8,12,rail_top+datum_h/2)*Box(6,4,datum_h),Pos(-8,-12,rail_top+datum_h/2)*Box(6,4,datum_h)]
+ for side in [-1,1]:
+  members.append(Pos(0,side*(deck_half_y+clear_y+stop_t/2),rail_top+stop_h/2)*Box(4,stop_t,stop_h))
+  edge=deck_half_x+clear_x+stop_t/2
+  members.append(Pos(side*(rail_x+edge)/2,0,rail_top+datum_h/2)*Box(edge-rail_x,3,datum_h))
+  members.append(Pos(side*edge,0,rail_top+stop_h/2)*Box(stop_t,4,stop_h))
+ body=body.fuse(*members)
+ assert len(body.solids())==1
+ body.color=srgb('#FFFFFF')
+
+ return {"body":body,"gate":gate,"gate_hardware":gate_hardware,"end_y":end_y,"end_z":end_z,"end_bar_h":end_bar_h,"end_bar_t":end_bar_t,"station":station,"cell_z":cell_z,"cell_envelope":cell_envelope}
+
+def make_controller_rails():
+ f=part('fuselage')
+ charging_frame=f.charging_frame
+ wire_relief=param('controller_wire_relief_diameter',3)
+ floor=param('cassette_lower_face_z',-33.5)
+ body=f.controller_cut-charging_frame*Pos(f.controller_pcb_x-2.2,0,-8.0)*Rot(0,90,0)*Cylinder(wire_relief/2,4)
+ body=body-charging_frame*Pos(0,0,floor-50)*Box(100,100,100)
+ fanout_r=param('edge_pad_wire_clearance_radius',1)
+ for x,y in [(18.1361,7.62),(18.1361,-7.62),(33.3761,-7.62)]:
+  body=body-Pos(x,y,-26.2)*Cylinder(fanout_r,4.2)
+ support_h=param('integral_board_support_height',0.6)
+ support_l=param('integral_board_support_length',20.5)
+ support_w=param('integral_board_support_width',17.2)
+ board_centre_x=f.charging_opening_x+f.controller_shift_x-15.25
+ support_z=f.charging_opening_z+f.controller_mount_raise+f.controller_pcb_x-1.4-f.usb_mouth_x
+ if support_h>0:
+  support_profile=RectangleRounded(support_l,support_w,0.5)-RectangleRounded(support_l-3.5,support_w-4.0,0.5)
+  body=body+Pos(board_centre_x,0,support_z)*extrude(support_profile,support_h)
+ assert len(body.solids())==1
+ body.color=srgb('#87CEEB')
+
+ # Open the rear PCB stop for straight bench installation; one removable tape tab retains it axially.
+ rear_release=Pos(43.1,0,-28.3)*Box(13.9,18.4,1.5)
+ body=body.cut(rear_release)
+ if isinstance(body,ShapeList):body=Compound(children=list(body))
+ assert len(body.solids())==1
+ return {"body":body}
+
+def make_loom_guide():
+ x=param('guide_axis_x',23)
+ y=param('guide_axis_y',-16)
+ z=param('guide_axis_z',15)
+ bore=param('unit_loom_bore_radius',4.0)
+ outer=param('unit_loom_outer_radius',5.2)
+ t=param('guide_width',2)
+ bond_gap=param('post_adhesive_gap',0.2)
+ guide=Pos(x,y,z)*(Cylinder(outer,t)-Cylinder(bore,t+2))
+ guide=guide-Pos(x-outer/2,y,z)*Box(outer,2*outer+1,t+2)
+ root=Pos(24,-12.25,z)*Box(2,1.1,t)
+ body=guide.fuse(root)
+ body=body-Pos(x,-11.5-bond_gap+20,z)*Box(20,40,t+2)
+ assert len(body.solids())==1
+ body.color=srgb('#FFFFFF')
+ return {"body":body}
+
+cradle_layout=make_cradle()
+controller=make_controller_rails()
+loom_guide=make_loom_guide()
+pack_gate=cradle_layout['gate']
+pack_end_y=cradle_layout['end_y']
+pack_end_z=cradle_layout['end_z']
+pack_end_bar_h=cradle_layout['end_bar_h']
+pack_end_bar_t=cradle_layout['end_bar_t']
+pack_station=cradle_layout['station']
+pack_cell_z=cradle_layout['cell_z']
+pack_cell_envelope=cradle_layout['cell_envelope']
+controller_support_x=param('controller_post_axis_x',28.5)
+controller_support_y=param('controller_post_axis_y',21.5)
+controller_support_r=param('unit_controller_support_radius',2.2)
+controller_support_bottom=param('unit_controller_support_bottom_z',-30.8)
+controller_support_top=param('unit_controller_support_top_z',-7.0)
+posts=[]
+for side in [-1,1]:
+ posts.append(Pos(controller_support_x,side*controller_support_y,(controller_support_bottom+controller_support_top)/2)*Cylinder(controller_support_r,controller_support_top-controller_support_bottom))
+ posts.append(Pos(controller_support_x,side*19.5,-30.4)*Box(5,5,2))
+ posts.append(Pos(23,side*19.5,-7.2)*Box(9,6,2.4))
+controller_bridge_t=param('controller_bridge_thickness',3.2)
+controller_bridge_z=param('controller_bridge_centre_z',-11.5)
+for side in [-1,1]:
+ posts.append(Pos(22.0,side*11,controller_bridge_z)*Box(12,3,controller_bridge_t))
+ posts.append(Pos(18.5,side*11,-9.6)*Box(5,3,5.0))
+ posts.append(Pos(controller_support_x,side*16,-11.0)*Box(3,14,4))
+guide_root=Pos(24,-10.9,15)*Box(2,3.2,2)
+body=body.fuse(cradle_layout['body'],controller['body'],loom_guide['body'],*posts,guide_root)
+assert not isinstance(body,ShapeList), 'Unit union disconnected: '+str([(round(s.volume,2),tuple(s.bounding_box().min),tuple(s.bounding_box().max)) for s in body])
+# Reinforced motor-foot arches keep a straight tool corridor to the rear clamp.
+driver_r=param('frame_fastener_passage_radius',2.2)
+for side in [-1,1]:
+ body=body.fuse(Pos(24,side*motor_support_y,f.carrier_top-1.0)*Box(6,7,5.0))
+assert not isinstance(body,ShapeList), 'Arches disconnected: '+str([(round(s.volume,2),tuple(s.bounding_box().min),tuple(s.bounding_box().max)) for s in body])
+body=body.cut(Pos(f.frame_rear_x,f.carrier_tool_y_center,f.frame_mount_z)*Rot(90,0,0)*Cylinder(driver_r,f.carrier_tool_y_length))
+if isinstance(body,ShapeList): body=Compound(children=list(body))
+assert len(body.solids())==1, 'Passage split: '+str([(round(s.volume,2),tuple(s.bounding_box().min),tuple(s.bounding_box().max)) for s in body.solids()])
+raw_wire_x=param('raw_pair_drop_x',21.0)
+raw_positive_y=param('raw_positive_drop_y',18.5)
+raw_negative_y=param('raw_negative_drop_y',20.5)
+for drop_y in [raw_positive_y,raw_negative_y]:
+ body=body.cut(Pos(raw_wire_x,drop_y,-5)*Cylinder(1.0,50))
+ if isinstance(body,ShapeList): body=Compound(children=list(body))
+body=body.cut(f.lower_shape,f.cap_shape)
+if isinstance(body,ShapeList): body=Compound(children=list(body))
+for hardware in f.carrier_hardware:
+ body=body.cut(hardware)
+ if isinstance(body,ShapeList): body=Compound(children=list(body))
+if isinstance(body,ShapeList): body=Compound(children=list(body))
+pcb_driver_r=param('pcb_driver_corridor_radius',1.3)
+body=body.cut(Pos(16,-11,20)*Cylinder(pcb_driver_r,40))
+if isinstance(body,ShapeList): body=Compound(children=list(body))
+# Open wire relief below the XIAO edge; the remaining perimeter still supports the PCB.
+pack_relief_x=param('closure_pack_channel_x',24.5)
+pack_relief_y=param('closure_pack_channel_y',14.5)
+pack_relief_z=param('case_pack_wire_relief_z',-30.9)
+pack_relief_w=param('closure_pack_channel_width',3.4)
+pack_relief_d=param('closure_pack_channel_depth',18.0)
+pack_relief_h=param('case_pack_wire_relief_height',4.4)
+body=body.cut(Pos(pack_relief_x,pack_relief_y,pack_relief_z)*Box(pack_relief_w,pack_relief_d,pack_relief_h))
+if isinstance(body,ShapeList):body=Compound(children=list(body))
+# Open -Y release around the new rear case clamp, preserving the PCB support top.
+rear_clear_x=param('closure_rear_service_x',21.5)
+rear_clear_z=param('closure_rear_service_z',-32.35)
+rear_clear_w=param('closure_rear_service_width',7.8)
+rear_clear_h=param('closure_rear_service_height',5.9)
+body=body.cut(Pos(rear_clear_x,0,rear_clear_z)*Box(rear_clear_w,120,rear_clear_h))
+if isinstance(body,ShapeList):body=Compound(children=list(body))
+# Wider exit at the actual battery pads; outside the load-bearing rear post.
+pack_exit_x=param('closure_pack_exit_x',26.137)
+pack_exit_y=param('closure_pack_exit_route_y',10.75)
+pack_exit_w=param('closure_pack_exit_width',4.0)
+pack_exit_d=param('closure_pack_exit_route_depth',10.5)
+body=body.cut(Pos(pack_exit_x,pack_exit_y,pack_relief_z)*Box(pack_exit_w,pack_exit_d,pack_relief_h))
+if isinstance(body,ShapeList):body=Compound(children=list(body))
+unit_solids=sorted(body.solids(),key=lambda s:s.volume,reverse=True)
+unit_trim_mm3=sum(s.volume for s in unit_solids[1:])
+if unit_trim_mm3<20 and all(s.volume<12 for s in unit_solids[1:]): body=unit_solids[0]
+assert len(body.solids())==1,'Unit frame disconnected: '+str([(round(s.volume,3),tuple(s.bounding_box().min),tuple(s.bounding_box().max)) for s in body.solids()])
+publish('unit_frame_gate_screws',cradle_layout['gate_hardware'],'电池端挡固定螺钉',role='fastener',material='stainless_steel')
 body.color=srgb('#FFFFFF')
-publish('internal_carrier',body,'电路电池电机托架',material='petg')
+publish('internal_carrier',body,'电池电路电机一体内架',material='petg')
 publish('pcb_mount_screws',pcb_hardware,'连接板固定螺钉',role='fastener',material='stainless_steel')

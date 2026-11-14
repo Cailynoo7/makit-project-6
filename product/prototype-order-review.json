@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "purpose": "Self-built prototype;no factory preassembly or harness/firmware labour purchase",
-  "requirements_digest": "e0e8102bcb8985831859985e9d8388f469a4d180d722be1f095a936551efc071",
-  "CAD_revision": "1ed13b556dd67607f6f8415e081282c7cb72848184f51b21819d5633b7fed86a",
+  "requirements_digest": "fd883fe93941885f918e4a4ddb7215599353573c6baa22ed87a8c4cc94531093",
+  "CAD_revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
   "PCB": {
     "connection_release": "a775a125f18a8423be0a2ba88a937e442a0c12100c13393ab9c8c7c26812f82e",
     "key_release": "b957cd2114d3ced53b0880e8878ea2964d1e2e989303f3763fdcc0b3ff58ff3a",
@@ -29,13 +29,13 @@
     "assembly_owner": "user"
   },
   "aluminium": {
-    "pieces": 15,
-    "A3_sheets": 15,
+    "pieces": 1,
+    "legacy_drawings_valid_for_current_design": false,
     "specification": "product/铝件加工说明.md",
-    "supplier_must_return": "material,threads,contact-profile/flatness records plus installed dry-fit and split-interface demonstration"
+    "pending": "整体金属桥几何检查完成，薄接触面成形/加工工艺、可达性、变形控制及报价待确认；旧AL01–15图不用。"
   },
-  "print_supplier_must_return": "charged-port coupon with actual soldered XIAO and USB cable;window/root fits;material declaration;rotor balance and trial spin",
-  "harness_supplier_must_return": "actual plug dimensions;every-wire continuity/polarity;power-contact pull records per actual terminal manufacturer;location labels and completed routing fixture check",
+  "print_supplier_must_return": "用户自行打印或委托单件打印；先做实际XIAO与USB试配、接缝小样，再确认整架装入和左右合壳",
+  "harness_supplier_must_return": "无厂家预装；用户按线束表制作并逐线验证导通、极性与端头保持",
   "customer_delivery": {
     "mode": "self_assembly",
     "factory_preassembly": false
@@ -47,7 +47,15 @@
     "motor RMS current and air direction",
     "magnetic holding and vibration"
   ],
-  "engineering_BOM_rows": 132,
+  "engineering_BOM_rows": 123,
   "BOM_correction": "104part_identity tags restored to validator-expected values after checking current exact-part/standard/custom specifications;no part/footprint/pin/quantity changed",
-  "excluded_from_commit": "runtime caches,build intermediates and temporary tool output;retain source assets,manufacturing releases,drawings and review evidence"
+  "excluded_from_commit": "runtime caches,build intermediates and temporary tool output;retain source assets,manufacturing releases,drawings and review evidence",
+  "record_scope": "本次清单已按当前左右分壳、单一内架和一体热桥更新；结构几何检查见当前锁壳核对。定制铝热桥制造方案/报价与实物试验仍待完成。",
+  "current_CAD_review": "Normal-Y closure/self-location and specified tool/assembly paths passed;see case-closure-check",
+  "current_order_status": "Printing and purchasing lists synchronized;custom metal process/quotation and physical prototype checks remain",
+  "print_inventory": {
+    "count": 31,
+    "optional_coupon_prints": 2,
+    "report": "product/print-list.json"
+  }
 }

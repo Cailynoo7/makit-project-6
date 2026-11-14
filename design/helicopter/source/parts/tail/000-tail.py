@@ -32,8 +32,11 @@ plug_length=param('tail_plug_length',4.0)
 plug_radius=param('tail_plug_radius',8.0)
 key_gap=param('tail_plug_clearance',0.2)
 key=Pos(-plug_length/2,0,0)*Rot(0,90,0)*Cylinder(plug_radius,plug_length)
+flat_z=param('hidden_tail_key_flat_z',6.5)
+key=key-Pos(-plug_length/2,0,flat_z+5)*Box(plug_length+2,2*plug_radius+2,10)
 body=body.fuse(key)
 receiver_slot=Pos(-2.10,0,0)*Rot(0,90,0)*Cylinder(plug_radius+key_gap,4.3)
+receiver_slot=receiver_slot-Pos(-2.1,0,flat_z+key_gap+5)*Box(6,24,10)
 cone_clearance=Pos(15,0,0)*Rot(0,90,0)*Cylinder(root_radius+0.45,30)
 receiver=Pos(-2.85,0,0)*Rot(0,90,0)*Cylinder(root_radius+0.45,5.7)
 receiver=receiver.cut(receiver_slot)
@@ -41,7 +44,7 @@ from screwjoint import make_screw_joint_v1
 tail_lock_joints=[]
 tail_lock_hardware=[]
 boss_slide_cuts=[]
-for i,y in enumerate([-4,4]):
+for i,y in enumerate([-4]):
  j=make_screw_joint_v1(size='M2',at=Location((-5.7,y,0),(0,-90,0)),through=[(receiver,1.45)],seat='surface',head='socket_cap',engage_depth=3.5,into=body,material='PETG',print_axis='horizontal',label='tail-internal-'+str(i),finish='stainless')
  if j.boss_length_mm is not None and j.boss_length_mm>0:
   body=body.fuse(j.bosses)
@@ -54,7 +57,7 @@ hole_back=fin_thickness/2-0.625
 hole_start=-fin_thickness/2-5
 body=body-Pos(tail_length+prop_aft_offset,(hole_start+hole_back)/2,prop_axis_height)*Rot(90,0,0)*Cylinder(prop_pin_hole/2,hole_back-hole_start)
 connections={'right_trim_fin':'integral: same half-outline as vertical fin; fused to tail tip','tail_propeller_pin':'free: clearance-fit cosmetic pin; adhesive retention'}
-connections['round_tail_joint']='solid circular shoulder with 4mm cylindrical plug; two internally accessible axial M2 screws'
+connections['round_tail_joint']='circular visible shoulder;hidden keyed plug;one axial M2 screw on the fixed negative-Y half'
 assert len(connections)==3
 body_sky_blue='#87CEEB'
 body.color=srgb(body_sky_blue)

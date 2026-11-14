@@ -29,7 +29,7 @@ body=Compound(children=list(body.solids()))
 clearance=param('optical_hard_clearance',0.5)
 support_source=part('internal_carrier')
 supports=[support_source.led_brackets[side]-Pos(-26,side*15,-4)*Cylinder(0.8,4) for side in [-1,1]]
-clear_shapes=[part(name).body for name in ['internal_carrier','battery_cradle','battery_gate','fuselage']]+supports
+clear_shapes=[part(name).body for name in ['internal_carrier','battery_gate','fuselage']]+supports
 for shape in clear_shapes:
  for v in [(0,0,0),(clearance,0,0),(-clearance,0,0),(0,clearance,0),(0,-clearance,0),(0,0,clearance),(0,0,-clearance)]:
   body=body-Pos(*v)*shape
@@ -50,5 +50,8 @@ join_height=param('support_join_height',2.0)
 joins=[Pos(-26.35,side*18,-4)*Box(join_length,join_width,join_height) for side in [-1,1]]
 body=body.fuse(*supports,*joins)
 assert len(body.solids())==1
+for fixed in [part('fuselage').lower_shape,part('fuselage').cap_shape,part('internal_carrier').body]:
+ body=body-fixed
+assert len(body.solids())==1,'One-piece optical support must remain connected'
 body.color=srgb('#FFFFFF')
 publish('optical_reflector',body,'一体反光罩与灯源支座',material='asa')

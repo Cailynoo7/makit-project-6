@@ -1,9 +1,9 @@
 {
-  "review_date": "2026-11-13",
+  "review_date": "2026-11-14",
   "ready_to_order": false,
-  "purpose": "自行制作与装配的散件采购；不采购功能总成或代接线服务",
-  "cad_revision": "1ed13b556dd67607f6f8415e081282c7cb72848184f51b21819d5633b7fed86a",
-  "requirements_digest": "e0e8102bcb8985831859985e9d8388f469a4d180d722be1f095a936551efc071",
+  "purpose": "自行制作的结构重构采购计划；以完成验证后的整体金属热桥和单一内架为准",
+  "cad_revision": "24f9b005d7eaa7cdb596e95c66a48acdfe317fa925e7c37d035629e85c878b3e",
+  "requirements_digest": "fd883fe93941885f918e4a4ddb7215599353573c6baa22ed87a8c4cc94531093",
   "items": [
     {
       "id": "controller",
@@ -14,7 +14,8 @@
       "product_url": "",
       "image_url": "",
       "state": "exact_identity",
-      "notes": "现成XIAO整板，自带Type-C与充电，无须另买充电模块。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "magnet",
@@ -25,7 +26,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Ø30×2mm钕铁硼圆片，不用带壳加厚型。槽深1.5mm；磁力和涂层钢架上的保持力仍需验证。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "connection_pcb",
@@ -36,7 +38,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "40x50mm6层1.6mm外1oz/内2oz，76器件模型已补齐并装配检查。采用现用171fcced制造包；双面手工或委托回流，不把空JLC自动SMT清单当包焊订单。六层、双面装配及铝件按新图询价，旧100–250元小板估价失效。"
+      "notes": "40x50x1.6mm6layer,outer1oz/inner2oz;X40 and mounting holes(-16,-11),(16,-11) unchanged. J10/J11 row centres[13.35,5.3912]and[13.35,-4.9048],90degree rotation,pin1originX12.08,pin2X14.62, same pinout. Neighbouring passives,fan bias tap,inner2 sensor GND corridors and off-hole ground transfers updated;F1 relief and cable guides internal only.",
+      "purchase_category": "bare_pcb"
     },
     {
       "id": "battery",
@@ -47,7 +50,8 @@
       "product_url": "https://item.szlcsc.com/6029056.html",
       "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20230105/B2E82B40C6A197EC38D59527C58C9F35.jpg",
       "state": "exact_identity",
-      "notes": "User selected3200mAh18650. FLY.18650.3200.3C is a bare3.6V cell,typ3200/min3100mAh,max18.6x65.2mm,46g. No built-in protection claimed. Supplier spot-welded tabs/leads plus the new PCB protection are required; no direct cell soldering. Datasheet pp4,7-8."
+      "notes": "User selected3200mAh18650. FLY.18650.3200.3C is a bare3.6V cell,typ3200/min3100mAh,max18.6x65.2mm,46g. No built-in protection claimed. Supplier spot-welded tabs/leads plus the new PCB protection are required; no direct cell soldering. Datasheet pp4,7-8.",
+      "purchase_category": "buy"
     },
     {
       "id": "motor",
@@ -58,7 +62,8 @@
       "product_url": "https://www.pololu.com/product/3060",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "12x10mm gearbox;3mm D-shaft;4.995:1 internal and3.75:1 belt reduction. Single-cell performance is extrapolated; initial60%PWM, winding current <=0.375A. Long-life carbon brushes; no interchangeable generic N20 accepted without matching motor curve."
+      "notes": "12x10mm gearbox;3mm D-shaft;4.995:1 internal and3.75:1 belt reduction. Single-cell performance is extrapolated; initial60%PWM, winding current <=0.375A. Long-life carbon brushes; no interchangeable generic N20 accepted without matching motor curve.",
+      "purchase_category": "buy"
     },
     {
       "id": "led_star",
@@ -69,7 +74,8 @@
       "product_url": "https://item.szlcsc.com/24012654.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240622_HONGLITRONIC-Hongli-Zhihui--HONGLITRONIC-HL-LM002H384W-5B2C5-Ra2-ANSI-4000K_C22398553_front.jpg",
       "state": "exact_identity",
-      "notes": "Finished COB light source on its own aluminium substrate,4000K,Ra>=80,13.5x13.5x1.5mm,LES11.2mm. At300mA,Tc25C:570/620/680lm and14/16/18V. Selected nominal266.7mA,approximately4W. The substrate size does not limit brightness to0.5W. Optical/thermal validation of the assembled lamp remains necessary. Datasheet pp2-5."
+      "notes": "Finished COB light source on its own aluminium substrate,4000K,Ra>=80,13.5x13.5x1.5mm,LES11.2mm. At300mA,Tc25C:570/620/680lm and14/16/18V. Selected nominal266.7mA,approximately4W. The substrate size does not limit brightness to0.5W. Optical/thermal validation of the assembled lamp remains necessary. Datasheet pp2-5.",
+      "purchase_category": "buy"
     },
     {
       "id": "bearings",
@@ -80,7 +86,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "6800标准轴承10×19×5mm，优先低摩擦金属防尘盖型ZZ；不能改变摩擦负载后仍沿用未验证的电机结论。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "headers_2",
@@ -91,7 +98,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "J2 raw cell, J3 motor, J4 COB, J5/J6 keys, J7 fan enable; choose0.64mm square-pin2.54mm vertical family rated>=3A for power circuits."
+      "notes": "J2 raw cell, J3 motor, J4 COB, J5/J6 keys, J7 fan enable; choose0.64mm square-pin2.54mm vertical family rated>=3A for power circuits.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "headers_7",
@@ -102,7 +110,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_regulator",
@@ -113,7 +122,8 @@
       "product_url": "https://item.szlcsc.com/1645090.html",
       "image_url": "",
       "state": "exact_identity",
-      "notes": "TPS61500 analog-dimming boost topology,2.9-18V input,200mV feedback,3A minimum switch-current limit;3A is NOT LED output current. Rsense0.75ohm1%,nom266.7mA;DIMC1uF,EN5kHz. Selected for full1S discharge coverage and matched14-18V COB; obsolete MEL7135/Q2 path cannot drive this source. Datasheet pp3-6,10-15,18-19."
+      "notes": "TPS61500 analog-dimming boost topology,2.9-18V input,200mV feedback,3A minimum switch-current limit;3A is NOT LED output current. Rsense0.75ohm1%,nom266.7mA;DIMC1uF,EN5kHz. Selected for full1S discharge coverage and matched14-18V COB; obsolete MEL7135/Q2 path cannot drive this source. Datasheet pp3-6,10-15,18-19.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "gate_resistors",
@@ -124,7 +134,8 @@
       "product_url": "https://item.szlcsc.com/23502.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20251025_UNI-ROYAL-0603WAF1000T5E_C22775_front.jpg",
       "state": "exact_identity",
-      "notes": "R1 filtered DRV8213 VCC feed100ohm;R3 TPS61500 EN control series100ohm."
+      "notes": "R1 filtered DRV8213 VCC feed100ohm;R3 TPS61500 EN control series100ohm.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "bias_resistors",
@@ -135,7 +146,8 @@
       "product_url": "https://item.szlcsc.com/15343.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250410_YAGEO-RC0603FR-07100KL_C14675_front.jpg",
       "state": "exact_identity",
-      "notes": "R2 fan-input pulldown,R4 lamp EN pulldown,R5 USB sense divider top,R10 fan nFAULT pullup,100kohm each."
+      "notes": "R2 fan-input pulldown,R4 lamp EN pulldown,R5 USB sense divider top,R10 fan nFAULT pullup,100kohm each.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "decoupling",
@@ -146,7 +158,8 @@
       "product_url": "https://item.szlcsc.com/15331.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250715_YAGEO-CC0603KRX7R9BB104_C14663_front.jpg",
       "state": "exact_identity",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "bulk",
@@ -157,7 +170,8 @@
       "product_url": "https://item.szlcsc.com/16532.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20180914_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850_front_10.jpg",
       "state": "exact_identity",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "switches",
@@ -168,7 +182,8 @@
       "product_url": "https://item.szlcsc.com/3009600.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230120_Shenzhen-Kinghelm-Elec-KH-6X6X4-3H-STM_C2837530_front.jpg",
       "state": "exact_identity",
-      "notes": "两块按键板各1只6×6×4.3mm，不能改买不同总高的按钮。"
+      "notes": "",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "drive_belt",
@@ -179,150 +194,164 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Nominal5.53% neutral-line stretch at23mm centres,30/8mm pitch diameters. Hidden motor slots give+/-0.3mm adjustment. Choose actual preload by slip,current and bearing-temperature tests."
+      "notes": "Nominal5.53% neutral-line stretch at23mm centres,30/8mm pitch diameters. Hidden motor slots give+/-0.3mm adjustment. Choose actual preload by slip,current and bearing-temperature tests.",
+      "purchase_category": "buy"
     },
     {
       "id": "led_spreader",
-      "name": "1050/1060 aluminium COB collector,18x34x3mm,2xM2 tapped thermal-bridge holes",
+      "name": "One-piece aluminium COB thermal bridge with integral branches and shell-contact faces",
       "quantity": 1,
       "purchase_quantity": 1,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "铝件总数15：集热板1、桥2、上盖连接件2、接触座4、内衬6；各AL01–15一件，禁止重复采购总成和组成件。按同版STEP与15页图加工。"
+      "notes": "Custom machined solid metal part;COB platform and both shell-contact branches are one piece. Replaces15 aluminium pieces,including6 separate liners;no separate thermal contact shoes or internal clamp screws. Keep electrically insulating thin shell TIM and COB bond.",
+      "purchase_category": "custom_metal"
     },
     {
       "id": "belly_diffuser",
       "name": "Printed translucent PETG belly diffuser, diameter 63.75mm, thickness 1.2mm",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "nose_diffuser",
       "name": "Printed translucent PETG nose diffuser, opening approximately59.5mm",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "button_caps",
       "name": "Opaque pale-blue curved Ø12mm button caps,Ø14mm internal flange,calibrated pusher,bulb/fan icons",
       "quantity": 2,
-      "purchase_quantity": 2,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "fixed_windows",
       "name": "Pale-blue curved window insert,37.5mm register,42.6mm shoulder,12.5mm button bore,open rear PCB guides",
       "quantity": 2,
-      "purchase_quantity": 2,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Pale-blue pane with37.5mm register,42.6mm shoulder; separate12mm button in12.5mm clearance hole; internal retaining ring; independent white overlay frame."
+      "notes": "Pale-blue pane with37.5mm register,42.6mm shoulder; separate12mm button in12.5mm clearance hole; internal retaining ring; independent white overlay frame.",
+      "purchase_category": "print"
     },
     {
       "id": "main_rotor_print",
       "name": "Printed white four-blade main rotor,diameter250mm,chord37.5mm,blade thickness1.6mm",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "250mm一体旋翼，厚度保持1.6mm；需更大有效平台或打印服务，动平衡和允许转速尚未验证。"
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "skid_print",
       "name": "White90mm landing skid with curved struts and internally retained mounting roots",
       "quantity": 2,
-      "purchase_quantity": 2,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Curved struts; rail Z=-51.25mm,Y=+/-56.25mm; mounts X=+/-22.5mm,Z=-25mm;26.25mm vertical drop; front/rear symmetric; internally retained5mm pins."
+      "notes": "Curved struts; rail Z=-51.25mm,Y=+/-56.25mm; mounts X=+/-22.5mm,Z=-25mm;26.25mm vertical drop; front/rear symmetric; internally retained5mm pins.",
+      "purchase_category": "print"
     },
     {
       "id": "tail_print",
       "name": "Solid sky-blue tail boom,50mm symmetric vertical fin,right half-profile trim,4mm cylindrical locating plug and circular shoulder",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Solid circular taper and full-round4mm locating plug with circular bearing shoulder; two hidden axial M2 screws. Symmetric vertical fin and same-half-profile right trim are integral; left white decorative tail propeller is separate."
+      "notes": "Solid circular taper,4mm-long locating plug with internal D-flat and circular bearing shoulder;one hidden axial M2 screw on fixed half. Visible round tail shoulder unchanged.",
+      "purchase_category": "print"
     },
     {
       "id": "tail_prop_print",
       "name": "Printed white three-blade decorative tail propeller, rounded paddle blades, domed hub and locating pin",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "White three-blade decorative left tail propeller; centre[176.875,-4.625,13.75]mm; aft offset1.875mm;3mm pin in3.5mm blind socket."
+      "notes": "White three-blade decorative left tail propeller; centre[176.875,-4.625,13.75]mm; aft offset1.875mm;3mm pin in3.5mm blind socket.",
+      "purchase_category": "print"
     },
     {
       "id": "window_bezel_left_print",
       "name": "Printed white curved overlay window frame, left",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Independent white PETG ring covering pale-blue window edge by 0.5mm; curved back follows cabin surface with nominal 0.15mm glue allowance; free curved adhesive interface."
+      "notes": "Independent white PETG ring covering pale-blue window edge by 0.5mm; curved back follows cabin surface with nominal 0.15mm glue allowance; free curved adhesive interface.",
+      "purchase_category": "print"
     },
     {
       "id": "window_bezel_right_print",
       "name": "Printed white curved overlay window frame, right",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Independent white PETG ring covering pale-blue window edge by 0.5mm; curved back follows cabin surface with nominal 0.15mm glue allowance; free curved adhesive interface."
+      "notes": "Independent white PETG ring covering pale-blue window edge by 0.5mm; curved back follows cabin surface with nominal 0.15mm glue allowance; free curved adhesive interface.",
+      "purchase_category": "print"
     },
     {
       "id": "internal_carrier_print",
-      "name": "PETG removable motor/PCB carrier with F1 relief, NTC guides and recessed cradle-tie seats",
+      "name": "PETG single internal chassis with integral battery cradle,XIAO support,motor/PCB mounts and loom guide",
+      "quantity": 1,
+      "purchase_quantity": 0,
+      "lcsc_code": "",
+      "product_url": "",
+      "image_url": "",
+      "state": "standard_or_custom_specification",
+      "notes": "One PETG chassis integrates battery cradle,motor/PCB mounts,XIAO rails and open loom guide. One front locator and oneM2x6 clamp. XIAO slides from rear on bench;one removable insulating-tape tab retains it axially.",
+      "purchase_category": "print"
+    },
+    {
+      "id": "internal_mount_screws",
+      "name": "M2x6mm ISO4762 stainless steel socket-head screw",
       "quantity": 1,
       "purchase_quantity": 1,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Approved exterior retained. Separate18650 cradle attaches using two2.5mm PA66 ties; integral PETG hard datums fix2mm deck gap and four stops locate laterally. Support cradle before cutting ties; PCB and motor stay on carrier during withdrawal."
-    },
-    {
-      "id": "internal_mount_screws",
-      "name": "M2 x 6mm ISO 7045 pan-head stainless steel machine screw",
-      "quantity": 2,
-      "purchase_quantity": 2,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "Single rear horizontal chassis clamp plus front locating pin;length verified by screw-joint build.",
+      "purchase_category": "buy"
     },
     {
       "id": "battery_strap",
@@ -333,7 +362,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "One 25mm strap centred Y=0 replaces two 10mm straps;cradle groove widened to26mm. Top overlap only;axial end gate and two buffers retained."
+      "notes": "One 25mm strap centred Y=0 replaces two 10mm straps;cradle groove widened to26mm. Top overlap only;axial end gate and two buffers retained.",
+      "purchase_category": "buy"
     },
     {
       "id": "battery_foam",
@@ -344,7 +374,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Include films,wrap and welded tabs within the reserved19x66.2mm pack envelope;do not add a70mm protected-cell variant."
+      "notes": "Include films,wrap and welded tabs within the reserved19x66.2mm pack envelope;do not add a70mm protected-cell variant.",
+      "purchase_category": "buy"
     },
     {
       "id": "pcb_mount_screws",
@@ -355,7 +386,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "key_headers",
@@ -366,7 +398,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "主板普通2P六组+J12一组；按键板另2组；NTC三组另列。不要将合计数量混写成同一BOM行。"
+      "notes": "",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "key_pcbs",
@@ -377,29 +410,20 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "同一14×18mm按键板制作2块，2层FR4、1.6mm；左右同板不同装配朝向。"
+      "notes": "",
+      "purchase_category": "bare_pcb"
     },
     {
       "id": "drive_pulley_print",
       "name": "White PETG D-shaft pulley,8mm effective diameter,3mm bore with flat at1mm; calibrate fit and spot-epoxy axial retention",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
-    },
-    {
-      "id": "controller_cassette_print",
-      "name": "PETG removable XIAO cassette with integral board-thickness support",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Support height parameter0.6mm for existing1.0mm reference PCB;set to0 for1.6mm actual PCB. No loose shim;USB centre and three solder-wire reliefs retained. Fit coupon must match."
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "led_thermal_adhesive",
@@ -410,40 +434,44 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Thin bond to finished COB metal substrate;keep light-emitting area and terminals clean. Thermal contact resistance target<=0.75K/W."
+      "notes": "Thin bond to finished COB metal substrate;keep light-emitting area and terminals clean. Thermal contact resistance target<=0.75K/W.",
+      "purchase_category": "buy"
     },
     {
       "id": "tail_lock_screws",
       "name": "M2x5mm ISO4762 stainless steel socket-head cap screw",
+      "quantity": 1,
+      "purchase_quantity": 1,
+      "lcsc_code": "",
+      "product_url": "",
+      "image_url": "",
+      "state": "standard_or_custom_specification",
+      "notes": "One hidden screw on fixed negative-Y half;D-flat short plug supplies anti-rotation.",
+      "purchase_category": "buy"
+    },
+    {
+      "id": "service_screws",
+      "name": "M2x8mm ISO4762 stainless steel socket-head screw",
       "quantity": 2,
       "purchase_quantity": 2,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
-    },
-    {
-      "id": "service_screws",
-      "name": "M2x10mm ISO4762 stainless steel socket-head screw",
-      "quantity": 3,
-      "purchase_quantity": 3,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "Two M2x8 normal-Y case clamps,front-upper and rear-lower;kit-generated4mm engagement. Integral rear tongue/groove aligns before clamping. Front and bottom diffusers must both be removed for access;no separate locating parts,new exterior holes,nuts or inserts.",
+      "purchase_category": "buy"
     },
     {
       "id": "controller_mount_screws",
       "name": "M1.6x5mm ISO4762 stainless steel socket-head cap screw",
       "quantity": 2,
-      "purchase_quantity": 2,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "Optional charging-fit coupon only;main XIAO support is integral and uses no separate mounting screws.",
+      "purchase_category": "optional_fit_test"
     },
     {
       "id": "heat_mount_screws",
@@ -454,29 +482,32 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Through3mm aluminium collector into kit-generated ASA pilot joints;do not substitute the former4mm length."
+      "notes": "Through3mm aluminium collector into kit-generated ASA pilot joints;do not substitute the former4mm length.",
+      "purchase_category": "buy"
     },
     {
       "id": "fuselage_lower_print",
-      "name": "Sky-blue PETG100mm spherical lower cabin with fully internal mounting supports",
+      "name": "Sky-blue PETG fixed negative-Y cabin half with integral locating tongue and normal-Y clamp receivers",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "One fixed side shell;integral rear locating tongue and two normal-Y M2x8 receiver bosses. Printed from fuselage only;metal hardware is purchased separately.",
+      "purchase_category": "print"
     },
     {
       "id": "fuselage_cap_print",
-      "name": "Sky-blue PETG removable upper cabin cap",
+      "name": "Sky-blue PETG removable positive-Y cabin half with integral locating groove and normal-Y clamp ears",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "One removable side shell;integral locating groove and two through ears. No separate locating parts;front and belly diffusers fitted after tightening both case screws.",
+      "purchase_category": "print"
     },
     {
       "id": "led_bracket_screws",
@@ -487,18 +518,20 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "window_retainer_print",
       "name": "White PETG curved-window clamp with integrated removable button stop,PCB rear pads and lower ledge",
       "quantity": 2,
-      "purchase_quantity": 2,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Internal U-ring and curved saddle feet clamp each pane shoulder against the100mm cabin; twoM2x6 per window."
+      "notes": "Internal U-ring and curved saddle feet clamp each pane shoulder against the100mm cabin; twoM2x6 per window.",
+      "purchase_category": "print"
     },
     {
       "id": "window_retainer_screws",
@@ -509,18 +542,20 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Four internal M2x6 socket-cap screws, two per pane; kit-derived nominal geometry, printed fit still needs coupon."
+      "notes": "Four internal M2x6 socket-cap screws, two per pane; kit-derived nominal geometry, printed fit still needs coupon.",
+      "purchase_category": "buy"
     },
     {
       "id": "skid_root_caps_print",
       "name": "White PETG curved internal saddle cap,9.2mm OD,6.7mm peg cavity,quantity4",
       "quantity": 4,
-      "purchase_quantity": 4,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Four independently printable curved saddle caps,9.2mm OD,6.7mm cavity; two per skid, matching the sphere interior."
+      "notes": "Four independently printable curved saddle caps,9.2mm OD,6.7mm cavity; two per skid, matching the sphere interior.",
+      "purchase_category": "print"
     },
     {
       "id": "skid_root_screws",
@@ -531,29 +566,32 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Four M2x8 socket-cap screws into5mm locating pins; internal heads; kit-derived nominal geometry, printed fit still needs coupon."
+      "notes": "Four M2x8 socket-cap screws into5mm locating pins; internal heads; kit-derived nominal geometry, printed fit still needs coupon.",
+      "purchase_category": "buy"
     },
     {
       "id": "rotor_bearing_spacer_print",
       "name": "PETG bearing outer-race spacer,19mm OD,16mm ID,7.9mm long",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "7.9mm spacer bears only on the two6800 outer races; separate from stationary inner spacer."
+      "notes": "7.9mm spacer bears only on the two6800 outer races; separate from stationary inner spacer.",
+      "purchase_category": "print"
     },
     {
       "id": "rotor_inner_spacer_print",
       "name": "PETG bearing inner-race spacer,12.6mm OD,10.2mm ID,7.9mm long",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "suspension_bolt",
@@ -564,7 +602,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "暂缓直接下单：M4×90 ISO10642沉头内六角，A2/304，90mm含头。尚无完全匹配现货证据，向紧固件商询价；不能换成ISO4762圆柱头或DIN965十字沉头。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "suspension_nut",
@@ -575,7 +614,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "M4 ISO4032普通六角螺母，螺距0.7mm；没有另加垫圈或加厚件的空间验证。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "bearing_retaining_adhesive",
@@ -586,51 +626,56 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "须供应商明确兼容PETG和钢，只粘外圈，不进入滚道；不默认用仅适于金属的厌氧胶。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "magnet_base_print",
       "name": "White PETG magnetic cup,45mm OD,13.75mm high,30.3mm pocket1.5mm deep",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "mast_print",
       "name": "White PETG stepped hollow mast,visible13.5x33.95mm,12.6mm inner-race foot7.05mm long",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "rotor_fixed_axle_print",
       "name": "White PETG9.8mm fixed axle with12.6mm lower inner-race shoulder,4.6mm bolt bore",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "hub_cover_print",
       "name": "White PETG32.5mm rotor hub cover with integral outer-race retainer",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "print"
     },
     {
       "id": "diffuser_reversible_adhesive",
@@ -641,7 +686,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "可剥离弹性胶，灯罩及覆盖窗框使用；先验证PETG粘接与透光外观。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "usb_sense_bottom",
@@ -652,7 +698,8 @@
       "product_url": "https://item.szlcsc.com/23534.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20251009_UNI-ROYAL-0603WAF1503T5E_C22807_front.jpg",
       "state": "exact_identity",
-      "notes": "Two150kohm resistors:R6 USB sense bottom andR7 fan VREF divider top."
+      "notes": "Two150kohm resistors:R6 USB sense bottom andR7 fan VREF divider top.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "female_housing_2",
@@ -663,7 +710,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Seven mainboard housings:J2,J3,J4,J5,J6,J7,J12;14mm total installed height. Side-window ends are separate low-profile solder sockets;do not buy nine standard crimp housings."
+      "notes": "Seven mainboard housings:J2,J3,J4,J5,J6,J7,J12;14mm total installed height. Side-window ends are separate low-profile solder sockets;do not buy nine standard crimp housings.",
+      "purchase_category": "buy"
     },
     {
       "id": "female_housing_7",
@@ -674,7 +722,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "J1;0.64mm square mating pins,7contacts;wire fanout to XIAO solder pads."
+      "notes": "J1;0.64mm square mating pins,7contacts;wire fanout to XIAO solder pads.",
+      "purchase_category": "buy"
     },
     {
       "id": "female_contacts",
@@ -685,7 +734,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "24 loose matching crimp contacts=7x2+7+3 for mainboard generic housings;window sockets include their own4contacts;three TE probe plugs use separate6TE contacts. >=3A for power contacts."
+      "notes": "24 loose matching crimp contacts=7x2+7+3 for mainboard generic housings;window sockets include their own4contacts;three TE probe plugs use separate6TE contacts. >=3A for power contacts.",
+      "purchase_category": "buy"
     },
     {
       "id": "power_wire",
@@ -696,7 +746,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "24AWG red1m+black1m for protected PACK,motor and shared GND;raw cell leads supplied by spot-weld service. Finished cuts in harness table;no RAW negative Y split."
+      "notes": "24AWG red1m+black1m for protected PACK,motor and shared GND;raw cell leads supplied by spot-weld service. Finished cuts in harness table;no RAW negative Y split.",
+      "purchase_category": "buy"
     },
     {
       "id": "signal_wire",
@@ -707,7 +758,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "H01/H04/H05/H06/H07/H08 stock;total4m includes>=0.5m white for visible optical cavity. Finished26AWG OD<=1.1mm to match fanout/tip envelopes;NTC adapter OD0.89-1.4mm as separately specified. White COB insulation uses red/yellow end labels,not an extra thick sleeve."
+      "notes": "H01/H04/H05/H06/H07/H08 stock;total4m includes>=0.5m white for visible optical cavity. Finished26AWG OD<=1.1mm to match fanout/tip envelopes;NTC adapter OD0.89-1.4mm as separately specified. White COB insulation uses red/yellow end labels,not an extra thick sleeve.",
+      "purchase_category": "buy"
     },
     {
       "id": "usb_cable",
@@ -718,7 +770,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "必须支持数据，插头包胶在入口处≤12.35×6.5mm；XIAO插口实际高度尚待样板适配核对。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "usb_adapter",
@@ -729,7 +782,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "普通合规5V≥1A电源，不用9V/12V诱骗板。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "magnet_adhesive",
@@ -740,7 +794,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "PETG/镀镍钕铁硼兼容的薄胶层，固定磁铁。"
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "heatshrink",
@@ -751,7 +806,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "insulation_tape",
@@ -762,7 +818,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "solder_consumables",
@@ -773,18 +830,20 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "",
+      "purchase_category": "buy"
     },
     {
       "id": "charging_fit_shell_print",
-      "name": "Optional local USB-C curved shell fit-test coupon,approximately25.55x46x20.25mm;reuse main XIAO cassette and2xM1.6x5 screws",
+      "name": "Optional USB fit-test print set: local coupon shell x1 and test XIAO cassette x1",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": ""
+      "notes": "Test fixture only;main unit uses integral chassis rails. Two M1.6x5 screws belong to coupon,not final lamp.",
+      "purchase_category": "optional_fit_test"
     },
     {
       "id": "fan_driver",
@@ -795,7 +854,8 @@
       "product_url": "https://item.szlcsc.com/33567428.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20260228_TI-DRV8213RTER_C31829946_front.jpg",
       "state": "exact_identity",
-      "notes": "Current regulation and latched stall shutdown at1S voltage; no Basic candidate with the same functions was found. WQFN requires reflow assembly."
+      "notes": "Current regulation and latched stall shutdown at1S voltage; no Basic candidate with the same functions was found. WQFN requires reflow assembly.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "fan_current_scale",
@@ -806,7 +866,8 @@
       "product_url": "https://item.szlcsc.com/23773.html",
       "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20221228/1B8B71093E88E17E066B810DDA7DEB84.jpg",
       "state": "exact_identity",
-      "notes": "4.99k IPROPI resistor; AIPROPI205uA/A."
+      "notes": "4.99k IPROPI resistor; AIPROPI205uA/A.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "fan_vref_bottom",
@@ -817,7 +878,8 @@
       "product_url": "https://item.szlcsc.com/32812.html",
       "image_url": "https://alimg.szlcsc.com/upload/public/product/middle/20251013/B224F7A864E47E44EFFD65D2C0C0EEFC.jpg",
       "state": "exact_identity",
-      "notes": "22k bottom with150k top gives VREF=VBAT*22/172."
+      "notes": "22k bottom with150k top gives VREF=VBAT*22/172.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "fan_start_timer",
@@ -828,7 +890,8 @@
       "product_url": "https://item.szlcsc.com/1975.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250904_Samsung-Electro-Mechanics-CL10B474KA8NNNC_C1623_front.jpg",
       "state": "exact_identity",
-      "notes": "470nF timer: nominal3.055s startup blanking."
+      "notes": "470nF timer: nominal3.055s startup blanking.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "fan_bulk",
@@ -839,7 +902,8 @@
       "product_url": "https://item.szlcsc.com/97327.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240318_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123_front.jpg",
       "state": "exact_identity",
-      "notes": "47uF10V1206 local motor input bulk; capacitance under DC bias must be checked on prototype."
+      "notes": "47uF10V1206 local motor input bulk; capacitance under DC bias must be checked on prototype.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "motor_mount_screws",
@@ -850,7 +914,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Through2mm motor plate into existing threaded metal gearbox;1mm engagement."
+      "notes": "Through2mm motor plate into existing threaded metal gearbox;1mm engagement.",
+      "purchase_category": "buy"
     },
     {
       "id": "motor_pulley_epoxy",
@@ -861,7 +926,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Spot at exposed D-shaft/pulley end provides axial retention only. Do not bond motor bearing or gearbox; replace pulley and motor together for service."
+      "notes": "Spot at exposed D-shaft/pulley end provides axial retention only. Do not bond motor bearing or gearbox; replace pulley and motor together for service.",
+      "purchase_category": "buy"
     },
     {
       "id": "led_inductor",
@@ -872,7 +938,8 @@
       "product_url": "https://item.szlcsc.com/266984.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20181009_Chilisin-Elec-MHCC06030-100M-R7_C280564_front.jpg",
       "state": "exact_identity",
-      "notes": "MHCC06030-100M-R7 shielded10uH20%,DCR68mohm max,Isat5.5A typ at30% inductance drop,Irms4A typ at40C rise;7.3x6.6x3mm. At8uH and assumed480kHz low-frequency bound,calculated worst switch peak2.49A. Supplier datasheet pp2,17 marks series not for new design; accepted for limited-stock prototype,requires lifecycle substitution review before production."
+      "notes": "MHCC06030-100M-R7 shielded10uH20%,DCR68mohm max,Isat5.5A typ at30% inductance drop,Irms4A typ at40C rise;7.3x6.6x3mm. At8uH and assumed480kHz low-frequency bound,calculated worst switch peak2.49A. Supplier datasheet pp2,17 marks series not for new design; accepted for limited-stock prototype,requires lifecycle substitution review before production.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_schottky",
@@ -883,7 +950,8 @@
       "product_url": "https://item.szlcsc.com/1056014.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230201_Vishay-Intertech-SS3P6L-M3-86A_C968580_front.jpg",
       "state": "exact_identity",
-      "notes": "SS3P6L-M3/86A,60V3A,TO-277A,chosen from TPS61500 recommended diode family; reverse rating exceeds40V switch rating. AverageLED current<=0.277A; calculated inductor peak2.49A. Datasheet pp1-2; footprint/polarity to be checked in PCB revision."
+      "notes": "SS3P6L-M3/86A,60V3A,TO-277A,chosen from TPS61500 recommended diode family; reverse rating exceeds40V switch rating. AverageLED current<=0.277A; calculated inductor peak2.49A. Datasheet pp1-2; footprint/polarity to be checked in PCB revision.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "thermal_adc",
@@ -894,7 +962,8 @@
       "product_url": "https://item.szlcsc.com/38573.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20190612_Texas-Instruments-ADS1115IDGSR_C37593_front.jpg",
       "state": "exact_identity",
-      "notes": "ADS1115IDGSR,3.3V I2C four-input ADC: AIN0 COB NTC,AIN1 shell NTC,AIN2 battery NTC,AIN3 divided protected battery. ADDR ground gives0x48;100nF bypass,4.7k I2C pull-ups. Uses explicitly remapped XIAO D7/GPIO20 SDA and D6/GPIO21 SCL; default I2C GPIO6/7 already drive loads. Datasheet pp3-5,11,23."
+      "notes": "ADS1115IDGSR,3.3V I2C four-input ADC: AIN0 COB NTC,AIN1 shell NTC,AIN2 battery NTC,AIN3 divided protected battery. ADDR ground gives0x48;100nF bypass,4.7k I2C pull-ups. Uses explicitly remapped XIAO D7/GPIO20 SDA and D6/GPIO21 SCL; default I2C GPIO6/7 already drive loads. Datasheet pp3-5,11,23.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "thermal_probes",
@@ -905,7 +974,8 @@
       "product_url": "https://item.szlcsc.com/55044715.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20260603_R-O-HNTC-103F3950FB-100P_C52204608_front.jpg",
       "state": "exact_identity",
-      "notes": "HNTC-103F3950FB-100P finished epoxy-bead probe,10kohm1%,B25/50=3950K1%,100+/-5mm overall length INCLUDING bead,not free lead length,head max2.8x7.5mm. Typical tau<=15s in liquid; installed thermal lag must be checked. Remote sensors on COB,opaque-shell hot spot and battery. Datasheet pp1,3. Wire gauge is unspecified; do not crimp unknown probe wire directly into22-26AWG terminal. Commission a26AWG terminated adapter with staggered insulated splices."
+      "notes": "HNTC-103F3950FB-100P finished epoxy-bead probe,10kohm1%,B25/50=3950K1%,100+/-5mm overall length INCLUDING bead,not free lead length,head max2.8x7.5mm. Typical tau<=15s in liquid; installed thermal lag must be checked. Remote sensors on COB,opaque-shell hot spot and battery. Datasheet pp1,3. Wire gauge is unspecified; do not crimp unknown probe wire directly into22-26AWG terminal. Commission a26AWG terminated adapter with staggered insulated splices.",
+      "purchase_category": "buy"
     },
     {
       "id": "battery_protection_ic",
@@ -916,7 +986,8 @@
       "product_url": "https://item.szlcsc.com/194498.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230111_Texas-Instruments-BQ29700DSER_C183096_front.jpg",
       "state": "exact_identity",
-      "notes": "BQ29700DSER1S protector:OVP4.275V,UVP2.8V,OCD100mV20ms,SCD500mV250us nominal. Common-drain back-to-back low-side FET application with330ohm BAT filter,100nF,2.2kohm V-minus resistor,5Mohm gate-source bleeds. All loads and XIAO charging connect to PACK side,never bypass CELL-minus. Datasheet pp4-8,21-22."
+      "notes": "BQ29700DSER1S protector:OVP4.275V,UVP2.8V,OCD100mV20ms,SCD500mV250us nominal. Common-drain back-to-back low-side FET application with330ohm BAT filter,100nF,2.2kohm V-minus resistor,5Mohm gate-source bleeds. All loads and XIAO charging connect to PACK side,never bypass CELL-minus. Datasheet pp4-8,21-22.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "battery_protection_fets",
@@ -927,7 +998,8 @@
       "product_url": "https://item.szlcsc.com/565047.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230204_Texas-Instruments-CSD85301Q2_C544396_front.jpg",
       "state": "exact_identity",
-      "notes": "Five paralleled back-to-back pairs using each CSD85301Q2 independent dual N-MOS;join drains externally,balanced copper. Rds each max39mohm atVgs2.5V,Tj25C;combined five-pair path max15.6mohm. One pair would trigger100mV protection too early at this load. Design bound1.5x hot Rds plus3mohm traces gives26.4mohm,85mV minimum OCD=>3.22A above2.63A load budget. Hot factor and sharing require prototype measurement; protector is not a calibrated current limiter. Datasheet pp1,3-4."
+      "notes": "Five paralleled back-to-back pairs using each CSD85301Q2 independent dual N-MOS;join drains externally,balanced copper. Rds each max39mohm atVgs2.5V,Tj25C;combined five-pair path max15.6mohm. One pair would trigger100mV protection too early at this load. Design bound1.5x hot Rds plus3mohm traces gives26.4mohm,85mV minimum OCD=>3.22A above2.63A load budget. Hot factor and sharing require prototype measurement; protector is not a calibrated current limiter. Datasheet pp1,3-4.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "battery_fuse",
@@ -938,7 +1010,8 @@
       "product_url": "https://item.szlcsc.com/28264.html",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20260522_Littelfuse-0451004-MRL_C27515_front.jpg",
       "state": "exact_identity",
-      "notes": "Littelfuse0451004.MRL,4A125V very-fast fuse,2410;series raw cell positive at battery entry. Datasheet p2 givesRnom16mohm andI2t3.152A2s;catalogI2t0.0551 is inconsistent and NOT used. Secondary fault protection,not a4A constant-current limiter. Startup inrush/temperature coordination must be tested."
+      "notes": "Littelfuse0451004.MRL,4A125V very-fast fuse,2410;series raw cell positive at battery entry. Datasheet p2 givesRnom16mohm andI2t3.152A2s;catalogI2t0.0551 is inconsistent and NOT used. Secondary fault protection,not a4A constant-current limiter. Startup inrush/temperature coordination must be tested.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_sense_resistor",
@@ -949,7 +1022,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Rsense Kelvin route,200mV nominal;nom266.67mA,bounds257.43..276.09mA including195..205mV FB and1%R;maxdissipation0.0566W."
+      "notes": "Rsense Kelvin route,200mV nominal;nom266.67mA,bounds257.43..276.09mA including195..205mV FB and1%R;maxdissipation0.0566W.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_freq_resistor",
@@ -960,7 +1034,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "TPS61500 FREQ nominal600kHz;frequency tolerance not specified for this exact resistor in datasheet,480kHz used as sensitivity assumption,not guaranteed limit."
+      "notes": "TPS61500 FREQ nominal600kHz;frequency tolerance not specified for this exact resistor in datasheet,480kHz used as sensitivity assumption,not guaranteed limit.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_ovp_top",
@@ -971,7 +1046,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "OVP upper resistor,Vnom20.6472V,min19.6527,max21.6729 including1%R and1.192..1.266V reference."
+      "notes": "OVP upper resistor,Vnom20.6472V,min19.6527,max21.6729 including1%R and1.192..1.266V reference.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_ovp_bottom",
@@ -982,7 +1058,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "OVP lower resistor;above LED14..18V plus3%VF measurement bound andFB0.205V."
+      "notes": "OVP lower resistor;above LED14..18V plus3%VF measurement bound andFB0.205V.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_soft_start",
@@ -993,7 +1070,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "SS soft-start capacitor per TI guidance."
+      "notes": "SS soft-start capacitor per TI guidance.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_compensation",
@@ -1004,7 +1082,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "COMP to ground;layout and loop response must be checked on new board."
+      "notes": "COMP to ground;layout and loop response must be checked on new board.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_dim_filter",
@@ -1015,7 +1094,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "DIMC to ground selects analog dimming;5kHz EN input. Start with continuous HIGH>=50ms before reducing duty;datasheet minimum start PWM on-time is200us,not20us."
+      "notes": "DIMC to ground selects analog dimming;5kHz EN input. Start with continuous HIGH>=50ms before reducing duty;datasheet minimum start PWM on-time is200us,not20us.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_input_cap",
@@ -1026,7 +1106,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Local VIN/PGND bypass,effective>=3.3uF at4.2V;shared battery bulk capacitor remains."
+      "notes": "Local VIN/PGND bypass,effective>=3.3uF at4.2V;shared battery bulk capacitor remains.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_output_caps",
@@ -1037,7 +1118,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "4.4uF nominal total,require>=2.2uF combined at21.7V from chosen supplier DC-bias curve;1..10uF effective output range."
+      "notes": "4.4uF nominal total,require>=2.2uF combined at21.7V from chosen supplier DC-bias curve;1..10uF effective output range.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_bleeder",
@@ -1048,7 +1130,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Across boosted output to discharge capacitance;do not hot-plug COB at charged output."
+      "notes": "Across boosted output to discharge capacitance;do not hot-plug COB at charged output.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "temperature_pullups",
@@ -1059,7 +1142,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "3.3V to each NTC node,NTC toPACK_GND;maxNTC selfheat0.273mW at3.3V."
+      "notes": "3.3V to each NTC node,NTC toPACK_GND;maxNTC selfheat0.273mW at3.3V.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "temperature_input_filter",
@@ -1070,7 +1154,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Series ADC input resistors;separate analogue returns from switching ground."
+      "notes": "Series ADC input resistors;separate analogue returns from switching ground.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "temperature_filter_caps",
@@ -1081,7 +1166,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "One per ADC input;NTC settling and multiplexer timing handled in firmware."
+      "notes": "One per ADC input;NTC settling and multiplexer timing handled in firmware.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "i2c_pullups",
@@ -1092,7 +1178,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "SDA/SCL pull-ups to3.3V,100kHz internal bus."
+      "notes": "SDA/SCL pull-ups to3.3V,100kHz internal bus.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "battery_adc_top",
@@ -1103,7 +1190,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Protected battery toAIN3 divider top."
+      "notes": "Protected battery toAIN3 divider top.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "battery_adc_bottom",
@@ -1114,7 +1202,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "AIN3 divider bottom,2.1V nominal at4.2V battery."
+      "notes": "AIN3 divider bottom,2.1V nominal at4.2V battery.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "protection_bat_filter",
@@ -1125,7 +1214,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "BQ29700 BAT input filter."
+      "notes": "BQ29700 BAT input filter.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "protection_vminus",
@@ -1136,7 +1226,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "PACK-minus toBQ29700 V-minus."
+      "notes": "PACK-minus toBQ29700 V-minus.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "protection_gate_bleeds",
@@ -1147,7 +1238,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Shared CHG/DSG gate-to-source bleed resistors,close to paired FET bank."
+      "notes": "Shared CHG/DSG gate-to-source bleed resistors,close to paired FET bank.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "added_bypass",
@@ -1158,7 +1250,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "One BQ29700 BAT-VSS,one ADS1115 VDD-GND."
+      "notes": "One BQ29700 BAT-VSS,one ADS1115 VDD-GND.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "thermal_header",
@@ -1169,7 +1262,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Internal extension forXIAO3V3,D7 SDA,D6 SCL;not an exterior port."
+      "notes": "Internal extension forXIAO3V3,D7 SDA,D6 SCL;not an exterior port.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "probe_headers",
@@ -1180,7 +1274,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Three internal probe ports,NTC input plus ground;avoid swapped channels."
+      "notes": "Three internal probe ports,NTC input plus ground;avoid swapped channels.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "probe_female_housings",
@@ -1191,7 +1286,8 @@
       "product_url": "https://item.szlcsc.com/460395.html",
       "image_url": "",
       "state": "exact_identity",
-      "notes": "TE supplier drawing p1: housing2P A5.59+0.25/-0.13mm,12.95mm axial length,6.60mm max cross section,pitch2.54mm;accepts1375819 family. J10/J11 rotated90degrees,row alongX,centreX13.35;conservative installed/service reserve6.5x9x20mm includes14mm plug and6mm bend allowance. 3 probes labelled COB/SHELL/BAT. Supplier drawing envelope,not a supplier STEP model."
+      "notes": "TE supplier drawing p1: housing2P A5.59+0.25/-0.13mm,12.95mm axial length,6.60mm max cross section,pitch2.54mm;accepts1375819 family. J10/J11 rotated90degrees,row alongX,centreX13.35;conservative installed/service reserve6.5x9x20mm includes14mm plug and6mm bend allowance. 3 probes labelled COB/SHELL/BAT. Supplier drawing envelope,not a supplier STEP model.",
+      "purchase_category": "buy"
     },
     {
       "id": "battery_spot_weld_service",
@@ -1202,40 +1298,20 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Exact bare cell with nickel tabs,positive insulating ring,24AWG red/black leads supplied by battery service;cut stock125/165mm,trim on routing jig. Wrapped cell reserveØ19x66.2mm;do not solder directly to cell."
-    },
-    {
-      "id": "conformal_heat_spreaders",
-      "name": "Six-piece formed1050/1060 aluminium shell-liner set,0.5mm thick,about72.1cm2 equivalent area",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Two fore,two aft,two cap liners fit the actual100mm cabin and avoid windows,skid roots,seams,USB and antenna. Bond to shell with<=0.15mm insulating thermal adhesive.72.1cm2 is volume/thickness equivalent metal area,not a verified thermal capacity. The500lx warm-state reading target remains unchanged."
-    },
-    {
-      "id": "heat_transfer_straps",
-      "name": "1050/1060 aluminium removable thermal bridge,left and right",
-      "quantity": 2,
-      "purchase_quantity": 2,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Two1050/1060 aluminium thermal bridges AL02/03;open R4 NTC exit channel replaces R2.1. Mounting axes and thermal interfaces unchanged;use final STEP and drawings."
+      "notes": "Exact bare cell with nickel tabs,positive insulating ring,24AWG red/black leads supplied by battery service;cut stock125/165mm,trim on routing jig. Wrapped cell reserveØ19x66.2mm;do not solder directly to cell.",
+      "purchase_category": "buy"
     },
     {
       "id": "internal_reflector",
       "name": "One-piece matte-white ASA reflector with integral left/right COB supports",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Single connected ASA print combines reflector and two supports,retains original M1.6 mounting joints and screw positions;two bonded interfaces removed. Remove collector first,then withdraw entire insert through nose."
+      "notes": "Single connected ASA print combines reflector and two supports,retains original M1.6 mounting joints and screw positions;two bonded interfaces removed. Remove collector first,then withdraw entire insert through nose.",
+      "purchase_category": "print"
     },
     {
       "id": "protected_battery_header",
@@ -1246,7 +1322,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "NewPACK+/-outputtoXIAOBAT+/BAT-;allXIAOgroundsPACK-side. Do not reuse raw-cell negative as ground."
+      "notes": "NewPACK+/-outputtoXIAOBAT+/BAT-;allXIAOgroundsPACK-side. Do not reuse raw-cell negative as ground.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "led_bias_link",
@@ -1257,7 +1334,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "R31 populated0ohm0603 separates the TPS61500 VIN-bias/C3 branch from the 3A inductor feeder."
+      "notes": "R31 populated0ohm0603 separates the TPS61500 VIN-bias/C3 branch from the 3A inductor feeder.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "protection_vss_link",
@@ -1268,7 +1346,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "R32 populated0ohm0603 forms Kelvin raw-cell-negative reference for U4 VSS,C15 bypass andR19 discharge gate bleed; not a load return."
+      "notes": "R32 populated0ohm0603 forms Kelvin raw-cell-negative reference for U4 VSS,C15 bypass andR19 discharge gate bleed; not a load return.",
+      "purchase_category": "pcb_component"
     },
     {
       "id": "probe_crimp_contacts",
@@ -1279,7 +1358,8 @@
       "product_url": "https://item.szlcsc.com/87650.html",
       "image_url": "",
       "state": "exact_identity",
-      "notes": "Exact1375820 housing contact family;datasheet p1:22-26AWG,insulationOD0.89-1.65mm. Crimp only onto specified26AWG adapter wire,not unspecified factory probe lead."
+      "notes": "Exact1375820 housing contact family;datasheet p1:22-26AWG,insulationOD0.89-1.65mm. Crimp only onto specified26AWG adapter wire,not unspecified factory probe lead.",
+      "purchase_category": "buy"
     },
     {
       "id": "ntc_guide_ties",
@@ -1290,18 +1370,20 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Two2.5x100 ties:one softly anchors H10 alongside+Y motor post,one closes existing lower guide for H11. New H01 guide tie is separately listed."
+      "notes": "Two2.5x100 ties:one softly anchors H10 alongside+Y motor post,one closes existing lower guide for H11. New H01 guide tie is separately listed.",
+      "purchase_category": "buy"
     },
     {
       "id": "battery_cradle_print",
-      "name": "PETG transverse18650 cradle and removable end gate,two-piece set",
+      "name": "PETG removable battery end gate for integral chassis",
       "quantity": 1,
-      "purchase_quantity": 1,
+      "purchase_quantity": 0,
       "lcsc_code": "",
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "For19x66.2mm maximum wrapped/tabbed cell at[0,0,-24],axisY.0.3mm radial hard clearance,one25mm strap,two axial cushions and two M2x6 gate screws. PETG,0.2mm layers,0.4mm nozzle;band wall remaining after 26mm strap groove>=1.25mm. Integral2mm hard deck datums and3mm lateral stops;X/Y clearance0.3/0.4mm. No compressible deck spacer."
+      "notes": "Only the removable end gate is printed separately;cradle belongs to the unit chassis. Preserve two M2 gate screws and terminal/cushion clearances.",
+      "purchase_category": "print"
     },
     {
       "id": "battery_gate_screws",
@@ -1312,7 +1394,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Kit-generated recessed joints atX=+/-11.3,Y=24,Z=-8mm. Self-forming PETG pilot holes;no metal tapping of the printed part."
+      "notes": "Kit-generated recessed joints atX=+/-11.3,Y=24,Z=-8mm. Self-forming PETG pilot holes;no metal tapping of the printed part.",
+      "purchase_category": "buy"
     },
     {
       "id": "battery_end_spacers",
@@ -1323,62 +1406,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Axial buffers between cell end faces and end stops atY=+/-36.4,Z=-21mm. Keep terminal centre and spot-welded lead exits clear."
-    },
-    {
-      "id": "battery_cradle_ties",
-      "name": "PA66 cable tie2.5x100mm,band<=0.8mm,head<=4.6x3.4x4.6mm",
-      "quantity": 2,
-      "purchase_quantity": 2,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Route through aligned deck/cradle slots atX=-2,Y=+/-17mm. Heads face outward below PCB. Two recessed deck seats protect solder tails. Cut for deep service and replace;buy spare ties. Separate from the two NTC-guide ties."
-    },
-    {
-      "id": "thermal_upper_links",
-      "name": "1050/1060 aluminium upper-cap heat link,left and right",
-      "quantity": 2,
-      "purchase_quantity": 2,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Bond spherical feet to the cap liners with0.1mm insulating thermal adhesive. Lower planar lap interfaces atZ26/26.1 use0.1mm non-curing thermal filler;links leave with upper cap."
-    },
-    {
-      "id": "thermal_contact_shoes",
-      "name": "1050/1060 aluminium spherical thermal contact shoes,fore/aft,left/right set",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Four metal pieces. Spherical faces couple to lower shell liners through0.1mm non-curing insulating thermal filler;they remain removable. M1.6x0.35 through threads:1.25mm tap drill,not the modeled1.6mm major envelope. Disconnect four bridge screws before extracting shoes."
-    },
-    {
-      "id": "thermal_contact_screws",
-      "name": "M1.6x10mm ISO4762 stainless steel socket-head cap screw",
-      "quantity": 4,
-      "purchase_quantity": 4,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Recessed0.1mm below thermal-bridge top.3.4mm counterbore,1.7mm deep;1.9mm bridge clearance bore. About1.6mm engagement in aluminium contact shoes. Fore axes[-28,+/-24],aft[27,+/-24.5]."
-    },
-    {
-      "id": "thermal_clamp_screws",
-      "name": "M2x8mm ISO4762 stainless steel socket-head cap screw",
-      "quantity": 2,
-      "purchase_quantity": 2,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Clamp4mm bridge root plus0.1mm thermal layer into3mm tapped collector. Tip protrusion about0.9mm occurs beyond the COB footprint atY=+/-14.5."
+      "notes": "Axial buffers between cell end faces and end stops atY=+/-36.4,Z=-21mm. Keep terminal centre and spot-welded lead exits clear.",
+      "purchase_category": "buy"
     },
     {
       "id": "noncuring_thermal_filler",
@@ -1389,7 +1418,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Collector roots,bridge/shoe laps,shoe/liner spherical interfaces and cap split laps. Fill the specified thin gaps;avoid thick pads. Do not permanently glue removable contact shoes."
+      "notes": "Only thin electrically insulating shell-contact interfaces;no filler interfaces within monolithic thermal bridge.",
+      "purchase_category": "buy"
     },
     {
       "id": "probe_retention_tape",
@@ -1400,18 +1430,20 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Hold battery NTC over a thin non-curing thermal layer so it can be removed without stripping the cell sleeve. COB and liner probes use insulating thermal adhesive away from solder pads and emitting area."
+      "notes": "Hold battery NTC over a thin non-curing thermal layer so it can be removed without stripping the cell sleeve. COB and shell probes use insulating thermal adhesive away from solder pads and emitting area.",
+      "purchase_category": "buy"
     },
     {
       "id": "hex_key_1p5",
-      "name": "1.5mm hex key with slender shaft<=1.8mm diameter",
+      "name": "Wera950 PKLS L-key,metric,chrome plated,1.5x90mm (05022040001)",
       "quantity": 1,
       "purchase_quantity": 1,
       "lcsc_code": "",
-      "product_url": "",
+      "product_url": "https://www.wera.de/en/05022040001",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "For internal ISO4762 screws. Remove the upper assembly before reaching thermal-contact screws;verify the purchased key against the checked access corridor."
+      "notes": "Manufacturer90/4.5mm arms,Wera05022040001. Tool geometry checks include5mm threaded withdrawal,60degree re-indexing,key disengagement and ordinary hand seating/removal of freed screws. Shaft envelope1.8mm,bend envelope4.5mm are conservative engineering defaults;actual fit/torque not measured.",
+      "purchase_category": "tool"
     },
     {
       "id": "female_housing_3",
@@ -1422,7 +1454,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "J8;3matching contacts included in24 loose contacts;0.64mm square mating pins."
+      "notes": "J8;3matching contacts included in24 loose contacts;0.64mm square mating pins.",
+      "purchase_category": "buy"
     },
     {
       "id": "key_low_profile_sockets",
@@ -1433,18 +1466,8 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "采购/线束定制规格已确定：2.54mm1x2焊线母座，壳<=8.5mm、总深<=11.5mm、含热缩截面<=3x5.6mm；不是已经取得厂家认证STEP的特定商品。先让供应商按此规格交样，外形大于包络不得直接代替。"
-    },
-    {
-      "id": "controller_wire_guide_print",
-      "name": "White ASA open main-loom guide,R3.6 bore,R5 outer,width2mm",
-      "quantity": 1,
-      "purchase_quantity": 1,
-      "lcsc_code": "",
-      "product_url": "",
-      "image_url": "",
-      "state": "standard_or_custom_specification",
-      "notes": "Internal guide on existing rear motor post;0.2mm peelable adhesive gap to flat post side. Remove before thermal bridge service. No exterior hole or new screw."
+      "notes": "Custom harness termination specification;cross section<=3x5.6mm including insulation,contacts included. No extra PCB. Window ends only;fit actual0.64mm pins. Self-made soldered and heat-shrunk terminations must remain inside total envelope. Physical sample inspection required.",
+      "purchase_category": "buy"
     },
     {
       "id": "controller_guide_tie",
@@ -1455,15 +1478,100 @@
       "product_url": "",
       "image_url": "",
       "state": "standard_or_custom_specification",
-      "notes": "Closes new H01 open guide. Release or replace for deep service;do not compress wire insulation."
+      "notes": "Closes new H01 open guide. Release or replace for deep service;do not compress wire insulation.",
+      "purchase_category": "buy"
     }
   ],
   "order_notes": [
-    "用户自行组装，采购散件和裸PCB；取消两套预装总成、代接线和代烧录服务。",
-    "PCB保持已发布六层规格；其焊接仍由用户完成，未将空SMT清单当作已焊板。",
-    "电芯选带点焊引线规格；不直接锡焊裸电芯。",
-    "15件铝件的热路保持，仍须定制加工或自行制作，不能以打印塑料替代。",
-    "按当前BOM买料，先做局部配合和通电试验；热稳定照度、温升、风量及磁吸承载未实测。"
+    "用户自行装配，不购买预装功能总成。",
+    "一件整体金属热桥取代15件分散铝件，六片独立均热片取消；历史AL01–15图纸不用作新热桥加工依据。",
+    "一体热桥为定制金属件，需确认制造工艺、薄接触区质量及报价，不能打印塑料代替。",
+    "PCB与电气针位保持，用户自行焊接和接线；热稳定照度、温控、风量、磁吸及振动须样机实测。",
+    "打印31件与购买散件分别执行，不购买整套线束包络的实体模型；线束由已列电线、插壳和端子自行制作。",
+    "可选USB试配件及其2颗M1.6×5内六角螺钉不计入整机默认采购。",
+    "数量为一台整机净用量，无备件；PCB元件按散件买一次，已装板卡不能再重复购买其散件。",
+    "定制铝热桥制造工艺与报价未确认；本次不确认现货、交期或价格。"
   ],
-  "user_order_units": []
+  "user_order_units": [
+    {
+      "name": "整机塑料打印件",
+      "quantity": 31,
+      "unit": "件",
+      "bom_ids": [
+        "battery_cradle_print",
+        "belly_diffuser",
+        "button_caps",
+        "drive_pulley_print",
+        "fixed_windows",
+        "fuselage_cap_print",
+        "fuselage_lower_print",
+        "hub_cover_print",
+        "internal_carrier_print",
+        "internal_reflector",
+        "magnet_base_print",
+        "main_rotor_print",
+        "mast_print",
+        "nose_diffuser",
+        "rotor_bearing_spacer_print",
+        "rotor_fixed_axle_print",
+        "rotor_inner_spacer_print",
+        "skid_print",
+        "skid_root_caps_print",
+        "tail_print",
+        "tail_prop_print",
+        "window_bezel_left_print",
+        "window_bezel_right_print",
+        "window_retainer_print"
+      ],
+      "instruction": "自行打印则不采购成品；委托打印时按打印清单整套报价，不再逐行重复下单。"
+    },
+    {
+      "name": "一体铝热桥",
+      "quantity": 1,
+      "unit": "件",
+      "bom_ids": [
+        "led_spreader"
+      ],
+      "instruction": "按当前整体STEP询价；旧15件铝片图纸不下单。"
+    },
+    {
+      "name": "主连接板裸板",
+      "quantity": 1,
+      "unit": "块",
+      "bom_ids": [
+        "connection_pcb"
+      ],
+      "instruction": "40×50×1.6mm六层；不含器件/预装。"
+    },
+    {
+      "name": "窗按键裸板",
+      "quantity": 2,
+      "unit": "块",
+      "bom_ids": [
+        "key_pcbs"
+      ],
+      "instruction": "14×18×1.6mm双层；不含按键/排针。"
+    },
+    {
+      "name": "10mm聚酰亚胺绝缘胶带，厚≤0.06mm",
+      "quantity": 1,
+      "unit": "卷",
+      "bom_ids": [
+        "insulation_tape",
+        "probe_retention_tape"
+      ],
+      "instruction": "同一卷覆盖两种用途，不重复买两卷。"
+    },
+    {
+      "name": "PA66扎带2.5×100mm，耐温≥85℃",
+      "quantity": 3,
+      "unit": "根",
+      "bom_ids": [
+        "ntc_guide_ties",
+        "controller_guide_tie"
+      ],
+      "instruction": "两处探头导向加一处主束导向，按包装采购。"
+    }
+  ],
+  "cad_review_status": "Normal-Y closure and integral self-location geometry checked;actual fit/torque and custom metal manufacturing quotation remain"
 }
